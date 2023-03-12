@@ -21,6 +21,11 @@ final_export['MITRE_TOOL'] = []
 final_export['MITRE_Tool_References'] = []
 final_export['MITRE_Tool_Aliases'] = []
 final_export['MITRE_Tool_Platforms'] = []
+final_export['MITRE_Malware'] = []
+final_export['MITRE_Malware_Platforms'] = []
+final_export['MITRE_Malware_Aliases'] = []
+final_export['MITRE_Malware_References'] = []
+
 
 
 
@@ -280,6 +285,14 @@ for filename in os.listdir('tool'):
             # Add the MITRE_Tool_Platforms object to the final export
             final_export['MITRE_Tool_Platforms'].append(mitre_tool_platforms.__dict__)
 
+
+
+
+
+####################################################
+# MITRE_Malware & MITRE_Malware_Platforms &
+# MITRE_Malware_Aliases & MITRE_Malware_References
+####################################################
 
 
 

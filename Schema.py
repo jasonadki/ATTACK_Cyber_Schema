@@ -131,4 +131,53 @@ class MITRE_Tool_Platforms:
         self.Platform_ID = Platform_ID
 
         
+class MITRE_Malware:
+    def __init__(
+        self,
+        UUID = None,
+        Description = None,
+        Name = None,
+        Depreciated = None,
+        Version_Number = None,
+        Superseded_By = None,
+    ):
+        self.UUID = UUID
+        self.Description = Description
+        self.Name = Name
+        self.Depreciated = Depreciated
+        self.Version_Number = Version_Number
+        self.Superseded_By = Superseded_By
 
+
+class MITRE_Malware_Platforms:
+    def __init__(
+        self,
+        Malware_ID = None,
+        Platform_ID = None,
+    ):
+        self.Malware_ID = Malware_ID
+        self.Platform_ID = Platform_ID
+
+
+class MITRE_MALWARE_Aliases:
+    def __init__(
+        self,
+        Name = None,
+        Malware_ID = None,
+    ):
+        self.Name = Name
+        self.Malware_ID = Malware_ID
+
+
+class MITRE_Malware_References:
+    def __init__(
+        self,
+        Source_Name = None,
+        URL = None,
+        Description = None,
+        Malware_ID = None,
+    ):
+        self.Source_Name = Source_Name
+        self.URL = URL
+        self.Description = Description
+        self.Malware_ID = Malware_ID
