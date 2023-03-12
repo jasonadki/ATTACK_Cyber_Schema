@@ -210,3 +210,46 @@ class MITRE_Tactic_References:
         self.Description = Description
         self.Tactic_ID = Tactic_ID
     
+
+class MITRE_Group:
+    def __init__(
+        self,
+        UUID = None,
+        Description = None,
+        Name = None,
+        Revoked = None,
+        Depreciated = None,
+        Version_Number = None,
+        Superseded_By = None,
+    ):
+        self.UUID = UUID
+        self.Description = Description
+        self.Name = Name
+        self.Revoked = Revoked
+        self.Depreciated = Depreciated
+        self.Version_Number = Version_Number
+        self.Superseded_By = Superseded_By
+
+
+class MITRE_Group_Aliases:
+    def __init__(
+        self,
+        Name = None,
+        Group_ID = None,
+    ):
+        self.Name = Name
+        self.Group_ID = Group_ID
+
+
+class MITRE_Group_References:
+    def __init__(
+        self,
+        Source_Name = None,
+        URL = None,
+        Description = None,
+        Group_ID = None,
+    ):
+        self.Source_Name = Source_Name
+        self.URL = URL
+        self.Description = Description
+        self.Group_ID = Group_ID

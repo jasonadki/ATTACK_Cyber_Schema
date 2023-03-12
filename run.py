@@ -27,6 +27,9 @@ final_export['MITRE_Malware_Aliases'] = []
 final_export['MITRE_Malware_References'] = []
 final_export['MITRE_TACTIC'] = []
 final_export['MITRE_Tactic_References'] = []
+final_export['MITRE_Group'] = []   
+final_export['MITRE_Group_Aliases'] = []
+final_export['MITRE_Group_References'] = []
 
 
 
@@ -429,6 +432,88 @@ for filename in os.listdir('x-mitre-tactic'):
 
             # Add the MITRE_Tactic_References object to the final export
             final_export['MITRE_Tactic_References'].append(mitre_tactic_reference.__dict__)
+
+
+
+
+############################################################
+# MITRE_GROUP & MITRE_Group_Aliases & MITRE_Group_References
+############################################################
+# Iterate through the intrustion-set directory
+for filename in os.listdir('intrusion-set'):
+    # Read in the json file
+    with open('intrusion-set/' + filename) as f:
+        data = json.load(f)
+
+    # Create a new MITRE_Group object
+    # Check if the group is depreciated
+    if 'x_mitre_deprecated' in data['objects'][0]:
+        depreciated = data['objects'][0]['x_mitre_deprecated']
+    else:
+        depreciated = 0
+
+    # Check if group has a description
+    if 'description' in data['objects'][0]:
+        description = data['objects'][0]['description']
+    else:
+        description = ''
+
+    # Check if group has a revoked status
+    if 'revoked' in data['objects'][0]:
+        revoked = data['objects'][0]['revoked']
+    else:
+        revoked = 0
+
+    mitre_group = MITRE_Group(
+        UUID = data['objects'][0]['id'].replace('intrusion-set--', ''),
+        Name = data['objects'][0]['name'],
+        Description = description,
+        Depreciated = depreciated,
+        Revoked = revoked,
+        Version_Number= data['objects'][0]['x_mitre_version']
+    )
+
+    # Add the MITRE_Group object to the final export
+    final_export['MITRE_Group'].append(mitre_group.__dict__)
+
+
+    # Aliases if they exist
+    if 'aliases' in data['objects'][0]:
+        for alias in data['objects'][0]['aliases']:
+            # Create a new MITRE_Group_Aliases object
+            mitre_group_aliases = MITRE_Group_Aliases(
+                Name = alias,
+                Group_ID = mitre_group.UUID
+            )
+
+            # Add the MITRE_Group_Aliases object to the final export
+            final_export['MITRE_Group_Aliases'].append(mitre_group_aliases.__dict__)
+
+    # References if they exist
+    if 'external_references' in data['objects'][0]:
+        for reference in data['objects'][0]['external_references']:
+            # Check that a description exists if not make it blank
+            if 'description' in reference:
+                description = reference['description']
+            else:
+                description = ''
+
+            if 'url' in reference:
+                url = reference['url']
+            else:
+                url = ''
+
+            mitre_group_reference = MITRE_Group_References(
+                Source_Name = reference['source_name'],
+                URL = url,
+                Description = description,
+                Group_ID = mitre_group.UUID
+            )
+
+            # Add the MITRE_Group_References object to the final export
+            final_export['MITRE_Group_References'].append(mitre_group_reference.__dict__)
+
+
 
 
 
