@@ -15,6 +15,9 @@ final_export['MITRE_Data_Sources_Collection_Layers'] = []
 final_export['MITRE_Data_Source_Reference'] = []
 final_export['MITRE_Data_Sources'] = []
 final_export['MITRE_Data_Component'] = []
+final_export['MITRE_ATTACK_Platforms'] = []
+final_export['MITRE_Data_Sources_Platforms'] = []
+
 
 
 def create_database_from_dict(db_file, data_dict):
@@ -126,6 +129,35 @@ for filename in os.listdir('x-mitre-data-source'):
         # Add the MITRE_Data_Sources_Collection_Layers object to the final export
         final_export['MITRE_Data_Sources_Collection_Layers'].append(MITRE_data_source_collection_layer.__dict__)
 
+
+    # Iterate through the platforms
+    for platform in data['objects'][0]['x_mitre_platforms']:
+        # Check if the platform already exists
+        if not any(d['Name'] == platform for d in final_export['MITRE_ATTACK_Platforms']):
+            # Create a new MITRE_ATTACK_Platforms object
+            mitre_attack_platforms = MITRE_ATTACK_Platforms(
+                UUID = str(uuid4()),
+                Name = platform,
+            )
+
+            # Add the MITRE_ATTACK_Platforms object to the final export
+            final_export['MITRE_ATTACK_Platforms'].append(mitre_attack_platforms.__dict__)
+            mitre_attack_platforms_UUID = mitre_attack_platforms.UUID
+
+        else:
+            # Get the UUID of the existing platform
+            mitre_attack_platforms_UUID = [d for d in final_export['MITRE_ATTACK_Platforms'] if d['Name'] == platform][0]['UUID']
+
+        # Create a new MITRE_Data_Sources_Platforms object
+        MITRE_data_source_platforms = MITRE_Data_Sources_Platforms(
+            Data_Source_ID = mitre_data_sources.UUID,
+            Platform_ID = mitre_attack_platforms_UUID
+        )
+
+        # Add the MITRE_Data_Sources_Platforms object to the final export
+        final_export['MITRE_Data_Sources_Platforms'].append(MITRE_data_source_platforms.__dict__)
+
+        
 
 
 # #######################

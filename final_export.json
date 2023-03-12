@@ -1,923 +1,845 @@
 {
     "MITRE_ATTACK_Collection_Layers": [
         {
-            "UUID": "e40272bc-1c6e-4da7-a34a-9d285cd56b1f",
-            "Name": "Container"
-        },
-        {
-            "UUID": "7406e3ea-4e46-4768-bfef-4e5eb04183ed",
-            "Name": "Cloud Control Plane"
-        },
-        {
-            "UUID": "c43e5652-8590-439f-bc44-3b41f4326bca",
+            "UUID": "0acd953d-d734-4842-aefc-b2fa3051ef8b",
             "Name": "Host"
         },
         {
-            "UUID": "4d6bb5a4-c12f-4fa2-8757-bbedb3070672",
+            "UUID": "fd98c3d1-9a16-4182-8e4d-761e6d5f05d7",
+            "Name": "Cloud Control Plane"
+        },
+        {
+            "UUID": "7f1395c8-dafa-43fe-acdb-d5c0b02e492a",
+            "Name": "Container"
+        },
+        {
+            "UUID": "d3a00e67-5085-4afc-a423-393c26a0c8f1",
             "Name": "OSINT"
         },
         {
-            "UUID": "780451f7-1fe9-43d0-ab01-a3bf3bef0f47",
+            "UUID": "8a5cfcfb-f31d-4bb6-b24f-4eb51e1e39a4",
             "Name": "Network"
         }
     ],
     "MITRE_Data_Sources_Collection_Layers": [
         {
-            "Data_Source_ID": "06bb1e05-533b-4de3-ae87-9b99910465cf",
-            "Layer_ID": "e40272bc-1c6e-4da7-a34a-9d285cd56b1f"
+            "Data_Source_ID": "61bbbf27-f7c3-46ba-a6bc-48ae76928065",
+            "Layer_ID": "0acd953d-d734-4842-aefc-b2fa3051ef8b"
         },
         {
-            "Data_Source_ID": "072ec5a7-00ba-466f-9057-69751a22a967",
-            "Layer_ID": "e40272bc-1c6e-4da7-a34a-9d285cd56b1f"
+            "Data_Source_ID": "40269753-26bd-437b-986e-159c66dec5e4",
+            "Layer_ID": "fd98c3d1-9a16-4182-8e4d-761e6d5f05d7"
         },
         {
-            "Data_Source_ID": "0b4f86ed-f4ab-46a3-8ed1-175be1974da6",
-            "Layer_ID": "7406e3ea-4e46-4768-bfef-4e5eb04183ed"
+            "Data_Source_ID": "40269753-26bd-437b-986e-159c66dec5e4",
+            "Layer_ID": "0acd953d-d734-4842-aefc-b2fa3051ef8b"
         },
         {
-            "Data_Source_ID": "0b4f86ed-f4ab-46a3-8ed1-175be1974da6",
-            "Layer_ID": "e40272bc-1c6e-4da7-a34a-9d285cd56b1f"
+            "Data_Source_ID": "f2f4f4bd-3455-400f-b2ee-104004df0f5b",
+            "Layer_ID": "fd98c3d1-9a16-4182-8e4d-761e6d5f05d7"
         },
         {
-            "Data_Source_ID": "0b4f86ed-f4ab-46a3-8ed1-175be1974da6",
-            "Layer_ID": "c43e5652-8590-439f-bc44-3b41f4326bca"
+            "Data_Source_ID": "f2f4f4bd-3455-400f-b2ee-104004df0f5b",
+            "Layer_ID": "0acd953d-d734-4842-aefc-b2fa3051ef8b"
         },
         {
-            "Data_Source_ID": "0f42a24c-e035-4f93-a91c-5f7076bd8da0",
-            "Layer_ID": "c43e5652-8590-439f-bc44-3b41f4326bca"
+            "Data_Source_ID": "d6188aac-17db-4861-845f-57c369f9b4c8",
+            "Layer_ID": "fd98c3d1-9a16-4182-8e4d-761e6d5f05d7"
         },
         {
-            "Data_Source_ID": "12c1e727-7fa4-49b6-af81-366ed2ce231e",
-            "Layer_ID": "c43e5652-8590-439f-bc44-3b41f4326bca"
-        },
-        {
-            "Data_Source_ID": "1ac0ca69-e07e-4b34-9061-e4588e146c52",
-            "Layer_ID": "7406e3ea-4e46-4768-bfef-4e5eb04183ed"
-        },
-        {
-            "Data_Source_ID": "1e26f222-e27e-4bfa-830c-fa4b4f18b5e4",
-            "Layer_ID": "7406e3ea-4e46-4768-bfef-4e5eb04183ed"
-        },
-        {
-            "Data_Source_ID": "1e26f222-e27e-4bfa-830c-fa4b4f18b5e4",
-            "Layer_ID": "c43e5652-8590-439f-bc44-3b41f4326bca"
-        },
-        {
-            "Data_Source_ID": "221adcd5-cccf-44df-9be6-ef607a6e1c3c",
-            "Layer_ID": "c43e5652-8590-439f-bc44-3b41f4326bca"
-        },
-        {
-            "Data_Source_ID": "29aa4e0e-4a26-4f79-a9bc-1ae66df1c923",
-            "Layer_ID": "4d6bb5a4-c12f-4fa2-8757-bbedb3070672"
+            "Data_Source_ID": "d6188aac-17db-4861-845f-57c369f9b4c8",
+            "Layer_ID": "0acd953d-d734-4842-aefc-b2fa3051ef8b"
         },
         {
             "Data_Source_ID": "2cd6cc81-d86e-4595-a4f0-43f5519f14e6",
-            "Layer_ID": "c43e5652-8590-439f-bc44-3b41f4326bca"
+            "Layer_ID": "0acd953d-d734-4842-aefc-b2fa3051ef8b"
         },
         {
-            "Data_Source_ID": "2ce537a2-3b30-4374-9397-31d6460ec0bc",
-            "Layer_ID": "7406e3ea-4e46-4768-bfef-4e5eb04183ed"
-        },
-        {
-            "Data_Source_ID": "38fe306c-bdec-4f3d-8521-b72dd32dbd17",
-            "Layer_ID": "4d6bb5a4-c12f-4fa2-8757-bbedb3070672"
-        },
-        {
-            "Data_Source_ID": "3bef4799-906c-409c-ac00-3fb7a1e352e6",
-            "Layer_ID": "4d6bb5a4-c12f-4fa2-8757-bbedb3070672"
-        },
-        {
-            "Data_Source_ID": "3c07684f-3794-4536-8f70-21efe700c0ec",
-            "Layer_ID": "7406e3ea-4e46-4768-bfef-4e5eb04183ed"
-        },
-        {
-            "Data_Source_ID": "3c07684f-3794-4536-8f70-21efe700c0ec",
-            "Layer_ID": "c43e5652-8590-439f-bc44-3b41f4326bca"
-        },
-        {
-            "Data_Source_ID": "40269753-26bd-437b-986e-159c66dec5e4",
-            "Layer_ID": "7406e3ea-4e46-4768-bfef-4e5eb04183ed"
-        },
-        {
-            "Data_Source_ID": "40269753-26bd-437b-986e-159c66dec5e4",
-            "Layer_ID": "c43e5652-8590-439f-bc44-3b41f4326bca"
-        },
-        {
-            "Data_Source_ID": "4358c631-e253-4557-86df-f687d0ef9891",
-            "Layer_ID": "7406e3ea-4e46-4768-bfef-4e5eb04183ed"
-        },
-        {
-            "Data_Source_ID": "4358c631-e253-4557-86df-f687d0ef9891",
-            "Layer_ID": "c43e5652-8590-439f-bc44-3b41f4326bca"
-        },
-        {
-            "Data_Source_ID": "4358c631-e253-4557-86df-f687d0ef9891",
-            "Layer_ID": "780451f7-1fe9-43d0-ab01-a3bf3bef0f47"
-        },
-        {
-            "Data_Source_ID": "45232bc0-e858-440d-aa93-d48c6cf167f0",
-            "Layer_ID": "7406e3ea-4e46-4768-bfef-4e5eb04183ed"
-        },
-        {
-            "Data_Source_ID": "4523e7f3-8de2-4078-96f8-1227eb537159",
-            "Layer_ID": "c43e5652-8590-439f-bc44-3b41f4326bca"
-        },
-        {
-            "Data_Source_ID": "509ed41e-ca42-461e-9058-24602256daf9",
-            "Layer_ID": "c43e5652-8590-439f-bc44-3b41f4326bca"
-        },
-        {
-            "Data_Source_ID": "61bbbf27-f7c3-46ba-a6bc-48ae76928065",
-            "Layer_ID": "c43e5652-8590-439f-bc44-3b41f4326bca"
-        },
-        {
-            "Data_Source_ID": "6d7de3b7-283d-48f9-909c-60d123d9d768",
-            "Layer_ID": "7406e3ea-4e46-4768-bfef-4e5eb04183ed"
-        },
-        {
-            "Data_Source_ID": "73691708-ffb5-4e29-906d-f485f6fa7089",
-            "Layer_ID": "e40272bc-1c6e-4da7-a34a-9d285cd56b1f"
-        },
-        {
-            "Data_Source_ID": "73691708-ffb5-4e29-906d-f485f6fa7089",
-            "Layer_ID": "c43e5652-8590-439f-bc44-3b41f4326bca"
-        },
-        {
-            "Data_Source_ID": "8765a845-dea1-4cd1-a56f-f54939b7ab9e",
-            "Layer_ID": "c43e5652-8590-439f-bc44-3b41f4326bca"
-        },
-        {
-            "Data_Source_ID": "9ec8c0d7-6137-456f-b829-c5f8b96ba054",
-            "Layer_ID": "c43e5652-8590-439f-bc44-3b41f4326bca"
-        },
-        {
-            "Data_Source_ID": "b0b6d26f-3747-4444-ac7a-239a6ff80cb5",
-            "Layer_ID": "7406e3ea-4e46-4768-bfef-4e5eb04183ed"
-        },
-        {
-            "Data_Source_ID": "b0b6d26f-3747-4444-ac7a-239a6ff80cb5",
-            "Layer_ID": "c43e5652-8590-439f-bc44-3b41f4326bca"
-        },
-        {
-            "Data_Source_ID": "b1ddede4-cafe-4955-ac4c-14b33ac3f647",
-            "Layer_ID": "7406e3ea-4e46-4768-bfef-4e5eb04183ed"
+            "Data_Source_ID": "06bb1e05-533b-4de3-ae87-9b99910465cf",
+            "Layer_ID": "7f1395c8-dafa-43fe-acdb-d5c0b02e492a"
         },
         {
             "Data_Source_ID": "b86d9b40-5fbe-4ef1-8dc3-263eff26f495",
-            "Layer_ID": "4d6bb5a4-c12f-4fa2-8757-bbedb3070672"
+            "Layer_ID": "d3a00e67-5085-4afc-a423-393c26a0c8f1"
         },
         {
-            "Data_Source_ID": "ba27545a-9c32-47ea-ba6a-cce50f1b326e",
-            "Layer_ID": "c43e5652-8590-439f-bc44-3b41f4326bca"
-        },
-        {
-            "Data_Source_ID": "c000cd5c-bbb3-4606-af6f-6c6d9de0bbe3",
-            "Layer_ID": "7406e3ea-4e46-4768-bfef-4e5eb04183ed"
-        },
-        {
-            "Data_Source_ID": "c000cd5c-bbb3-4606-af6f-6c6d9de0bbe3",
-            "Layer_ID": "c43e5652-8590-439f-bc44-3b41f4326bca"
-        },
-        {
-            "Data_Source_ID": "c000cd5c-bbb3-4606-af6f-6c6d9de0bbe3",
-            "Layer_ID": "780451f7-1fe9-43d0-ab01-a3bf3bef0f47"
-        },
-        {
-            "Data_Source_ID": "c3af32ff-65c5-4ea8-912a-fb4a85197239",
-            "Layer_ID": "e40272bc-1c6e-4da7-a34a-9d285cd56b1f"
+            "Data_Source_ID": "6d7de3b7-283d-48f9-909c-60d123d9d768",
+            "Layer_ID": "fd98c3d1-9a16-4182-8e4d-761e6d5f05d7"
         },
         {
             "Data_Source_ID": "c9ddfb51-eb45-4e22-b614-44ac1caa7883",
-            "Layer_ID": "e40272bc-1c6e-4da7-a34a-9d285cd56b1f"
+            "Layer_ID": "7f1395c8-dafa-43fe-acdb-d5c0b02e492a"
         },
         {
             "Data_Source_ID": "c9ddfb51-eb45-4e22-b614-44ac1caa7883",
-            "Layer_ID": "c43e5652-8590-439f-bc44-3b41f4326bca"
-        },
-        {
-            "Data_Source_ID": "ca1cb239-ff6d-4f64-b9d7-41c8556a8b4f",
-            "Layer_ID": "c43e5652-8590-439f-bc44-3b41f4326bca"
-        },
-        {
-            "Data_Source_ID": "d6188aac-17db-4861-845f-57c369f9b4c8",
-            "Layer_ID": "7406e3ea-4e46-4768-bfef-4e5eb04183ed"
-        },
-        {
-            "Data_Source_ID": "d6188aac-17db-4861-845f-57c369f9b4c8",
-            "Layer_ID": "c43e5652-8590-439f-bc44-3b41f4326bca"
-        },
-        {
-            "Data_Source_ID": "d710099e-df94-4be4-bf85-cabd30e912bb",
-            "Layer_ID": "c43e5652-8590-439f-bc44-3b41f4326bca"
+            "Layer_ID": "0acd953d-d734-4842-aefc-b2fa3051ef8b"
         },
         {
             "Data_Source_ID": "dd75f457-8dc0-4a24-9ae5-4b61c33af866",
-            "Layer_ID": "4d6bb5a4-c12f-4fa2-8757-bbedb3070672"
+            "Layer_ID": "d3a00e67-5085-4afc-a423-393c26a0c8f1"
         },
         {
-            "Data_Source_ID": "e8b8ede7-337b-4c0c-8c32-5c7872c1ee22",
-            "Layer_ID": "c43e5652-8590-439f-bc44-3b41f4326bca"
+            "Data_Source_ID": "38fe306c-bdec-4f3d-8521-b72dd32dbd17",
+            "Layer_ID": "d3a00e67-5085-4afc-a423-393c26a0c8f1"
         },
         {
-            "Data_Source_ID": "f2f4f4bd-3455-400f-b2ee-104004df0f5b",
-            "Layer_ID": "7406e3ea-4e46-4768-bfef-4e5eb04183ed"
+            "Data_Source_ID": "73691708-ffb5-4e29-906d-f485f6fa7089",
+            "Layer_ID": "7f1395c8-dafa-43fe-acdb-d5c0b02e492a"
         },
         {
-            "Data_Source_ID": "f2f4f4bd-3455-400f-b2ee-104004df0f5b",
-            "Layer_ID": "c43e5652-8590-439f-bc44-3b41f4326bca"
+            "Data_Source_ID": "73691708-ffb5-4e29-906d-f485f6fa7089",
+            "Layer_ID": "0acd953d-d734-4842-aefc-b2fa3051ef8b"
+        },
+        {
+            "Data_Source_ID": "3bef4799-906c-409c-ac00-3fb7a1e352e6",
+            "Layer_ID": "d3a00e67-5085-4afc-a423-393c26a0c8f1"
+        },
+        {
+            "Data_Source_ID": "12c1e727-7fa4-49b6-af81-366ed2ce231e",
+            "Layer_ID": "0acd953d-d734-4842-aefc-b2fa3051ef8b"
+        },
+        {
+            "Data_Source_ID": "4523e7f3-8de2-4078-96f8-1227eb537159",
+            "Layer_ID": "0acd953d-d734-4842-aefc-b2fa3051ef8b"
+        },
+        {
+            "Data_Source_ID": "4358c631-e253-4557-86df-f687d0ef9891",
+            "Layer_ID": "fd98c3d1-9a16-4182-8e4d-761e6d5f05d7"
+        },
+        {
+            "Data_Source_ID": "4358c631-e253-4557-86df-f687d0ef9891",
+            "Layer_ID": "0acd953d-d734-4842-aefc-b2fa3051ef8b"
+        },
+        {
+            "Data_Source_ID": "4358c631-e253-4557-86df-f687d0ef9891",
+            "Layer_ID": "8a5cfcfb-f31d-4bb6-b24f-4eb51e1e39a4"
+        },
+        {
+            "Data_Source_ID": "0b4f86ed-f4ab-46a3-8ed1-175be1974da6",
+            "Layer_ID": "fd98c3d1-9a16-4182-8e4d-761e6d5f05d7"
+        },
+        {
+            "Data_Source_ID": "0b4f86ed-f4ab-46a3-8ed1-175be1974da6",
+            "Layer_ID": "7f1395c8-dafa-43fe-acdb-d5c0b02e492a"
+        },
+        {
+            "Data_Source_ID": "0b4f86ed-f4ab-46a3-8ed1-175be1974da6",
+            "Layer_ID": "0acd953d-d734-4842-aefc-b2fa3051ef8b"
+        },
+        {
+            "Data_Source_ID": "8765a845-dea1-4cd1-a56f-f54939b7ab9e",
+            "Layer_ID": "0acd953d-d734-4842-aefc-b2fa3051ef8b"
+        },
+        {
+            "Data_Source_ID": "d710099e-df94-4be4-bf85-cabd30e912bb",
+            "Layer_ID": "0acd953d-d734-4842-aefc-b2fa3051ef8b"
+        },
+        {
+            "Data_Source_ID": "1ac0ca69-e07e-4b34-9061-e4588e146c52",
+            "Layer_ID": "fd98c3d1-9a16-4182-8e4d-761e6d5f05d7"
+        },
+        {
+            "Data_Source_ID": "509ed41e-ca42-461e-9058-24602256daf9",
+            "Layer_ID": "0acd953d-d734-4842-aefc-b2fa3051ef8b"
+        },
+        {
+            "Data_Source_ID": "1e26f222-e27e-4bfa-830c-fa4b4f18b5e4",
+            "Layer_ID": "fd98c3d1-9a16-4182-8e4d-761e6d5f05d7"
+        },
+        {
+            "Data_Source_ID": "1e26f222-e27e-4bfa-830c-fa4b4f18b5e4",
+            "Layer_ID": "0acd953d-d734-4842-aefc-b2fa3051ef8b"
+        },
+        {
+            "Data_Source_ID": "ca1cb239-ff6d-4f64-b9d7-41c8556a8b4f",
+            "Layer_ID": "0acd953d-d734-4842-aefc-b2fa3051ef8b"
+        },
+        {
+            "Data_Source_ID": "0f42a24c-e035-4f93-a91c-5f7076bd8da0",
+            "Layer_ID": "0acd953d-d734-4842-aefc-b2fa3051ef8b"
+        },
+        {
+            "Data_Source_ID": "3c07684f-3794-4536-8f70-21efe700c0ec",
+            "Layer_ID": "fd98c3d1-9a16-4182-8e4d-761e6d5f05d7"
+        },
+        {
+            "Data_Source_ID": "3c07684f-3794-4536-8f70-21efe700c0ec",
+            "Layer_ID": "0acd953d-d734-4842-aefc-b2fa3051ef8b"
+        },
+        {
+            "Data_Source_ID": "072ec5a7-00ba-466f-9057-69751a22a967",
+            "Layer_ID": "7f1395c8-dafa-43fe-acdb-d5c0b02e492a"
+        },
+        {
+            "Data_Source_ID": "c000cd5c-bbb3-4606-af6f-6c6d9de0bbe3",
+            "Layer_ID": "fd98c3d1-9a16-4182-8e4d-761e6d5f05d7"
+        },
+        {
+            "Data_Source_ID": "c000cd5c-bbb3-4606-af6f-6c6d9de0bbe3",
+            "Layer_ID": "0acd953d-d734-4842-aefc-b2fa3051ef8b"
+        },
+        {
+            "Data_Source_ID": "c000cd5c-bbb3-4606-af6f-6c6d9de0bbe3",
+            "Layer_ID": "8a5cfcfb-f31d-4bb6-b24f-4eb51e1e39a4"
+        },
+        {
+            "Data_Source_ID": "b0b6d26f-3747-4444-ac7a-239a6ff80cb5",
+            "Layer_ID": "fd98c3d1-9a16-4182-8e4d-761e6d5f05d7"
+        },
+        {
+            "Data_Source_ID": "b0b6d26f-3747-4444-ac7a-239a6ff80cb5",
+            "Layer_ID": "0acd953d-d734-4842-aefc-b2fa3051ef8b"
+        },
+        {
+            "Data_Source_ID": "9ec8c0d7-6137-456f-b829-c5f8b96ba054",
+            "Layer_ID": "0acd953d-d734-4842-aefc-b2fa3051ef8b"
+        },
+        {
+            "Data_Source_ID": "b1ddede4-cafe-4955-ac4c-14b33ac3f647",
+            "Layer_ID": "fd98c3d1-9a16-4182-8e4d-761e6d5f05d7"
+        },
+        {
+            "Data_Source_ID": "ba27545a-9c32-47ea-ba6a-cce50f1b326e",
+            "Layer_ID": "0acd953d-d734-4842-aefc-b2fa3051ef8b"
         },
         {
             "Data_Source_ID": "f424e4b4-a8a4-4c58-a4ae-4f53bfd08563",
-            "Layer_ID": "c43e5652-8590-439f-bc44-3b41f4326bca"
+            "Layer_ID": "0acd953d-d734-4842-aefc-b2fa3051ef8b"
+        },
+        {
+            "Data_Source_ID": "221adcd5-cccf-44df-9be6-ef607a6e1c3c",
+            "Layer_ID": "0acd953d-d734-4842-aefc-b2fa3051ef8b"
+        },
+        {
+            "Data_Source_ID": "e8b8ede7-337b-4c0c-8c32-5c7872c1ee22",
+            "Layer_ID": "0acd953d-d734-4842-aefc-b2fa3051ef8b"
+        },
+        {
+            "Data_Source_ID": "45232bc0-e858-440d-aa93-d48c6cf167f0",
+            "Layer_ID": "fd98c3d1-9a16-4182-8e4d-761e6d5f05d7"
+        },
+        {
+            "Data_Source_ID": "29aa4e0e-4a26-4f79-a9bc-1ae66df1c923",
+            "Layer_ID": "d3a00e67-5085-4afc-a423-393c26a0c8f1"
+        },
+        {
+            "Data_Source_ID": "2ce537a2-3b30-4374-9397-31d6460ec0bc",
+            "Layer_ID": "fd98c3d1-9a16-4182-8e4d-761e6d5f05d7"
+        },
+        {
+            "Data_Source_ID": "c3af32ff-65c5-4ea8-912a-fb4a85197239",
+            "Layer_ID": "7f1395c8-dafa-43fe-acdb-d5c0b02e492a"
         }
     ],
     "MITRE_Data_Source_Reference": [
         {
-            "UUID": "03c7a7c1-4bc8-4536-af0d-eb0f9fcdc68f",
-            "Source_Name": "mitre-attack",
-            "URL": "https://attack.mitre.org/datasources/DS0014",
-            "Description": "",
-            "Data_Source_ID": "06bb1e05-533b-4de3-ae87-9b99910465cf"
-        },
-        {
-            "UUID": "a21295a0-9829-4709-a62b-2f215184f3d8",
-            "Source_Name": "Kube Kubectl",
-            "URL": "https://kubernetes.io/docs/reference/kubectl/kubectl/",
-            "Description": "kubernetes. (n.d.). kubectl. Retrieved October 13, 2021.",
-            "Data_Source_ID": "06bb1e05-533b-4de3-ae87-9b99910465cf"
-        },
-        {
-            "UUID": "f5a9254a-29a0-465e-8d11-30fae068fc1e",
-            "Source_Name": "Kube Pod",
-            "URL": "https://kubernetes.io/docs/reference/generated/kubernetes-api/v1.19/#pod-v1-core",
-            "Description": "kubenetes. (n.d.). Pod v1 core. Retrieved October 13, 2021.",
-            "Data_Source_ID": "06bb1e05-533b-4de3-ae87-9b99910465cf"
-        },
-        {
-            "UUID": "76345391-d017-47ce-b4b9-fda131f62f47",
-            "Source_Name": "mitre-attack",
-            "URL": "https://attack.mitre.org/datasources/DS0032",
-            "Description": "",
-            "Data_Source_ID": "072ec5a7-00ba-466f-9057-69751a22a967"
-        },
-        {
-            "UUID": "2685a066-064d-491b-b65d-1da3affe99b8",
-            "Source_Name": "Docker Docs Container",
-            "URL": "https://docs.docker.com/engine/api/v1.41/#tag/Container",
-            "Description": "docker docs. (n.d.). Containers. Retrieved October 13, 2021.",
-            "Data_Source_ID": "072ec5a7-00ba-466f-9057-69751a22a967"
-        },
-        {
-            "UUID": "90be7ce6-204e-4e5a-b5c5-e3fa605c9304",
-            "Source_Name": "mitre-attack",
-            "URL": "https://attack.mitre.org/data-sources/DS0002",
-            "Description": "",
-            "Data_Source_ID": "0b4f86ed-f4ab-46a3-8ed1-175be1974da6"
-        },
-        {
-            "UUID": "7d0776d0-44e3-4763-9a92-1ff8f7641327",
-            "Source_Name": "mitre-attack",
-            "URL": "https://attack.mitre.org/datasources/DS0024",
-            "Description": "",
-            "Data_Source_ID": "0f42a24c-e035-4f93-a91c-5f7076bd8da0"
-        },
-        {
-            "UUID": "56c5e262-c16e-4a12-8fe4-205b0dfae548",
-            "Source_Name": "Microsoft Registry",
-            "URL": "https://docs.microsoft.com/en-us/windows/win32/sysinfo/registry",
-            "Description": "Microsoft. (2018, May 31). Registry. Retrieved September 29, 2021.",
-            "Data_Source_ID": "0f42a24c-e035-4f93-a91c-5f7076bd8da0"
-        },
-        {
-            "UUID": "d610d357-f20a-4ebb-9b09-8cfb70063d8a",
-            "Source_Name": "mitre-attack",
-            "URL": "https://attack.mitre.org/data-sources/DS0012",
-            "Description": "",
-            "Data_Source_ID": "12c1e727-7fa4-49b6-af81-366ed2ce231e"
-        },
-        {
-            "UUID": "c55ce007-44b3-4855-990d-f8b04877bba7",
-            "Source_Name": "FireEye PowerShell Logging",
-            "URL": "https://www.fireeye.com/blog/threat-research/2016/02/greater_visibilityt.html",
-            "Description": "Dunwoody, M. (2016, February 11). Greater Visibility Through PowerShell Logging. Retrieved September 28, 2021.",
-            "Data_Source_ID": "12c1e727-7fa4-49b6-af81-366ed2ce231e"
-        },
-        {
-            "UUID": "e48effb5-3fd7-468f-9d93-1d9955b0d41b",
-            "Source_Name": "Microsoft AMSI",
-            "URL": "https://docs.microsoft.com/en-us/windows/win32/amsi/antimalware-scan-interface-portal",
-            "Description": "Microsoft. (2019, April 19). Antimalware Scan Interface (AMSI). Retrieved September 28, 2021.",
-            "Data_Source_ID": "12c1e727-7fa4-49b6-af81-366ed2ce231e"
-        },
-        {
-            "UUID": "d4f1cd3e-4574-488c-8dc7-b970b95e3351",
-            "Source_Name": "Microsoft PowerShell Logging",
-            "URL": "https://docs.microsoft.com/en-us/powershell/module/microsoft.powershell.core/about/about_logging_windows?view=powershell-7",
-            "Description": "Microsoft. (2020, March 30). about_Logging_Windows. Retrieved September 28, 2021.",
-            "Data_Source_ID": "12c1e727-7fa4-49b6-af81-366ed2ce231e"
-        },
-        {
-            "UUID": "83f47816-8ae3-46a8-b91f-d3c4d8dc56cd",
-            "Source_Name": "mitre-attack",
-            "URL": "https://attack.mitre.org/datasources/DS0007",
-            "Description": "",
-            "Data_Source_ID": "1ac0ca69-e07e-4b34-9061-e4588e146c52"
-        },
-        {
-            "UUID": "d3a0a0d9-7ad5-42eb-ba79-ff83f970781c",
-            "Source_Name": "Microsoft Image",
-            "URL": "https://docs.microsoft.com/en-us/azure/virtual-machines/windows/capture-image-resource",
-            "Description": "Microsoft. (2021, August 23). Create a managed image of a generalized VM in Azure. Retrieved October 13, 2021.",
-            "Data_Source_ID": "1ac0ca69-e07e-4b34-9061-e4588e146c52"
-        },
-        {
-            "UUID": "796e9a80-fbfb-4694-adc3-7581846505a6",
-            "Source_Name": "Amazon AMI",
-            "URL": "https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/AMIs.html",
-            "Description": "Amazon. (n.d.). Amazon Machine Images (AMI). Retrieved October 13, 2021.",
-            "Data_Source_ID": "1ac0ca69-e07e-4b34-9061-e4588e146c52"
-        },
-        {
-            "UUID": "e370f667-af18-4863-9476-2bbdd0767aa5",
-            "Source_Name": "mitre-attack",
-            "URL": "https://attack.mitre.org/datasources/DS0006",
-            "Description": "",
-            "Data_Source_ID": "1e26f222-e27e-4bfa-830c-fa4b4f18b5e4"
-        },
-        {
-            "UUID": "141db822-b19d-47b3-97a1-23c2a4370010",
-            "Source_Name": "Medium Authentication Tokens",
-            "URL": "https://medium.com/@sherryhsu/session-vs-token-based-authentication-11a6c5ac45e4",
-            "Description": "Hsu, S. (2018, June 30). Session vs Token Based Authentication. Retrieved September 29, 2021.",
-            "Data_Source_ID": "1e26f222-e27e-4bfa-830c-fa4b4f18b5e4"
-        },
-        {
-            "UUID": "a220c3fb-b38a-44bf-b03a-22aa22e30e33",
-            "Source_Name": "Auth0 Access Tokens",
-            "URL": "https://auth0.com/docs/tokens/access-tokens",
-            "Description": "Auth0. (n.d.). Access Tokens. Retrieved September 29, 2021.",
-            "Data_Source_ID": "1e26f222-e27e-4bfa-830c-fa4b4f18b5e4"
-        },
-        {
-            "UUID": "39fb6bae-a4f2-4daf-9163-a56ad1563c4e",
-            "Source_Name": "mitre-attack",
-            "URL": "https://attack.mitre.org/datasources/DS0023",
-            "Description": "",
-            "Data_Source_ID": "221adcd5-cccf-44df-9be6-ef607a6e1c3c"
-        },
-        {
-            "UUID": "97c1a873-0a3b-4aeb-aa2d-8aea43c2d33a",
-            "Source_Name": "Microsoft Named Pipes",
-            "URL": "https://docs.microsoft.com/en-us/windows/win32/ipc/named-pipes",
-            "Description": "Microsoft. (2018, May 31). Named Pipes. Retrieved September 28, 2021.",
-            "Data_Source_ID": "221adcd5-cccf-44df-9be6-ef607a6e1c3c"
-        },
-        {
-            "UUID": "d3c5aaf1-bcbe-4755-955d-4faaf9d47ae5",
-            "Source_Name": "mitre-attack",
-            "URL": "https://attack.mitre.org/datasources/DS0037",
-            "Description": "",
-            "Data_Source_ID": "29aa4e0e-4a26-4f79-a9bc-1ae66df1c923"
-        },
-        {
-            "UUID": "84222a43-4cd8-4804-b399-7628c86ea0b9",
-            "Source_Name": "mitre-attack",
-            "URL": "https://attack.mitre.org/datasources/DS0005",
-            "Description": "",
-            "Data_Source_ID": "2cd6cc81-d86e-4595-a4f0-43f5519f14e6"
-        },
-        {
-            "UUID": "391ca8a3-c9df-44c7-8310-a7a28eef285a",
-            "Source_Name": "Microsoft WMI System Classes",
-            "URL": "https://docs.microsoft.com/en-us/windows/win32/wmisdk/wmi-system-classes",
-            "Description": "Microsoft. (2018, May 31). WMI System Classes. Retrieved September 29, 2021.",
-            "Data_Source_ID": "2cd6cc81-d86e-4595-a4f0-43f5519f14e6"
-        },
-        {
-            "UUID": "e4d065ee-2779-471e-9708-5dc67717deba",
-            "Source_Name": "Microsoft WMI Architecture",
-            "URL": "https://docs.microsoft.com/en-us/windows/win32/wmisdk/wmi-architecture",
-            "Description": "Microsoft. (2018, May 31). WMI Architecture. Retrieved September 29, 2021.",
-            "Data_Source_ID": "2cd6cc81-d86e-4595-a4f0-43f5519f14e6"
-        },
-        {
-            "UUID": "8f274ac8-3007-4389-b00b-73b873dc8e14",
-            "Source_Name": "mitre-attack",
-            "URL": "https://attack.mitre.org/datasources/DS0010",
-            "Description": "",
-            "Data_Source_ID": "2ce537a2-3b30-4374-9397-31d6460ec0bc"
-        },
-        {
-            "UUID": "8941ce19-1cae-43b9-90f3-e98119e23561",
-            "Source_Name": "Amazon S3",
-            "URL": "https://aws.amazon.com/s3/",
-            "Description": "Amazon. (n.d.). Amazon S3. Retrieved October 13, 2021.",
-            "Data_Source_ID": "2ce537a2-3b30-4374-9397-31d6460ec0bc"
-        },
-        {
-            "UUID": "98367d53-9f06-40fd-b13b-fc4bfe2b0c1a",
-            "Source_Name": "Azure Blob Storage",
-            "URL": "https://azure.microsoft.com/en-us/services/storage/blobs/",
-            "Description": "Microsoft. (n.d.). Azure Blob Storage. Retrieved October 13, 2021.",
-            "Data_Source_ID": "2ce537a2-3b30-4374-9397-31d6460ec0bc"
-        },
-        {
-            "UUID": "5790b79c-e978-4e17-b732-6a3e96bb552a",
-            "Source_Name": "Google Cloud Storage",
-            "URL": "https://cloud.google.com/storage",
-            "Description": "Google. (n.d.). Cloud Storage. Retrieved October 13, 2021.",
-            "Data_Source_ID": "2ce537a2-3b30-4374-9397-31d6460ec0bc"
-        },
-        {
-            "UUID": "8d6ff02d-576d-464f-b345-996d505c5f5e",
-            "Source_Name": "mitre-attack",
-            "URL": "https://attack.mitre.org/datasources/DS0035",
-            "Description": "",
-            "Data_Source_ID": "38fe306c-bdec-4f3d-8521-b72dd32dbd17"
-        },
-        {
-            "UUID": "7dd44234-62f3-4d9e-bd02-fd28be2555ca",
-            "Source_Name": "mitre-attack",
-            "URL": "https://attack.mitre.org/datasources/DS0021",
-            "Description": "",
-            "Data_Source_ID": "3bef4799-906c-409c-ac00-3fb7a1e352e6"
-        },
-        {
-            "UUID": "f221e714-f279-4cdd-b5fb-ce2628e114ff",
-            "Source_Name": "mitre-attack",
-            "URL": "https://attack.mitre.org/datasources/DS0036",
-            "Description": "",
-            "Data_Source_ID": "3c07684f-3794-4536-8f70-21efe700c0ec"
-        },
-        {
-            "UUID": "e50e9a42-f3c1-4692-a5f3-f1a0d7f0c41a",
-            "Source_Name": "Amazon IAM Groups",
-            "URL": "https://docs.aws.amazon.com/IAM/latest/UserGuide/id_groups.html",
-            "Description": "Amazon. (n.d.). IAM user groups. Retrieved October 13, 2021.",
-            "Data_Source_ID": "3c07684f-3794-4536-8f70-21efe700c0ec"
-        },
-        {
-            "UUID": "c8297d01-8bdc-4055-ac46-7a7cd14add67",
-            "Source_Name": "mitre-attack",
-            "URL": "https://attack.mitre.org/datasources/DS0015",
-            "Description": "",
-            "Data_Source_ID": "40269753-26bd-437b-986e-159c66dec5e4"
-        },
-        {
-            "UUID": "272fa1a3-54d6-466d-8774-93e070758027",
-            "Source_Name": "Confluence Logs",
-            "URL": "https://confluence.atlassian.com/doc/working-with-confluence-logs-108364721.html",
-            "Description": "Confluence Support. (2021, April 22). Working with Confluence Logs. Retrieved September 23, 2021.",
-            "Data_Source_ID": "40269753-26bd-437b-986e-159c66dec5e4"
-        },
-        {
-            "UUID": "33a23d07-3079-4421-9926-20fe3b79f43f",
-            "Source_Name": "mitre-attack",
-            "URL": "https://attack.mitre.org/data-sources/DS0028",
-            "Description": "",
-            "Data_Source_ID": "4358c631-e253-4557-86df-f687d0ef9891"
-        },
-        {
-            "UUID": "17d05ca9-cc30-4a44-854d-da8941b65f91",
-            "Source_Name": "Microsoft Audit Logon Events",
-            "URL": "https://docs.microsoft.com/en-us/windows/security/threat-protection/auditing/basic-audit-logon-events",
-            "Description": "Microsoft. (2021, September 6). Audit logon events. Retrieved September 28, 2021.",
-            "Data_Source_ID": "4358c631-e253-4557-86df-f687d0ef9891"
-        },
-        {
-            "UUID": "fdac041f-84a0-4b68-af2b-df92d0986d7e",
-            "Source_Name": "mitre-attack",
-            "URL": "https://attack.mitre.org/datasources/DS0030",
-            "Description": "",
-            "Data_Source_ID": "45232bc0-e858-440d-aa93-d48c6cf167f0"
-        },
-        {
-            "UUID": "2b33b15a-c9b4-46c5-842d-af16c155c8f8",
-            "Source_Name": "Amazon VM",
-            "URL": "https://azure.microsoft.com/en-us/overview/what-is-a-virtual-machine/",
-            "Description": "Microsoft. (n.d.). What is a virtual machine (VM)?. Retrieved October 13, 2021.",
-            "Data_Source_ID": "45232bc0-e858-440d-aa93-d48c6cf167f0"
-        },
-        {
-            "UUID": "31277512-05ae-418c-a890-cf49593c3cf2",
-            "Source_Name": "Google VM",
-            "URL": "https://cloud.google.com/compute/docs/instances",
-            "Description": "Google. (n.d.). Virtual machine instances. Retrieved October 13, 2021.",
-            "Data_Source_ID": "45232bc0-e858-440d-aa93-d48c6cf167f0"
-        },
-        {
-            "UUID": "5e7b85f5-0a57-45ac-804c-a8d4909e3aba",
-            "Source_Name": "mitre-attack",
-            "URL": "https://attack.mitre.org/data-sources/DS0013",
-            "Description": "",
-            "Data_Source_ID": "4523e7f3-8de2-4078-96f8-1227eb537159"
-        },
-        {
-            "UUID": "0459d559-cb09-40ff-8ac8-d447a09cc7e2",
-            "Source_Name": "mitre-attack",
-            "URL": "https://attack.mitre.org/data-sources/DS0022",
-            "Description": "",
-            "Data_Source_ID": "509ed41e-ca42-461e-9058-24602256daf9"
-        },
-        {
-            "UUID": "ac82e703-6c7b-407c-b08d-dfd7ce676440",
-            "Source_Name": "Microsoft File Mgmt",
-            "URL": "https://docs.microsoft.com/en-us/windows/win32/fileio/file-management",
-            "Description": "Microsoft. (2018, May 31). File Management (Local File Systems). Retrieved September 28, 2021.",
-            "Data_Source_ID": "509ed41e-ca42-461e-9058-24602256daf9"
-        },
-        {
-            "UUID": "1269515d-5c0e-4478-b944-68d111ba24c8",
+            "UUID": "7dadd6ed-7868-470b-81b1-b70528530d2d",
             "Source_Name": "mitre-attack",
             "URL": "https://attack.mitre.org/datasources/DS0016",
             "Description": "",
             "Data_Source_ID": "61bbbf27-f7c3-46ba-a6bc-48ae76928065"
         },
         {
-            "UUID": "2c0c8674-c8a0-4d88-bd1b-737bd6f80b04",
+            "UUID": "33a8a154-a869-4554-9f87-e7e74e13c351",
             "Source_Name": "Sysmon EID 9",
             "URL": "https://docs.microsoft.com/sysinternals/downloads/sysmon#event-id-9-rawaccessread",
             "Description": "Russinovich, R. & Garnier, T. (2021, August 18). Sysmon Event ID 9. Retrieved September 24, 2021.",
             "Data_Source_ID": "61bbbf27-f7c3-46ba-a6bc-48ae76928065"
         },
         {
-            "UUID": "1cda7952-929d-4a26-abf3-216fbcd4f5e9",
+            "UUID": "c2097fd7-b9b3-4fc7-910d-52d1c3d54d9d",
             "Source_Name": "mitre-attack",
-            "URL": "https://attack.mitre.org/datasources/DS0020",
+            "URL": "https://attack.mitre.org/datasources/DS0015",
             "Description": "",
-            "Data_Source_ID": "6d7de3b7-283d-48f9-909c-60d123d9d768"
+            "Data_Source_ID": "40269753-26bd-437b-986e-159c66dec5e4"
         },
         {
-            "UUID": "5bad9184-3c11-4820-9961-e606bb360e5d",
-            "Source_Name": "Microsoft Snapshot",
-            "URL": "https://docs.microsoft.com/en-us/azure/virtual-machines/linux/snapshot-copy-managed-disk",
-            "Description": "Microsoft. (2021, September 16). Create a snapshot of a virtual hard disk. Retrieved October 13, 2021.",
-            "Data_Source_ID": "6d7de3b7-283d-48f9-909c-60d123d9d768"
+            "UUID": "ee7bac9f-11d8-4a1d-844b-2990ed381ba3",
+            "Source_Name": "Confluence Logs",
+            "URL": "https://confluence.atlassian.com/doc/working-with-confluence-logs-108364721.html",
+            "Description": "Confluence Support. (2021, April 22). Working with Confluence Logs. Retrieved September 23, 2021.",
+            "Data_Source_ID": "40269753-26bd-437b-986e-159c66dec5e4"
         },
         {
-            "UUID": "c6ed29e9-2934-48bc-88f8-36d0735f717a",
-            "Source_Name": "Amazon Snapshots",
-            "URL": "https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/EBSSnapshots.html",
-            "Description": "Amazon. (n.d.). Amazon EBS snapshots. Retrieved October 13, 2021.",
-            "Data_Source_ID": "6d7de3b7-283d-48f9-909c-60d123d9d768"
-        },
-        {
-            "UUID": "66bb865d-9745-49cf-8310-8fa6c436f456",
-            "Source_Name": "mitre-attack",
-            "URL": "https://attack.mitre.org/data-sources/DS0017",
-            "Description": "",
-            "Data_Source_ID": "73691708-ffb5-4e29-906d-f485f6fa7089"
-        },
-        {
-            "UUID": "058e3802-f962-46ba-86f3-920b370fb3e2",
-            "Source_Name": "Confluence Linux Command  Line",
-            "URL": "https://confluence.atlassian.com/confkb/how-to-enable-command-line-audit-logging-in-linux-956166545.html",
-            "Description": "Confluence Support. (2021, September 8). How to enable command line audit logging in linux. Retrieved September 23, 2021.",
-            "Data_Source_ID": "73691708-ffb5-4e29-906d-f485f6fa7089"
-        },
-        {
-            "UUID": "b1c8a7a3-15ec-45f1-aa77-2ea5e0fd84a8",
-            "Source_Name": "Audit OSX",
-            "URL": "https://www.scip.ch/en/?labs.20150108",
-            "Description": "Gagliardi, R. (n.d.). Audit in a OS X System. Retrieved September 23, 2021.",
-            "Data_Source_ID": "73691708-ffb5-4e29-906d-f485f6fa7089"
-        },
-        {
-            "UUID": "c821c13b-8460-40d1-ac97-54be3539da15",
-            "Source_Name": "mitre-attack",
-            "URL": "https://attack.mitre.org/datasources/DS0008",
-            "Description": "",
-            "Data_Source_ID": "8765a845-dea1-4cd1-a56f-f54939b7ab9e"
-        },
-        {
-            "UUID": "9d7b0a6c-df28-4f21-9d3d-ead3db911fea",
-            "Source_Name": "STIG Audit Kernel Modules",
-            "URL": "https://www.stigviewer.com/stig/oracle_linux_5/2016-12-20/finding/V-22383",
-            "Description": "Unified Compliance Framework. (2016, December 20). The audit system must be configured to audit the loading and unloading of dynamic kernel modules.. Retrieved September 28, 2021.",
-            "Data_Source_ID": "8765a845-dea1-4cd1-a56f-f54939b7ab9e"
-        },
-        {
-            "UUID": "16fdf255-dc6a-48d0-a923-8f4c8c1ea961",
-            "Source_Name": "Init Man Page",
-            "URL": "https://man7.org/linux/man-pages/man2/init_module.2.html",
-            "Description": "Kerrisk, M. (2021, March 22). INIT_MODULE(2). Retrieved September 28, 2021.",
-            "Data_Source_ID": "8765a845-dea1-4cd1-a56f-f54939b7ab9e"
-        },
-        {
-            "UUID": "d2fb9edc-3917-407b-bd14-7c725b4b7950",
-            "Source_Name": "mitre-attack",
-            "URL": "https://attack.mitre.org/datasources/DS0027",
-            "Description": "",
-            "Data_Source_ID": "9ec8c0d7-6137-456f-b829-c5f8b96ba054"
-        },
-        {
-            "UUID": "7c75cdcd-344f-4a61-82fc-3ccc39aaa665",
-            "Source_Name": "IOKit Fundamentals",
-            "URL": "https://developer.apple.com/library/archive/documentation/DeviceDrivers/Conceptual/IOKitFundamentals/Features/Features.html",
-            "Description": "Apple. (2014, April 9). What Is the I/O Kit?. Retrieved September 24, 2021.",
-            "Data_Source_ID": "9ec8c0d7-6137-456f-b829-c5f8b96ba054"
-        },
-        {
-            "UUID": "c2493100-4260-41d4-af5f-2d866838ef49",
-            "Source_Name": "Windows Getting Started Drivers",
-            "URL": "https://docs.microsoft.com/en-us/windows-hardware/drivers/gettingstarted/user-mode-and-kernel-mode",
-            "Description": "Viviano, A. (2021, August 17). Getting started with Windows drivers: User mode and kernel mode. Retrieved September 24, 2021.",
-            "Data_Source_ID": "9ec8c0d7-6137-456f-b829-c5f8b96ba054"
-        },
-        {
-            "UUID": "db6e4a5d-6ea2-4ac1-927a-2133ddd0b22b",
-            "Source_Name": "mitre-attack",
-            "URL": "https://attack.mitre.org/datasources/DS0034",
-            "Description": "",
-            "Data_Source_ID": "b0b6d26f-3747-4444-ac7a-239a6ff80cb5"
-        },
-        {
-            "UUID": "d0e239d8-abc1-4dc5-ae56-93ae8f6592e5",
-            "Source_Name": "Amazon S3",
-            "URL": "https://aws.amazon.com/s3/",
-            "Description": "Amazon. (n.d.). Amazon S3. Retrieved October 13, 2021.",
-            "Data_Source_ID": "b0b6d26f-3747-4444-ac7a-239a6ff80cb5"
-        },
-        {
-            "UUID": "8f5112c3-9fb5-41ac-a33e-2fa977cfaa83",
-            "Source_Name": "Azure Blob Storage",
-            "URL": "https://azure.microsoft.com/en-us/services/storage/blobs/",
-            "Description": "Microsoft. (n.d.). Azure Blob Storage. Retrieved October 13, 2021.",
-            "Data_Source_ID": "b0b6d26f-3747-4444-ac7a-239a6ff80cb5"
-        },
-        {
-            "UUID": "fa6eacd7-1770-4b48-9d4c-4880f87b0466",
-            "Source_Name": "Google Cloud Storage",
-            "URL": "https://cloud.google.com/storage",
-            "Description": "Google. (n.d.). Cloud Storage. Retrieved October 13, 2021.",
-            "Data_Source_ID": "b0b6d26f-3747-4444-ac7a-239a6ff80cb5"
-        },
-        {
-            "UUID": "75d0ae77-67b1-46ec-9f93-17233aae4ea9",
-            "Source_Name": "mitre-attack",
-            "URL": "https://attack.mitre.org/datasources/DS0025",
-            "Description": "",
-            "Data_Source_ID": "b1ddede4-cafe-4955-ac4c-14b33ac3f647"
-        },
-        {
-            "UUID": "47f15749-cbba-46d3-8cdf-534a3f17a106",
-            "Source_Name": "Amazon AWS",
-            "URL": "https://aws.amazon.com",
-            "Description": "Amazon. (n.d.). Start Building on AWS Today. Retrieved October 13, 2021.",
-            "Data_Source_ID": "b1ddede4-cafe-4955-ac4c-14b33ac3f647"
-        },
-        {
-            "UUID": "8275c8f1-1e67-4cb0-a667-7d8c9c37941e",
-            "Source_Name": "Azure Products",
-            "URL": "https://azure.microsoft.com/en-us/services/",
-            "Description": "Microsoft. (n.d.). Azure products. Retrieved October 13, 2021.",
-            "Data_Source_ID": "b1ddede4-cafe-4955-ac4c-14b33ac3f647"
-        },
-        {
-            "UUID": "68f2072e-63ea-445b-8d76-8028fd80e708",
-            "Source_Name": "mitre-attack",
-            "URL": "https://attack.mitre.org/data-sources/DS0004",
-            "Description": "",
-            "Data_Source_ID": "b86d9b40-5fbe-4ef1-8dc3-263eff26f495"
-        },
-        {
-            "UUID": "265f2b49-dc81-483e-bcce-469a301aba5f",
-            "Source_Name": "mitre-attack",
-            "URL": "https://attack.mitre.org/datasources/DS0033",
-            "Description": "",
-            "Data_Source_ID": "ba27545a-9c32-47ea-ba6a-cce50f1b326e"
-        },
-        {
-            "UUID": "8eb7311d-57a0-4cc8-a3df-9dbd0be05262",
-            "Source_Name": "Microsoft NFS Overview",
-            "URL": "https://docs.microsoft.com/en-us/windows-server/storage/nfs/nfs-overview",
-            "Description": "Microsoft. (2018, July 9). Network File System overview. Retrieved September 28, 2021.",
-            "Data_Source_ID": "ba27545a-9c32-47ea-ba6a-cce50f1b326e"
-        },
-        {
-            "UUID": "000288ec-bee1-47b2-943e-205db8eece32",
-            "Source_Name": "mitre-attack",
-            "URL": "https://attack.mitre.org/data-sources/DS0029",
-            "Description": "",
-            "Data_Source_ID": "c000cd5c-bbb3-4606-af6f-6c6d9de0bbe3"
-        },
-        {
-            "UUID": "d62648be-84f1-492d-a10d-73e2edcbb80c",
-            "Source_Name": "mitre-attack",
-            "URL": "https://attack.mitre.org/data-sources/DS0031",
-            "Description": "",
-            "Data_Source_ID": "c3af32ff-65c5-4ea8-912a-fb4a85197239"
-        },
-        {
-            "UUID": "829b3bfa-dcd5-4168-87a2-106660794397",
-            "Source_Name": "Kube Cluster Admin",
-            "URL": "https://kubernetes.io/docs/concepts/cluster-administration/",
-            "Description": "kubernetes. (2021, January 16). Cluster Administration. Retrieved October 13, 2021.",
-            "Data_Source_ID": "c3af32ff-65c5-4ea8-912a-fb4a85197239"
-        },
-        {
-            "UUID": "1101a6d2-bf8e-4f23-9634-b04e66a4f22c",
-            "Source_Name": "Kube Cluster Info",
-            "URL": "https://kubernetes.io/docs/reference/generated/kubectl/kubectl-commands#cluster-info",
-            "Description": "kubernetes. (n.d.). cluster-info. Retrieved October 13, 2021.",
-            "Data_Source_ID": "c3af32ff-65c5-4ea8-912a-fb4a85197239"
-        },
-        {
-            "UUID": "b4a47925-bb72-478c-8c23-e97d5f7f3f3b",
-            "Source_Name": "mitre-attack",
-            "URL": "https://attack.mitre.org/datasources/DS0003",
-            "Description": "",
-            "Data_Source_ID": "c9ddfb51-eb45-4e22-b614-44ac1caa7883"
-        },
-        {
-            "UUID": "5675e922-0179-403b-8da7-279e226c9483",
-            "Source_Name": "Microsoft Tasks",
-            "URL": "https://docs.microsoft.com/en-us/windows/win32/taskschd/tasks",
-            "Description": "Microsoft. (2018, May 31). Tasks. Retrieved September 28, 2021.",
-            "Data_Source_ID": "c9ddfb51-eb45-4e22-b614-44ac1caa7883"
-        },
-        {
-            "UUID": "0716948f-a675-450e-aef2-5fc13399cb19",
-            "Source_Name": "mitre-attack",
-            "URL": "https://attack.mitre.org/datasources/DS0001",
-            "Description": "",
-            "Data_Source_ID": "ca1cb239-ff6d-4f64-b9d7-41c8556a8b4f"
-        },
-        {
-            "UUID": "7a652bda-047a-4db1-9c49-0b2d2c3a3d2e",
-            "Source_Name": "mitre-attack",
-            "URL": "https://attack.mitre.org/datasources/DS0026",
-            "Description": "",
-            "Data_Source_ID": "d6188aac-17db-4861-845f-57c369f9b4c8"
-        },
-        {
-            "UUID": "b29dd14c-442a-410c-a2f1-05d2baf5e53f",
-            "Source_Name": "Microsoft AD DS Getting Started",
-            "URL": "https://docs.microsoft.com/en-us/windows-server/identity/ad-ds/ad-ds-getting-started",
-            "Description": "Foulds, I. et al. (2018, August 7). AD DS Getting Started. Retrieved September 23, 2021.",
-            "Data_Source_ID": "d6188aac-17db-4861-845f-57c369f9b4c8"
-        },
-        {
-            "UUID": "ca95fe7d-4ab1-40cf-acad-d6d007645398",
-            "Source_Name": "mitre-attack",
-            "URL": "https://attack.mitre.org/datasources/DS0019",
-            "Description": "",
-            "Data_Source_ID": "d710099e-df94-4be4-bf85-cabd30e912bb"
-        },
-        {
-            "UUID": "50b571d6-2c90-489d-a871-eb194bf18183",
-            "Source_Name": "Microsoft Services",
-            "URL": "https://docs.microsoft.com/en-us/dotnet/framework/windows-services/introduction-to-windows-service-applications",
-            "Description": "Microsoft. (2017, March 30). Introduction to Windows Service Applications. Retrieved September 28, 2021.",
-            "Data_Source_ID": "d710099e-df94-4be4-bf85-cabd30e912bb"
-        },
-        {
-            "UUID": "bb537d5d-3730-4117-a36e-a09914dd3fa3",
-            "Source_Name": "Linux Services Run Levels",
-            "URL": "https://www.linux.com/news/introduction-services-runlevels-and-rcd-scripts/",
-            "Description": "The Linux Foundation. (2006, January 11). An introduction to services, runlevels, and rc.d scripts. Retrieved September 28, 2021.",
-            "Data_Source_ID": "d710099e-df94-4be4-bf85-cabd30e912bb"
-        },
-        {
-            "UUID": "3c6c8b7a-5576-45e7-a8e2-5220383b17ba",
-            "Source_Name": "mitre-attack",
-            "URL": "https://attack.mitre.org/datasources/DS0038",
-            "Description": "",
-            "Data_Source_ID": "dd75f457-8dc0-4a24-9ae5-4b61c33af866"
-        },
-        {
-            "UUID": "0be86df1-8afa-4ffb-bf3d-f506a25d2cba",
-            "Source_Name": "mitre-attack",
-            "URL": "https://attack.mitre.org/data-sources/DS0009",
-            "Description": "",
-            "Data_Source_ID": "e8b8ede7-337b-4c0c-8c32-5c7872c1ee22"
-        },
-        {
-            "UUID": "85c0eabb-b061-4aa0-b0d1-935c82b04983",
-            "Source_Name": "Microsoft Processes and Threads",
-            "URL": "https://docs.microsoft.com/en-us/windows/win32/procthread/processes-and-threads",
-            "Description": "Microsoft. (2018, May 31). Processes and Threads. Retrieved September 28, 2021.",
-            "Data_Source_ID": "e8b8ede7-337b-4c0c-8c32-5c7872c1ee22"
-        },
-        {
-            "UUID": "a5959ccf-b54e-4ff5-85b5-1f8ebcf55144",
+            "UUID": "5fafa132-ea67-4b29-8c47-08320bcac050",
             "Source_Name": "mitre-attack",
             "URL": "https://attack.mitre.org/datasources/DS0018",
             "Description": "",
             "Data_Source_ID": "f2f4f4bd-3455-400f-b2ee-104004df0f5b"
         },
         {
-            "UUID": "5cb648fe-05a3-4f8d-8169-25bb164b0713",
+            "UUID": "1254f27a-219f-45c2-ba69-43fd6252d3c3",
             "Source_Name": "AWS Sec Groups VPC",
             "URL": "https://docs.aws.amazon.com/vpc/latest/userguide/VPC_SecurityGroups.html",
             "Description": "Amazon. (n.d.). Security groups for your VPC. Retrieved October 13, 2021.",
             "Data_Source_ID": "f2f4f4bd-3455-400f-b2ee-104004df0f5b"
         },
         {
-            "UUID": "9937f073-e180-4390-9cc3-8a820a386ee6",
+            "UUID": "eaac37ab-0b17-4912-b88c-ba2b90c44e56",
+            "Source_Name": "mitre-attack",
+            "URL": "https://attack.mitre.org/datasources/DS0026",
+            "Description": "",
+            "Data_Source_ID": "d6188aac-17db-4861-845f-57c369f9b4c8"
+        },
+        {
+            "UUID": "79b23e56-f186-45cf-a5ec-dc1bba58b000",
+            "Source_Name": "Microsoft AD DS Getting Started",
+            "URL": "https://docs.microsoft.com/en-us/windows-server/identity/ad-ds/ad-ds-getting-started",
+            "Description": "Foulds, I. et al. (2018, August 7). AD DS Getting Started. Retrieved September 23, 2021.",
+            "Data_Source_ID": "d6188aac-17db-4861-845f-57c369f9b4c8"
+        },
+        {
+            "UUID": "84c47afa-5f76-4e33-befc-b736c733124e",
+            "Source_Name": "mitre-attack",
+            "URL": "https://attack.mitre.org/datasources/DS0005",
+            "Description": "",
+            "Data_Source_ID": "2cd6cc81-d86e-4595-a4f0-43f5519f14e6"
+        },
+        {
+            "UUID": "e8249eec-3231-4da4-a742-b28938c13f1f",
+            "Source_Name": "Microsoft WMI System Classes",
+            "URL": "https://docs.microsoft.com/en-us/windows/win32/wmisdk/wmi-system-classes",
+            "Description": "Microsoft. (2018, May 31). WMI System Classes. Retrieved September 29, 2021.",
+            "Data_Source_ID": "2cd6cc81-d86e-4595-a4f0-43f5519f14e6"
+        },
+        {
+            "UUID": "80b45b97-c59d-49b7-9826-a93193589312",
+            "Source_Name": "Microsoft WMI Architecture",
+            "URL": "https://docs.microsoft.com/en-us/windows/win32/wmisdk/wmi-architecture",
+            "Description": "Microsoft. (2018, May 31). WMI Architecture. Retrieved September 29, 2021.",
+            "Data_Source_ID": "2cd6cc81-d86e-4595-a4f0-43f5519f14e6"
+        },
+        {
+            "UUID": "03d0e8eb-c3f4-4b8a-bfe1-4ce100305df7",
+            "Source_Name": "mitre-attack",
+            "URL": "https://attack.mitre.org/datasources/DS0014",
+            "Description": "",
+            "Data_Source_ID": "06bb1e05-533b-4de3-ae87-9b99910465cf"
+        },
+        {
+            "UUID": "18ff952d-5ddd-43a5-8462-852912631890",
+            "Source_Name": "Kube Kubectl",
+            "URL": "https://kubernetes.io/docs/reference/kubectl/kubectl/",
+            "Description": "kubernetes. (n.d.). kubectl. Retrieved October 13, 2021.",
+            "Data_Source_ID": "06bb1e05-533b-4de3-ae87-9b99910465cf"
+        },
+        {
+            "UUID": "f07f7028-c111-4a53-a52a-cbff50e1614a",
+            "Source_Name": "Kube Pod",
+            "URL": "https://kubernetes.io/docs/reference/generated/kubernetes-api/v1.19/#pod-v1-core",
+            "Description": "kubenetes. (n.d.). Pod v1 core. Retrieved October 13, 2021.",
+            "Data_Source_ID": "06bb1e05-533b-4de3-ae87-9b99910465cf"
+        },
+        {
+            "UUID": "6d1e3182-0eb1-4975-a425-fec94c951ef7",
+            "Source_Name": "mitre-attack",
+            "URL": "https://attack.mitre.org/data-sources/DS0004",
+            "Description": "",
+            "Data_Source_ID": "b86d9b40-5fbe-4ef1-8dc3-263eff26f495"
+        },
+        {
+            "UUID": "f0afb159-45b6-413f-a770-4d9eba6c9523",
+            "Source_Name": "mitre-attack",
+            "URL": "https://attack.mitre.org/datasources/DS0020",
+            "Description": "",
+            "Data_Source_ID": "6d7de3b7-283d-48f9-909c-60d123d9d768"
+        },
+        {
+            "UUID": "b2585307-feea-4874-8e6a-05b9de8f5a68",
+            "Source_Name": "Microsoft Snapshot",
+            "URL": "https://docs.microsoft.com/en-us/azure/virtual-machines/linux/snapshot-copy-managed-disk",
+            "Description": "Microsoft. (2021, September 16). Create a snapshot of a virtual hard disk. Retrieved October 13, 2021.",
+            "Data_Source_ID": "6d7de3b7-283d-48f9-909c-60d123d9d768"
+        },
+        {
+            "UUID": "ff671ae6-43ba-4832-8233-eca476e306c8",
+            "Source_Name": "Amazon Snapshots",
+            "URL": "https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/EBSSnapshots.html",
+            "Description": "Amazon. (n.d.). Amazon EBS snapshots. Retrieved October 13, 2021.",
+            "Data_Source_ID": "6d7de3b7-283d-48f9-909c-60d123d9d768"
+        },
+        {
+            "UUID": "84db00a6-9615-44d2-b06f-6dc3eee3aead",
+            "Source_Name": "mitre-attack",
+            "URL": "https://attack.mitre.org/datasources/DS0003",
+            "Description": "",
+            "Data_Source_ID": "c9ddfb51-eb45-4e22-b614-44ac1caa7883"
+        },
+        {
+            "UUID": "696cad2b-82bb-41b7-ba0e-5f408ec1682e",
+            "Source_Name": "Microsoft Tasks",
+            "URL": "https://docs.microsoft.com/en-us/windows/win32/taskschd/tasks",
+            "Description": "Microsoft. (2018, May 31). Tasks. Retrieved September 28, 2021.",
+            "Data_Source_ID": "c9ddfb51-eb45-4e22-b614-44ac1caa7883"
+        },
+        {
+            "UUID": "6eb46153-575a-413f-b44c-059233a8a9f7",
+            "Source_Name": "mitre-attack",
+            "URL": "https://attack.mitre.org/datasources/DS0038",
+            "Description": "",
+            "Data_Source_ID": "dd75f457-8dc0-4a24-9ae5-4b61c33af866"
+        },
+        {
+            "UUID": "61297f16-e54c-44ac-92de-a268af9ade00",
+            "Source_Name": "mitre-attack",
+            "URL": "https://attack.mitre.org/datasources/DS0035",
+            "Description": "",
+            "Data_Source_ID": "38fe306c-bdec-4f3d-8521-b72dd32dbd17"
+        },
+        {
+            "UUID": "f5f67dc4-3f9c-4e1f-86c4-6f09dbaf9192",
+            "Source_Name": "mitre-attack",
+            "URL": "https://attack.mitre.org/data-sources/DS0017",
+            "Description": "",
+            "Data_Source_ID": "73691708-ffb5-4e29-906d-f485f6fa7089"
+        },
+        {
+            "UUID": "476e1045-7848-4062-8af2-056c974141b3",
+            "Source_Name": "Confluence Linux Command  Line",
+            "URL": "https://confluence.atlassian.com/confkb/how-to-enable-command-line-audit-logging-in-linux-956166545.html",
+            "Description": "Confluence Support. (2021, September 8). How to enable command line audit logging in linux. Retrieved September 23, 2021.",
+            "Data_Source_ID": "73691708-ffb5-4e29-906d-f485f6fa7089"
+        },
+        {
+            "UUID": "f403f112-d808-404c-acc0-3de5e7205c14",
+            "Source_Name": "Audit OSX",
+            "URL": "https://www.scip.ch/en/?labs.20150108",
+            "Description": "Gagliardi, R. (n.d.). Audit in a OS X System. Retrieved September 23, 2021.",
+            "Data_Source_ID": "73691708-ffb5-4e29-906d-f485f6fa7089"
+        },
+        {
+            "UUID": "f78e0f6d-e71c-4444-99cc-9c96eb06a672",
+            "Source_Name": "mitre-attack",
+            "URL": "https://attack.mitre.org/datasources/DS0021",
+            "Description": "",
+            "Data_Source_ID": "3bef4799-906c-409c-ac00-3fb7a1e352e6"
+        },
+        {
+            "UUID": "934eb8d7-dcd3-436f-98e3-693d9f0d3347",
+            "Source_Name": "mitre-attack",
+            "URL": "https://attack.mitre.org/data-sources/DS0012",
+            "Description": "",
+            "Data_Source_ID": "12c1e727-7fa4-49b6-af81-366ed2ce231e"
+        },
+        {
+            "UUID": "7cb71a28-6934-400d-9935-9987e0121b64",
+            "Source_Name": "FireEye PowerShell Logging",
+            "URL": "https://www.fireeye.com/blog/threat-research/2016/02/greater_visibilityt.html",
+            "Description": "Dunwoody, M. (2016, February 11). Greater Visibility Through PowerShell Logging. Retrieved September 28, 2021.",
+            "Data_Source_ID": "12c1e727-7fa4-49b6-af81-366ed2ce231e"
+        },
+        {
+            "UUID": "bda09efc-a458-4d52-98a1-0158225e3538",
+            "Source_Name": "Microsoft AMSI",
+            "URL": "https://docs.microsoft.com/en-us/windows/win32/amsi/antimalware-scan-interface-portal",
+            "Description": "Microsoft. (2019, April 19). Antimalware Scan Interface (AMSI). Retrieved September 28, 2021.",
+            "Data_Source_ID": "12c1e727-7fa4-49b6-af81-366ed2ce231e"
+        },
+        {
+            "UUID": "669ab6d2-4b95-4278-b251-7a4849e818e2",
+            "Source_Name": "Microsoft PowerShell Logging",
+            "URL": "https://docs.microsoft.com/en-us/powershell/module/microsoft.powershell.core/about/about_logging_windows?view=powershell-7",
+            "Description": "Microsoft. (2020, March 30). about_Logging_Windows. Retrieved September 28, 2021.",
+            "Data_Source_ID": "12c1e727-7fa4-49b6-af81-366ed2ce231e"
+        },
+        {
+            "UUID": "f8ab7060-ff16-4589-a9ff-bfabc5d563d0",
+            "Source_Name": "mitre-attack",
+            "URL": "https://attack.mitre.org/data-sources/DS0013",
+            "Description": "",
+            "Data_Source_ID": "4523e7f3-8de2-4078-96f8-1227eb537159"
+        },
+        {
+            "UUID": "f9236b80-ec79-4f09-b655-36c587f07e90",
+            "Source_Name": "mitre-attack",
+            "URL": "https://attack.mitre.org/data-sources/DS0028",
+            "Description": "",
+            "Data_Source_ID": "4358c631-e253-4557-86df-f687d0ef9891"
+        },
+        {
+            "UUID": "68fe64a6-8600-4684-a6d0-d220f201e08f",
+            "Source_Name": "Microsoft Audit Logon Events",
+            "URL": "https://docs.microsoft.com/en-us/windows/security/threat-protection/auditing/basic-audit-logon-events",
+            "Description": "Microsoft. (2021, September 6). Audit logon events. Retrieved September 28, 2021.",
+            "Data_Source_ID": "4358c631-e253-4557-86df-f687d0ef9891"
+        },
+        {
+            "UUID": "bc8e72b9-deeb-4e88-ae1a-f0702b44b841",
+            "Source_Name": "mitre-attack",
+            "URL": "https://attack.mitre.org/data-sources/DS0002",
+            "Description": "",
+            "Data_Source_ID": "0b4f86ed-f4ab-46a3-8ed1-175be1974da6"
+        },
+        {
+            "UUID": "b73ed0d9-70e9-4ae5-90bf-58a53fad844a",
+            "Source_Name": "mitre-attack",
+            "URL": "https://attack.mitre.org/datasources/DS0008",
+            "Description": "",
+            "Data_Source_ID": "8765a845-dea1-4cd1-a56f-f54939b7ab9e"
+        },
+        {
+            "UUID": "ea5c45df-a985-47dc-b16d-9864a0a6fbad",
+            "Source_Name": "STIG Audit Kernel Modules",
+            "URL": "https://www.stigviewer.com/stig/oracle_linux_5/2016-12-20/finding/V-22383",
+            "Description": "Unified Compliance Framework. (2016, December 20). The audit system must be configured to audit the loading and unloading of dynamic kernel modules.. Retrieved September 28, 2021.",
+            "Data_Source_ID": "8765a845-dea1-4cd1-a56f-f54939b7ab9e"
+        },
+        {
+            "UUID": "926cd556-e7df-4d12-8978-03b739898f3a",
+            "Source_Name": "Init Man Page",
+            "URL": "https://man7.org/linux/man-pages/man2/init_module.2.html",
+            "Description": "Kerrisk, M. (2021, March 22). INIT_MODULE(2). Retrieved September 28, 2021.",
+            "Data_Source_ID": "8765a845-dea1-4cd1-a56f-f54939b7ab9e"
+        },
+        {
+            "UUID": "ed6c2c4a-3c51-4ecc-b8b3-f6f89bae3b68",
+            "Source_Name": "mitre-attack",
+            "URL": "https://attack.mitre.org/datasources/DS0019",
+            "Description": "",
+            "Data_Source_ID": "d710099e-df94-4be4-bf85-cabd30e912bb"
+        },
+        {
+            "UUID": "e837345b-2a2f-4381-b2a5-dc9c4def8ff9",
+            "Source_Name": "Microsoft Services",
+            "URL": "https://docs.microsoft.com/en-us/dotnet/framework/windows-services/introduction-to-windows-service-applications",
+            "Description": "Microsoft. (2017, March 30). Introduction to Windows Service Applications. Retrieved September 28, 2021.",
+            "Data_Source_ID": "d710099e-df94-4be4-bf85-cabd30e912bb"
+        },
+        {
+            "UUID": "1741a7fa-f879-4c82-a498-663799354733",
+            "Source_Name": "Linux Services Run Levels",
+            "URL": "https://www.linux.com/news/introduction-services-runlevels-and-rcd-scripts/",
+            "Description": "The Linux Foundation. (2006, January 11). An introduction to services, runlevels, and rc.d scripts. Retrieved September 28, 2021.",
+            "Data_Source_ID": "d710099e-df94-4be4-bf85-cabd30e912bb"
+        },
+        {
+            "UUID": "5f93299a-20b8-464a-a8fd-7948298dce66",
+            "Source_Name": "mitre-attack",
+            "URL": "https://attack.mitre.org/datasources/DS0007",
+            "Description": "",
+            "Data_Source_ID": "1ac0ca69-e07e-4b34-9061-e4588e146c52"
+        },
+        {
+            "UUID": "f3bd17eb-5ce8-463a-a973-13666c32e97c",
+            "Source_Name": "Microsoft Image",
+            "URL": "https://docs.microsoft.com/en-us/azure/virtual-machines/windows/capture-image-resource",
+            "Description": "Microsoft. (2021, August 23). Create a managed image of a generalized VM in Azure. Retrieved October 13, 2021.",
+            "Data_Source_ID": "1ac0ca69-e07e-4b34-9061-e4588e146c52"
+        },
+        {
+            "UUID": "6200c079-98d5-4aea-a983-56d3a3b198a8",
+            "Source_Name": "Amazon AMI",
+            "URL": "https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/AMIs.html",
+            "Description": "Amazon. (n.d.). Amazon Machine Images (AMI). Retrieved October 13, 2021.",
+            "Data_Source_ID": "1ac0ca69-e07e-4b34-9061-e4588e146c52"
+        },
+        {
+            "UUID": "eeb97498-5978-4000-b70d-69ed36769364",
+            "Source_Name": "mitre-attack",
+            "URL": "https://attack.mitre.org/data-sources/DS0022",
+            "Description": "",
+            "Data_Source_ID": "509ed41e-ca42-461e-9058-24602256daf9"
+        },
+        {
+            "UUID": "92a15e89-9708-44ba-ad9d-7a71a3475733",
+            "Source_Name": "Microsoft File Mgmt",
+            "URL": "https://docs.microsoft.com/en-us/windows/win32/fileio/file-management",
+            "Description": "Microsoft. (2018, May 31). File Management (Local File Systems). Retrieved September 28, 2021.",
+            "Data_Source_ID": "509ed41e-ca42-461e-9058-24602256daf9"
+        },
+        {
+            "UUID": "44152118-b413-47ff-b393-1eda1ec5c40e",
+            "Source_Name": "mitre-attack",
+            "URL": "https://attack.mitre.org/datasources/DS0006",
+            "Description": "",
+            "Data_Source_ID": "1e26f222-e27e-4bfa-830c-fa4b4f18b5e4"
+        },
+        {
+            "UUID": "4197ed23-e77c-41e9-8868-a05d5512b2fa",
+            "Source_Name": "Medium Authentication Tokens",
+            "URL": "https://medium.com/@sherryhsu/session-vs-token-based-authentication-11a6c5ac45e4",
+            "Description": "Hsu, S. (2018, June 30). Session vs Token Based Authentication. Retrieved September 29, 2021.",
+            "Data_Source_ID": "1e26f222-e27e-4bfa-830c-fa4b4f18b5e4"
+        },
+        {
+            "UUID": "92624847-62c3-423a-a4a5-3342850900e9",
+            "Source_Name": "Auth0 Access Tokens",
+            "URL": "https://auth0.com/docs/tokens/access-tokens",
+            "Description": "Auth0. (n.d.). Access Tokens. Retrieved September 29, 2021.",
+            "Data_Source_ID": "1e26f222-e27e-4bfa-830c-fa4b4f18b5e4"
+        },
+        {
+            "UUID": "258f1f5f-0a16-42c0-95cf-6b3734cbcc2c",
+            "Source_Name": "mitre-attack",
+            "URL": "https://attack.mitre.org/datasources/DS0001",
+            "Description": "",
+            "Data_Source_ID": "ca1cb239-ff6d-4f64-b9d7-41c8556a8b4f"
+        },
+        {
+            "UUID": "2d427239-6e8e-4741-81fd-a333d4530e00",
+            "Source_Name": "mitre-attack",
+            "URL": "https://attack.mitre.org/datasources/DS0024",
+            "Description": "",
+            "Data_Source_ID": "0f42a24c-e035-4f93-a91c-5f7076bd8da0"
+        },
+        {
+            "UUID": "86d3bf14-19f0-48e2-aeed-c14a9bbfd9da",
+            "Source_Name": "Microsoft Registry",
+            "URL": "https://docs.microsoft.com/en-us/windows/win32/sysinfo/registry",
+            "Description": "Microsoft. (2018, May 31). Registry. Retrieved September 29, 2021.",
+            "Data_Source_ID": "0f42a24c-e035-4f93-a91c-5f7076bd8da0"
+        },
+        {
+            "UUID": "3054c77d-f965-4fdb-8f4a-b698cc69b2a7",
+            "Source_Name": "mitre-attack",
+            "URL": "https://attack.mitre.org/datasources/DS0036",
+            "Description": "",
+            "Data_Source_ID": "3c07684f-3794-4536-8f70-21efe700c0ec"
+        },
+        {
+            "UUID": "7a60c5ad-7e7f-484e-b2dc-9281996eac7b",
+            "Source_Name": "Amazon IAM Groups",
+            "URL": "https://docs.aws.amazon.com/IAM/latest/UserGuide/id_groups.html",
+            "Description": "Amazon. (n.d.). IAM user groups. Retrieved October 13, 2021.",
+            "Data_Source_ID": "3c07684f-3794-4536-8f70-21efe700c0ec"
+        },
+        {
+            "UUID": "92548886-edeb-4fb1-92b4-332f1c1b33b7",
+            "Source_Name": "mitre-attack",
+            "URL": "https://attack.mitre.org/datasources/DS0032",
+            "Description": "",
+            "Data_Source_ID": "072ec5a7-00ba-466f-9057-69751a22a967"
+        },
+        {
+            "UUID": "b306a0b5-5876-4813-82b7-2f732fa4f221",
+            "Source_Name": "Docker Docs Container",
+            "URL": "https://docs.docker.com/engine/api/v1.41/#tag/Container",
+            "Description": "docker docs. (n.d.). Containers. Retrieved October 13, 2021.",
+            "Data_Source_ID": "072ec5a7-00ba-466f-9057-69751a22a967"
+        },
+        {
+            "UUID": "6dfad4d2-a0ae-4065-90be-5d77f59e59f5",
+            "Source_Name": "mitre-attack",
+            "URL": "https://attack.mitre.org/data-sources/DS0029",
+            "Description": "",
+            "Data_Source_ID": "c000cd5c-bbb3-4606-af6f-6c6d9de0bbe3"
+        },
+        {
+            "UUID": "83791407-dfa3-4987-947b-00dc1fc3150a",
+            "Source_Name": "mitre-attack",
+            "URL": "https://attack.mitre.org/datasources/DS0034",
+            "Description": "",
+            "Data_Source_ID": "b0b6d26f-3747-4444-ac7a-239a6ff80cb5"
+        },
+        {
+            "UUID": "c8c40130-e3e7-4ac8-8bf3-674f5997785c",
+            "Source_Name": "Amazon S3",
+            "URL": "https://aws.amazon.com/s3/",
+            "Description": "Amazon. (n.d.). Amazon S3. Retrieved October 13, 2021.",
+            "Data_Source_ID": "b0b6d26f-3747-4444-ac7a-239a6ff80cb5"
+        },
+        {
+            "UUID": "d51063bf-9ac6-4f8f-8d97-d3876026af60",
+            "Source_Name": "Azure Blob Storage",
+            "URL": "https://azure.microsoft.com/en-us/services/storage/blobs/",
+            "Description": "Microsoft. (n.d.). Azure Blob Storage. Retrieved October 13, 2021.",
+            "Data_Source_ID": "b0b6d26f-3747-4444-ac7a-239a6ff80cb5"
+        },
+        {
+            "UUID": "4f02c9e5-b879-42d8-b1ff-39e3c1952c81",
+            "Source_Name": "Google Cloud Storage",
+            "URL": "https://cloud.google.com/storage",
+            "Description": "Google. (n.d.). Cloud Storage. Retrieved October 13, 2021.",
+            "Data_Source_ID": "b0b6d26f-3747-4444-ac7a-239a6ff80cb5"
+        },
+        {
+            "UUID": "3d54f6b6-86f0-4eeb-adfb-76e7a701a56e",
+            "Source_Name": "mitre-attack",
+            "URL": "https://attack.mitre.org/datasources/DS0027",
+            "Description": "",
+            "Data_Source_ID": "9ec8c0d7-6137-456f-b829-c5f8b96ba054"
+        },
+        {
+            "UUID": "eff1251a-f1e1-446e-997b-fe19552bf96f",
+            "Source_Name": "IOKit Fundamentals",
+            "URL": "https://developer.apple.com/library/archive/documentation/DeviceDrivers/Conceptual/IOKitFundamentals/Features/Features.html",
+            "Description": "Apple. (2014, April 9). What Is the I/O Kit?. Retrieved September 24, 2021.",
+            "Data_Source_ID": "9ec8c0d7-6137-456f-b829-c5f8b96ba054"
+        },
+        {
+            "UUID": "b1130c48-2e6d-4fa8-a145-bdefb8c75348",
+            "Source_Name": "Windows Getting Started Drivers",
+            "URL": "https://docs.microsoft.com/en-us/windows-hardware/drivers/gettingstarted/user-mode-and-kernel-mode",
+            "Description": "Viviano, A. (2021, August 17). Getting started with Windows drivers: User mode and kernel mode. Retrieved September 24, 2021.",
+            "Data_Source_ID": "9ec8c0d7-6137-456f-b829-c5f8b96ba054"
+        },
+        {
+            "UUID": "806ff12c-6f46-423f-9ebd-8f2953e3bf11",
+            "Source_Name": "mitre-attack",
+            "URL": "https://attack.mitre.org/datasources/DS0025",
+            "Description": "",
+            "Data_Source_ID": "b1ddede4-cafe-4955-ac4c-14b33ac3f647"
+        },
+        {
+            "UUID": "27dc85d6-49ec-4bdf-8410-1d02ace91f57",
+            "Source_Name": "Amazon AWS",
+            "URL": "https://aws.amazon.com",
+            "Description": "Amazon. (n.d.). Start Building on AWS Today. Retrieved October 13, 2021.",
+            "Data_Source_ID": "b1ddede4-cafe-4955-ac4c-14b33ac3f647"
+        },
+        {
+            "UUID": "69d0d567-9afd-4917-a0d5-c1dc6c021eb2",
+            "Source_Name": "Azure Products",
+            "URL": "https://azure.microsoft.com/en-us/services/",
+            "Description": "Microsoft. (n.d.). Azure products. Retrieved October 13, 2021.",
+            "Data_Source_ID": "b1ddede4-cafe-4955-ac4c-14b33ac3f647"
+        },
+        {
+            "UUID": "3d96edc3-069d-4c59-82d2-71d3cda2a7de",
+            "Source_Name": "mitre-attack",
+            "URL": "https://attack.mitre.org/datasources/DS0033",
+            "Description": "",
+            "Data_Source_ID": "ba27545a-9c32-47ea-ba6a-cce50f1b326e"
+        },
+        {
+            "UUID": "52e5a7a3-2848-4d03-a294-6a6e550bd01f",
+            "Source_Name": "Microsoft NFS Overview",
+            "URL": "https://docs.microsoft.com/en-us/windows-server/storage/nfs/nfs-overview",
+            "Description": "Microsoft. (2018, July 9). Network File System overview. Retrieved September 28, 2021.",
+            "Data_Source_ID": "ba27545a-9c32-47ea-ba6a-cce50f1b326e"
+        },
+        {
+            "UUID": "3b961282-933c-46ec-9a68-4dcfa615ac84",
             "Source_Name": "mitre-attack",
             "URL": "https://attack.mitre.org/datasources/DS0011",
             "Description": "",
             "Data_Source_ID": "f424e4b4-a8a4-4c58-a4ae-4f53bfd08563"
         },
         {
-            "UUID": "db4824bc-796a-4a70-98c1-18236879149c",
+            "UUID": "dbdc0732-1691-4be2-8342-92504be6fb17",
             "Source_Name": "Microsoft LoadLibrary",
             "URL": "https://docs.microsoft.com/en-us/windows/win32/api/libloaderapi/nf-libloaderapi-loadlibrarya",
             "Description": "Microsoft. (2018, December 5). LoadLibraryA function (libloaderapi.h). Retrieved September 28, 2021.",
             "Data_Source_ID": "f424e4b4-a8a4-4c58-a4ae-4f53bfd08563"
         },
         {
-            "UUID": "bb626a76-b0b5-473b-91a4-5ec8344dc40a",
+            "UUID": "34f58359-3671-41b8-8d32-21a26b2bdc9d",
             "Source_Name": "Microsoft Module Class",
             "URL": "https://docs.microsoft.com/en-us/dotnet/api/system.reflection.module",
             "Description": "Microsoft. (n.d.). Module Class. Retrieved September 28, 2021.",
             "Data_Source_ID": "f424e4b4-a8a4-4c58-a4ae-4f53bfd08563"
+        },
+        {
+            "UUID": "9930c7bb-ff74-4017-b003-f41bf1dae79f",
+            "Source_Name": "mitre-attack",
+            "URL": "https://attack.mitre.org/datasources/DS0023",
+            "Description": "",
+            "Data_Source_ID": "221adcd5-cccf-44df-9be6-ef607a6e1c3c"
+        },
+        {
+            "UUID": "45a15dbe-7493-401d-8f68-60532b2d7512",
+            "Source_Name": "Microsoft Named Pipes",
+            "URL": "https://docs.microsoft.com/en-us/windows/win32/ipc/named-pipes",
+            "Description": "Microsoft. (2018, May 31). Named Pipes. Retrieved September 28, 2021.",
+            "Data_Source_ID": "221adcd5-cccf-44df-9be6-ef607a6e1c3c"
+        },
+        {
+            "UUID": "29007d9b-fcd2-4b21-8a42-b379e4b9fed0",
+            "Source_Name": "mitre-attack",
+            "URL": "https://attack.mitre.org/data-sources/DS0009",
+            "Description": "",
+            "Data_Source_ID": "e8b8ede7-337b-4c0c-8c32-5c7872c1ee22"
+        },
+        {
+            "UUID": "bb8ed7e0-71d3-455b-ad09-56223f360013",
+            "Source_Name": "Microsoft Processes and Threads",
+            "URL": "https://docs.microsoft.com/en-us/windows/win32/procthread/processes-and-threads",
+            "Description": "Microsoft. (2018, May 31). Processes and Threads. Retrieved September 28, 2021.",
+            "Data_Source_ID": "e8b8ede7-337b-4c0c-8c32-5c7872c1ee22"
+        },
+        {
+            "UUID": "406299fb-e051-4efd-b702-a1436ff750b4",
+            "Source_Name": "mitre-attack",
+            "URL": "https://attack.mitre.org/datasources/DS0030",
+            "Description": "",
+            "Data_Source_ID": "45232bc0-e858-440d-aa93-d48c6cf167f0"
+        },
+        {
+            "UUID": "4cec2aba-cad8-47c6-ad97-18e49f0de6cb",
+            "Source_Name": "Amazon VM",
+            "URL": "https://azure.microsoft.com/en-us/overview/what-is-a-virtual-machine/",
+            "Description": "Microsoft. (n.d.). What is a virtual machine (VM)?. Retrieved October 13, 2021.",
+            "Data_Source_ID": "45232bc0-e858-440d-aa93-d48c6cf167f0"
+        },
+        {
+            "UUID": "eed6681b-72d0-4f8d-9ba0-12f850f13cd4",
+            "Source_Name": "Google VM",
+            "URL": "https://cloud.google.com/compute/docs/instances",
+            "Description": "Google. (n.d.). Virtual machine instances. Retrieved October 13, 2021.",
+            "Data_Source_ID": "45232bc0-e858-440d-aa93-d48c6cf167f0"
+        },
+        {
+            "UUID": "faa61195-6ae9-4523-bb0c-8d4c5685ea91",
+            "Source_Name": "mitre-attack",
+            "URL": "https://attack.mitre.org/datasources/DS0037",
+            "Description": "",
+            "Data_Source_ID": "29aa4e0e-4a26-4f79-a9bc-1ae66df1c923"
+        },
+        {
+            "UUID": "58cb0112-6c21-4929-8646-7ddd13b1e990",
+            "Source_Name": "mitre-attack",
+            "URL": "https://attack.mitre.org/datasources/DS0010",
+            "Description": "",
+            "Data_Source_ID": "2ce537a2-3b30-4374-9397-31d6460ec0bc"
+        },
+        {
+            "UUID": "18735c5b-f380-42f3-9ffd-022ab51abca5",
+            "Source_Name": "Amazon S3",
+            "URL": "https://aws.amazon.com/s3/",
+            "Description": "Amazon. (n.d.). Amazon S3. Retrieved October 13, 2021.",
+            "Data_Source_ID": "2ce537a2-3b30-4374-9397-31d6460ec0bc"
+        },
+        {
+            "UUID": "d3cf99d5-17eb-484f-8e2b-b5d2154585f8",
+            "Source_Name": "Azure Blob Storage",
+            "URL": "https://azure.microsoft.com/en-us/services/storage/blobs/",
+            "Description": "Microsoft. (n.d.). Azure Blob Storage. Retrieved October 13, 2021.",
+            "Data_Source_ID": "2ce537a2-3b30-4374-9397-31d6460ec0bc"
+        },
+        {
+            "UUID": "f62f5f95-2fcd-4938-97ef-271470f784c6",
+            "Source_Name": "Google Cloud Storage",
+            "URL": "https://cloud.google.com/storage",
+            "Description": "Google. (n.d.). Cloud Storage. Retrieved October 13, 2021.",
+            "Data_Source_ID": "2ce537a2-3b30-4374-9397-31d6460ec0bc"
+        },
+        {
+            "UUID": "8d8ed4a4-11e9-45bd-bc2c-adebb75cf97f",
+            "Source_Name": "mitre-attack",
+            "URL": "https://attack.mitre.org/data-sources/DS0031",
+            "Description": "",
+            "Data_Source_ID": "c3af32ff-65c5-4ea8-912a-fb4a85197239"
+        },
+        {
+            "UUID": "a6bfa340-f723-4548-aa34-50f4c70209ff",
+            "Source_Name": "Kube Cluster Admin",
+            "URL": "https://kubernetes.io/docs/concepts/cluster-administration/",
+            "Description": "kubernetes. (2021, January 16). Cluster Administration. Retrieved October 13, 2021.",
+            "Data_Source_ID": "c3af32ff-65c5-4ea8-912a-fb4a85197239"
+        },
+        {
+            "UUID": "afc8dced-6a08-4526-bb1a-c78d1d5da7e4",
+            "Source_Name": "Kube Cluster Info",
+            "URL": "https://kubernetes.io/docs/reference/generated/kubectl/kubectl-commands#cluster-info",
+            "Description": "kubernetes. (n.d.). cluster-info. Retrieved October 13, 2021.",
+            "Data_Source_ID": "c3af32ff-65c5-4ea8-912a-fb4a85197239"
         }
     ],
     "MITRE_Data_Sources": [
         {
-            "UUID": "06bb1e05-533b-4de3-ae87-9b99910465cf",
-            "Description": "A single unit of shared resources within a cluster, comprised of one or more containers(Citation: Kube Kubectl)(Citation: Kube Pod)",
-            "Name": "Pod",
-            "Version": "1.0"
-        },
-        {
-            "UUID": "072ec5a7-00ba-466f-9057-69751a22a967",
-            "Description": "A standard unit of virtualized software that packages up code and all its dependencies so the application runs quickly and reliably from one computing environment to another(Citation: Docker Docs Container)",
-            "Name": "Container",
-            "Version": "1.0"
-        },
-        {
-            "UUID": "0b4f86ed-f4ab-46a3-8ed1-175be1974da6",
-            "Description": "A profile representing a user, device, service, or application used to authenticate and access resources",
-            "Name": "User Account",
-            "Version": "1.1"
-        },
-        {
-            "UUID": "0f42a24c-e035-4f93-a91c-5f7076bd8da0",
-            "Description": "A Windows OS hierarchical database that stores much of the information and settings for software programs, hardware devices, user preferences, and operating-system configurations(Citation: Microsoft Registry)",
-            "Name": "Windows Registry",
-            "Version": "1.0"
-        },
-        {
-            "UUID": "12c1e727-7fa4-49b6-af81-366ed2ce231e",
-            "Description": "A file or stream containing a list of commands, allowing them to be launched in sequence(Citation: Microsoft PowerShell Logging)(Citation: FireEye PowerShell Logging)(Citation: Microsoft AMSI)",
-            "Name": "Script",
-            "Version": "1.1"
-        },
-        {
-            "UUID": "1ac0ca69-e07e-4b34-9061-e4588e146c52",
-            "Description": "A single file used to deploy a virtual machine/bootable disk into an on-premise or third-party cloud environment(Citation: Microsoft Image)(Citation: Amazon AMI)",
-            "Name": "Image",
-            "Version": "1.0"
-        },
-        {
-            "UUID": "1e26f222-e27e-4bfa-830c-fa4b4f18b5e4",
-            "Description": "Credential material, such as session cookies or tokens, used to authenticate to web applications and services(Citation: Medium Authentication Tokens)(Citation: Auth0 Access Tokens)",
-            "Name": "Web Credential",
-            "Version": "1.0"
-        },
-        {
-            "UUID": "221adcd5-cccf-44df-9be6-ef607a6e1c3c",
-            "Description": "Mechanisms that allow inter-process communication locally or over the network. A named pipe is usually found as a file and processes attach to it(Citation: Microsoft Named Pipes)",
-            "Name": "Named Pipe",
-            "Version": "1.0"
-        },
-        {
-            "UUID": "29aa4e0e-4a26-4f79-a9bc-1ae66df1c923",
-            "Description": "A digital document, which highlights information such as the owner's identity, used to instill trust in public keys used while encrypting network communications",
-            "Name": "Certificate",
-            "Version": "1.0"
-        },
-        {
-            "UUID": "2cd6cc81-d86e-4595-a4f0-43f5519f14e6",
-            "Description": "The infrastructure for management data and operations that enables local and remote management of Windows personal computers and servers(Citation: Microsoft WMI System Classes)(Citation: Microsoft WMI Architecture)",
-            "Name": "WMI",
-            "Version": "1.0"
-        },
-        {
-            "UUID": "2ce537a2-3b30-4374-9397-31d6460ec0bc",
-            "Description": "Data object storage infrastructure hosted on-premise or by third-party providers, made available to users through network connections and/or APIs(Citation: Amazon S3)(Citation: Azure Blob Storage)(Citation: Google Cloud Storage)",
-            "Name": "Cloud Storage",
-            "Version": "1.0"
-        },
-        {
-            "UUID": "38fe306c-bdec-4f3d-8521-b72dd32dbd17",
-            "Description": "Information obtained (commonly via active network traffic probes or web crawling) regarding various types of resources and servers connected to the public Internet",
-            "Name": "Internet Scan",
-            "Version": "1.0"
-        },
-        {
-            "UUID": "3bef4799-906c-409c-ac00-3fb7a1e352e6",
-            "Description": "A malicious online profile representing a user commonly used by adversaries to social engineer or otherwise target victims",
-            "Name": "Persona",
-            "Version": "1.0"
-        },
-        {
-            "UUID": "3c07684f-3794-4536-8f70-21efe700c0ec",
-            "Description": "A collection of multiple user accounts that share the same access rights to the computer and/or network resources and have common security rights(Citation: Amazon IAM Groups)",
-            "Name": "Group",
+            "UUID": "61bbbf27-f7c3-46ba-a6bc-48ae76928065",
+            "Description": "A non-volatile data storage device (hard drive, floppy disk, USB flash drive) with at least one formatted partition, typically mounted to the file system and/or assigned a drive letter(Citation: Sysmon EID 9)",
+            "Name": "Drive",
             "Version": "1.0"
         },
         {
@@ -927,105 +849,9 @@
             "Version": "1.0"
         },
         {
-            "UUID": "4358c631-e253-4557-86df-f687d0ef9891",
-            "Description": "Logon occurring on a system or resource (local, domain, or cloud) to which a user/device is gaining access after successful authentication and authorization(Citation: Microsoft Audit Logon Events)",
-            "Name": "Logon Session",
-            "Version": "1.1"
-        },
-        {
-            "UUID": "45232bc0-e858-440d-aa93-d48c6cf167f0",
-            "Description": "A virtual server environment which runs workloads, hosted on-premise or by third-party cloud providers(Citation: Amazon VM)(Citation: Google VM)",
-            "Name": "Instance",
-            "Version": "1.0"
-        },
-        {
-            "UUID": "4523e7f3-8de2-4078-96f8-1227eb537159",
-            "Description": "Information from host telemetry providing insights about system status, errors, or other notable functional activity",
-            "Name": "Sensor Health",
-            "Version": "1.1"
-        },
-        {
-            "UUID": "509ed41e-ca42-461e-9058-24602256daf9",
-            "Description": "A computer resource object, managed by the I/O system, for storing data (such as images, text, videos, computer programs, or any wide variety of other media).(Citation: Microsoft File Mgmt)",
-            "Name": "File",
-            "Version": "1.0"
-        },
-        {
-            "UUID": "61bbbf27-f7c3-46ba-a6bc-48ae76928065",
-            "Description": "A non-volatile data storage device (hard drive, floppy disk, USB flash drive) with at least one formatted partition, typically mounted to the file system and/or assigned a drive letter(Citation: Sysmon EID 9)",
-            "Name": "Drive",
-            "Version": "1.0"
-        },
-        {
-            "UUID": "6d7de3b7-283d-48f9-909c-60d123d9d768",
-            "Description": "A point-in-time copy of cloud volumes (files, settings, etc.) that can be created and/or deployed in cloud environments(Citation: Microsoft Snapshot)(Citation: Amazon Snapshots)",
-            "Name": "Snapshot",
-            "Version": "1.0"
-        },
-        {
-            "UUID": "73691708-ffb5-4e29-906d-f485f6fa7089",
-            "Description": "A directive given to a computer program, acting as an interpreter of some kind, in order to perform a specific task(Citation: Confluence Linux Command  Line)(Citation: Audit OSX)",
-            "Name": "Command",
-            "Version": "1.1"
-        },
-        {
-            "UUID": "8765a845-dea1-4cd1-a56f-f54939b7ab9e",
-            "Description": "A computer program, at the core of a computer OS, that resides in memory and facilitates interactions between hardware and software components(Citation: STIG Audit Kernel Modules)(Citation: Init Man Page)",
-            "Name": "Kernel",
-            "Version": "1.0"
-        },
-        {
-            "UUID": "9ec8c0d7-6137-456f-b829-c5f8b96ba054",
-            "Description": "A computer program that operates or controls a particular type of device that is attached to a computer. Provides a software interface to hardware devices, enabling operating systems and other computer programs to access hardware functions without needing to know precise details about the hardware being used(Citation: IOKit Fundamentals)(Citation: Windows Getting Started Drivers)",
-            "Name": "Driver",
-            "Version": "1.0"
-        },
-        {
-            "UUID": "b0b6d26f-3747-4444-ac7a-239a6ff80cb5",
-            "Description": "Block object storage hosted on-premise or by third-party providers, typically made available to resources as virtualized hard drives(Citation: Amazon S3)(Citation: Azure Blob Storage)(Citation: Google Cloud Storage)",
-            "Name": "Volume",
-            "Version": "1.0"
-        },
-        {
-            "UUID": "b1ddede4-cafe-4955-ac4c-14b33ac3f647",
-            "Description": "Infrastructure, platforms, or software that are hosted on-premise or by third-party providers, made available to users through network connections and/or APIs(Citation: Amazon AWS)(Citation: Azure Products)",
-            "Name": "Cloud Service",
-            "Version": "1.0"
-        },
-        {
-            "UUID": "b86d9b40-5fbe-4ef1-8dc3-263eff26f495",
-            "Description": "Information obtained (via shared or submitted samples) regarding malicious software (droppers, backdoors, etc.) used by adversaries",
-            "Name": "Malware Repository",
-            "Version": "1.1"
-        },
-        {
-            "UUID": "ba27545a-9c32-47ea-ba6a-cce50f1b326e",
-            "Description": "A storage resource (typically a folder or drive) made available from one host to others using network protocols, such as Server Message Block (SMB) or Network File System (NFS)(Citation: Microsoft NFS Overview)",
-            "Name": "Network Share",
-            "Version": "1.0"
-        },
-        {
-            "UUID": "c000cd5c-bbb3-4606-af6f-6c6d9de0bbe3",
-            "Description": "Data transmitted across a network (ex: Web, DNS, Mail, File, etc.), that is either summarized (ex: Netflow) and/or captured as raw data in an analyzable format (ex: PCAP)",
-            "Name": "Network Traffic",
-            "Version": "1.1"
-        },
-        {
-            "UUID": "c3af32ff-65c5-4ea8-912a-fb4a85197239",
-            "Description": "A set of containerized computing resources that are managed together but have separate nodes to execute various tasks and/or applications(Citation: Kube Cluster Admin)(Citation: Kube Cluster Info)",
-            "Name": "Cluster",
-            "Version": "1.0"
-        },
-        {
-            "UUID": "c9ddfb51-eb45-4e22-b614-44ac1caa7883",
-            "Description": "Automated tasks that can be executed at a specific time or on a recurring schedule running in the background (ex: Cron daemon, task scheduler, BITS)(Citation: Microsoft Tasks)",
-            "Name": "Scheduled Job",
-            "Version": "1.0"
-        },
-        {
-            "UUID": "ca1cb239-ff6d-4f64-b9d7-41c8556a8b4f",
-            "Description": "Computer software that provides low-level control for the hardware and device(s) of a host, such as BIOS or UEFI/EFI",
-            "Name": "Firmware",
+            "UUID": "f2f4f4bd-3455-400f-b2ee-104004df0f5b",
+            "Description": "A network security system, running locally on an endpoint or remotely as a service (ex: cloud environment), that monitors and controls incoming/outgoing network traffic based on predefined rules(Citation: AWS Sec Groups VPC)",
+            "Name": "Firewall",
             "Version": "1.0"
         },
         {
@@ -1035,9 +861,33 @@
             "Version": "1.0"
         },
         {
-            "UUID": "d710099e-df94-4be4-bf85-cabd30e912bb",
-            "Description": "A computer process that is configured to execute continuously in the background and perform system tasks, in some cases before any user has logged in(Citation: Microsoft Services)(Citation: Linux Services Run Levels)",
-            "Name": "Service",
+            "UUID": "2cd6cc81-d86e-4595-a4f0-43f5519f14e6",
+            "Description": "The infrastructure for management data and operations that enables local and remote management of Windows personal computers and servers(Citation: Microsoft WMI System Classes)(Citation: Microsoft WMI Architecture)",
+            "Name": "WMI",
+            "Version": "1.0"
+        },
+        {
+            "UUID": "06bb1e05-533b-4de3-ae87-9b99910465cf",
+            "Description": "A single unit of shared resources within a cluster, comprised of one or more containers(Citation: Kube Kubectl)(Citation: Kube Pod)",
+            "Name": "Pod",
+            "Version": "1.0"
+        },
+        {
+            "UUID": "b86d9b40-5fbe-4ef1-8dc3-263eff26f495",
+            "Description": "Information obtained (via shared or submitted samples) regarding malicious software (droppers, backdoors, etc.) used by adversaries",
+            "Name": "Malware Repository",
+            "Version": "1.1"
+        },
+        {
+            "UUID": "6d7de3b7-283d-48f9-909c-60d123d9d768",
+            "Description": "A point-in-time copy of cloud volumes (files, settings, etc.) that can be created and/or deployed in cloud environments(Citation: Microsoft Snapshot)(Citation: Amazon Snapshots)",
+            "Name": "Snapshot",
+            "Version": "1.0"
+        },
+        {
+            "UUID": "c9ddfb51-eb45-4e22-b614-44ac1caa7883",
+            "Description": "Automated tasks that can be executed at a specific time or on a recurring schedule running in the background (ex: Cron daemon, task scheduler, BITS)(Citation: Microsoft Tasks)",
+            "Name": "Scheduled Job",
             "Version": "1.0"
         },
         {
@@ -1047,15 +897,129 @@
             "Version": "1.0"
         },
         {
-            "UUID": "e8b8ede7-337b-4c0c-8c32-5c7872c1ee22",
-            "Description": "Instances of computer programs that are being executed by at least one thread. Processes have memory space for process executables, loaded modules (DLLs or shared libraries), and allocated memory regions containing everything from user input to application-specific data structures(Citation: Microsoft Processes and Threads)",
-            "Name": "Process",
+            "UUID": "38fe306c-bdec-4f3d-8521-b72dd32dbd17",
+            "Description": "Information obtained (commonly via active network traffic probes or web crawling) regarding various types of resources and servers connected to the public Internet",
+            "Name": "Internet Scan",
+            "Version": "1.0"
+        },
+        {
+            "UUID": "73691708-ffb5-4e29-906d-f485f6fa7089",
+            "Description": "A directive given to a computer program, acting as an interpreter of some kind, in order to perform a specific task(Citation: Confluence Linux Command  Line)(Citation: Audit OSX)",
+            "Name": "Command",
             "Version": "1.1"
         },
         {
-            "UUID": "f2f4f4bd-3455-400f-b2ee-104004df0f5b",
-            "Description": "A network security system, running locally on an endpoint or remotely as a service (ex: cloud environment), that monitors and controls incoming/outgoing network traffic based on predefined rules(Citation: AWS Sec Groups VPC)",
-            "Name": "Firewall",
+            "UUID": "3bef4799-906c-409c-ac00-3fb7a1e352e6",
+            "Description": "A malicious online profile representing a user commonly used by adversaries to social engineer or otherwise target victims",
+            "Name": "Persona",
+            "Version": "1.0"
+        },
+        {
+            "UUID": "12c1e727-7fa4-49b6-af81-366ed2ce231e",
+            "Description": "A file or stream containing a list of commands, allowing them to be launched in sequence(Citation: Microsoft PowerShell Logging)(Citation: FireEye PowerShell Logging)(Citation: Microsoft AMSI)",
+            "Name": "Script",
+            "Version": "1.1"
+        },
+        {
+            "UUID": "4523e7f3-8de2-4078-96f8-1227eb537159",
+            "Description": "Information from host telemetry providing insights about system status, errors, or other notable functional activity",
+            "Name": "Sensor Health",
+            "Version": "1.1"
+        },
+        {
+            "UUID": "4358c631-e253-4557-86df-f687d0ef9891",
+            "Description": "Logon occurring on a system or resource (local, domain, or cloud) to which a user/device is gaining access after successful authentication and authorization(Citation: Microsoft Audit Logon Events)",
+            "Name": "Logon Session",
+            "Version": "1.1"
+        },
+        {
+            "UUID": "0b4f86ed-f4ab-46a3-8ed1-175be1974da6",
+            "Description": "A profile representing a user, device, service, or application used to authenticate and access resources",
+            "Name": "User Account",
+            "Version": "1.1"
+        },
+        {
+            "UUID": "8765a845-dea1-4cd1-a56f-f54939b7ab9e",
+            "Description": "A computer program, at the core of a computer OS, that resides in memory and facilitates interactions between hardware and software components(Citation: STIG Audit Kernel Modules)(Citation: Init Man Page)",
+            "Name": "Kernel",
+            "Version": "1.0"
+        },
+        {
+            "UUID": "d710099e-df94-4be4-bf85-cabd30e912bb",
+            "Description": "A computer process that is configured to execute continuously in the background and perform system tasks, in some cases before any user has logged in(Citation: Microsoft Services)(Citation: Linux Services Run Levels)",
+            "Name": "Service",
+            "Version": "1.0"
+        },
+        {
+            "UUID": "1ac0ca69-e07e-4b34-9061-e4588e146c52",
+            "Description": "A single file used to deploy a virtual machine/bootable disk into an on-premise or third-party cloud environment(Citation: Microsoft Image)(Citation: Amazon AMI)",
+            "Name": "Image",
+            "Version": "1.0"
+        },
+        {
+            "UUID": "509ed41e-ca42-461e-9058-24602256daf9",
+            "Description": "A computer resource object, managed by the I/O system, for storing data (such as images, text, videos, computer programs, or any wide variety of other media).(Citation: Microsoft File Mgmt)",
+            "Name": "File",
+            "Version": "1.0"
+        },
+        {
+            "UUID": "1e26f222-e27e-4bfa-830c-fa4b4f18b5e4",
+            "Description": "Credential material, such as session cookies or tokens, used to authenticate to web applications and services(Citation: Medium Authentication Tokens)(Citation: Auth0 Access Tokens)",
+            "Name": "Web Credential",
+            "Version": "1.0"
+        },
+        {
+            "UUID": "ca1cb239-ff6d-4f64-b9d7-41c8556a8b4f",
+            "Description": "Computer software that provides low-level control for the hardware and device(s) of a host, such as BIOS or UEFI/EFI",
+            "Name": "Firmware",
+            "Version": "1.0"
+        },
+        {
+            "UUID": "0f42a24c-e035-4f93-a91c-5f7076bd8da0",
+            "Description": "A Windows OS hierarchical database that stores much of the information and settings for software programs, hardware devices, user preferences, and operating-system configurations(Citation: Microsoft Registry)",
+            "Name": "Windows Registry",
+            "Version": "1.0"
+        },
+        {
+            "UUID": "3c07684f-3794-4536-8f70-21efe700c0ec",
+            "Description": "A collection of multiple user accounts that share the same access rights to the computer and/or network resources and have common security rights(Citation: Amazon IAM Groups)",
+            "Name": "Group",
+            "Version": "1.0"
+        },
+        {
+            "UUID": "072ec5a7-00ba-466f-9057-69751a22a967",
+            "Description": "A standard unit of virtualized software that packages up code and all its dependencies so the application runs quickly and reliably from one computing environment to another(Citation: Docker Docs Container)",
+            "Name": "Container",
+            "Version": "1.0"
+        },
+        {
+            "UUID": "c000cd5c-bbb3-4606-af6f-6c6d9de0bbe3",
+            "Description": "Data transmitted across a network (ex: Web, DNS, Mail, File, etc.), that is either summarized (ex: Netflow) and/or captured as raw data in an analyzable format (ex: PCAP)",
+            "Name": "Network Traffic",
+            "Version": "1.1"
+        },
+        {
+            "UUID": "b0b6d26f-3747-4444-ac7a-239a6ff80cb5",
+            "Description": "Block object storage hosted on-premise or by third-party providers, typically made available to resources as virtualized hard drives(Citation: Amazon S3)(Citation: Azure Blob Storage)(Citation: Google Cloud Storage)",
+            "Name": "Volume",
+            "Version": "1.0"
+        },
+        {
+            "UUID": "9ec8c0d7-6137-456f-b829-c5f8b96ba054",
+            "Description": "A computer program that operates or controls a particular type of device that is attached to a computer. Provides a software interface to hardware devices, enabling operating systems and other computer programs to access hardware functions without needing to know precise details about the hardware being used(Citation: IOKit Fundamentals)(Citation: Windows Getting Started Drivers)",
+            "Name": "Driver",
+            "Version": "1.0"
+        },
+        {
+            "UUID": "b1ddede4-cafe-4955-ac4c-14b33ac3f647",
+            "Description": "Infrastructure, platforms, or software that are hosted on-premise or by third-party providers, made available to users through network connections and/or APIs(Citation: Amazon AWS)(Citation: Azure Products)",
+            "Name": "Cloud Service",
+            "Version": "1.0"
+        },
+        {
+            "UUID": "ba27545a-9c32-47ea-ba6a-cce50f1b326e",
+            "Description": "A storage resource (typically a folder or drive) made available from one host to others using network protocols, such as Server Message Block (SMB) or Network File System (NFS)(Citation: Microsoft NFS Overview)",
+            "Name": "Network Share",
             "Version": "1.0"
         },
         {
@@ -1063,65 +1027,45 @@
             "Description": "Executable files consisting of one or more shared classes and interfaces, such as portable executable (PE) format binaries/dynamic link libraries (DLL), executable and linkable format (ELF) binaries/shared libraries, and Mach-O format binaries/shared libraries(Citation: Microsoft LoadLibrary)(Citation: Microsoft Module Class)",
             "Name": "Module",
             "Version": "1.0"
+        },
+        {
+            "UUID": "221adcd5-cccf-44df-9be6-ef607a6e1c3c",
+            "Description": "Mechanisms that allow inter-process communication locally or over the network. A named pipe is usually found as a file and processes attach to it(Citation: Microsoft Named Pipes)",
+            "Name": "Named Pipe",
+            "Version": "1.0"
+        },
+        {
+            "UUID": "e8b8ede7-337b-4c0c-8c32-5c7872c1ee22",
+            "Description": "Instances of computer programs that are being executed by at least one thread. Processes have memory space for process executables, loaded modules (DLLs or shared libraries), and allocated memory regions containing everything from user input to application-specific data structures(Citation: Microsoft Processes and Threads)",
+            "Name": "Process",
+            "Version": "1.1"
+        },
+        {
+            "UUID": "45232bc0-e858-440d-aa93-d48c6cf167f0",
+            "Description": "A virtual server environment which runs workloads, hosted on-premise or by third-party cloud providers(Citation: Amazon VM)(Citation: Google VM)",
+            "Name": "Instance",
+            "Version": "1.0"
+        },
+        {
+            "UUID": "29aa4e0e-4a26-4f79-a9bc-1ae66df1c923",
+            "Description": "A digital document, which highlights information such as the owner's identity, used to instill trust in public keys used while encrypting network communications",
+            "Name": "Certificate",
+            "Version": "1.0"
+        },
+        {
+            "UUID": "2ce537a2-3b30-4374-9397-31d6460ec0bc",
+            "Description": "Data object storage infrastructure hosted on-premise or by third-party providers, made available to users through network connections and/or APIs(Citation: Amazon S3)(Citation: Azure Blob Storage)(Citation: Google Cloud Storage)",
+            "Name": "Cloud Storage",
+            "Version": "1.0"
+        },
+        {
+            "UUID": "c3af32ff-65c5-4ea8-912a-fb4a85197239",
+            "Description": "A set of containerized computing resources that are managed together but have separate nodes to execute various tasks and/or applications(Citation: Kube Cluster Admin)(Citation: Kube Cluster Info)",
+            "Name": "Cluster",
+            "Version": "1.0"
         }
     ],
     "MITRE_Data_Component": [
-        {
-            "UUID": "02d090b6-8157-48da-98a2-517f7edd49fc",
-            "Description": "A user requested active directory credentials, such as a ticket or token (ex: Windows EID 4769)",
-            "Name": "Active Directory Credential Request",
-            "Version": "1.0",
-            "Data_Source_ID": "d6188aac-17db-4861-845f-57c369f9b4c8"
-        },
-        {
-            "UUID": "05645013-2fed-4066-8bdc-626b2e201dd4",
-            "Description": "Initial construction of a WMI object, such as a filter, consumer, subscription, binding, or provider (ex: Sysmon EIDs 19-21)",
-            "Name": "WMI Creation",
-            "Version": "1.0",
-            "Data_Source_ID": "2cd6cc81-d86e-4595-a4f0-43f5519f14e6"
-        },
-        {
-            "UUID": "05d5b5b4-ef93-4807-b05f-33d8c5a35bc5",
-            "Description": "Changes made to a group, such as membership, name, or permissions (ex: Windows EID 4728 or 4732, AWS IAM UpdateGroup)",
-            "Name": "Group Modification",
-            "Version": "1.0",
-            "Data_Source_ID": "3c07684f-3794-4536-8f70-21efe700c0ec"
-        },
-        {
-            "UUID": "071a09b1-8945-46fd-8bb7-6bcc89400963",
-            "Description": "Changes made to a virtual machine image, including setting and/or control data (ex: Azure Compute Service Images PATCH)",
-            "Name": "Image Modification",
-            "Version": "1.0",
-            "Data_Source_ID": "1ac0ca69-e07e-4b34-9061-e4588e146c52"
-        },
-        {
-            "UUID": "07688e40-a7fa-4436-937f-1216674341a0",
-            "Description": "An extracted list of pods within a cluster (ex: kubectl get pods)",
-            "Name": "Pod Enumeration",
-            "Version": "1.0",
-            "Data_Source_ID": "06bb1e05-533b-4de3-ae87-9b99910465cf"
-        },
-        {
-            "UUID": "0dcbbf4f-929c-489a-b66b-9b820d3f7f0e",
-            "Description": "Logged network traffic in response to a scan showing both protocol header and body values",
-            "Name": "Response Content",
-            "Version": "1.0",
-            "Data_Source_ID": "38fe306c-bdec-4f3d-8521-b72dd32dbd17"
-        },
-        {
-            "UUID": "0f72bf50-35b3-419d-ab95-70f9b6a818dd",
-            "Description": "Contextual data about a cloud volume and activity around it, such as id, type, state, and size",
-            "Name": "Volume Metadata",
-            "Version": "1.0",
-            "Data_Source_ID": "b0b6d26f-3747-4444-ac7a-239a6ff80cb5"
-        },
-        {
-            "UUID": "1067aa74-5796-4d9b-b4f1-a4c9eb6fd9da",
-            "Description": "Contextual data about an Internet-facing resource gathered from a scan, such as running services or ports",
-            "Name": "Response Metadata",
-            "Version": "1.0",
-            "Data_Source_ID": "38fe306c-bdec-4f3d-8521-b72dd32dbd17"
-        },
         {
             "UUID": "1177a4c5-31c8-400c-8544-9071166afa0e",
             "Description": "Removal of a Registry Key (ex: Windows EID 4658 or Sysmon EID 12)",
@@ -1130,620 +1074,11 @@
             "Data_Source_ID": "0f42a24c-e035-4f93-a91c-5f7076bd8da0"
         },
         {
-            "UUID": "1361e324-b594-4c0e-a517-20cee32b8d7f",
-            "Description": "Deactivation or stoppage of an instance (ex: instance.stop within GCP Audit Logs)",
-            "Name": "Instance Stop",
-            "Version": "1.0",
-            "Data_Source_ID": "45232bc0-e858-440d-aa93-d48c6cf167f0"
-        },
-        {
-            "UUID": "167b48f7-76e9-4fcb-9e8d-7121f7bf56c3",
-            "Description": "Code, strings, and other signatures that compromise a malicious payload",
-            "Name": "Malware Content",
-            "Version": "1.1",
-            "Data_Source_ID": "b86d9b40-5fbe-4ef1-8dc3-263eff26f495"
-        },
-        {
-            "UUID": "16e07530-764b-4d83-bae0-cdbfc31bf21d",
-            "Description": "Removal of a snapshot (ex: AWS delete-snapshot)",
-            "Name": "Snapshot Deletion",
-            "Version": "1.0",
-            "Data_Source_ID": "6d7de3b7-283d-48f9-909c-60d123d9d768"
-        },
-        {
-            "UUID": "181a9f8c-c780-4f1f-91a8-edb770e904ba",
-            "Description": "Initial construction of a network connection, such as capturing socket information with a source/destination IP and port(s) (ex: Windows EID 5156, Sysmon EID 3, or Zeek conn.log)",
-            "Name": "Network Connection Creation",
-            "Version": "1.1",
-            "Data_Source_ID": "c000cd5c-bbb3-4606-af6f-6c6d9de0bbe3"
-        },
-        {
-            "UUID": "1887a270-576a-4049-84de-ef746b2572d6",
-            "Description": "Opening of a process by another process, typically to read memory of the target process (ex: Sysmon EID 10)",
-            "Name": "Process Access",
-            "Version": "1.0",
-            "Data_Source_ID": "e8b8ede7-337b-4c0c-8c32-5c7872c1ee22"
-        },
-        {
-            "UUID": "18b236d8-7224-488f-9d2f-50076a0f653a",
-            "Description": "Initial construction of a new active directory object (ex: Windows EID 5137)",
-            "Name": "Active Directory Object Creation",
-            "Version": "1.0",
-            "Data_Source_ID": "d6188aac-17db-4861-845f-57c369f9b4c8"
-        },
-        {
-            "UUID": "1dad5aa4-4bb5-45e4-9e42-55d40003cfa6",
-            "Description": "Queried or logged information highlighting current and expired digital certificates (ex: Certificate transparency)",
-            "Name": "Certificate Registration",
-            "Version": "1.0",
-            "Data_Source_ID": "29aa4e0e-4a26-4f79-a9bc-1ae66df1c923"
-        },
-        {
-            "UUID": "235b7491-2d2b-4617-9a52-3c0783680f71",
-            "Description": "Opening a file, which makes the file contents available to the requestor (ex: Windows EID 4663)",
-            "Name": "File Access",
-            "Version": "1.0",
-            "Data_Source_ID": "509ed41e-ca42-461e-9058-24602256daf9"
-        },
-        {
-            "UUID": "23e4ee78-26f3-4fcf-ba43-ab953962f96c",
-            "Description": "An object file that contains code to extend the running kernel of an OS, typically used to add support for new hardware (as device drivers) and/or filesystems, or for adding system calls",
-            "Name": "Kernel Module Load",
-            "Version": "1.0",
-            "Data_Source_ID": "8765a845-dea1-4cd1-a56f-f54939b7ab9e"
-        },
-        {
-            "UUID": "2a80d95f-08c4-48e3-833e-151ef19d90f5",
-            "Description": "An extracted list of instances within a cloud environment (ex: instance.list within GCP Audit Logs)",
-            "Name": "Instance Enumeration",
-            "Version": "1.0",
-            "Data_Source_ID": "45232bc0-e858-440d-aa93-d48c6cf167f0"
-        },
-        {
-            "UUID": "2b3bfe19-d59a-460d-93bb-2f546adc2d2c",
-            "Description": "Initial construction of a new file (ex: Sysmon EID 11)",
-            "Name": "File Creation",
-            "Version": "1.0",
-            "Data_Source_ID": "509ed41e-ca42-461e-9058-24602256daf9"
-        },
-        {
-            "UUID": "2e521444-7295-4dec-96c1-7595b2df7811",
-            "Description": "Queried domain name system (DNS) registry data highlighting current domain to IP address resolutions (ex: dig/nslookup queries)",
-            "Name": "Active DNS",
-            "Version": "1.0",
-            "Data_Source_ID": "dd75f457-8dc0-4a24-9ae5-4b61c33af866"
-        },
-        {
-            "UUID": "3551476e-14f5-4e48-a518-e82135329e03",
-            "Description": "Attaching a driver to either user or kernel-mode of a system (ex: Sysmon EID 6)",
-            "Name": "Driver Load",
-            "Version": "1.0",
-            "Data_Source_ID": "9ec8c0d7-6137-456f-b829-c5f8b96ba054"
-        },
-        {
-            "UUID": "3772e279-27d6-477a-9fe3-c6beb363594c",
-            "Description": "Logged network traffic data showing both protocol header and body values (ex: PCAP)",
-            "Name": "Network Traffic Content",
-            "Version": "1.0",
-            "Data_Source_ID": "c000cd5c-bbb3-4606-af6f-6c6d9de0bbe3"
-        },
-        {
-            "UUID": "39b9db72-8b48-4595-a18d-db5bbba3091b",
-            "Description": "Contextual data about a logon session, such as username, logon type, access tokens (security context, user SIDs, logon identifiers, and logon SID), and any activity associated within it",
-            "Name": "Logon Session Metadata",
-            "Version": "1.0",
-            "Data_Source_ID": "4358c631-e253-4557-86df-f687d0ef9891"
-        },
-        {
-            "UUID": "3acecdde-c327-4498-9bb8-33a2e63c6c57",
-            "Description": "Removal of a a cloud volume (ex: AWS delete-volume)",
-            "Name": "Volume Deletion",
-            "Version": "1.0",
-            "Data_Source_ID": "b0b6d26f-3747-4444-ac7a-239a6ff80cb5"
-        },
-        {
-            "UUID": "3d20385b-24ef-40e1-9f56-f39750379077",
-            "Description": "The initial construction of an executable managed by the OS, that may involve one or more tasks or threads. (e.g. Win EID 4688, Sysmon EID 1, cmd.exe > net use, etc.)",
-            "Name": "Process Creation",
-            "Version": "1.1",
-            "Data_Source_ID": "e8b8ede7-337b-4c0c-8c32-5c7872c1ee22"
-        },
-        {
-            "UUID": "3d6e6b3b-4aa8-40e1-8c47-91db0f313d9f",
-            "Description": "Initial construction of a drive letter or mount point to a data storage device",
-            "Name": "Drive Creation",
-            "Version": "1.0",
-            "Data_Source_ID": "61bbbf27-f7c3-46ba-a6bc-48ae76928065"
-        },
-        {
-            "UUID": "3da222e6-53f3-451c-a239-0b405c009432",
-            "Description": "Initial construction of a new snapshot (ex: AWS create-snapshot)",
-            "Name": "Snapshot Creation",
-            "Version": "1.0",
-            "Data_Source_ID": "6d7de3b7-283d-48f9-909c-60d123d9d768"
-        },
-        {
-            "UUID": "45977f14-1bcc-4ec4-ac14-a30fd3a11f44",
-            "Description": "Changes made to cloud storage infrastructure, including its settings and/or data (ex: AWS S3 PutObject or PutObjectAcl)",
-            "Name": "Cloud Storage Modification",
-            "Version": "1.0",
-            "Data_Source_ID": "2ce537a2-3b30-4374-9397-31d6460ec0bc"
-        },
-        {
-            "UUID": "45d0ff14-b9c4-41f5-8603-156657c20b75",
-            "Description": "Changes made to an instance, including its settings and/or control data (ex: instance.addResourcePolicies or instances.setMetadata within GCP Audit Logs)",
-            "Name": "Instance Modification",
-            "Version": "1.0",
-            "Data_Source_ID": "45232bc0-e858-440d-aa93-d48c6cf167f0"
-        },
-        {
-            "UUID": "45fd904d-6eb0-4b50-8478-a961f09f898b",
-            "Description": "Contextual data about an instance and activity around it such as name, type, or status",
-            "Name": "Instance Metadata",
-            "Version": "1.0",
-            "Data_Source_ID": "45232bc0-e858-440d-aa93-d48c6cf167f0"
-        },
-        {
-            "UUID": "4c41e296-b8d2-4a37-b789-eb565c87c00c",
-            "Description": "Removal of cloud storage infrastructure (ex: AWS S3 DeleteBucket)",
-            "Name": "Cloud Storage Deletion",
-            "Version": "1.0",
-            "Data_Source_ID": "2ce537a2-3b30-4374-9397-31d6460ec0bc"
-        },
-        {
-            "UUID": "4dcd8ba3-2075-4f8b-941e-39884ffaac08",
-            "Description": "Changes made to a drive letter or mount point of a data storage device",
-            "Name": "Drive Modification",
-            "Version": "1.0",
-            "Data_Source_ID": "61bbbf27-f7c3-46ba-a6bc-48ae76928065"
-        },
-        {
-            "UUID": "5263cb33-08cc-4a68-820f-004e1e400d76",
-            "Description": "Initial construction of a new pod (ex: kubectl apply|run)",
-            "Name": "Pod Creation",
-            "Version": "1.0",
-            "Data_Source_ID": "06bb1e05-533b-4de3-ae87-9b99910465cf"
-        },
-        {
-            "UUID": "5297a638-1382-4f0c-8472-0d21830bf705",
-            "Description": "Initial construction of a new service/daemon (ex: Windows EID 4697 or /var/log daemon logs)",
-            "Name": "Service Creation",
-            "Version": "1.0",
-            "Data_Source_ID": "d710099e-df94-4be4-bf85-cabd30e912bb"
-        },
-        {
-            "UUID": "58ef998c-f3bf-4985-b487-b1005f5c05d1",
-            "Description": "Opening of a cloud storage infrastructure, typically to collect/read its value (ex: AWS S3 GetObject)",
-            "Name": "Cloud Storage Access",
-            "Version": "1.0",
-            "Data_Source_ID": "2ce537a2-3b30-4374-9397-31d6460ec0bc"
-        },
-        {
-            "UUID": "59ec10d9-546b-4b8e-bccb-fa85f71e5055",
-            "Description": "Initial construction of new cloud storage infrastructure (ex: AWS S3 CreateBucket)",
-            "Name": "Cloud Storage Creation",
-            "Version": "1.0",
-            "Data_Source_ID": "2ce537a2-3b30-4374-9397-31d6460ec0bc"
-        },
-        {
-            "UUID": "5b8b466b-2c81-4fe7-946f-d677a74ae3db",
-            "Description": "Changes made to an active directory object (ex: Windows EID 5163 or 5136)",
-            "Name": "Active Directory Object Modification",
-            "Version": "1.0",
-            "Data_Source_ID": "d6188aac-17db-4861-845f-57c369f9b4c8"
-        },
-        {
-            "UUID": "5c6de881-bc70-4070-855a-7a9631a407f7",
-            "Description": "Opening of an active directory object, typically to collect/read its value (ex: Windows EID 4661)",
-            "Name": "Active Directory Object Access",
-            "Version": "1.0",
-            "Data_Source_ID": "d6188aac-17db-4861-845f-57c369f9b4c8"
-        },
-        {
-            "UUID": "5f7c9def-0ddf-423b-b1f8-fb2ddeed0ce3",
-            "Description": "Initial construction of new web credential material (ex: Windows EID 1200 or 4769)",
-            "Name": "Web Credential Creation",
-            "Version": "1.0",
-            "Data_Source_ID": "1e26f222-e27e-4bfa-830c-fa4b4f18b5e4"
-        },
-        {
-            "UUID": "5fe82895-28e5-4aac-845e-dc886b63be2e",
-            "Description": "Activation or invocation of a container (ex: docker start or docker restart)",
-            "Name": "Container Start",
-            "Version": "1.0",
-            "Data_Source_ID": "072ec5a7-00ba-466f-9057-69751a22a967"
-        },
-        {
-            "UUID": "61f1d40e-f3d0-4cc6-aa2d-937b6204194f",
-            "Description": "Exit of a running process (ex: Sysmon EID 5 or Windows EID 4689)",
-            "Name": "Process Termination",
-            "Version": "1.0",
-            "Data_Source_ID": "e8b8ede7-337b-4c0c-8c32-5c7872c1ee22"
-        },
-        {
-            "UUID": "639e87f3-acb6-448a-9645-258f20da4bc5",
-            "Description": "Contextual data about a file, which may include information such as name, the content (ex: signature, headers, or data/media), user/ower, permissions, etc.",
-            "Name": "File Metadata",
-            "Version": "1.0",
-            "Data_Source_ID": "509ed41e-ca42-461e-9058-24602256daf9"
-        },
-        {
-            "UUID": "66531bc6-a509-4868-8314-4d599e91d222",
-            "Description": "Changes made to a service/daemon, such as changes to name, description, and/or start type (ex: Windows EID 7040 or /var/log daemon logs)",
-            "Name": "Service Modification",
-            "Version": "1.0",
-            "Data_Source_ID": "d710099e-df94-4be4-bf85-cabd30e912bb"
-        },
-        {
-            "UUID": "672b2ebd-4310-4efe-bf03-7ab005298a74",
-            "Description": "Changes made to a pod, including its settings and/or control data (ex: kubectl set|patch|edit)",
-            "Name": "Pod Modification",
-            "Version": "1.0",
-            "Data_Source_ID": "06bb1e05-533b-4de3-ae87-9b99910465cf"
-        },
-        {
-            "UUID": "685f917a-e95e-4ba0-ade1-c7d354dae6e0",
-            "Description": "The execution of a line of text, potentially with arguments, created from program code (e.g. a cmdlet executed via powershell.exe, interactive commands like >dir, shell executions, etc. )",
-            "Name": "Command Execution",
-            "Version": "1.1",
-            "Data_Source_ID": "73691708-ffb5-4e29-906d-f485f6fa7089"
-        },
-        {
-            "UUID": "73ff2dcc-24b1-4368-b9dc-706dd9e68354",
-            "Description": "Opening of a data storage device with an assigned drive letter or mount point",
-            "Name": "Drive Access",
-            "Version": "1.0",
-            "Data_Source_ID": "61bbbf27-f7c3-46ba-a6bc-48ae76928065"
-        },
-        {
-            "UUID": "746f095a-f84c-4ccc-90a5-c7caa5c100a2",
-            "Description": "Contextual data about a firewall and activity around it such as name, policy, or status",
-            "Name": "Firewall Metadata",
-            "Version": "1.0",
-            "Data_Source_ID": "f2f4f4bd-3455-400f-b2ee-104004df0f5b"
-        },
-        {
-            "UUID": "74fa567d-bc90-425c-8a41-3c703abb221c",
-            "Description": "Contextual data about a service/daemon, which may include information such as name, service executable, start type, etc.",
-            "Name": "Service Metadata",
-            "Version": "1.0",
-            "Data_Source_ID": "d710099e-df94-4be4-bf85-cabd30e912bb"
-        },
-        {
-            "UUID": "7561ed50-16cb-4826-82c7-c1ddca61785e",
-            "Description": "Removal of an instance (ex: instance.delete within GCP Audit Logs)",
-            "Name": "Instance Deletion",
-            "Version": "1.0",
-            "Data_Source_ID": "45232bc0-e858-440d-aa93-d48c6cf167f0"
-        },
-        {
-            "UUID": "7b375092-3a61-448d-900a-77c9a4bde4dc",
-            "Description": "Contextual data about a scheduled job, which may include information such as name, timing, command(s), etc.",
-            "Name": "Scheduled Job Metadata",
-            "Version": "1.0",
-            "Data_Source_ID": "c9ddfb51-eb45-4e22-b614-44ac1caa7883"
-        },
-        {
-            "UUID": "7f70fae7-a68d-4730-a83a-f260b9606129",
-            "Description": "Initial construction of a new Registry Key (ex: Windows EID 4656 or Sysmon EID 12)",
-            "Name": "Windows Registry Key Creation",
-            "Version": "1.0",
-            "Data_Source_ID": "0f42a24c-e035-4f93-a91c-5f7076bd8da0"
-        },
-        {
-            "UUID": "84572de3-9583-4c73-aabd-06ea88123dd8",
-            "Description": "Changes made to a file, or its access permissions and attributes, typically to alter the contents of the targeted file (ex: Windows EID 4670 or Sysmon EID 2)",
-            "Name": "File Modification",
-            "Version": "1.0",
-            "Data_Source_ID": "509ed41e-ca42-461e-9058-24602256daf9"
-        },
-        {
-            "UUID": "85a533a4-5fa4-4dba-b45d-f0717bedd6e6",
-            "Description": "Logging, messaging, and other artifacts highlighting the health of host sensors (ex: metrics, errors, and/or exceptions from logging applications)",
-            "Name": "Host Status",
-            "Version": "1.1",
-            "Data_Source_ID": "4523e7f3-8de2-4078-96f8-1227eb537159"
-        },
-        {
-            "UUID": "8b4ca854-ac08-47da-b24f-601b28a39aff",
-            "Description": "Removal of a virtual machine image (ex: Azure Compute Service Images DELETE)",
-            "Name": "Image Deletion",
-            "Version": "1.0",
-            "Data_Source_ID": "1ac0ca69-e07e-4b34-9061-e4588e146c52"
-        },
-        {
-            "UUID": "8bc66f94-54a9-4be4-bdd1-fe90df643774",
-            "Description": "Contextual data about a snapshot, which may include information such as ID, type, and status",
-            "Name": "Snapshot Metadata",
-            "Version": "1.0",
-            "Data_Source_ID": "6d7de3b7-283d-48f9-909c-60d123d9d768"
-        },
-        {
-            "UUID": "8c826308-2760-492f-9e36-4f0f7e23bcac",
-            "Description": "An extracted list of cloud services (ex: AWS ECS ListServices)",
-            "Name": "Cloud Service Enumeration",
-            "Version": "1.0",
-            "Data_Source_ID": "b1ddede4-cafe-4955-ac4c-14b33ac3f647"
-        },
-        {
-            "UUID": "8d8c7cac-94cf-4726-8989-cab33851168c",
-            "Description": "Contextual data about a group which describes group and activity around it, such as name, permissions, or user accounts within the group",
-            "Name": "Group Metadata",
-            "Version": "1.0",
-            "Data_Source_ID": "3c07684f-3794-4536-8f70-21efe700c0ec"
-        },
-        {
-            "UUID": "8e44412e-3238-4d64-8878-4f11e27784fe",
-            "Description": "An extracted list of available groups and/or their associated settings (ex: AWS list-groups)",
-            "Name": "Group Enumeration",
-            "Version": "1.0",
-            "Data_Source_ID": "3c07684f-3794-4536-8f70-21efe700c0ec"
-        },
-        {
-            "UUID": "8fb2f315-1aca-4cef-ae0d-8105e1f95985",
-            "Description": "Established, compromised, or otherwise acquired social media personas",
-            "Name": "Social Media",
-            "Version": "1.0",
-            "Data_Source_ID": "3bef4799-906c-409c-ac00-3fb7a1e352e6"
-        },
-        {
-            "UUID": "9085a576-636a-455b-91d2-c2921bbe6d1d",
-            "Description": "Removal of an active directory object (ex: Windows EID 5141)",
-            "Name": "Active Directory Object Deletion",
-            "Version": "1.0",
-            "Data_Source_ID": "d6188aac-17db-4861-845f-57c369f9b4c8"
-        },
-        {
-            "UUID": "91b3ed33-d1b5-4c4b-a896-76c55eb3cfd8",
-            "Description": "An extracted list of containers (ex: docker ps)",
-            "Name": "Container Enumeration",
-            "Version": "1.0",
-            "Data_Source_ID": "072ec5a7-00ba-466f-9057-69751a22a967"
-        },
-        {
-            "UUID": "93a6e38c-02a5-44d8-9035-b2e08459f31f",
-            "Description": "Contextual data about a malicious payload, such as compilation times, file hashes, as well as watermarks or other identifiable configuration information",
-            "Name": "Malware Metadata",
-            "Version": "1.1",
-            "Data_Source_ID": "b86d9b40-5fbe-4ef1-8dc3-263eff26f495"
-        },
-        {
-            "UUID": "9bde2f9d-a695-4344-bfac-f2dce13d121e",
-            "Description": "Initial construction of a WMI object, such as a filter, consumer, subscription, binding, or provider (ex: Sysmon EIDs 19-21)",
-            "Name": "OS API Execution",
-            "Version": "1.0",
-            "Data_Source_ID": "e8b8ede7-337b-4c0c-8c32-5c7872c1ee22"
-        },
-        {
-            "UUID": "9c2fa0ae-7abc-485a-97f6-699e3b6cf9fa",
-            "Description": "Logging, messaging, and other artifacts provided by third-party services (ex: metrics, errors, and/or alerts from mail/web applications)",
-            "Name": "Application Log Content",
-            "Version": "1.0",
-            "Data_Source_ID": "40269753-26bd-437b-986e-159c66dec5e4"
-        },
-        {
-            "UUID": "9ce98c86-8d30-4043-ba54-0784d478d0b5",
-            "Description": "Initial construction of a successful new user logon following an authentication attempt. (e.g. Windows EID 4624, /var/log/utmp, or /var/log/wmtp)",
-            "Name": "Logon Session Creation",
-            "Version": "1.1",
-            "Data_Source_ID": "4358c631-e253-4557-86df-f687d0ef9891"
-        },
-        {
-            "UUID": "9f387817-df83-432a-b56b-a8fb7f71eedd",
-            "Description": "The execution of a text file that contains code via the interpreter (e.g. Powershell, WMI, Windows EID 4104, etc.)",
-            "Name": "Script Execution",
-            "Version": "1.1",
-            "Data_Source_ID": "12c1e727-7fa4-49b6-af81-366ed2ce231e"
-        },
-        {
-            "UUID": "a5ae90ca-0c4b-481c-959f-0eb18a7ff953",
-            "Description": "Initial construction of a new container (ex: docker create <container_name>)",
-            "Name": "Container Creation",
-            "Version": "1.0",
-            "Data_Source_ID": "072ec5a7-00ba-466f-9057-69751a22a967"
-        },
-        {
-            "UUID": "a7f22107-02e5-4982-9067-6625d4a1765a",
-            "Description": "Summarized network packet data, with metrics, such as protocol headers and volume (ex: Netflow or Zeek http.log)",
-            "Name": "Network Traffic Flow",
-            "Version": "1.0",
-            "Data_Source_ID": "c000cd5c-bbb3-4606-af6f-6c6d9de0bbe3"
-        },
-        {
-            "UUID": "a953ca55-921a-44f7-9b8d-3d40141aa17e",
-            "Description": "An attempt by a user to gain access to a network or computing resource, often by providing credentials (ex: Windows EID 4776 or /var/log/auth.log)",
-            "Name": "User Account Authentication",
-            "Version": "1.1",
-            "Data_Source_ID": "0b4f86ed-f4ab-46a3-8ed1-175be1974da6"
-        },
-        {
-            "UUID": "b008766d-f34f-4ded-b712-659f59aaed6e",
-            "Description": "Initial construction of a virtual machine image (ex: Azure Compute Service Images PUT)",
-            "Name": "Image Creation",
-            "Version": "1.0",
-            "Data_Source_ID": "1ac0ca69-e07e-4b34-9061-e4588e146c52"
-        },
-        {
-            "UUID": "b33d36e3-d7ea-4895-8eed-19a08a8f7c4f",
-            "Description": "Contextual data about a cloud service and activity around it such as name, type, or purpose/function",
-            "Name": "Cloud Service Metadata",
-            "Version": "1.0",
-            "Data_Source_ID": "b1ddede4-cafe-4955-ac4c-14b33ac3f647"
-        },
-        {
-            "UUID": "b597a220-6510-4397-b0d8-342cd2c58827",
-            "Description": "Contextual data about a virtual machine image such as name, resource group, state, or type",
-            "Name": "Image Metadata",
-            "Version": "1.0",
-            "Data_Source_ID": "1ac0ca69-e07e-4b34-9061-e4588e146c52"
-        },
-        {
-            "UUID": "b5b0e8ae-7436-4951-950a-7b83c4dd3f2c",
-            "Description": "Initial construction of a new instance (ex: instance.insert within GCP Audit Logs)",
-            "Name": "Instance Creation",
-            "Version": "1.0",
-            "Data_Source_ID": "45232bc0-e858-440d-aa93-d48c6cf167f0"
-        },
-        {
-            "UUID": "b5d0492b-cda4-421c-8e51-ed2b8d85c5d0",
-            "Description": "Contextual data about an account, which may include a username, user ID, environmental data, etc.",
-            "Name": "User Account Metadata",
-            "Version": "1.0",
-            "Data_Source_ID": "0b4f86ed-f4ab-46a3-8ed1-175be1974da6"
-        },
-        {
-            "UUID": "b9a1578e-8653-4103-be23-cb52e0b1816e",
-            "Description": "Contextual data about a named pipe on a system, including pipe name and creating process (ex: Sysmon EIDs 17-18)",
-            "Name": "Named Pipe Metadata",
-            "Version": "1.0",
-            "Data_Source_ID": "221adcd5-cccf-44df-9be6-ef607a6e1c3c"
-        },
-        {
-            "UUID": "b9d031bb-d150-4fc6-8025-688201bf3ffd",
-            "Description": "Changes made to firmware, including its settings and/or data, such as MBR (Master Boot Record) and VBR (Volume Boot Record)",
-            "Name": "Firmware Modification",
-            "Version": "1.0",
-            "Data_Source_ID": "ca1cb239-ff6d-4f64-b9d7-41c8556a8b4f"
-        },
-        {
-            "UUID": "bf91faa8-0049-4870-810a-4df55e0b77ee",
-            "Description": "An extracted list of available firewalls and/or their associated settings/rules (ex: Azure Network Firewall CLI Show commands)",
-            "Name": "Firewall Enumeration",
-            "Version": "1.0",
-            "Data_Source_ID": "f2f4f4bd-3455-400f-b2ee-104004df0f5b"
-        },
-        {
-            "UUID": "c0a4a086-cc20-4e1e-b7cb-29d99dfa3fb1",
-            "Description": "Attaching a module into the memory of a process/program, typically to access shared resources/features provided by the module (ex: Sysmon EID 7)",
-            "Name": "Module Load",
-            "Version": "1.0",
-            "Data_Source_ID": "f424e4b4-a8a4-4c58-a4ae-4f53bfd08563"
-        },
-        {
-            "UUID": "c0edd522-0aef-46b3-8efa-2bd334ce4242",
-            "Description": "Contextual data about a pod and activity around it such as name, ID, namespace, or status",
-            "Name": "Pod Metadata",
-            "Version": "1.0",
-            "Data_Source_ID": "06bb1e05-533b-4de3-ae87-9b99910465cf"
-        },
-        {
-            "UUID": "c97d0171-f6e0-4415-85ff-4082fdb8c72a",
-            "Description": "Deactivation or stoppage of a cloud service (ex: Write/Delete entries within Azure Firewall Activity Logs)",
-            "Name": "Firewall Disable",
-            "Version": "1.0",
-            "Data_Source_ID": "f2f4f4bd-3455-400f-b2ee-104004df0f5b"
-        },
-        {
-            "UUID": "cc150ad8-ecfa-4340-9aaa-d21165873bd4",
-            "Description": "Logged domain name system (DNS) data highlighting timelines of domain to IP address resolutions (ex: passive DNS)",
-            "Name": "Passive DNS",
-            "Version": "1.0",
-            "Data_Source_ID": "dd75f457-8dc0-4a24-9ae5-4b61c33af866"
-        },
-        {
-            "UUID": "d27b0089-2c39-4b6c-84ff-303e48657e77",
-            "Description": "Changes made to an account, such as permissions and/or membership in specific groups (ex: Windows EID 4738 or /var/log access/authentication logs)",
-            "Name": "User Account Modification",
-            "Version": "1.0",
-            "Data_Source_ID": "0b4f86ed-f4ab-46a3-8ed1-175be1974da6"
-        },
-        {
-            "UUID": "d2ff4b56-8351-4ed8-b0fb-d8605366005f",
-            "Description": "Changes made to a firewall rule, typically to allow/block specific network traffic (ex: Windows EID 4950 or Write/Delete entries within Azure Firewall Rule Collection Activity Logs)",
-            "Name": "Firewall Rule Modification",
-            "Version": "1.0",
-            "Data_Source_ID": "f2f4f4bd-3455-400f-b2ee-104004df0f5b"
-        },
-        {
-            "UUID": "d46272ce-a0fe-4256-855e-738de7bb63ee",
-            "Description": "Changes made to a cloud volume, including its settings and control data (ex: AWS modify-volume)",
-            "Name": "Volume Modification",
-            "Version": "1.0",
-            "Data_Source_ID": "b0b6d26f-3747-4444-ac7a-239a6ff80cb5"
-        },
-        {
-            "UUID": "d5fca4e4-e47a-487b-873f-3d22f8865e96",
-            "Description": "Changes made to a process, or its contents, typically to write and/or execute code in the memory of the target process (ex: Sysmon EID 8)",
-            "Name": "Process Modification",
-            "Version": "1.0",
-            "Data_Source_ID": "e8b8ede7-337b-4c0c-8c32-5c7872c1ee22"
-        },
-        {
-            "UUID": "d6257b8e-869c-41c0-8731-fdca40858a91",
-            "Description": "Removal of an account (ex: Windows EID 4726 or /var/log access/authentication logs)",
-            "Name": "User Account Deletion",
-            "Version": "1.0",
-            "Data_Source_ID": "0b4f86ed-f4ab-46a3-8ed1-175be1974da6"
-        },
-        {
-            "UUID": "da85d358-741a-410d-9433-20d6269a6170",
-            "Description": "Changes made to a Registry Key and/or Key value (ex: Windows EID 4657 or Sysmon EID 13|14)",
-            "Name": "Windows Registry Key Modification",
-            "Version": "1.0",
-            "Data_Source_ID": "0f42a24c-e035-4f93-a91c-5f7076bd8da0"
-        },
-        {
-            "UUID": "dad75cc7-5bae-4175-adb4-ca1962d8650e",
-            "Description": "Initial construction of a cloud volume (ex: AWS create-volume)",
-            "Name": "Volume Creation",
-            "Version": "1.0",
-            "Data_Source_ID": "b0b6d26f-3747-4444-ac7a-239a6ff80cb5"
-        },
-        {
-            "UUID": "deb22295-7e37-4a3b-ac6f-c86666fbe63d",
-            "Description": "Initial construction of a new account (ex: Windows EID 4720 or /etc/passwd logs)",
-            "Name": "User Account Creation",
-            "Version": "1.0",
-            "Data_Source_ID": "0b4f86ed-f4ab-46a3-8ed1-175be1974da6"
-        },
-        {
-            "UUID": "df508a43-65f5-453f-8b8f-4b5d64e60a21",
-            "Description": "Contextual data about a container and activity around it such as name, ID, image, or status",
-            "Name": "Container Metadata",
-            "Version": "1.0",
-            "Data_Source_ID": "072ec5a7-00ba-466f-9057-69751a22a967"
-        },
-        {
-            "UUID": "e214eb6d-de8f-4154-9015-6d47915fbed1",
-            "Description": "Contextual data about cloud storage infrastructure and activity around it such as name, size, or owner",
-            "Name": "Cloud Storage Metadata",
-            "Version": "1.0",
-            "Data_Source_ID": "2ce537a2-3b30-4374-9397-31d6460ec0bc"
-        },
-        {
-            "UUID": "e52d89f9-1710-4708-88a5-cbef77c4cd5e",
-            "Description": "Changes made to a cloud service, including its settings and/or data (ex: AWS CloudTrail DeleteTrail or DeleteConfigRule)",
-            "Name": "Cloud Service Modification",
-            "Version": "1.0",
-            "Data_Source_ID": "b1ddede4-cafe-4955-ac4c-14b33ac3f647"
-        },
-        {
-            "UUID": "e905dad2-00d6-477c-97e8-800427abd0e8",
-            "Description": "Removal of a file (ex: Sysmon EID 23, macOS ESF EID ES_EVENT_TYPE_AUTH_UNLINK, or Linux commands auditd unlink, rename, rmdir, unlinked, or renameat rules)",
-            "Name": "File Deletion",
-            "Version": "1.0",
-            "Data_Source_ID": "509ed41e-ca42-461e-9058-24602256daf9"
-        },
-        {
-            "UUID": "ec0612c5-2644-4c50-bcac-82586974fedd",
-            "Description": "Deactivation or stoppage of a cloud service (ex: AWS Cloudtrail StopLogging)",
-            "Name": "Cloud Service Disable",
-            "Version": "1.0",
-            "Data_Source_ID": "b1ddede4-cafe-4955-ac4c-14b33ac3f647"
-        },
-        {
-            "UUID": "ec225357-8197-47a4-a9cd-57741d592877",
-            "Description": "An extracted list of available volumes within a cloud environment (ex: AWS describe-volumes)",
-            "Name": "Volume Enumeration",
-            "Version": "1.0",
-            "Data_Source_ID": "b0b6d26f-3747-4444-ac7a-239a6ff80cb5"
-        },
-        {
-            "UUID": "ed0dd8aa-1677-4551-bb7d-8da767617e1b",
-            "Description": "Opening a Registry Key, typically to read the associated value (ex: Windows EID 4656)",
-            "Name": "Windows Registry Key Access",
-            "Version": "1.0",
-            "Data_Source_ID": "0f42a24c-e035-4f93-a91c-5f7076bd8da0"
+            "UUID": "fafaa705-ec08-4405-ac62-288c252e520d",
+            "Description": "Contextual data about a cluster and activity around it such as name, namespace, age, or status",
+            "Name": "Cluster Metadata",
+            "Version": "1.0",
+            "Data_Source_ID": "c3af32ff-65c5-4ea8-912a-fb4a85197239"
         },
         {
             "UUID": "ee575f4a-2d4f-48f6-b18b-89067760adc1",
@@ -1753,6 +1088,76 @@
             "Data_Source_ID": "e8b8ede7-337b-4c0c-8c32-5c7872c1ee22"
         },
         {
+            "UUID": "cc150ad8-ecfa-4340-9aaa-d21165873bd4",
+            "Description": "Logged domain name system (DNS) data highlighting timelines of domain to IP address resolutions (ex: passive DNS)",
+            "Name": "Passive DNS",
+            "Version": "1.0",
+            "Data_Source_ID": "dd75f457-8dc0-4a24-9ae5-4b61c33af866"
+        },
+        {
+            "UUID": "deb22295-7e37-4a3b-ac6f-c86666fbe63d",
+            "Description": "Initial construction of a new account (ex: Windows EID 4720 or /etc/passwd logs)",
+            "Name": "User Account Creation",
+            "Version": "1.0",
+            "Data_Source_ID": "0b4f86ed-f4ab-46a3-8ed1-175be1974da6"
+        },
+        {
+            "UUID": "9ce98c86-8d30-4043-ba54-0784d478d0b5",
+            "Description": "Initial construction of a successful new user logon following an authentication attempt. (e.g. Windows EID 4624, /var/log/utmp, or /var/log/wmtp)",
+            "Name": "Logon Session Creation",
+            "Version": "1.1",
+            "Data_Source_ID": "4358c631-e253-4557-86df-f687d0ef9891"
+        },
+        {
+            "UUID": "b33d36e3-d7ea-4895-8eed-19a08a8f7c4f",
+            "Description": "Contextual data about a cloud service and activity around it such as name, type, or purpose/function",
+            "Name": "Cloud Service Metadata",
+            "Version": "1.0",
+            "Data_Source_ID": "b1ddede4-cafe-4955-ac4c-14b33ac3f647"
+        },
+        {
+            "UUID": "85a533a4-5fa4-4dba-b45d-f0717bedd6e6",
+            "Description": "Logging, messaging, and other artifacts highlighting the health of host sensors (ex: metrics, errors, and/or exceptions from logging applications)",
+            "Name": "Host Status",
+            "Version": "1.1",
+            "Data_Source_ID": "4523e7f3-8de2-4078-96f8-1227eb537159"
+        },
+        {
+            "UUID": "071a09b1-8945-46fd-8bb7-6bcc89400963",
+            "Description": "Changes made to a virtual machine image, including setting and/or control data (ex: Azure Compute Service Images PATCH)",
+            "Name": "Image Modification",
+            "Version": "1.0",
+            "Data_Source_ID": "1ac0ca69-e07e-4b34-9061-e4588e146c52"
+        },
+        {
+            "UUID": "74fa567d-bc90-425c-8a41-3c703abb221c",
+            "Description": "Contextual data about a service/daemon, which may include information such as name, service executable, start type, etc.",
+            "Name": "Service Metadata",
+            "Version": "1.0",
+            "Data_Source_ID": "d710099e-df94-4be4-bf85-cabd30e912bb"
+        },
+        {
+            "UUID": "5fe82895-28e5-4aac-845e-dc886b63be2e",
+            "Description": "Activation or invocation of a container (ex: docker start or docker restart)",
+            "Name": "Container Start",
+            "Version": "1.0",
+            "Data_Source_ID": "072ec5a7-00ba-466f-9057-69751a22a967"
+        },
+        {
+            "UUID": "ec225357-8197-47a4-a9cd-57741d592877",
+            "Description": "An extracted list of available volumes within a cloud environment (ex: AWS describe-volumes)",
+            "Name": "Volume Enumeration",
+            "Version": "1.0",
+            "Data_Source_ID": "b0b6d26f-3747-4444-ac7a-239a6ff80cb5"
+        },
+        {
+            "UUID": "1dad5aa4-4bb5-45e4-9e42-55d40003cfa6",
+            "Description": "Queried or logged information highlighting current and expired digital certificates (ex: Certificate transparency)",
+            "Name": "Certificate Registration",
+            "Version": "1.0",
+            "Data_Source_ID": "29aa4e0e-4a26-4f79-a9bc-1ae66df1c923"
+        },
+        {
             "UUID": "f1eb6ea9-f3ab-414f-af35-2d5427199984",
             "Description": "Changes made to a snapshop, such as metadata and control data (ex: AWS modify-snapshot-attribute)",
             "Name": "Snapshot Modification",
@@ -1760,30 +1165,37 @@
             "Data_Source_ID": "6d7de3b7-283d-48f9-909c-60d123d9d768"
         },
         {
-            "UUID": "f42df6f0-6395-4f0c-9376-525a031f00c3",
-            "Description": "Initial construction of a new scheduled job (ex: Windows EID 4698 or /var/log cron logs)",
-            "Name": "Scheduled Job Creation",
+            "UUID": "8b4ca854-ac08-47da-b24f-601b28a39aff",
+            "Description": "Removal of a virtual machine image (ex: Azure Compute Service Images DELETE)",
+            "Name": "Image Deletion",
             "Version": "1.0",
-            "Data_Source_ID": "c9ddfb51-eb45-4e22-b614-44ac1caa7883"
+            "Data_Source_ID": "1ac0ca69-e07e-4b34-9061-e4588e146c52"
         },
         {
-            "UUID": "f5468e67-51c7-4756-9b4f-65707708e7fa",
-            "Description": "Opening a network share, which makes the contents available to the requestor (ex: Windows EID 5140 or 5145)",
-            "Name": "Network Share Access",
-            "Version": "1.0",
-            "Data_Source_ID": "ba27545a-9c32-47ea-ba6a-cce50f1b326e"
+            "UUID": "93a6e38c-02a5-44d8-9035-b2e08459f31f",
+            "Description": "Contextual data about a malicious payload, such as compilation times, file hashes, as well as watermarks or other identifiable configuration information",
+            "Name": "Malware Metadata",
+            "Version": "1.1",
+            "Data_Source_ID": "b86d9b40-5fbe-4ef1-8dc3-263eff26f495"
         },
         {
-            "UUID": "f5a9a1dd-82f9-41a3-85b8-13e5b9cd6c79",
-            "Description": "Contextual data about a driver and activity around it such as driver issues reporting or integrity (page hash, code) checking",
-            "Name": "Driver Metadata",
+            "UUID": "8c826308-2760-492f-9e36-4f0f7e23bcac",
+            "Description": "An extracted list of cloud services (ex: AWS ECS ListServices)",
+            "Name": "Cloud Service Enumeration",
             "Version": "1.0",
-            "Data_Source_ID": "9ec8c0d7-6137-456f-b829-c5f8b96ba054"
+            "Data_Source_ID": "b1ddede4-cafe-4955-ac4c-14b33ac3f647"
         },
         {
-            "UUID": "f8213cde-6b3a-420d-9ab7-41c9af1a919f",
-            "Description": "Activation or invocation of an instance (ex: instance.start within GCP Audit Logs)",
-            "Name": "Instance Start",
+            "UUID": "639e87f3-acb6-448a-9645-258f20da4bc5",
+            "Description": "Contextual data about a file, which may include information such as name, the content (ex: signature, headers, or data/media), user/ower, permissions, etc.",
+            "Name": "File Metadata",
+            "Version": "1.0",
+            "Data_Source_ID": "509ed41e-ca42-461e-9058-24602256daf9"
+        },
+        {
+            "UUID": "2a80d95f-08c4-48e3-833e-151ef19d90f5",
+            "Description": "An extracted list of instances within a cloud environment (ex: instance.list within GCP Audit Logs)",
+            "Name": "Instance Enumeration",
             "Version": "1.0",
             "Data_Source_ID": "45232bc0-e858-440d-aa93-d48c6cf167f0"
         },
@@ -1795,25 +1207,151 @@
             "Data_Source_ID": "c9ddfb51-eb45-4e22-b614-44ac1caa7883"
         },
         {
-            "UUID": "fafaa705-ec08-4405-ac62-288c252e520d",
-            "Description": "Contextual data about a cluster and activity around it such as name, namespace, age, or status",
-            "Name": "Cluster Metadata",
+            "UUID": "3d6e6b3b-4aa8-40e1-8c47-91db0f313d9f",
+            "Description": "Initial construction of a drive letter or mount point to a data storage device",
+            "Name": "Drive Creation",
             "Version": "1.0",
-            "Data_Source_ID": "c3af32ff-65c5-4ea8-912a-fb4a85197239"
+            "Data_Source_ID": "61bbbf27-f7c3-46ba-a6bc-48ae76928065"
         },
         {
-            "UUID": "fcc4811f-9cc8-4db5-8097-4d8242a380de",
-            "Description": "An extracted list of cloud storage infrastructure (ex: AWS S3 ListBuckets or ListObjects)",
-            "Name": "Cloud Storage Enumeration",
+            "UUID": "d27b0089-2c39-4b6c-84ff-303e48657e77",
+            "Description": "Changes made to an account, such as permissions and/or membership in specific groups (ex: Windows EID 4738 or /var/log access/authentication logs)",
+            "Name": "User Account Modification",
             "Version": "1.0",
-            "Data_Source_ID": "2ce537a2-3b30-4374-9397-31d6460ec0bc"
+            "Data_Source_ID": "0b4f86ed-f4ab-46a3-8ed1-175be1974da6"
         },
         {
-            "UUID": "ff93f688-d7a4-49cf-9c79-a14454da8428",
-            "Description": "An attempt by a user to gain access to a network or computing resource by providing web credentials (ex: Windows EID 1202)",
-            "Name": "Web Credential Usage",
+            "UUID": "dad75cc7-5bae-4175-adb4-ca1962d8650e",
+            "Description": "Initial construction of a cloud volume (ex: AWS create-volume)",
+            "Name": "Volume Creation",
+            "Version": "1.0",
+            "Data_Source_ID": "b0b6d26f-3747-4444-ac7a-239a6ff80cb5"
+        },
+        {
+            "UUID": "d2ff4b56-8351-4ed8-b0fb-d8605366005f",
+            "Description": "Changes made to a firewall rule, typically to allow/block specific network traffic (ex: Windows EID 4950 or Write/Delete entries within Azure Firewall Rule Collection Activity Logs)",
+            "Name": "Firewall Rule Modification",
+            "Version": "1.0",
+            "Data_Source_ID": "f2f4f4bd-3455-400f-b2ee-104004df0f5b"
+        },
+        {
+            "UUID": "181a9f8c-c780-4f1f-91a8-edb770e904ba",
+            "Description": "Initial construction of a network connection, such as capturing socket information with a source/destination IP and port(s) (ex: Windows EID 5156, Sysmon EID 3, or Zeek conn.log)",
+            "Name": "Network Connection Creation",
+            "Version": "1.1",
+            "Data_Source_ID": "c000cd5c-bbb3-4606-af6f-6c6d9de0bbe3"
+        },
+        {
+            "UUID": "1361e324-b594-4c0e-a517-20cee32b8d7f",
+            "Description": "Deactivation or stoppage of an instance (ex: instance.stop within GCP Audit Logs)",
+            "Name": "Instance Stop",
+            "Version": "1.0",
+            "Data_Source_ID": "45232bc0-e858-440d-aa93-d48c6cf167f0"
+        },
+        {
+            "UUID": "07688e40-a7fa-4436-937f-1216674341a0",
+            "Description": "An extracted list of pods within a cluster (ex: kubectl get pods)",
+            "Name": "Pod Enumeration",
+            "Version": "1.0",
+            "Data_Source_ID": "06bb1e05-533b-4de3-ae87-9b99910465cf"
+        },
+        {
+            "UUID": "235b7491-2d2b-4617-9a52-3c0783680f71",
+            "Description": "Opening a file, which makes the file contents available to the requestor (ex: Windows EID 4663)",
+            "Name": "File Access",
+            "Version": "1.0",
+            "Data_Source_ID": "509ed41e-ca42-461e-9058-24602256daf9"
+        },
+        {
+            "UUID": "c97d0171-f6e0-4415-85ff-4082fdb8c72a",
+            "Description": "Deactivation or stoppage of a cloud service (ex: Write/Delete entries within Azure Firewall Activity Logs)",
+            "Name": "Firewall Disable",
+            "Version": "1.0",
+            "Data_Source_ID": "f2f4f4bd-3455-400f-b2ee-104004df0f5b"
+        },
+        {
+            "UUID": "5f7c9def-0ddf-423b-b1f8-fb2ddeed0ce3",
+            "Description": "Initial construction of new web credential material (ex: Windows EID 1200 or 4769)",
+            "Name": "Web Credential Creation",
             "Version": "1.0",
             "Data_Source_ID": "1e26f222-e27e-4bfa-830c-fa4b4f18b5e4"
+        },
+        {
+            "UUID": "16e07530-764b-4d83-bae0-cdbfc31bf21d",
+            "Description": "Removal of a snapshot (ex: AWS delete-snapshot)",
+            "Name": "Snapshot Deletion",
+            "Version": "1.0",
+            "Data_Source_ID": "6d7de3b7-283d-48f9-909c-60d123d9d768"
+        },
+        {
+            "UUID": "9f387817-df83-432a-b56b-a8fb7f71eedd",
+            "Description": "The execution of a text file that contains code via the interpreter (e.g. Powershell, WMI, Windows EID 4104, etc.)",
+            "Name": "Script Execution",
+            "Version": "1.1",
+            "Data_Source_ID": "12c1e727-7fa4-49b6-af81-366ed2ce231e"
+        },
+        {
+            "UUID": "da85d358-741a-410d-9433-20d6269a6170",
+            "Description": "Changes made to a Registry Key and/or Key value (ex: Windows EID 4657 or Sysmon EID 13|14)",
+            "Name": "Windows Registry Key Modification",
+            "Version": "1.0",
+            "Data_Source_ID": "0f42a24c-e035-4f93-a91c-5f7076bd8da0"
+        },
+        {
+            "UUID": "05d5b5b4-ef93-4807-b05f-33d8c5a35bc5",
+            "Description": "Changes made to a group, such as membership, name, or permissions (ex: Windows EID 4728 or 4732, AWS IAM UpdateGroup)",
+            "Name": "Group Modification",
+            "Version": "1.0",
+            "Data_Source_ID": "3c07684f-3794-4536-8f70-21efe700c0ec"
+        },
+        {
+            "UUID": "91b3ed33-d1b5-4c4b-a896-76c55eb3cfd8",
+            "Description": "An extracted list of containers (ex: docker ps)",
+            "Name": "Container Enumeration",
+            "Version": "1.0",
+            "Data_Source_ID": "072ec5a7-00ba-466f-9057-69751a22a967"
+        },
+        {
+            "UUID": "3772e279-27d6-477a-9fe3-c6beb363594c",
+            "Description": "Logged network traffic data showing both protocol header and body values (ex: PCAP)",
+            "Name": "Network Traffic Content",
+            "Version": "1.0",
+            "Data_Source_ID": "c000cd5c-bbb3-4606-af6f-6c6d9de0bbe3"
+        },
+        {
+            "UUID": "2b3bfe19-d59a-460d-93bb-2f546adc2d2c",
+            "Description": "Initial construction of a new file (ex: Sysmon EID 11)",
+            "Name": "File Creation",
+            "Version": "1.0",
+            "Data_Source_ID": "509ed41e-ca42-461e-9058-24602256daf9"
+        },
+        {
+            "UUID": "3acecdde-c327-4498-9bb8-33a2e63c6c57",
+            "Description": "Removal of a a cloud volume (ex: AWS delete-volume)",
+            "Name": "Volume Deletion",
+            "Version": "1.0",
+            "Data_Source_ID": "b0b6d26f-3747-4444-ac7a-239a6ff80cb5"
+        },
+        {
+            "UUID": "df508a43-65f5-453f-8b8f-4b5d64e60a21",
+            "Description": "Contextual data about a container and activity around it such as name, ID, image, or status",
+            "Name": "Container Metadata",
+            "Version": "1.0",
+            "Data_Source_ID": "072ec5a7-00ba-466f-9057-69751a22a967"
+        },
+        {
+            "UUID": "f5468e67-51c7-4756-9b4f-65707708e7fa",
+            "Description": "Opening a network share, which makes the contents available to the requestor (ex: Windows EID 5140 or 5145)",
+            "Name": "Network Share Access",
+            "Version": "1.0",
+            "Data_Source_ID": "ba27545a-9c32-47ea-ba6a-cce50f1b326e"
+        },
+        {
+            "UUID": "d5fca4e4-e47a-487b-873f-3d22f8865e96",
+            "Description": "Changes made to a process, or its contents, typically to write and/or execute code in the memory of the target process (ex: Sysmon EID 8)",
+            "Name": "Process Modification",
+            "Version": "1.0",
+            "Data_Source_ID": "e8b8ede7-337b-4c0c-8c32-5c7872c1ee22"
         },
         {
             "UUID": "ff9b665a-598b-4bcb-8b2a-a87566aa1256",
@@ -1823,11 +1361,1000 @@
             "Data_Source_ID": "dd75f457-8dc0-4a24-9ae5-4b61c33af866"
         },
         {
+            "UUID": "b5b0e8ae-7436-4951-950a-7b83c4dd3f2c",
+            "Description": "Initial construction of a new instance (ex: instance.insert within GCP Audit Logs)",
+            "Name": "Instance Creation",
+            "Version": "1.0",
+            "Data_Source_ID": "45232bc0-e858-440d-aa93-d48c6cf167f0"
+        },
+        {
+            "UUID": "18b236d8-7224-488f-9d2f-50076a0f653a",
+            "Description": "Initial construction of a new active directory object (ex: Windows EID 5137)",
+            "Name": "Active Directory Object Creation",
+            "Version": "1.0",
+            "Data_Source_ID": "d6188aac-17db-4861-845f-57c369f9b4c8"
+        },
+        {
+            "UUID": "0f72bf50-35b3-419d-ab95-70f9b6a818dd",
+            "Description": "Contextual data about a cloud volume and activity around it, such as id, type, state, and size",
+            "Name": "Volume Metadata",
+            "Version": "1.0",
+            "Data_Source_ID": "b0b6d26f-3747-4444-ac7a-239a6ff80cb5"
+        },
+        {
+            "UUID": "3d20385b-24ef-40e1-9f56-f39750379077",
+            "Description": "The initial construction of an executable managed by the OS, that may involve one or more tasks or threads. (e.g. Win EID 4688, Sysmon EID 1, cmd.exe > net use, etc.)",
+            "Name": "Process Creation",
+            "Version": "1.1",
+            "Data_Source_ID": "e8b8ede7-337b-4c0c-8c32-5c7872c1ee22"
+        },
+        {
+            "UUID": "02d090b6-8157-48da-98a2-517f7edd49fc",
+            "Description": "A user requested active directory credentials, such as a ticket or token (ex: Windows EID 4769)",
+            "Name": "Active Directory Credential Request",
+            "Version": "1.0",
+            "Data_Source_ID": "d6188aac-17db-4861-845f-57c369f9b4c8"
+        },
+        {
+            "UUID": "7561ed50-16cb-4826-82c7-c1ddca61785e",
+            "Description": "Removal of an instance (ex: instance.delete within GCP Audit Logs)",
+            "Name": "Instance Deletion",
+            "Version": "1.0",
+            "Data_Source_ID": "45232bc0-e858-440d-aa93-d48c6cf167f0"
+        },
+        {
+            "UUID": "39b9db72-8b48-4595-a18d-db5bbba3091b",
+            "Description": "Contextual data about a logon session, such as username, logon type, access tokens (security context, user SIDs, logon identifiers, and logon SID), and any activity associated within it",
+            "Name": "Logon Session Metadata",
+            "Version": "1.0",
+            "Data_Source_ID": "4358c631-e253-4557-86df-f687d0ef9891"
+        },
+        {
+            "UUID": "9085a576-636a-455b-91d2-c2921bbe6d1d",
+            "Description": "Removal of an active directory object (ex: Windows EID 5141)",
+            "Name": "Active Directory Object Deletion",
+            "Version": "1.0",
+            "Data_Source_ID": "d6188aac-17db-4861-845f-57c369f9b4c8"
+        },
+        {
+            "UUID": "0dcbbf4f-929c-489a-b66b-9b820d3f7f0e",
+            "Description": "Logged network traffic in response to a scan showing both protocol header and body values",
+            "Name": "Response Content",
+            "Version": "1.0",
+            "Data_Source_ID": "38fe306c-bdec-4f3d-8521-b72dd32dbd17"
+        },
+        {
+            "UUID": "685f917a-e95e-4ba0-ade1-c7d354dae6e0",
+            "Description": "The execution of a line of text, potentially with arguments, created from program code (e.g. a cmdlet executed via powershell.exe, interactive commands like >dir, shell executions, etc. )",
+            "Name": "Command Execution",
+            "Version": "1.1",
+            "Data_Source_ID": "73691708-ffb5-4e29-906d-f485f6fa7089"
+        },
+        {
+            "UUID": "f8213cde-6b3a-420d-9ab7-41c9af1a919f",
+            "Description": "Activation or invocation of an instance (ex: instance.start within GCP Audit Logs)",
+            "Name": "Instance Start",
+            "Version": "1.0",
+            "Data_Source_ID": "45232bc0-e858-440d-aa93-d48c6cf167f0"
+        },
+        {
+            "UUID": "5263cb33-08cc-4a68-820f-004e1e400d76",
+            "Description": "Initial construction of a new pod (ex: kubectl apply|run)",
+            "Name": "Pod Creation",
+            "Version": "1.0",
+            "Data_Source_ID": "06bb1e05-533b-4de3-ae87-9b99910465cf"
+        },
+        {
+            "UUID": "e905dad2-00d6-477c-97e8-800427abd0e8",
+            "Description": "Removal of a file (ex: Sysmon EID 23, macOS ESF EID ES_EVENT_TYPE_AUTH_UNLINK, or Linux commands auditd unlink, rename, rmdir, unlinked, or renameat rules)",
+            "Name": "File Deletion",
+            "Version": "1.0",
+            "Data_Source_ID": "509ed41e-ca42-461e-9058-24602256daf9"
+        },
+        {
+            "UUID": "1887a270-576a-4049-84de-ef746b2572d6",
+            "Description": "Opening of a process by another process, typically to read memory of the target process (ex: Sysmon EID 10)",
+            "Name": "Process Access",
+            "Version": "1.0",
+            "Data_Source_ID": "e8b8ede7-337b-4c0c-8c32-5c7872c1ee22"
+        },
+        {
+            "UUID": "61f1d40e-f3d0-4cc6-aa2d-937b6204194f",
+            "Description": "Exit of a running process (ex: Sysmon EID 5 or Windows EID 4689)",
+            "Name": "Process Termination",
+            "Version": "1.0",
+            "Data_Source_ID": "e8b8ede7-337b-4c0c-8c32-5c7872c1ee22"
+        },
+        {
+            "UUID": "66531bc6-a509-4868-8314-4d599e91d222",
+            "Description": "Changes made to a service/daemon, such as changes to name, description, and/or start type (ex: Windows EID 7040 or /var/log daemon logs)",
+            "Name": "Service Modification",
+            "Version": "1.0",
+            "Data_Source_ID": "d710099e-df94-4be4-bf85-cabd30e912bb"
+        },
+        {
+            "UUID": "7f70fae7-a68d-4730-a83a-f260b9606129",
+            "Description": "Initial construction of a new Registry Key (ex: Windows EID 4656 or Sysmon EID 12)",
+            "Name": "Windows Registry Key Creation",
+            "Version": "1.0",
+            "Data_Source_ID": "0f42a24c-e035-4f93-a91c-5f7076bd8da0"
+        },
+        {
+            "UUID": "167b48f7-76e9-4fcb-9e8d-7121f7bf56c3",
+            "Description": "Code, strings, and other signatures that compromise a malicious payload",
+            "Name": "Malware Content",
+            "Version": "1.1",
+            "Data_Source_ID": "b86d9b40-5fbe-4ef1-8dc3-263eff26f495"
+        },
+        {
+            "UUID": "45d0ff14-b9c4-41f5-8603-156657c20b75",
+            "Description": "Changes made to an instance, including its settings and/or control data (ex: instance.addResourcePolicies or instances.setMetadata within GCP Audit Logs)",
+            "Name": "Instance Modification",
+            "Version": "1.0",
+            "Data_Source_ID": "45232bc0-e858-440d-aa93-d48c6cf167f0"
+        },
+        {
+            "UUID": "8e44412e-3238-4d64-8878-4f11e27784fe",
+            "Description": "An extracted list of available groups and/or their associated settings (ex: AWS list-groups)",
+            "Name": "Group Enumeration",
+            "Version": "1.0",
+            "Data_Source_ID": "3c07684f-3794-4536-8f70-21efe700c0ec"
+        },
+        {
+            "UUID": "73ff2dcc-24b1-4368-b9dc-706dd9e68354",
+            "Description": "Opening of a data storage device with an assigned drive letter or mount point",
+            "Name": "Drive Access",
+            "Version": "1.0",
+            "Data_Source_ID": "61bbbf27-f7c3-46ba-a6bc-48ae76928065"
+        },
+        {
+            "UUID": "8d8c7cac-94cf-4726-8989-cab33851168c",
+            "Description": "Contextual data about a group which describes group and activity around it, such as name, permissions, or user accounts within the group",
+            "Name": "Group Metadata",
+            "Version": "1.0",
+            "Data_Source_ID": "3c07684f-3794-4536-8f70-21efe700c0ec"
+        },
+        {
+            "UUID": "8bc66f94-54a9-4be4-bdd1-fe90df643774",
+            "Description": "Contextual data about a snapshot, which may include information such as ID, type, and status",
+            "Name": "Snapshot Metadata",
+            "Version": "1.0",
+            "Data_Source_ID": "6d7de3b7-283d-48f9-909c-60d123d9d768"
+        },
+        {
+            "UUID": "45977f14-1bcc-4ec4-ac14-a30fd3a11f44",
+            "Description": "Changes made to cloud storage infrastructure, including its settings and/or data (ex: AWS S3 PutObject or PutObjectAcl)",
+            "Name": "Cloud Storage Modification",
+            "Version": "1.0",
+            "Data_Source_ID": "2ce537a2-3b30-4374-9397-31d6460ec0bc"
+        },
+        {
+            "UUID": "1067aa74-5796-4d9b-b4f1-a4c9eb6fd9da",
+            "Description": "Contextual data about an Internet-facing resource gathered from a scan, such as running services or ports",
+            "Name": "Response Metadata",
+            "Version": "1.0",
+            "Data_Source_ID": "38fe306c-bdec-4f3d-8521-b72dd32dbd17"
+        },
+        {
+            "UUID": "d6257b8e-869c-41c0-8731-fdca40858a91",
+            "Description": "Removal of an account (ex: Windows EID 4726 or /var/log access/authentication logs)",
+            "Name": "User Account Deletion",
+            "Version": "1.0",
+            "Data_Source_ID": "0b4f86ed-f4ab-46a3-8ed1-175be1974da6"
+        },
+        {
+            "UUID": "9c2fa0ae-7abc-485a-97f6-699e3b6cf9fa",
+            "Description": "Logging, messaging, and other artifacts provided by third-party services (ex: metrics, errors, and/or alerts from mail/web applications)",
+            "Name": "Application Log Content",
+            "Version": "1.0",
+            "Data_Source_ID": "40269753-26bd-437b-986e-159c66dec5e4"
+        },
+        {
+            "UUID": "4dcd8ba3-2075-4f8b-941e-39884ffaac08",
+            "Description": "Changes made to a drive letter or mount point of a data storage device",
+            "Name": "Drive Modification",
+            "Version": "1.0",
+            "Data_Source_ID": "61bbbf27-f7c3-46ba-a6bc-48ae76928065"
+        },
+        {
+            "UUID": "b008766d-f34f-4ded-b712-659f59aaed6e",
+            "Description": "Initial construction of a virtual machine image (ex: Azure Compute Service Images PUT)",
+            "Name": "Image Creation",
+            "Version": "1.0",
+            "Data_Source_ID": "1ac0ca69-e07e-4b34-9061-e4588e146c52"
+        },
+        {
+            "UUID": "b9d031bb-d150-4fc6-8025-688201bf3ffd",
+            "Description": "Changes made to firmware, including its settings and/or data, such as MBR (Master Boot Record) and VBR (Volume Boot Record)",
+            "Name": "Firmware Modification",
+            "Version": "1.0",
+            "Data_Source_ID": "ca1cb239-ff6d-4f64-b9d7-41c8556a8b4f"
+        },
+        {
+            "UUID": "e214eb6d-de8f-4154-9015-6d47915fbed1",
+            "Description": "Contextual data about cloud storage infrastructure and activity around it such as name, size, or owner",
+            "Name": "Cloud Storage Metadata",
+            "Version": "1.0",
+            "Data_Source_ID": "2ce537a2-3b30-4374-9397-31d6460ec0bc"
+        },
+        {
+            "UUID": "3551476e-14f5-4e48-a518-e82135329e03",
+            "Description": "Attaching a driver to either user or kernel-mode of a system (ex: Sysmon EID 6)",
+            "Name": "Driver Load",
+            "Version": "1.0",
+            "Data_Source_ID": "9ec8c0d7-6137-456f-b829-c5f8b96ba054"
+        },
+        {
+            "UUID": "45fd904d-6eb0-4b50-8478-a961f09f898b",
+            "Description": "Contextual data about an instance and activity around it such as name, type, or status",
+            "Name": "Instance Metadata",
+            "Version": "1.0",
+            "Data_Source_ID": "45232bc0-e858-440d-aa93-d48c6cf167f0"
+        },
+        {
+            "UUID": "59ec10d9-546b-4b8e-bccb-fa85f71e5055",
+            "Description": "Initial construction of new cloud storage infrastructure (ex: AWS S3 CreateBucket)",
+            "Name": "Cloud Storage Creation",
+            "Version": "1.0",
+            "Data_Source_ID": "2ce537a2-3b30-4374-9397-31d6460ec0bc"
+        },
+        {
+            "UUID": "bf91faa8-0049-4870-810a-4df55e0b77ee",
+            "Description": "An extracted list of available firewalls and/or their associated settings/rules (ex: Azure Network Firewall CLI Show commands)",
+            "Name": "Firewall Enumeration",
+            "Version": "1.0",
+            "Data_Source_ID": "f2f4f4bd-3455-400f-b2ee-104004df0f5b"
+        },
+        {
+            "UUID": "4c41e296-b8d2-4a37-b789-eb565c87c00c",
+            "Description": "Removal of cloud storage infrastructure (ex: AWS S3 DeleteBucket)",
+            "Name": "Cloud Storage Deletion",
+            "Version": "1.0",
+            "Data_Source_ID": "2ce537a2-3b30-4374-9397-31d6460ec0bc"
+        },
+        {
+            "UUID": "e52d89f9-1710-4708-88a5-cbef77c4cd5e",
+            "Description": "Changes made to a cloud service, including its settings and/or data (ex: AWS CloudTrail DeleteTrail or DeleteConfigRule)",
+            "Name": "Cloud Service Modification",
+            "Version": "1.0",
+            "Data_Source_ID": "b1ddede4-cafe-4955-ac4c-14b33ac3f647"
+        },
+        {
+            "UUID": "a7f22107-02e5-4982-9067-6625d4a1765a",
+            "Description": "Summarized network packet data, with metrics, such as protocol headers and volume (ex: Netflow or Zeek http.log)",
+            "Name": "Network Traffic Flow",
+            "Version": "1.0",
+            "Data_Source_ID": "c000cd5c-bbb3-4606-af6f-6c6d9de0bbe3"
+        },
+        {
+            "UUID": "ec0612c5-2644-4c50-bcac-82586974fedd",
+            "Description": "Deactivation or stoppage of a cloud service (ex: AWS Cloudtrail StopLogging)",
+            "Name": "Cloud Service Disable",
+            "Version": "1.0",
+            "Data_Source_ID": "b1ddede4-cafe-4955-ac4c-14b33ac3f647"
+        },
+        {
+            "UUID": "05645013-2fed-4066-8bdc-626b2e201dd4",
+            "Description": "Initial construction of a WMI object, such as a filter, consumer, subscription, binding, or provider (ex: Sysmon EIDs 19-21)",
+            "Name": "WMI Creation",
+            "Version": "1.0",
+            "Data_Source_ID": "2cd6cc81-d86e-4595-a4f0-43f5519f14e6"
+        },
+        {
+            "UUID": "7b375092-3a61-448d-900a-77c9a4bde4dc",
+            "Description": "Contextual data about a scheduled job, which may include information such as name, timing, command(s), etc.",
+            "Name": "Scheduled Job Metadata",
+            "Version": "1.0",
+            "Data_Source_ID": "c9ddfb51-eb45-4e22-b614-44ac1caa7883"
+        },
+        {
+            "UUID": "a5ae90ca-0c4b-481c-959f-0eb18a7ff953",
+            "Description": "Initial construction of a new container (ex: docker create <container_name>)",
+            "Name": "Container Creation",
+            "Version": "1.0",
+            "Data_Source_ID": "072ec5a7-00ba-466f-9057-69751a22a967"
+        },
+        {
+            "UUID": "fcc4811f-9cc8-4db5-8097-4d8242a380de",
+            "Description": "An extracted list of cloud storage infrastructure (ex: AWS S3 ListBuckets or ListObjects)",
+            "Name": "Cloud Storage Enumeration",
+            "Version": "1.0",
+            "Data_Source_ID": "2ce537a2-3b30-4374-9397-31d6460ec0bc"
+        },
+        {
+            "UUID": "b9a1578e-8653-4103-be23-cb52e0b1816e",
+            "Description": "Contextual data about a named pipe on a system, including pipe name and creating process (ex: Sysmon EIDs 17-18)",
+            "Name": "Named Pipe Metadata",
+            "Version": "1.0",
+            "Data_Source_ID": "221adcd5-cccf-44df-9be6-ef607a6e1c3c"
+        },
+        {
+            "UUID": "8fb2f315-1aca-4cef-ae0d-8105e1f95985",
+            "Description": "Established, compromised, or otherwise acquired social media personas",
+            "Name": "Social Media",
+            "Version": "1.0",
+            "Data_Source_ID": "3bef4799-906c-409c-ac00-3fb7a1e352e6"
+        },
+        {
+            "UUID": "b5d0492b-cda4-421c-8e51-ed2b8d85c5d0",
+            "Description": "Contextual data about an account, which may include a username, user ID, environmental data, etc.",
+            "Name": "User Account Metadata",
+            "Version": "1.0",
+            "Data_Source_ID": "0b4f86ed-f4ab-46a3-8ed1-175be1974da6"
+        },
+        {
             "UUID": "ffd73905-2e51-4f2d-8549-e72fb0eb6c38",
             "Description": "An extracted list of snapshops within a cloud environment (ex: AWS describe-snapshots)",
             "Name": "Snapshot Enumeration",
             "Version": "1.0",
             "Data_Source_ID": "6d7de3b7-283d-48f9-909c-60d123d9d768"
+        },
+        {
+            "UUID": "a953ca55-921a-44f7-9b8d-3d40141aa17e",
+            "Description": "An attempt by a user to gain access to a network or computing resource, often by providing credentials (ex: Windows EID 4776 or /var/log/auth.log)",
+            "Name": "User Account Authentication",
+            "Version": "1.1",
+            "Data_Source_ID": "0b4f86ed-f4ab-46a3-8ed1-175be1974da6"
+        },
+        {
+            "UUID": "3da222e6-53f3-451c-a239-0b405c009432",
+            "Description": "Initial construction of a new snapshot (ex: AWS create-snapshot)",
+            "Name": "Snapshot Creation",
+            "Version": "1.0",
+            "Data_Source_ID": "6d7de3b7-283d-48f9-909c-60d123d9d768"
+        },
+        {
+            "UUID": "23e4ee78-26f3-4fcf-ba43-ab953962f96c",
+            "Description": "An object file that contains code to extend the running kernel of an OS, typically used to add support for new hardware (as device drivers) and/or filesystems, or for adding system calls",
+            "Name": "Kernel Module Load",
+            "Version": "1.0",
+            "Data_Source_ID": "8765a845-dea1-4cd1-a56f-f54939b7ab9e"
+        },
+        {
+            "UUID": "d46272ce-a0fe-4256-855e-738de7bb63ee",
+            "Description": "Changes made to a cloud volume, including its settings and control data (ex: AWS modify-volume)",
+            "Name": "Volume Modification",
+            "Version": "1.0",
+            "Data_Source_ID": "b0b6d26f-3747-4444-ac7a-239a6ff80cb5"
+        },
+        {
+            "UUID": "2e521444-7295-4dec-96c1-7595b2df7811",
+            "Description": "Queried domain name system (DNS) registry data highlighting current domain to IP address resolutions (ex: dig/nslookup queries)",
+            "Name": "Active DNS",
+            "Version": "1.0",
+            "Data_Source_ID": "dd75f457-8dc0-4a24-9ae5-4b61c33af866"
+        },
+        {
+            "UUID": "ed0dd8aa-1677-4551-bb7d-8da767617e1b",
+            "Description": "Opening a Registry Key, typically to read the associated value (ex: Windows EID 4656)",
+            "Name": "Windows Registry Key Access",
+            "Version": "1.0",
+            "Data_Source_ID": "0f42a24c-e035-4f93-a91c-5f7076bd8da0"
+        },
+        {
+            "UUID": "5b8b466b-2c81-4fe7-946f-d677a74ae3db",
+            "Description": "Changes made to an active directory object (ex: Windows EID 5163 or 5136)",
+            "Name": "Active Directory Object Modification",
+            "Version": "1.0",
+            "Data_Source_ID": "d6188aac-17db-4861-845f-57c369f9b4c8"
+        },
+        {
+            "UUID": "9bde2f9d-a695-4344-bfac-f2dce13d121e",
+            "Description": "Initial construction of a WMI object, such as a filter, consumer, subscription, binding, or provider (ex: Sysmon EIDs 19-21)",
+            "Name": "OS API Execution",
+            "Version": "1.0",
+            "Data_Source_ID": "e8b8ede7-337b-4c0c-8c32-5c7872c1ee22"
+        },
+        {
+            "UUID": "ff93f688-d7a4-49cf-9c79-a14454da8428",
+            "Description": "An attempt by a user to gain access to a network or computing resource by providing web credentials (ex: Windows EID 1202)",
+            "Name": "Web Credential Usage",
+            "Version": "1.0",
+            "Data_Source_ID": "1e26f222-e27e-4bfa-830c-fa4b4f18b5e4"
+        },
+        {
+            "UUID": "c0a4a086-cc20-4e1e-b7cb-29d99dfa3fb1",
+            "Description": "Attaching a module into the memory of a process/program, typically to access shared resources/features provided by the module (ex: Sysmon EID 7)",
+            "Name": "Module Load",
+            "Version": "1.0",
+            "Data_Source_ID": "f424e4b4-a8a4-4c58-a4ae-4f53bfd08563"
+        },
+        {
+            "UUID": "84572de3-9583-4c73-aabd-06ea88123dd8",
+            "Description": "Changes made to a file, or its access permissions and attributes, typically to alter the contents of the targeted file (ex: Windows EID 4670 or Sysmon EID 2)",
+            "Name": "File Modification",
+            "Version": "1.0",
+            "Data_Source_ID": "509ed41e-ca42-461e-9058-24602256daf9"
+        },
+        {
+            "UUID": "c0edd522-0aef-46b3-8efa-2bd334ce4242",
+            "Description": "Contextual data about a pod and activity around it such as name, ID, namespace, or status",
+            "Name": "Pod Metadata",
+            "Version": "1.0",
+            "Data_Source_ID": "06bb1e05-533b-4de3-ae87-9b99910465cf"
+        },
+        {
+            "UUID": "f42df6f0-6395-4f0c-9376-525a031f00c3",
+            "Description": "Initial construction of a new scheduled job (ex: Windows EID 4698 or /var/log cron logs)",
+            "Name": "Scheduled Job Creation",
+            "Version": "1.0",
+            "Data_Source_ID": "c9ddfb51-eb45-4e22-b614-44ac1caa7883"
+        },
+        {
+            "UUID": "5c6de881-bc70-4070-855a-7a9631a407f7",
+            "Description": "Opening of an active directory object, typically to collect/read its value (ex: Windows EID 4661)",
+            "Name": "Active Directory Object Access",
+            "Version": "1.0",
+            "Data_Source_ID": "d6188aac-17db-4861-845f-57c369f9b4c8"
+        },
+        {
+            "UUID": "b597a220-6510-4397-b0d8-342cd2c58827",
+            "Description": "Contextual data about a virtual machine image such as name, resource group, state, or type",
+            "Name": "Image Metadata",
+            "Version": "1.0",
+            "Data_Source_ID": "1ac0ca69-e07e-4b34-9061-e4588e146c52"
+        },
+        {
+            "UUID": "5297a638-1382-4f0c-8472-0d21830bf705",
+            "Description": "Initial construction of a new service/daemon (ex: Windows EID 4697 or /var/log daemon logs)",
+            "Name": "Service Creation",
+            "Version": "1.0",
+            "Data_Source_ID": "d710099e-df94-4be4-bf85-cabd30e912bb"
+        },
+        {
+            "UUID": "f5a9a1dd-82f9-41a3-85b8-13e5b9cd6c79",
+            "Description": "Contextual data about a driver and activity around it such as driver issues reporting or integrity (page hash, code) checking",
+            "Name": "Driver Metadata",
+            "Version": "1.0",
+            "Data_Source_ID": "9ec8c0d7-6137-456f-b829-c5f8b96ba054"
+        },
+        {
+            "UUID": "746f095a-f84c-4ccc-90a5-c7caa5c100a2",
+            "Description": "Contextual data about a firewall and activity around it such as name, policy, or status",
+            "Name": "Firewall Metadata",
+            "Version": "1.0",
+            "Data_Source_ID": "f2f4f4bd-3455-400f-b2ee-104004df0f5b"
+        },
+        {
+            "UUID": "672b2ebd-4310-4efe-bf03-7ab005298a74",
+            "Description": "Changes made to a pod, including its settings and/or control data (ex: kubectl set|patch|edit)",
+            "Name": "Pod Modification",
+            "Version": "1.0",
+            "Data_Source_ID": "06bb1e05-533b-4de3-ae87-9b99910465cf"
+        },
+        {
+            "UUID": "58ef998c-f3bf-4985-b487-b1005f5c05d1",
+            "Description": "Opening of a cloud storage infrastructure, typically to collect/read its value (ex: AWS S3 GetObject)",
+            "Name": "Cloud Storage Access",
+            "Version": "1.0",
+            "Data_Source_ID": "2ce537a2-3b30-4374-9397-31d6460ec0bc"
+        }
+    ],
+    "MITRE_ATTACK_Platforms": [
+        {
+            "UUID": "5f909ef4-1961-4f46-9e5f-c1b7fa0d6011",
+            "Name": "Linux",
+            "Is_Operating_System": null
+        },
+        {
+            "UUID": "a66065fd-7cbf-434d-8205-e5fdc3d0cb61",
+            "Name": "Windows",
+            "Is_Operating_System": null
+        },
+        {
+            "UUID": "8042d1df-0fa3-4ec5-bba2-66349d9a3fe7",
+            "Name": "macOS",
+            "Is_Operating_System": null
+        },
+        {
+            "UUID": "07fcc3fb-797a-47c8-9dd9-a308511e09f3",
+            "Name": "Google Workspace",
+            "Is_Operating_System": null
+        },
+        {
+            "UUID": "84e7ddb9-301b-4d4d-8992-d7ddc4130e94",
+            "Name": "IaaS",
+            "Is_Operating_System": null
+        },
+        {
+            "UUID": "163d7c82-3ad1-4e56-943a-bb43327b2cff",
+            "Name": "Office 365",
+            "Is_Operating_System": null
+        },
+        {
+            "UUID": "19f757b4-a6b1-4130-9358-eff3ec3671b0",
+            "Name": "SaaS",
+            "Is_Operating_System": null
+        },
+        {
+            "UUID": "d63f06bc-d4e8-411e-8f7c-1cf6e0471f90",
+            "Name": "Azure AD",
+            "Is_Operating_System": null
+        },
+        {
+            "UUID": "de42396d-85ac-44fe-a2e0-36ddfa236826",
+            "Name": "Containers",
+            "Is_Operating_System": null
+        },
+        {
+            "UUID": "41d3ee8f-bdd7-496f-b68a-8e3f7957bae6",
+            "Name": "PRE",
+            "Is_Operating_System": null
+        },
+        {
+            "UUID": "52c41226-5a0b-494d-b122-5ce0b5db0f58",
+            "Name": "Network",
+            "Is_Operating_System": null
+        }
+    ],
+    "MITRE_Data_Sources_Platforms": [
+        {
+            "Data_Source_ID": "61bbbf27-f7c3-46ba-a6bc-48ae76928065",
+            "Platform_ID": "5f909ef4-1961-4f46-9e5f-c1b7fa0d6011"
+        },
+        {
+            "Data_Source_ID": "61bbbf27-f7c3-46ba-a6bc-48ae76928065",
+            "Platform_ID": "a66065fd-7cbf-434d-8205-e5fdc3d0cb61"
+        },
+        {
+            "Data_Source_ID": "61bbbf27-f7c3-46ba-a6bc-48ae76928065",
+            "Platform_ID": "8042d1df-0fa3-4ec5-bba2-66349d9a3fe7"
+        },
+        {
+            "Data_Source_ID": "40269753-26bd-437b-986e-159c66dec5e4",
+            "Platform_ID": "07fcc3fb-797a-47c8-9dd9-a308511e09f3"
+        },
+        {
+            "Data_Source_ID": "40269753-26bd-437b-986e-159c66dec5e4",
+            "Platform_ID": "84e7ddb9-301b-4d4d-8992-d7ddc4130e94"
+        },
+        {
+            "Data_Source_ID": "40269753-26bd-437b-986e-159c66dec5e4",
+            "Platform_ID": "5f909ef4-1961-4f46-9e5f-c1b7fa0d6011"
+        },
+        {
+            "Data_Source_ID": "40269753-26bd-437b-986e-159c66dec5e4",
+            "Platform_ID": "163d7c82-3ad1-4e56-943a-bb43327b2cff"
+        },
+        {
+            "Data_Source_ID": "40269753-26bd-437b-986e-159c66dec5e4",
+            "Platform_ID": "19f757b4-a6b1-4130-9358-eff3ec3671b0"
+        },
+        {
+            "Data_Source_ID": "40269753-26bd-437b-986e-159c66dec5e4",
+            "Platform_ID": "a66065fd-7cbf-434d-8205-e5fdc3d0cb61"
+        },
+        {
+            "Data_Source_ID": "40269753-26bd-437b-986e-159c66dec5e4",
+            "Platform_ID": "8042d1df-0fa3-4ec5-bba2-66349d9a3fe7"
+        },
+        {
+            "Data_Source_ID": "f2f4f4bd-3455-400f-b2ee-104004df0f5b",
+            "Platform_ID": "d63f06bc-d4e8-411e-8f7c-1cf6e0471f90"
+        },
+        {
+            "Data_Source_ID": "f2f4f4bd-3455-400f-b2ee-104004df0f5b",
+            "Platform_ID": "07fcc3fb-797a-47c8-9dd9-a308511e09f3"
+        },
+        {
+            "Data_Source_ID": "f2f4f4bd-3455-400f-b2ee-104004df0f5b",
+            "Platform_ID": "84e7ddb9-301b-4d4d-8992-d7ddc4130e94"
+        },
+        {
+            "Data_Source_ID": "f2f4f4bd-3455-400f-b2ee-104004df0f5b",
+            "Platform_ID": "5f909ef4-1961-4f46-9e5f-c1b7fa0d6011"
+        },
+        {
+            "Data_Source_ID": "f2f4f4bd-3455-400f-b2ee-104004df0f5b",
+            "Platform_ID": "163d7c82-3ad1-4e56-943a-bb43327b2cff"
+        },
+        {
+            "Data_Source_ID": "f2f4f4bd-3455-400f-b2ee-104004df0f5b",
+            "Platform_ID": "19f757b4-a6b1-4130-9358-eff3ec3671b0"
+        },
+        {
+            "Data_Source_ID": "f2f4f4bd-3455-400f-b2ee-104004df0f5b",
+            "Platform_ID": "a66065fd-7cbf-434d-8205-e5fdc3d0cb61"
+        },
+        {
+            "Data_Source_ID": "f2f4f4bd-3455-400f-b2ee-104004df0f5b",
+            "Platform_ID": "8042d1df-0fa3-4ec5-bba2-66349d9a3fe7"
+        },
+        {
+            "Data_Source_ID": "d6188aac-17db-4861-845f-57c369f9b4c8",
+            "Platform_ID": "d63f06bc-d4e8-411e-8f7c-1cf6e0471f90"
+        },
+        {
+            "Data_Source_ID": "d6188aac-17db-4861-845f-57c369f9b4c8",
+            "Platform_ID": "a66065fd-7cbf-434d-8205-e5fdc3d0cb61"
+        },
+        {
+            "Data_Source_ID": "2cd6cc81-d86e-4595-a4f0-43f5519f14e6",
+            "Platform_ID": "a66065fd-7cbf-434d-8205-e5fdc3d0cb61"
+        },
+        {
+            "Data_Source_ID": "06bb1e05-533b-4de3-ae87-9b99910465cf",
+            "Platform_ID": "de42396d-85ac-44fe-a2e0-36ddfa236826"
+        },
+        {
+            "Data_Source_ID": "b86d9b40-5fbe-4ef1-8dc3-263eff26f495",
+            "Platform_ID": "41d3ee8f-bdd7-496f-b68a-8e3f7957bae6"
+        },
+        {
+            "Data_Source_ID": "6d7de3b7-283d-48f9-909c-60d123d9d768",
+            "Platform_ID": "84e7ddb9-301b-4d4d-8992-d7ddc4130e94"
+        },
+        {
+            "Data_Source_ID": "c9ddfb51-eb45-4e22-b614-44ac1caa7883",
+            "Platform_ID": "de42396d-85ac-44fe-a2e0-36ddfa236826"
+        },
+        {
+            "Data_Source_ID": "c9ddfb51-eb45-4e22-b614-44ac1caa7883",
+            "Platform_ID": "5f909ef4-1961-4f46-9e5f-c1b7fa0d6011"
+        },
+        {
+            "Data_Source_ID": "c9ddfb51-eb45-4e22-b614-44ac1caa7883",
+            "Platform_ID": "a66065fd-7cbf-434d-8205-e5fdc3d0cb61"
+        },
+        {
+            "Data_Source_ID": "c9ddfb51-eb45-4e22-b614-44ac1caa7883",
+            "Platform_ID": "8042d1df-0fa3-4ec5-bba2-66349d9a3fe7"
+        },
+        {
+            "Data_Source_ID": "dd75f457-8dc0-4a24-9ae5-4b61c33af866",
+            "Platform_ID": "41d3ee8f-bdd7-496f-b68a-8e3f7957bae6"
+        },
+        {
+            "Data_Source_ID": "38fe306c-bdec-4f3d-8521-b72dd32dbd17",
+            "Platform_ID": "41d3ee8f-bdd7-496f-b68a-8e3f7957bae6"
+        },
+        {
+            "Data_Source_ID": "73691708-ffb5-4e29-906d-f485f6fa7089",
+            "Platform_ID": "de42396d-85ac-44fe-a2e0-36ddfa236826"
+        },
+        {
+            "Data_Source_ID": "73691708-ffb5-4e29-906d-f485f6fa7089",
+            "Platform_ID": "5f909ef4-1961-4f46-9e5f-c1b7fa0d6011"
+        },
+        {
+            "Data_Source_ID": "73691708-ffb5-4e29-906d-f485f6fa7089",
+            "Platform_ID": "52c41226-5a0b-494d-b122-5ce0b5db0f58"
+        },
+        {
+            "Data_Source_ID": "73691708-ffb5-4e29-906d-f485f6fa7089",
+            "Platform_ID": "a66065fd-7cbf-434d-8205-e5fdc3d0cb61"
+        },
+        {
+            "Data_Source_ID": "73691708-ffb5-4e29-906d-f485f6fa7089",
+            "Platform_ID": "8042d1df-0fa3-4ec5-bba2-66349d9a3fe7"
+        },
+        {
+            "Data_Source_ID": "3bef4799-906c-409c-ac00-3fb7a1e352e6",
+            "Platform_ID": "41d3ee8f-bdd7-496f-b68a-8e3f7957bae6"
+        },
+        {
+            "Data_Source_ID": "12c1e727-7fa4-49b6-af81-366ed2ce231e",
+            "Platform_ID": "a66065fd-7cbf-434d-8205-e5fdc3d0cb61"
+        },
+        {
+            "Data_Source_ID": "4523e7f3-8de2-4078-96f8-1227eb537159",
+            "Platform_ID": "5f909ef4-1961-4f46-9e5f-c1b7fa0d6011"
+        },
+        {
+            "Data_Source_ID": "4523e7f3-8de2-4078-96f8-1227eb537159",
+            "Platform_ID": "a66065fd-7cbf-434d-8205-e5fdc3d0cb61"
+        },
+        {
+            "Data_Source_ID": "4523e7f3-8de2-4078-96f8-1227eb537159",
+            "Platform_ID": "8042d1df-0fa3-4ec5-bba2-66349d9a3fe7"
+        },
+        {
+            "Data_Source_ID": "4358c631-e253-4557-86df-f687d0ef9891",
+            "Platform_ID": "d63f06bc-d4e8-411e-8f7c-1cf6e0471f90"
+        },
+        {
+            "Data_Source_ID": "4358c631-e253-4557-86df-f687d0ef9891",
+            "Platform_ID": "07fcc3fb-797a-47c8-9dd9-a308511e09f3"
+        },
+        {
+            "Data_Source_ID": "4358c631-e253-4557-86df-f687d0ef9891",
+            "Platform_ID": "84e7ddb9-301b-4d4d-8992-d7ddc4130e94"
+        },
+        {
+            "Data_Source_ID": "4358c631-e253-4557-86df-f687d0ef9891",
+            "Platform_ID": "5f909ef4-1961-4f46-9e5f-c1b7fa0d6011"
+        },
+        {
+            "Data_Source_ID": "4358c631-e253-4557-86df-f687d0ef9891",
+            "Platform_ID": "163d7c82-3ad1-4e56-943a-bb43327b2cff"
+        },
+        {
+            "Data_Source_ID": "4358c631-e253-4557-86df-f687d0ef9891",
+            "Platform_ID": "19f757b4-a6b1-4130-9358-eff3ec3671b0"
+        },
+        {
+            "Data_Source_ID": "4358c631-e253-4557-86df-f687d0ef9891",
+            "Platform_ID": "a66065fd-7cbf-434d-8205-e5fdc3d0cb61"
+        },
+        {
+            "Data_Source_ID": "4358c631-e253-4557-86df-f687d0ef9891",
+            "Platform_ID": "8042d1df-0fa3-4ec5-bba2-66349d9a3fe7"
+        },
+        {
+            "Data_Source_ID": "0b4f86ed-f4ab-46a3-8ed1-175be1974da6",
+            "Platform_ID": "d63f06bc-d4e8-411e-8f7c-1cf6e0471f90"
+        },
+        {
+            "Data_Source_ID": "0b4f86ed-f4ab-46a3-8ed1-175be1974da6",
+            "Platform_ID": "de42396d-85ac-44fe-a2e0-36ddfa236826"
+        },
+        {
+            "Data_Source_ID": "0b4f86ed-f4ab-46a3-8ed1-175be1974da6",
+            "Platform_ID": "07fcc3fb-797a-47c8-9dd9-a308511e09f3"
+        },
+        {
+            "Data_Source_ID": "0b4f86ed-f4ab-46a3-8ed1-175be1974da6",
+            "Platform_ID": "84e7ddb9-301b-4d4d-8992-d7ddc4130e94"
+        },
+        {
+            "Data_Source_ID": "0b4f86ed-f4ab-46a3-8ed1-175be1974da6",
+            "Platform_ID": "5f909ef4-1961-4f46-9e5f-c1b7fa0d6011"
+        },
+        {
+            "Data_Source_ID": "0b4f86ed-f4ab-46a3-8ed1-175be1974da6",
+            "Platform_ID": "163d7c82-3ad1-4e56-943a-bb43327b2cff"
+        },
+        {
+            "Data_Source_ID": "0b4f86ed-f4ab-46a3-8ed1-175be1974da6",
+            "Platform_ID": "19f757b4-a6b1-4130-9358-eff3ec3671b0"
+        },
+        {
+            "Data_Source_ID": "0b4f86ed-f4ab-46a3-8ed1-175be1974da6",
+            "Platform_ID": "a66065fd-7cbf-434d-8205-e5fdc3d0cb61"
+        },
+        {
+            "Data_Source_ID": "0b4f86ed-f4ab-46a3-8ed1-175be1974da6",
+            "Platform_ID": "8042d1df-0fa3-4ec5-bba2-66349d9a3fe7"
+        },
+        {
+            "Data_Source_ID": "8765a845-dea1-4cd1-a56f-f54939b7ab9e",
+            "Platform_ID": "5f909ef4-1961-4f46-9e5f-c1b7fa0d6011"
+        },
+        {
+            "Data_Source_ID": "8765a845-dea1-4cd1-a56f-f54939b7ab9e",
+            "Platform_ID": "8042d1df-0fa3-4ec5-bba2-66349d9a3fe7"
+        },
+        {
+            "Data_Source_ID": "d710099e-df94-4be4-bf85-cabd30e912bb",
+            "Platform_ID": "5f909ef4-1961-4f46-9e5f-c1b7fa0d6011"
+        },
+        {
+            "Data_Source_ID": "d710099e-df94-4be4-bf85-cabd30e912bb",
+            "Platform_ID": "a66065fd-7cbf-434d-8205-e5fdc3d0cb61"
+        },
+        {
+            "Data_Source_ID": "d710099e-df94-4be4-bf85-cabd30e912bb",
+            "Platform_ID": "8042d1df-0fa3-4ec5-bba2-66349d9a3fe7"
+        },
+        {
+            "Data_Source_ID": "1ac0ca69-e07e-4b34-9061-e4588e146c52",
+            "Platform_ID": "84e7ddb9-301b-4d4d-8992-d7ddc4130e94"
+        },
+        {
+            "Data_Source_ID": "509ed41e-ca42-461e-9058-24602256daf9",
+            "Platform_ID": "5f909ef4-1961-4f46-9e5f-c1b7fa0d6011"
+        },
+        {
+            "Data_Source_ID": "509ed41e-ca42-461e-9058-24602256daf9",
+            "Platform_ID": "52c41226-5a0b-494d-b122-5ce0b5db0f58"
+        },
+        {
+            "Data_Source_ID": "509ed41e-ca42-461e-9058-24602256daf9",
+            "Platform_ID": "a66065fd-7cbf-434d-8205-e5fdc3d0cb61"
+        },
+        {
+            "Data_Source_ID": "509ed41e-ca42-461e-9058-24602256daf9",
+            "Platform_ID": "8042d1df-0fa3-4ec5-bba2-66349d9a3fe7"
+        },
+        {
+            "Data_Source_ID": "1e26f222-e27e-4bfa-830c-fa4b4f18b5e4",
+            "Platform_ID": "d63f06bc-d4e8-411e-8f7c-1cf6e0471f90"
+        },
+        {
+            "Data_Source_ID": "1e26f222-e27e-4bfa-830c-fa4b4f18b5e4",
+            "Platform_ID": "07fcc3fb-797a-47c8-9dd9-a308511e09f3"
+        },
+        {
+            "Data_Source_ID": "1e26f222-e27e-4bfa-830c-fa4b4f18b5e4",
+            "Platform_ID": "5f909ef4-1961-4f46-9e5f-c1b7fa0d6011"
+        },
+        {
+            "Data_Source_ID": "1e26f222-e27e-4bfa-830c-fa4b4f18b5e4",
+            "Platform_ID": "163d7c82-3ad1-4e56-943a-bb43327b2cff"
+        },
+        {
+            "Data_Source_ID": "1e26f222-e27e-4bfa-830c-fa4b4f18b5e4",
+            "Platform_ID": "19f757b4-a6b1-4130-9358-eff3ec3671b0"
+        },
+        {
+            "Data_Source_ID": "1e26f222-e27e-4bfa-830c-fa4b4f18b5e4",
+            "Platform_ID": "a66065fd-7cbf-434d-8205-e5fdc3d0cb61"
+        },
+        {
+            "Data_Source_ID": "1e26f222-e27e-4bfa-830c-fa4b4f18b5e4",
+            "Platform_ID": "8042d1df-0fa3-4ec5-bba2-66349d9a3fe7"
+        },
+        {
+            "Data_Source_ID": "ca1cb239-ff6d-4f64-b9d7-41c8556a8b4f",
+            "Platform_ID": "5f909ef4-1961-4f46-9e5f-c1b7fa0d6011"
+        },
+        {
+            "Data_Source_ID": "ca1cb239-ff6d-4f64-b9d7-41c8556a8b4f",
+            "Platform_ID": "a66065fd-7cbf-434d-8205-e5fdc3d0cb61"
+        },
+        {
+            "Data_Source_ID": "ca1cb239-ff6d-4f64-b9d7-41c8556a8b4f",
+            "Platform_ID": "8042d1df-0fa3-4ec5-bba2-66349d9a3fe7"
+        },
+        {
+            "Data_Source_ID": "0f42a24c-e035-4f93-a91c-5f7076bd8da0",
+            "Platform_ID": "a66065fd-7cbf-434d-8205-e5fdc3d0cb61"
+        },
+        {
+            "Data_Source_ID": "3c07684f-3794-4536-8f70-21efe700c0ec",
+            "Platform_ID": "d63f06bc-d4e8-411e-8f7c-1cf6e0471f90"
+        },
+        {
+            "Data_Source_ID": "3c07684f-3794-4536-8f70-21efe700c0ec",
+            "Platform_ID": "07fcc3fb-797a-47c8-9dd9-a308511e09f3"
+        },
+        {
+            "Data_Source_ID": "3c07684f-3794-4536-8f70-21efe700c0ec",
+            "Platform_ID": "84e7ddb9-301b-4d4d-8992-d7ddc4130e94"
+        },
+        {
+            "Data_Source_ID": "3c07684f-3794-4536-8f70-21efe700c0ec",
+            "Platform_ID": "163d7c82-3ad1-4e56-943a-bb43327b2cff"
+        },
+        {
+            "Data_Source_ID": "3c07684f-3794-4536-8f70-21efe700c0ec",
+            "Platform_ID": "19f757b4-a6b1-4130-9358-eff3ec3671b0"
+        },
+        {
+            "Data_Source_ID": "3c07684f-3794-4536-8f70-21efe700c0ec",
+            "Platform_ID": "a66065fd-7cbf-434d-8205-e5fdc3d0cb61"
+        },
+        {
+            "Data_Source_ID": "072ec5a7-00ba-466f-9057-69751a22a967",
+            "Platform_ID": "de42396d-85ac-44fe-a2e0-36ddfa236826"
+        },
+        {
+            "Data_Source_ID": "c000cd5c-bbb3-4606-af6f-6c6d9de0bbe3",
+            "Platform_ID": "84e7ddb9-301b-4d4d-8992-d7ddc4130e94"
+        },
+        {
+            "Data_Source_ID": "c000cd5c-bbb3-4606-af6f-6c6d9de0bbe3",
+            "Platform_ID": "5f909ef4-1961-4f46-9e5f-c1b7fa0d6011"
+        },
+        {
+            "Data_Source_ID": "c000cd5c-bbb3-4606-af6f-6c6d9de0bbe3",
+            "Platform_ID": "a66065fd-7cbf-434d-8205-e5fdc3d0cb61"
+        },
+        {
+            "Data_Source_ID": "c000cd5c-bbb3-4606-af6f-6c6d9de0bbe3",
+            "Platform_ID": "8042d1df-0fa3-4ec5-bba2-66349d9a3fe7"
+        },
+        {
+            "Data_Source_ID": "b0b6d26f-3747-4444-ac7a-239a6ff80cb5",
+            "Platform_ID": "84e7ddb9-301b-4d4d-8992-d7ddc4130e94"
+        },
+        {
+            "Data_Source_ID": "b0b6d26f-3747-4444-ac7a-239a6ff80cb5",
+            "Platform_ID": "5f909ef4-1961-4f46-9e5f-c1b7fa0d6011"
+        },
+        {
+            "Data_Source_ID": "b0b6d26f-3747-4444-ac7a-239a6ff80cb5",
+            "Platform_ID": "a66065fd-7cbf-434d-8205-e5fdc3d0cb61"
+        },
+        {
+            "Data_Source_ID": "b0b6d26f-3747-4444-ac7a-239a6ff80cb5",
+            "Platform_ID": "8042d1df-0fa3-4ec5-bba2-66349d9a3fe7"
+        },
+        {
+            "Data_Source_ID": "9ec8c0d7-6137-456f-b829-c5f8b96ba054",
+            "Platform_ID": "5f909ef4-1961-4f46-9e5f-c1b7fa0d6011"
+        },
+        {
+            "Data_Source_ID": "9ec8c0d7-6137-456f-b829-c5f8b96ba054",
+            "Platform_ID": "a66065fd-7cbf-434d-8205-e5fdc3d0cb61"
+        },
+        {
+            "Data_Source_ID": "9ec8c0d7-6137-456f-b829-c5f8b96ba054",
+            "Platform_ID": "8042d1df-0fa3-4ec5-bba2-66349d9a3fe7"
+        },
+        {
+            "Data_Source_ID": "b1ddede4-cafe-4955-ac4c-14b33ac3f647",
+            "Platform_ID": "d63f06bc-d4e8-411e-8f7c-1cf6e0471f90"
+        },
+        {
+            "Data_Source_ID": "b1ddede4-cafe-4955-ac4c-14b33ac3f647",
+            "Platform_ID": "07fcc3fb-797a-47c8-9dd9-a308511e09f3"
+        },
+        {
+            "Data_Source_ID": "b1ddede4-cafe-4955-ac4c-14b33ac3f647",
+            "Platform_ID": "84e7ddb9-301b-4d4d-8992-d7ddc4130e94"
+        },
+        {
+            "Data_Source_ID": "b1ddede4-cafe-4955-ac4c-14b33ac3f647",
+            "Platform_ID": "163d7c82-3ad1-4e56-943a-bb43327b2cff"
+        },
+        {
+            "Data_Source_ID": "b1ddede4-cafe-4955-ac4c-14b33ac3f647",
+            "Platform_ID": "19f757b4-a6b1-4130-9358-eff3ec3671b0"
+        },
+        {
+            "Data_Source_ID": "ba27545a-9c32-47ea-ba6a-cce50f1b326e",
+            "Platform_ID": "5f909ef4-1961-4f46-9e5f-c1b7fa0d6011"
+        },
+        {
+            "Data_Source_ID": "ba27545a-9c32-47ea-ba6a-cce50f1b326e",
+            "Platform_ID": "a66065fd-7cbf-434d-8205-e5fdc3d0cb61"
+        },
+        {
+            "Data_Source_ID": "ba27545a-9c32-47ea-ba6a-cce50f1b326e",
+            "Platform_ID": "8042d1df-0fa3-4ec5-bba2-66349d9a3fe7"
+        },
+        {
+            "Data_Source_ID": "f424e4b4-a8a4-4c58-a4ae-4f53bfd08563",
+            "Platform_ID": "5f909ef4-1961-4f46-9e5f-c1b7fa0d6011"
+        },
+        {
+            "Data_Source_ID": "f424e4b4-a8a4-4c58-a4ae-4f53bfd08563",
+            "Platform_ID": "a66065fd-7cbf-434d-8205-e5fdc3d0cb61"
+        },
+        {
+            "Data_Source_ID": "f424e4b4-a8a4-4c58-a4ae-4f53bfd08563",
+            "Platform_ID": "8042d1df-0fa3-4ec5-bba2-66349d9a3fe7"
+        },
+        {
+            "Data_Source_ID": "221adcd5-cccf-44df-9be6-ef607a6e1c3c",
+            "Platform_ID": "5f909ef4-1961-4f46-9e5f-c1b7fa0d6011"
+        },
+        {
+            "Data_Source_ID": "221adcd5-cccf-44df-9be6-ef607a6e1c3c",
+            "Platform_ID": "a66065fd-7cbf-434d-8205-e5fdc3d0cb61"
+        },
+        {
+            "Data_Source_ID": "221adcd5-cccf-44df-9be6-ef607a6e1c3c",
+            "Platform_ID": "8042d1df-0fa3-4ec5-bba2-66349d9a3fe7"
+        },
+        {
+            "Data_Source_ID": "e8b8ede7-337b-4c0c-8c32-5c7872c1ee22",
+            "Platform_ID": "5f909ef4-1961-4f46-9e5f-c1b7fa0d6011"
+        },
+        {
+            "Data_Source_ID": "e8b8ede7-337b-4c0c-8c32-5c7872c1ee22",
+            "Platform_ID": "a66065fd-7cbf-434d-8205-e5fdc3d0cb61"
+        },
+        {
+            "Data_Source_ID": "e8b8ede7-337b-4c0c-8c32-5c7872c1ee22",
+            "Platform_ID": "8042d1df-0fa3-4ec5-bba2-66349d9a3fe7"
+        },
+        {
+            "Data_Source_ID": "45232bc0-e858-440d-aa93-d48c6cf167f0",
+            "Platform_ID": "84e7ddb9-301b-4d4d-8992-d7ddc4130e94"
+        },
+        {
+            "Data_Source_ID": "29aa4e0e-4a26-4f79-a9bc-1ae66df1c923",
+            "Platform_ID": "41d3ee8f-bdd7-496f-b68a-8e3f7957bae6"
+        },
+        {
+            "Data_Source_ID": "2ce537a2-3b30-4374-9397-31d6460ec0bc",
+            "Platform_ID": "84e7ddb9-301b-4d4d-8992-d7ddc4130e94"
+        },
+        {
+            "Data_Source_ID": "c3af32ff-65c5-4ea8-912a-fb4a85197239",
+            "Platform_ID": "de42396d-85ac-44fe-a2e0-36ddfa236826"
         }
     ]
 }
