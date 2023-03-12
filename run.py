@@ -17,6 +17,10 @@ final_export['MITRE_Data_Sources'] = []
 final_export['MITRE_Data_Component'] = []
 final_export['MITRE_ATTACK_Platforms'] = []
 final_export['MITRE_Data_Sources_Platforms'] = []
+final_export['MITRE_TOOL'] = []
+final_export['MITRE_Tool_References'] = []
+final_export['MITRE_Tool_Aliases'] = []
+final_export['MITRE_Tool_Platforms'] = []
 
 
 
@@ -157,7 +161,7 @@ for filename in os.listdir('x-mitre-data-source'):
         # Add the MITRE_Data_Sources_Platforms object to the final export
         final_export['MITRE_Data_Sources_Platforms'].append(MITRE_data_source_platforms.__dict__)
 
-        
+
 
 
 # #######################
@@ -182,6 +186,100 @@ for filename in os.listdir('x-mitre-data-component'):
 
     # Add the MITRE_Data_Component object to the final export
     final_export['MITRE_Data_Component'].append(mitre_data_component.__dict__)
+
+
+
+
+
+################################################
+# MITRE_TOOL & MITRE_Tool_References &
+# MITRE_Tool_Aliases & MITRE_Tool_Platforms
+################################################
+# Iterate through the x-mitre-tool directory
+for filename in os.listdir('tool'):
+        
+    # Read in the json file
+    with open('tool/' + filename) as f:
+        data = json.load(f)
+
+
+    # Create a new MITRE_TOOL object
+    mitre_tool = MITRE_TOOL(
+        UUID = data['objects'][0]['id'].replace('tool--', ''),
+        Description = data['objects'][0]['description'],
+        Name = data['objects'][0]['name'],
+        Version = data['objects'][0]['x_mitre_version'],
+    )
+
+    # Add the MITRE_TOOL object to the final export
+    final_export['MITRE_TOOL'].append(mitre_tool.__dict__)
+
+    # Aliases if they exist
+    if 'x_mitre_aliases' in data['objects'][0]:
+        for alias in data['objects'][0]['x_mitre_aliases']:
+            # Create a new MITRE_Tool_Aliases object
+            mitre_tool_aliases = MITRE_Tool_Aliases(
+                Name = alias,
+                Tool_ID= mitre_tool.UUID,
+            )
+
+            # Add the MITRE_Tool_Aliases object to the final export
+            final_export['MITRE_Tool_Aliases'].append(mitre_tool_aliases.__dict__)
+                
+
+    # References
+    for reference in data['objects'][0]['external_references']:
+        # Check that a description exists if not make it blank
+        if 'description' in reference:
+            description = reference['description']
+        else:
+            description = ''
+
+        if 'url' in reference:
+            url = reference['url']
+        else:
+            url = ''
+
+        mitre_tool_reference = MITRE_Tool_References(
+            Source_Name = reference['source_name'],
+            URL = url,
+            Description = description,
+            Tool_ID = mitre_tool.UUID
+        )
+
+
+        # Add the MITRE_Tool_References object to the final export
+        final_export['MITRE_Tool_References'].append(mitre_tool_reference.__dict__)
+
+
+    # Platforms if they exist
+    if 'x_mitre_platforms' in data['objects'][0]:
+        for platform in data['objects'][0]['x_mitre_platforms']:
+            # Check if the platform already exists
+            if not any(d['Name'] == platform for d in final_export['MITRE_ATTACK_Platforms']):
+                # Create a new MITRE_ATTACK_Platforms object
+                mitre_attack_platforms = MITRE_ATTACK_Platforms(
+                    UUID = str(uuid4()),
+                    Name = platform,
+                )
+
+                # Add the MITRE_ATTACK_Platforms object to the final export
+                final_export['MITRE_ATTACK_Platforms'].append(mitre_attack_platforms.__dict__)
+                mitre_attack_platforms_UUID = mitre_attack_platforms.UUID
+
+            else:
+                # Get the UUID of the existing platform
+                mitre_attack_platforms_UUID = [d for d in final_export['MITRE_ATTACK_Platforms'] if d['Name'] == platform][0]['UUID']
+
+            # Create a new MITRE_Tool_Platforms object
+            mitre_tool_platforms = MITRE_Tool_Platforms(
+                Tool_ID = mitre_tool.UUID,
+                Platform_ID = mitre_attack_platforms_UUID
+            )
+
+            # Add the MITRE_Tool_Platforms object to the final export
+            final_export['MITRE_Tool_Platforms'].append(mitre_tool_platforms.__dict__)
+
 
 
 
