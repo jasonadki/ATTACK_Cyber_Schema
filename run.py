@@ -293,7 +293,115 @@ for filename in os.listdir('tool'):
 # MITRE_Malware & MITRE_Malware_Platforms &
 # MITRE_Malware_Aliases & MITRE_Malware_References
 ####################################################
+# Iterate through the malware directory
+for filename in os.listdir('malware'):
+    # Read in the json file
+    with open('malware/' + filename) as f:
+        data = json.load(f)
 
+    
+    # Create a new MITRE_Malware object
+    # Check if the malware is depreciated
+    if 'x_mitre_deprecated' in data['objects'][0]:
+        depreciated = data['objects'][0]['x_mitre_deprecated']
+    else:
+        depreciated = None
+    mitre_malware = MITRE_Malware(
+        UUID = data['objects'][0]['id'].replace('malware--', ''),
+        Description = data['objects'][0]['description'],
+        Name = data['objects'][0]['name'],
+        Depreciated= depreciated,
+        Version_Number= data['objects'][0]['x_mitre_version'],
+    )
+
+    # Add the MITRE_Malware object to the final export
+    final_export['MITRE_Malware'].append(mitre_malware.__dict__)
+
+    # Aliases if they exist
+    if 'x_mitre_aliases' in data['objects'][0]:
+        for alias in data['objects'][0]['x_mitre_aliases']:
+            # Create a new MITRE_Malware_Aliases object
+            mitre_malware_aliases = MITRE_MALWARE_Aliases(
+                Name = alias,
+                Malware_ID= mitre_malware.UUID,
+            )
+
+            # Add the MITRE_Malware_Aliases object to the final export
+            final_export['MITRE_Malware_Aliases'].append(mitre_malware_aliases.__dict__)
+
+    # References if they exist
+    if 'external_references' in data['objects'][0]:
+        for reference in data['objects'][0]['external_references']:
+            # Check that a description exists if not make it blank
+            if 'description' in reference:
+                description = reference['description']
+            else:
+                description = ''
+
+            if 'url' in reference:
+                url = reference['url']
+            else:
+                url = ''
+
+            mitre_malware_reference = MITRE_Malware_References(
+                Source_Name = reference['source_name'],
+                URL = url,
+                Description = description,
+                Malware_ID = mitre_malware.UUID
+            )
+
+            # Add the MITRE_Malware_References object to the final export
+            final_export['MITRE_Malware_References'].append(mitre_malware_reference.__dict__)
+
+    # Platforms if they exist
+    if 'x_mitre_platforms' in data['objects'][0]:
+        for platform in data['objects'][0]['x_mitre_platforms']:
+            # Check if the platform already exists
+            if not any(d['Name'] == platform for d in final_export['MITRE_ATTACK_Platforms']):
+                # Create a new MITRE_ATTACK_Platforms object
+                mitre_attack_platforms = MITRE_ATTACK_Platforms(
+                    UUID = str(uuid4()),
+                    Name = platform,
+                )
+
+                # Add the MITRE_ATTACK_Platforms object to the final export
+                final_export['MITRE_ATTACK_Platforms'].append(mitre_attack_platforms.__dict__)
+                mitre_attack_platforms_UUID = mitre_attack_platforms.UUID
+
+            else:
+                # Get the UUID of the existing platform
+                mitre_attack_platforms_UUID = [d for d in final_export['MITRE_ATTACK_Platforms'] if d['Name'] == platform][0]['UUID']
+
+            # Create a new MITRE_Malware_Platforms object
+            mitre_malware_platforms = MITRE_Malware_Platforms(
+                Malware_ID = mitre_malware.UUID,
+                Platform_ID = mitre_attack_platforms_UUID
+            )
+
+            # Add the MITRE_Malware_Platforms object to the final export
+            final_export['MITRE_Malware_Platforms'].append(mitre_malware_platforms.__dict__)
+
+# # Iterate through the relationships directory
+# for filename in os.listdir('relationship'):
+#     # Read in the json file
+#     with open('relationship/' + filename) as f:
+#         data = json.load(f)
+
+#     # Check if the source_ref is malware and the target_ref is malware
+#     if data['objects'][0]['source_ref'].startswith('malware--') and data['objects'][0]['target_ref'].startswith('malware--'):
+#         # Update the malware object that's UUID is the source_ref
+#         # So that the Superseded_By field is the UUID in the target_ref
+#         # Update the malware in the final export
+#         for malware in final_export['MITRE_Malware']:
+#             if malware['UUID'] == data['objects'][0]['source_ref'].replace('malware--', ''):
+#                 malware['Superseded_By'] = data['objects'][0]['target_ref'].replace('malware--', '')
+
+
+
+        
+
+            
+    
 
 
 
