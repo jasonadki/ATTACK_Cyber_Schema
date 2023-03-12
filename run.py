@@ -25,6 +25,8 @@ final_export['MITRE_Malware'] = []
 final_export['MITRE_Malware_Platforms'] = []
 final_export['MITRE_Malware_Aliases'] = []
 final_export['MITRE_Malware_References'] = []
+final_export['MITRE_TACTIC'] = []
+final_export['MITRE_Tactic_References'] = []
 
 
 
@@ -380,6 +382,55 @@ for filename in os.listdir('malware'):
 
             # Add the MITRE_Malware_Platforms object to the final export
             final_export['MITRE_Malware_Platforms'].append(mitre_malware_platforms.__dict__)
+
+
+
+####################################################
+# MITRE_TACTIC & MITRE_Tactic_References
+####################################################
+
+# Iterate through the tactics directory
+for filename in os.listdir('x-mitre-tactic'):
+    # Read in the json file
+    with open('x-mitre-tactic/' + filename) as f:
+        data = json.load(f)
+
+    # Create a new MITRE_TACTIC object
+    mitre_tactic = MITRE_TACTIC(
+        UUID = data['objects'][0]['id'].replace('x-mitre-tactic--', ''),
+        Name = data['objects'][0]['name'],
+        Description = data['objects'][0]['description'],
+        Shortname= data['objects'][0]['x_mitre_shortname'],
+    )
+
+    # Add the MITRE_TACTIC object to the final export
+    final_export['MITRE_TACTIC'].append(mitre_tactic.__dict__)
+
+    # References if they exist
+    if 'external_references' in data['objects'][0]:
+        for reference in data['objects'][0]['external_references']:
+            # Check that a description exists if not make it blank
+            if 'description' in reference:
+                description = reference['description']
+            else:
+                description = ''
+
+            if 'url' in reference:
+                url = reference['url']
+            else:
+                url = ''
+
+            mitre_tactic_reference = MITRE_Tactic_References(
+                Source_Name = reference['source_name'],
+                URL = url,
+                Description = description,
+                Tactic_ID = mitre_tactic.UUID
+            )
+
+            # Add the MITRE_Tactic_References object to the final export
+            final_export['MITRE_Tactic_References'].append(mitre_tactic_reference.__dict__)
+
+
 
 # # Iterate through the relationships directory
 # for filename in os.listdir('relationship'):

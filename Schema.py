@@ -181,3 +181,32 @@ class MITRE_Malware_References:
         self.URL = URL
         self.Description = Description
         self.Malware_ID = Malware_ID
+
+
+class MITRE_TACTIC:
+    def __init__(
+        self,
+        UUID = None,
+        Name = None,
+        Description = None,
+        Shortname = None,
+    ):
+        self.UUID = UUID
+        self.Name = Name
+        self.Description = Description
+        self.Shortname = Shortname
+
+
+class MITRE_Tactic_References:
+    def __init__(
+        self,
+        Source_Name = None,
+        URL = None,
+        Description = None,
+        Tactic_ID = None,
+    ):
+        self.Source_Name = Source_Name
+        self.URL = URL
+        self.Description = Description
+        self.Tactic_ID = Tactic_ID
+    
