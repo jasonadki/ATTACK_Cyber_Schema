@@ -253,3 +253,37 @@ class MITRE_Group_References:
         self.URL = URL
         self.Description = Description
         self.Group_ID = Group_ID
+
+
+class MITRE_Mitigation:
+    def __init__(
+        self,
+        UUID = None,
+        Description = None,
+        Depreciated = None,
+        Version = None,
+        Name = None,
+        Created_Date = None,
+        Modified_Date = None,
+    ):
+        self.UUID = UUID
+        self.Description = Description
+        self.Depreciated = Depreciated
+        self.Version = Version
+        self.Name = Name
+        self.Created_Date = Created_Date
+        self.Modified_Date = Modified_Date
+
+
+class MITRE_Mitigation_References:
+    def __init__(
+        self,
+        Source_Name = None,
+        URL = None,
+        Description = None,
+        Mitigation_ID = None,
+    ):
+        self.Source_Name = Source_Name
+        self.URL = URL
+        self.Description = Description
+        self.Mitigation_ID = Mitigation_ID

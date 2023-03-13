@@ -30,6 +30,8 @@ final_export['MITRE_Tactic_References'] = []
 final_export['MITRE_Group'] = []   
 final_export['MITRE_Group_Aliases'] = []
 final_export['MITRE_Group_References'] = []
+final_export['MITRE_Mitigation'] = []
+final_export['MITRE_Mitigation_References'] = []
 
 
 
@@ -515,6 +517,64 @@ for filename in os.listdir('intrusion-set'):
 
 
 
+####################################################
+# MITRE_Mitigation & MITRE_Mitigation_References
+####################################################
+# Iterate through the course-of-action directory
+for filename in os.listdir('course-of-action'):
+    # Read in the json file
+    with open('course-of-action/' + filename) as f:
+        data = json.load(f)
+
+    # Create a new MITRE_Mitigation object
+    # Check if the mitigation is depreciated
+    if 'x_mitre_deprecated' in data['objects'][0]:
+        depreciated = data['objects'][0]['x_mitre_deprecated']
+    else:
+        depreciated = 0
+
+    # Check if has modified
+    if 'modified' in data['objects'][0]:
+        modified = data['objects'][0]['modified']
+    else:
+        modified = None
+
+    mitre_mitigation = MITRE_Mitigation(
+        UUID = data['objects'][0]['id'].replace('course-of-action--', ''),
+        Name = data['objects'][0]['name'],
+        Description = data['objects'][0]['description'],
+        Version = data['objects'][0]['x_mitre_version'],
+        Depreciated = depreciated,
+        Created_Date = data['objects'][0]['created'],
+        Modified_Date= modified
+    )
+
+    # Add the MITRE_Mitigation object to the final export
+    final_export['MITRE_Mitigation'].append(mitre_mitigation.__dict__)
+
+    # References if they exist
+    if 'external_references' in data['objects'][0]:
+        for reference in data['objects'][0]['external_references']:
+            # Check that a description exists if not make it blank
+            if 'description' in reference:
+                description = reference['description']
+            else:
+                description = ''
+
+            if 'url' in reference:
+                url = reference['url']
+            else:
+                url = ''
+
+            mitre_mitigation_reference = MITRE_Mitigation_References(
+                Source_Name = reference['source_name'],
+                URL = url,
+                Description = description,
+                Mitigation_ID = mitre_mitigation.UUID
+            )
+
+            # Add the MITRE_Mitigation_References object to the final export
+            final_export['MITRE_Mitigation_References'].append(mitre_mitigation_reference.__dict__)
 
 
 # # Iterate through the relationships directory
