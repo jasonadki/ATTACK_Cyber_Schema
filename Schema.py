@@ -317,3 +317,54 @@ class MITRE_TECHNIQUE:
         self.Version = Version
         self.Impact_ID = Impact_ID
         self.Parent_Technique = Parent_Technique
+
+
+class MITRE_ATTACK_Campaign:
+    def __init__(
+        self,
+        UUID = None,
+        Name = None,
+        Description = None,
+        First_Seen = None,
+        Last_Seen = None,
+        Created_Date = None,
+        Modified_Date = None,
+        Revoked = None,
+        Depreciated = None,
+        Version = None,
+    ):
+        self.UUID = UUID
+        self.Name = Name
+        self.Description = Description
+        self.First_Seen = First_Seen
+        self.Last_Seen = Last_Seen
+        self.Created_Date = Created_Date
+        self.Modified_Date = Modified_Date
+        self.Revoked = Revoked
+        self.Depreciated = Depreciated
+        self.Version = Version
+
+    
+class MITRE_ATTACK_Campaign_References:
+    def __init__(
+        self,
+        Source_Name = None,
+        URL = None,
+        Description = None,
+        Campaign_ID = None,
+    ):
+        self.Source_Name = Source_Name
+        self.URL = URL
+        self.Description = Description
+        self.Campaign_ID = Campaign_ID
+
+
+class MITRE_ATTACK_Campaign_Aliases:
+    def __init__(
+        self,
+        Name = None,
+        Campaign_ID = None,
+    ):
+        self.Name = Name
+        self.Campaign_ID = Campaign_ID
+

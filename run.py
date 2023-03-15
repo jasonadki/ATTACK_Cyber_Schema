@@ -32,6 +32,9 @@ final_export['MITRE_Group_Aliases'] = []
 final_export['MITRE_Group_References'] = []
 final_export['MITRE_Mitigation'] = []
 final_export['MITRE_Mitigation_References'] = []
+final_export['MITRE_ATTACK_Campaign'] = []
+final_export['MITRE_ATTACK_Campaign_References'] = []
+final_export['MITRE_ATTACK_Campaign_Aliases'] = []
 
 
 
@@ -575,6 +578,97 @@ for filename in os.listdir('course-of-action'):
 
             # Add the MITRE_Mitigation_References object to the final export
             final_export['MITRE_Mitigation_References'].append(mitre_mitigation_reference.__dict__)
+
+
+
+
+#############################################################
+# MITRE_ATTACK_Campaign & MITRE_ATTACK_Campaign_References &
+# MITRE_ATTACK_Campaign_Aliases
+#############################################################
+# Iterate through the campaign directory
+for filename in os.listdir('campaign'):
+    # Read in the json file
+    with open('campaign/' + filename) as f:
+        data = json.load(f)
+
+    # Create a new MITRE_ATTACK_Campaign object
+    # Check if the campaign is depreciated
+    if 'x_mitre_deprecated' in data['objects'][0]:
+        depreciated = data['objects'][0]['x_mitre_deprecated']
+    else:
+        depreciated = 0
+        
+    # Check if first seen
+    if 'first_seen' in data['objects'][0]:
+        first_seen = data['objects'][0]['first_seen']
+    else:
+        first_seen = None
+
+    # Check if last seen
+    if 'last_seen' in data['objects'][0]:
+        last_seen = data['objects'][0]['last_seen']
+    else:
+        last_seen = None
+
+    mitre_attack_campaign = MITRE_ATTACK_Campaign(
+        UUID = data['objects'][0]['id'].replace('campaign--', ''),
+        Name = data['objects'][0]['name'],
+        Description = data['objects'][0]['description'],
+        First_Seen= first_seen,
+        Last_Seen = last_seen,
+        Created_Date= data['objects'][0]['created'],
+        Modified_Date= data['objects'][0]['modified'],
+        Revoked = data['objects'][0]['revoked'],
+        Depreciated= depreciated,
+        Version = data['objects'][0]['x_mitre_version']
+    )
+
+    # Add the MITRE_ATTACK_Campaign object to the final export
+    final_export['MITRE_ATTACK_Campaign'].append(mitre_attack_campaign.__dict__)
+
+    # Aliases if they exist
+    if 'aliases' in data['objects'][0]:
+        for alias in data['objects'][0]['aliases']:
+            # Create a new MITRE_ATTACK_Campaign_Aliases object
+            mitre_attack_campaign_aliases = MITRE_ATTACK_Campaign_Aliases(
+                Name = alias,
+                Campaign_ID = mitre_attack_campaign.UUID
+            )
+
+            # Add the MITRE_ATTACK_Campaign_Aliases object to the final export
+            final_export['MITRE_ATTACK_Campaign_Aliases'].append(mitre_attack_campaign_aliases.__dict__)
+
+    # References if they exist
+    if 'external_references' in data['objects'][0]:
+        for reference in data['objects'][0]['external_references']:
+            # Check that a description exists if not make it blank
+            if 'description' in reference:
+                description = reference['description']
+            else:
+                description = ''
+
+            if 'url' in reference:
+                url = reference['url']
+            else:
+                url = ''
+
+            mitre_attack_campaign_reference = MITRE_ATTACK_Campaign_References(
+                Source_Name = reference['source_name'],
+                URL = url,
+                Description = description,
+                Campaign_ID = mitre_attack_campaign.UUID
+            )
+
+            # Add the MITRE_ATTACK_Campaign_References object to the final export
+            final_export['MITRE_ATTACK_Campaign_References'].append(mitre_attack_campaign_reference.__dict__)
+
+            
+
+
+
+
+
 
 
 # # Iterate through the relationships directory
