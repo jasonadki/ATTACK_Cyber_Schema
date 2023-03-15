@@ -287,3 +287,33 @@ class MITRE_Mitigation_References:
         self.URL = URL
         self.Description = Description
         self.Mitigation_ID = Mitigation_ID
+
+
+class MITRE_TECHNIQUE:
+    def __init__(
+        self,
+        UUID = None,
+        Description = None,
+        Name = None,
+        Revoked = None,
+        Depreciated = None,
+        Detection = None,
+        Network_Required = None,
+        Remote_Support = None,
+        System_Requirements = None,
+        Version = None,
+        Impact_ID = None,
+        Parent_Technique = None,
+    ):
+        self.UUID = UUID
+        self.Description = Description
+        self.Name = Name
+        self.Revoked = Revoked
+        self.Depreciated = Depreciated
+        self.Detection = Detection
+        self.Network_Required = Network_Required
+        self.Remote_Support = Remote_Support
+        self.System_Requirements = System_Requirements
+        self.Version = Version
+        self.Impact_ID = Impact_ID
+        self.Parent_Technique = Parent_Technique

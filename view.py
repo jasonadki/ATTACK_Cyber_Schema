@@ -9,16 +9,28 @@ from Schema import *
 
 x = []
 
-pairs = []
 
-# Iterate through the x-mitre-data-source directory
-for filename in os.listdir('attack-pattern'):
-    # Read in the json file
-    with open('attack-pattern/' + filename) as f:
+# Iterate through the campaign directory
+for filename in os.listdir('campaign'):
+    # Open the file
+    with open('campaign/' + filename) as f:
+        # Read the file
         data = json.load(f)
+    
+    data = data['objects'][0]
 
-    for k in data['objects'][0]['kill_chain_phases']:
-        x.append(k['kill_chain_name'])
+    # Add a list of all the keys of data, sorted, to x
+    x.append(sorted(data.keys()))
 
-print(len(x))
-print(len(set(x)))
+
+# Get a list of strings of concatenated keys
+y = ['|'.join(i) for i in x]
+
+y = list(set(y))
+
+# Create list of lists by splitting the strings on '|'
+y = [i.split('|') for i in y]
+
+for i in y:
+    print(i)
+    print()
