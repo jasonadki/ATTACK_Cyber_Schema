@@ -11,26 +11,18 @@ x = []
 
 
 # Iterate through the campaign directory
-for filename in os.listdir('campaign'):
+for filename in os.listdir('attack-pattern'):
     # Open the file
-    with open('campaign/' + filename) as f:
+    with open('attack-pattern/' + filename) as f:
         # Read the file
         data = json.load(f)
-    
-    data = data['objects'][0]
 
-    # Add a list of all the keys of data, sorted, to x
-    x.append(sorted(data.keys()))
+        data = data['objects'][0]
+
+        # Get a list of all the keys in the dictionary
+        for k in data.keys():
+            x.append(k)
 
 
-# Get a list of strings of concatenated keys
-y = ['|'.join(i) for i in x]
 
-y = list(set(y))
-
-# Create list of lists by splitting the strings on '|'
-y = [i.split('|') for i in y]
-
-for i in y:
-    print(i)
-    print()
+print(list(set(x)))
