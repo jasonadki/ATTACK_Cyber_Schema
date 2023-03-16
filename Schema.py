@@ -183,7 +183,7 @@ class MITRE_Malware_References:
         self.Malware_ID = Malware_ID
 
 
-class MITRE_TACTIC:
+class MITRE_Tactic:
     def __init__(
         self,
         UUID = None,
@@ -348,7 +348,6 @@ class MITRE_TECHNIQUE:
         Revoked = None,
         Depreciated = None,
         Detection = None,
-        Network_Required = None,
         Remote_Support = None,
         System_Requirements = None,
         Version = None,
@@ -361,7 +360,6 @@ class MITRE_TECHNIQUE:
         self.Revoked = Revoked
         self.Depreciated = Depreciated
         self.Detection = Detection
-        self.Network_Required = Network_Required
         self.Remote_Support = Remote_Support
         self.System_Requirements = System_Requirements
         self.Version = Version
@@ -378,3 +376,95 @@ class MITRE_ATTACK_Impact_Types:
         self.UUID = UUID
         self.Name = Name
 
+class System_Permissions:
+    def __init__(
+        self,
+        UUID = None,
+        Name = None,
+    ):
+        self.UUID = UUID
+        self.Name = Name
+
+
+class MITRE_Technique_Obtained_Permissions:
+    def __init__(
+        self,
+        Technique_ID = None,
+        Permission_ID = None,
+    ):
+        self.Technique_ID = Technique_ID
+        self.Permission_ID = Permission_ID
+
+
+class MITRE_Technique_Required_Permissions:
+    def __init__(
+        self,
+        Technique_ID = None,
+        Permission_ID = None,
+    ):
+        self.Technique_ID = Technique_ID
+        self.Permission_ID = Permission_ID
+
+
+class MITRE_ATTACK_Defenses:
+    def __init__(
+        self,
+        UUID = None,
+        Name = None,
+    ):
+        self.UUID = UUID
+        self.Name = Name
+
+
+class MITRE_Technique_Defense_Bypasses:
+    def __init__(
+        self,
+        Technique_ID = None,
+        Defense_ID = None,
+    ):
+        self.Technique_ID = Technique_ID
+        self.Defense_ID = Defense_ID
+
+
+class MITRE_Techniques_Platforms:
+    def __init__(
+        self,
+        Technique_ID = None,
+        Platform_ID = None,
+    ):
+        self.Technique_ID = Technique_ID
+        self.Platform_ID = Platform_ID
+
+
+class MITRE_Technique_Data_Components:
+    def __init__(
+        self,
+        Technique_ID = None,
+        Data_Component_ID = None,
+    ):
+        self.Technique_ID = Technique_ID
+        self.Data_Component_ID = Data_Component_ID
+
+    
+class MITRE_Technique_Tactics:
+    def __init__(
+        self,
+        Technique_ID = None,
+        Tactic_ID = None,
+    ):
+        self.Technique_ID = Technique_ID
+        self.Tactic_ID = Tactic_ID
+
+
+class MITRE_Technique_References:
+    def __init__(
+        self,
+        Source_Name = None,
+        URL = None,
+        Description = None,
+        Technique_ID = None,
+    ):
+        self.Source_Name = Source_Name
+        self.URL = URL
+        self.Description = Description
+        self.Technique_ID = Technique_ID

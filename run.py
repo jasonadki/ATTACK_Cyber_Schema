@@ -25,7 +25,7 @@ final_export['MITRE_Malware'] = []
 final_export['MITRE_Malware_Platforms'] = []
 final_export['MITRE_Malware_Aliases'] = []
 final_export['MITRE_Malware_References'] = []
-final_export['MITRE_TACTIC'] = []
+final_export['MITRE_Tactic'] = []
 final_export['MITRE_Tactic_References'] = []
 final_export['MITRE_Group'] = []   
 final_export['MITRE_Group_Aliases'] = []
@@ -37,6 +37,15 @@ final_export['MITRE_ATTACK_Campaign_References'] = []
 final_export['MITRE_ATTACK_Campaign_Aliases'] = []
 final_export['MITRE_TECHNIQUE'] = []
 final_export['MITRE_ATTACK_Impact_Types'] = []
+final_export['System_Permissions'] = []
+final_export['MITRE_Technique_Obtained_Permissions'] = []
+final_export['MITRE_Technique_Required_Permissions'] = []
+final_export['MITRE_ATTACK_Defenses'] = []
+final_export['MITRE_Technique_Defense_Bypasses'] = []
+final_export['MITRE_Techniques_Platforms'] = []
+final_export['MITRE_Technique_Data_Components'] = []
+final_export['MITRE_Technique_Tactics'] = []
+final_export['MITRE_Technique_References'] = []
 
 
 
@@ -181,28 +190,28 @@ def create_database_from_dict(db_file, data_dict):
 
 
 
-# # #######################
-# # # MITRE_Data_Component
-# # #######################
-# # Iterate through the x-mitre-data-component directory
-# for filename in os.listdir('x-mitre-data-component'):
+# #######################
+# # MITRE_Data_Component
+# #######################
+# Iterate through the x-mitre-data-component directory
+for filename in os.listdir('x-mitre-data-component'):
     
-#     # Read in the json file
-#     with open('x-mitre-data-component/' + filename) as f:
-#         data = json.load(f)
+    # Read in the json file
+    with open('x-mitre-data-component/' + filename) as f:
+        data = json.load(f)
 
 
-#     # Create a new MITRE_Data_Component object
-#     mitre_data_component = MITRE_Data_Component(
-#         UUID = data['objects'][0]['id'].replace('x-mitre-data-component--', ''),
-#         Description = data['objects'][0]['description'],
-#         Name = data['objects'][0]['name'],
-#         Version = data['objects'][0]['x_mitre_version'],
-#         Data_Source_ID = data['objects'][0]['x_mitre_data_source_ref'].replace('x-mitre-data-source--', ''),
-#     )
+    # Create a new MITRE_Data_Component object
+    mitre_data_component = MITRE_Data_Component(
+        UUID = data['objects'][0]['id'].replace('x-mitre-data-component--', ''),
+        Description = data['objects'][0]['description'],
+        Name = data['objects'][0]['name'],
+        Version = data['objects'][0]['x_mitre_version'],
+        Data_Source_ID = data['objects'][0]['x_mitre_data_source_ref'].replace('x-mitre-data-source--', ''),
+    )
 
-#     # Add the MITRE_Data_Component object to the final export
-#     final_export['MITRE_Data_Component'].append(mitre_data_component.__dict__)
+    # Add the MITRE_Data_Component object to the final export
+    final_export['MITRE_Data_Component'].append(mitre_data_component.__dict__)
 
 
 
@@ -395,50 +404,50 @@ def create_database_from_dict(db_file, data_dict):
 
 
 
-# ####################################################
-# # MITRE_TACTIC & MITRE_Tactic_References
-# ####################################################
+####################################################
+# MITRE_Tactic & MITRE_Tactic_References
+####################################################
 
-# # Iterate through the tactics directory
-# for filename in os.listdir('x-mitre-tactic'):
-#     # Read in the json file
-#     with open('x-mitre-tactic/' + filename) as f:
-#         data = json.load(f)
+# Iterate through the tactics directory
+for filename in os.listdir('x-mitre-tactic'):
+    # Read in the json file
+    with open('x-mitre-tactic/' + filename) as f:
+        data = json.load(f)
 
-#     # Create a new MITRE_TACTIC object
-#     mitre_tactic = MITRE_TACTIC(
-#         UUID = data['objects'][0]['id'].replace('x-mitre-tactic--', ''),
-#         Name = data['objects'][0]['name'],
-#         Description = data['objects'][0]['description'],
-#         Shortname= data['objects'][0]['x_mitre_shortname'],
-#     )
+    # Create a new MITRE_Tactic object
+    tactic = MITRE_Tactic(
+        UUID = data['objects'][0]['id'].replace('x-mitre-tactic--', ''),
+        Name = data['objects'][0]['name'],
+        Description = data['objects'][0]['description'],
+        Shortname= data['objects'][0]['x_mitre_shortname'],
+    )
 
-#     # Add the MITRE_TACTIC object to the final export
-#     final_export['MITRE_TACTIC'].append(mitre_tactic.__dict__)
+    # Add the MITRE_Tactic object to the final export
+    final_export['MITRE_Tactic'].append(tactic.__dict__)
 
-#     # References if they exist
-#     if 'external_references' in data['objects'][0]:
-#         for reference in data['objects'][0]['external_references']:
-#             # Check that a description exists if not make it blank
-#             if 'description' in reference:
-#                 description = reference['description']
-#             else:
-#                 description = ''
+    # References if they exist
+    if 'external_references' in data['objects'][0]:
+        for reference in data['objects'][0]['external_references']:
+            # Check that a description exists if not make it blank
+            if 'description' in reference:
+                description = reference['description']
+            else:
+                description = ''
 
-#             if 'url' in reference:
-#                 url = reference['url']
-#             else:
-#                 url = ''
+            if 'url' in reference:
+                url = reference['url']
+            else:
+                url = ''
 
-#             mitre_tactic_reference = MITRE_Tactic_References(
-#                 Source_Name = reference['source_name'],
-#                 URL = url,
-#                 Description = description,
-#                 Tactic_ID = mitre_tactic.UUID
-#             )
+            MITRE_Tactic_reference = MITRE_Tactic_References(
+                Source_Name = reference['source_name'],
+                URL = url,
+                Description = description,
+                Tactic_ID = tactic.UUID
+            )
 
-#             # Add the MITRE_Tactic_References object to the final export
-#             final_export['MITRE_Tactic_References'].append(mitre_tactic_reference.__dict__)
+            # Add the MITRE_Tactic_References object to the final export
+            final_export['MITRE_Tactic_References'].append(MITRE_Tactic_reference.__dict__)
 
 
 
@@ -668,9 +677,11 @@ def create_database_from_dict(db_file, data_dict):
             
 
 
-###################################
-# MITRE_TECHNIQUE
-###################################
+#############################################################
+# MITRE_TECHNIQUE & MITRE_ATTACK_Impact_Types &
+# System_Permissions & MITRE_Technique_Obtained_Permissions &
+# MITRE_Technique_Required_Permissions
+#############################################################
 # Iterate through the attack-pattern directory
 for filename in os.listdir('attack-pattern'):
     # Read in the json file
@@ -757,6 +768,239 @@ for filename in os.listdir('attack-pattern'):
 
     # Add the MITRE_TECHNIQUE object to the final export
     final_export['MITRE_TECHNIQUE'].append(technique.__dict__)
+
+
+    # Obtained Permissions
+    # Check if the technique has a x_mitre_effective_permissions field
+    if 'x_mitre_effective_permissions' in data['objects'][0]:
+        for permission in data['objects'][0]['x_mitre_effective_permissions']:
+            # Check if the permission exists in the final export
+            if not any(d['Name'] == permission for d in final_export['System_Permissions']):
+                # Create a new System_Permissions object
+                system_permission = System_Permissions(
+                    UUID = str(uuid4()),
+                    Name = permission
+                )
+
+                # Add the System_Permissions object to the final export
+                final_export['System_Permissions'].append(system_permission.__dict__)
+
+                permissionUUID = system_permission.UUID
+
+            else:
+                # Get the UUID of the permission found in the final export
+                for system_permission in final_export['System_Permissions']:
+                    if system_permission['Name'] == permission:
+                        permissionUUID = system_permission['UUID']
+
+            # Create a new MITRE_Technique_Obtained_Permissions object
+            technique_obtained_permission = MITRE_Technique_Obtained_Permissions(
+                Technique_ID = technique.UUID,
+                Permission_ID = permissionUUID
+            )
+
+            # Add the MITRE_Technique_Obtained_Permissions object to the final export
+            final_export['MITRE_Technique_Obtained_Permissions'].append(technique_obtained_permission.__dict__)
+
+
+    # Required Permissions
+    # Check if the technique has a x_mitre_permissions_required field
+    if 'x_mitre_permissions_required' in data['objects'][0]:
+        for permission in data['objects'][0]['x_mitre_permissions_required']:
+            # Check if the permission exists in the final export
+            if not any(d['Name'] == permission for d in final_export['System_Permissions']):
+                # Create a new System_Permissions object
+                system_permission = System_Permissions(
+                    UUID = str(uuid4()),
+                    Name = permission
+                )
+
+                # Add the System_Permissions object to the final export
+                final_export['System_Permissions'].append(system_permission.__dict__)
+
+                permissionUUID = system_permission.UUID
+
+            else:
+                # Get the UUID of the permission found in the final export
+                for system_permission in final_export['System_Permissions']:
+                    if system_permission['Name'] == permission:
+                        permissionUUID = system_permission['UUID']
+
+            # Create a new MITRE_Technique_Required_Permissions object
+            technique_required_permission = MITRE_Technique_Required_Permissions(
+                Technique_ID = technique.UUID,
+                Permission_ID = permissionUUID
+            )
+
+            # Add the MITRE_Technique_Required_Permissions object to the final export
+            final_export['MITRE_Technique_Required_Permissions'].append(technique_required_permission.__dict__)
+
+
+    # By passed defenses
+    # Check if the technique has a x_mitre_defense_bypassed field
+    if 'x_mitre_defense_bypassed' in data['objects'][0]:
+        for defense in data['objects'][0]['x_mitre_defense_bypassed']:
+            # Check if the defense exists in the final export
+            if not any(d['Name'] == defense for d in final_export['MITRE_ATTACK_Defenses']):
+                # Create a new MITRE_ATTACK_Defenses object
+                defense = MITRE_ATTACK_Defenses(
+                    UUID = str(uuid4()),
+                    Name = defense
+                )
+
+                # Add the MITRE_ATTACK_Defenses object to the final export
+                final_export['MITRE_ATTACK_Defenses'].append(defense.__dict__)
+
+                defenseUUID = defense.UUID
+
+            else:
+                # Get the UUID of the defense found in the final export
+                for defense in final_export['MITRE_ATTACK_Defenses']:
+                    if defense['Name'] == defense:
+                        defenseUUID = defense['UUID']
+
+            # Create a new MITRE_Technique_Defense_Bypasses object
+            technique_by_passed_defense = MITRE_Technique_Defense_Bypasses(
+                Technique_ID = technique.UUID,
+                Defense_ID = defenseUUID
+            )
+
+            # Add the MITRE_Technique_Defense_Bypasses object to the final export
+            final_export['MITRE_Technique_Defense_Bypasses'].append(technique_by_passed_defense.__dict__)
+
+
+    # Platforms
+    # Check if the technique has a x_mitre_platforms field
+    if 'x_mitre_platforms' in data['objects'][0]:
+        for platform in data['objects'][0]['x_mitre_platforms']:
+            # Check if the platform exists in the final export
+            if not any(d['Name'] == platform for d in final_export['MITRE_ATTACK_Platforms']):
+                # Create a new MITRE_ATTACK_Platforms object
+                platform = MITRE_ATTACK_Platforms(
+                    UUID = str(uuid4()),
+                    Name = platform
+                )
+
+                # Add the MITRE_ATTACK_Platforms object to the final export
+                final_export['MITRE_ATTACK_Platforms'].append(platform.__dict__)
+
+                platformUUID = platform.UUID
+
+            else:
+                # Get the UUID of the platform found in the final export
+                for platform in final_export['MITRE_ATTACK_Platforms']:
+                    if platform['Name'] == platform:
+                        platformUUID = platform['UUID']
+
+            # Create a new MITRE_ATTACK_Platforms object
+            technique_platform = MITRE_Techniques_Platforms(
+                Technique_ID = technique.UUID,
+                Platform_ID = platformUUID
+            )
+
+            # Add the MITRE_Techniques_Platforms object to the final export
+            final_export['MITRE_Techniques_Platforms'].append(technique_platform.__dict__)
+
+
+    # Technique Data Components
+    # Check if the technique has a x_mitre_data_sources field
+    if 'x_mitre_data_sources' in data['objects'][0]:
+        for data_component in data['objects'][0]['x_mitre_data_sources']:
+            # Get the right of the : and remove starting whitespace
+            data_component = data_component.split(':')[1].lstrip()
+            # Check if the data component exists in the final export
+            if not any(d['Name'] == data_component for d in final_export['MITRE_Data_Component']):
+                # Create a new MITRE_Data_Component object
+                data_component = MITRE_Technique_Data_Components(
+                    UUID = str(uuid4()),
+                    Name = data_component
+                )
+
+                # Add the MITRE_Technique_Data_Components object to the final export
+                final_export['MITRE_Technique_Data_Components'].append(data_component.__dict__)
+
+                data_componentUUID = data_component.UUID
+
+            else:
+                # Get the UUID of the data component found in the final export
+                for dc in final_export['MITRE_Data_Component']:
+                    if dc['Name'] == data_component:
+                        data_componentUUID = dc['UUID']
+
+            # Create a new MITRE_Technique_Data_Components object
+            technique_data_component = MITRE_Technique_Data_Components(
+                Technique_ID = technique.UUID,
+                Data_Component_ID = data_componentUUID
+            )
+
+            # Add the MITRE_Technique_Data_Component object to the final export
+            final_export['MITRE_Technique_Data_Components'].append(technique_data_component.__dict__)
+
+
+
+    # Tactics
+    # Check if the technique has a kill_chain_phases field
+    if 'kill_chain_phases' in data['objects'][0]:
+        for tactic in data['objects'][0]['kill_chain_phases']:
+            tactic = tactic['phase_name']
+            # Check if the tactic exists in the final export
+            if not any(d['Shortname'] == tactic for d in final_export['MITRE_Tactic']):
+                # Create a new MITRE_Tactics object
+                tact_new = MITRE_Tactic(
+                    UUID = str(uuid4()),
+                    Name = tactic
+                )
+
+                # Add the MITRE_Tactics object to the final export
+                final_export['MITRE_Tactic'].append(tact_new.__dict__)
+
+                tacticUUID = tact_new.UUID
+
+            else:
+                # Get the UUID of the tactic found in the final export
+                for tac in final_export['MITRE_Tactic']:
+                    if tac['Shortname'] == tactic:
+                        tacticUUID = tac['UUID']
+
+            # Create a new MITRE_Technique_Tactics object
+            technique_tactic = MITRE_Technique_Tactics(
+                Technique_ID = technique.UUID,
+                Tactic_ID = tacticUUID
+            )
+
+            # Add the MITRE_Technique_Tactics object to the final export
+            final_export['MITRE_Technique_Tactics'].append(technique_tactic.__dict__)
+
+
+    # References
+    for external_reference in data['objects'][0]['external_references']:
+        # Create a new MITRE_Technique_References  object
+        # Check that a description exists if not make it blank
+        if 'description' in external_reference:
+            description = external_reference['description']
+        else:
+            description = ''
+
+        # Check that a url exists if not make it blank
+        if 'url' in external_reference:
+            url = external_reference['url']
+        else:
+            url = ''
+
+
+
+        mitre_technique_reference = MITRE_Technique_References(
+            Source_Name = external_reference['source_name'],
+            URL = url,
+            Description = description,
+            Technique_ID = technique.UUID,
+        )
+
+        # Add the MITRE_Technique_References object to the final export
+        final_export['MITRE_Technique_References'].append(mitre_technique_reference.__dict__)
+
+
+
 
 
 
