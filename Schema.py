@@ -1,3 +1,17 @@
+class MITRE_External_References:
+    def __init__(
+        self,
+        UUID = None,
+        Source_Name = None,
+        URL = None,
+        Description = None,
+    ):
+        self.UUID = UUID
+        self.Source_Name = Source_Name
+        self.URL = URL
+        self.Description = Description
+
+
 class MITRE_ATTACK_Collection_Layers:
     def __init__(
         self,
@@ -21,16 +35,10 @@ class MITRE_Data_Sources_Collection_Layers:
 class MITRE_Data_Source_Reference:
     def __init__(
         self,
-        UUID = None,
-        Source_Name = None,
-        URL = None,
-        Description = None,
+        Reference_ID = None,
         Data_Source_ID = None,
     ):
-        self.UUID = UUID
-        self.Source_Name = Source_Name
-        self.URL = URL
-        self.Description = Description
+        self.Reference_ID = Reference_ID
         self.Data_Source_ID = Data_Source_ID
 
 
@@ -454,36 +462,6 @@ class MITRE_Technique_Tactics:
     ):
         self.Technique_ID = Technique_ID
         self.Tactic_ID = Tactic_ID
-
-
-# class MITRE_Technique_References:
-#     def __init__(
-#         self,
-#         Source_Name = None,
-#         URL = None,
-#         Description = None,
-#         Technique_ID = None,
-#     ):
-#         self.Source_Name = Source_Name
-#         self.URL = URL
-#         self.Description = Description
-#         self.Technique_ID = Technique_ID
-
-
-class MITRE_External_References:
-    def __init__(
-        self,
-        UUID = None,
-        Source_Name = None,
-        URL = None,
-        Description = None,
-        Technique_ID = None,
-    ):
-        self.UUID = UUID
-        self.Source_Name = Source_Name
-        self.URL = URL
-        self.Description = Description
-        self.Technique_ID = Technique_ID
 
 
 
