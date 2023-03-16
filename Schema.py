@@ -456,15 +456,44 @@ class MITRE_Technique_Tactics:
         self.Tactic_ID = Tactic_ID
 
 
-class MITRE_Technique_References:
+# class MITRE_Technique_References:
+#     def __init__(
+#         self,
+#         Source_Name = None,
+#         URL = None,
+#         Description = None,
+#         Technique_ID = None,
+#     ):
+#         self.Source_Name = Source_Name
+#         self.URL = URL
+#         self.Description = Description
+#         self.Technique_ID = Technique_ID
+
+
+class MITRE_External_References:
     def __init__(
         self,
+        UUID = None,
         Source_Name = None,
         URL = None,
         Description = None,
         Technique_ID = None,
     ):
+        self.UUID = UUID
         self.Source_Name = Source_Name
         self.URL = URL
         self.Description = Description
         self.Technique_ID = Technique_ID
+
+
+
+class MITRE_Technique_References:
+    def __init__(
+        self,
+        Reference_ID = None,
+        Technique_ID = None,
+    ):
+        self.Reference_ID = Reference_ID
+        self.Technique_ID = Technique_ID
+
+
