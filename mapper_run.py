@@ -47,6 +47,17 @@ final_export['MITRE_Technique_Data_Components'] = []
 final_export['MITRE_Technique_Tactics'] = []
 final_export['MITRE_Technique_References'] = []
 final_export['MITRE_External_References'] = []
+final_export['MITRE_Campaign_Technique'] = []
+final_export['MITRE_Campaign_Malware'] = []
+final_export['MITRE_Campaign_Group'] = []
+final_export['MITRE_Campaign_Tool'] = []
+final_export['MITRE_Malware_Technique'] = []
+final_export['MITRE_Group_Malware'] = []
+final_export['MITRE_Group_Tool'] = []
+final_export['MITRE_Group_Technique'] = []
+final_export['MITRE_Tool_Technique'] = []
+final_export['MITRE_Mitigation_Technique'] = []
+final_export['MITRE_Technique_Data_Component'] = []
 
 
 
@@ -1569,54 +1580,196 @@ for filename in os.listdir('attack-pattern'):
 
 
 
+##################################
+# Relationships
+##################################
+# Iterate through the relationships directory
+for filename in os.listdir('relationship'):
+    # Read in the json file
+    with open('relationship/' + filename) as f:
+        data = json.load(f)
+
+    # source_ref: campaign uses target_ref: malware
+    # Need to check if the source_ref (left of the --) is campaign and the target_ref (left of the --) is malware
+    if data['objects'][0]['source_ref'].startswith('campaign') and data['objects'][0]['target_ref'].startswith('malware'):
+        # Create a new MITRE_Campaign_Malware object make sure to remove the identifiers from the source and target
+        campaign_malware = MITRE_Campaign_Malware(
+            Campaign_ID = data['objects'][0]['source_ref'].replace('campaign--', ''),
+            Malware_ID = data['objects'][0]['target_ref'].replace('malware--', '')
+        )
+
+        # Add the MITRE_Campaign_Malware object to the final export
+        final_export['MITRE_Campaign_Malware'].append(campaign_malware.__dict__)
+
+    # source_ref: campaign attributed-to target_ref: group
+    # Need to check if the source_ref (left of the --) is campaign and the target_ref (left of the --) is group
+    elif data['objects'][0]['source_ref'].startswith('campaign') and data['objects'][0]['target_ref'].startswith('intrusion-set'):
+        # Create a new MITRE_Campaign_Group object make sure to remove the identifiers from the source and target
+        campaign_group = MITRE_Campaign_Group(
+            Campaign_ID = data['objects'][0]['source_ref'].replace('campaign--', ''),
+            Group_ID = data['objects'][0]['target_ref'].replace('intrusion-set--', '')
+        )
+
+        # Add the MITRE_Campaign_Group object to the final export
+        final_export['MITRE_Campaign_Group'].append(campaign_group.__dict__)
+
+
+    # source_ref: campaign uses target_ref: tool
+    # Need to check if the source_ref (left of the --) is campaign and the target_ref (left of the --) is tool
+    elif data['objects'][0]['source_ref'].startswith('campaign') and data['objects'][0]['target_ref'].startswith('tool'):
+        # Create a new MITRE_Campaign_Tool object make sure to remove the identifiers from the source and target
+        campaign_tool = MITRE_Campaign_Tool(
+            Campaign_ID = data['objects'][0]['source_ref'].replace('campaign--', ''),
+            Tool_ID = data['objects'][0]['target_ref'].replace('tool--', '')
+        )
+
+        # Add the MITRE_Campaign_Tool object to the final export
+        final_export['MITRE_Campaign_Tool'].append(campaign_tool.__dict__)
+
+    # source_ref: campaign uses target_ref: technique
+    # Need to check if the source_ref (left of the --) is campaign and the target_ref (left of the --) is technique
+    elif data['objects'][0]['source_ref'].startswith('campaign') and data['objects'][0]['target_ref'].startswith('attack-pattern'):
+        # Create a new MITRE_Campaign_Technique object make sure to remove the identifiers from the source and target
+        campaign_technique = MITRE_Campaign_Technique(
+            Campaign_ID = data['objects'][0]['source_ref'].replace('campaign--', ''),
+            Technique_ID = data['objects'][0]['target_ref'].replace('attack-pattern--', '')
+        )
+
+        # Add the MITRE_Campaign_Technique object to the final export
+        final_export['MITRE_Campaign_Technique'].append(campaign_technique.__dict__)
+
+    # source_ref: malware revoked-by target_ref: malware
+    # Need to check if the source_ref (left of the --) is malware and the target_ref (left of the --) is malware
+    elif data['objects'][0]['source_ref'].startswith('malware') and data['objects'][0]['target_ref'].startswith('malware'):
+        # Update the Malware object that has the same ID as the source_ref so the Superseded_By field is updated to the target_ref
+        for malware in final_export['MITRE_Malware']:
+            if malware['UUID'] == data['objects'][0]['source_ref'].replace('malware--', ''):
+
+                # Update the malware object in the final export
+                final_export['MITRE_Malware'][final_export['MITRE_Malware'].index(malware)]['Superseded_By'] = data['objects'][0]['target_ref'].replace('malware--', '')
+
+                
+    # source_ref: malware uses target_ref: technique
+    # Need to check if the source_ref (left of the --) is malware and the target_ref (left of the --) is technique
+    elif data['objects'][0]['source_ref'].startswith('malware') and data['objects'][0]['target_ref'].startswith('attack-pattern'):
+        # Create a new MITRE_Malware_Technique object make sure to remove the identifiers from the source and target
+        malware_technique = MITRE_Malware_Technique(
+            Malware_ID = data['objects'][0]['source_ref'].replace('malware--', ''),
+            Technique_ID = data['objects'][0]['target_ref'].replace('attack-pattern--', '')
+        )
+
+        # Add the MITRE_Malware_Technique object to the final export
+        final_export['MITRE_Malware_Technique'].append(malware_technique.__dict__)
+
+    # source_ref: group uses target_ref: malware
+    # Need to check if the source_ref (left of the --) is group and the target_ref (left of the --) is malware
+    elif data['objects'][0]['source_ref'].startswith('intrusion-set') and data['objects'][0]['target_ref'].startswith('malware'):
+        # Create a new MITRE_Group_Malware object make sure to remove the identifiers from the source and target
+        group_malware = MITRE_Group_Malware(
+            Group_ID = data['objects'][0]['source_ref'].replace('intrusion-set--', ''),
+            Malware_ID = data['objects'][0]['target_ref'].replace('malware--', '')
+        )
+
+        # Add the MITRE_Group_Malware object to the final export
+        final_export['MITRE_Group_Malware'].append(group_malware.__dict__)
+
+    # source_ref: group revoked-by target_ref: group
+    # Need to check if the source_ref (left of the --) is group and the target_ref (left of the --) is group
+    elif data['objects'][0]['source_ref'].startswith('intrusion-set') and data['objects'][0]['target_ref'].startswith('intrusion-set'):
+        # Update the Group object that has the same ID as the source_ref so the Superseded_By field is updated to the target_ref
+        for group in final_export['MITRE_Group']:
+            if group['UUID'] == data['objects'][0]['source_ref'].replace('intrusion-set--', ''):
+
+                # Update the group object in the final export
+                final_export['MITRE_Group'][final_export['MITRE_Group'].index(group)]['Superseded_By'] = data['objects'][0]['target_ref'].replace('intrusion-set--', '')
 
 
 
+    # source_ref: group uses target_ref: tool
+    # Need to check if the source_ref (left of the --) is group and the target_ref (left of the --) is tool
+    elif data['objects'][0]['source_ref'].startswith('intrusion-set') and data['objects'][0]['target_ref'].startswith('tool'):
+        # Create a new MITRE_Group_Tool object make sure to remove the identifiers from the source and target
+        group_tool = MITRE_Group_Tool(
+            Group_ID = data['objects'][0]['source_ref'].replace('intrusion-set--', ''),
+            Tool_ID = data['objects'][0]['target_ref'].replace('tool--', '')
+        )
+
+        # Add the MITRE_Group_Tool object to the final export
+        final_export['MITRE_Group_Tool'].append(group_tool.__dict__)
 
 
+    # source_ref: group uses target_ref: technique
+    # Need to check if the source_ref (left of the --) is group and the target_ref (left of the --) is technique
+    elif data['objects'][0]['source_ref'].startswith('intrusion-set') and data['objects'][0]['target_ref'].startswith('attack-pattern'):
+        # Create a new MITRE_Group_Technique object make sure to remove the identifiers from the source and target
+        group_technique = MITRE_Group_Technique(
+            Group_ID = data['objects'][0]['source_ref'].replace('intrusion-set--', ''),
+            Technique_ID = data['objects'][0]['target_ref'].replace('attack-pattern--', '')
+        )
+
+        # Add the MITRE_Group_Technique object to the final export
+        final_export['MITRE_Group_Technique'].append(group_technique.__dict__)
 
 
+    # source_ref: technique revoked-by target_ref: technique
+    # Need to check if the source_ref (left of the --) is technique and the target_ref (left of the --) is technique
+    elif data['objects'][0]['source_ref'].startswith('attack-pattern') and data['objects'][0]['target_ref'].startswith('attack-pattern') and data['objects'][0]['relationship_type'] == 'revoked-by':
+        # Update the Technique object that has the same ID as the source_ref so the Superseded_By field is updated to the target_ref
+        for technique in final_export['MITRE_TECHNIQUE']:
+            if technique['UUID'] == data['objects'][0]['source_ref'].replace('attack-pattern--', ''):
+
+                # Update the technique object in the final export
+                final_export['MITRE_TECHNIQUE'][final_export['MITRE_TECHNIQUE'].index(technique)]['Superseded_By'] = data['objects'][0]['target_ref'].replace('attack-pattern--', '')
 
 
+    # source_ref: technique subtechnique-of target_ref: technique
+    # Need to check if the source_ref (left of the --) is technique and the target_ref (left of the --) is technique
+    elif data['objects'][0]['source_ref'].startswith('attack-pattern') and data['objects'][0]['target_ref'].startswith('attack-pattern') and data['objects'][0]['relationship_type'] == 'subtechnique-of':
+        # Update the Technique object that has the same ID as the source_ref so the Superseded_By field is updated to the target_ref
+        for technique in final_export['MITRE_TECHNIQUE']:
+            if technique['UUID'] == data['objects'][0]['source_ref'].replace('attack-pattern--', ''):
 
+                # Update the technique object in the final export
+                final_export['MITRE_TECHNIQUE'][final_export['MITRE_TECHNIQUE'].index(technique)]['Parent_Technique'] = data['objects'][0]['target_ref'].replace('attack-pattern--', '')
 
+    # source_ref: tool uses target_ref: technique
+    # Need to check if the source_ref (left of the --) is tool and the target_ref (left of the --) is technique
+    elif data['objects'][0]['source_ref'].startswith('tool') and data['objects'][0]['target_ref'].startswith('attack-pattern'):
+        # Create a new MITRE_Tool_Technique object make sure to remove the identifiers from the source and target
+        tool_technique = MITRE_Tool_Technique(
+            Tool_ID = data['objects'][0]['source_ref'].replace('tool--', ''),
+            Technique_ID = data['objects'][0]['target_ref'].replace('attack-pattern--', '')
+        )
 
+        # Add the MITRE_Tool_Technique object to the final export
+        final_export['MITRE_Tool_Technique'].append(tool_technique.__dict__)
 
+    # source_ref: mitigation mitigates target_ref: technique
+    # Need to check if the source_ref (left of the --) is mitigation and the target_ref (left of the --) is technique
+    elif data['objects'][0]['source_ref'].startswith('course-of-action') and data['objects'][0]['target_ref'].startswith('attack-pattern'):
+        # Create a new MITRE_Mitigation_Technique object make sure to remove the identifiers from the source and target
+        mitigation_technique = MITRE_Mitigation_Technique(
+            Mitigation_ID = data['objects'][0]['source_ref'].replace('course-of-action--', ''),
+            Technique_ID = data['objects'][0]['target_ref'].replace('attack-pattern--', '')
+        )
 
+        # Add the MITRE_Mitigation_Technique object to the final export
+        final_export['MITRE_Mitigation_Technique'].append(mitigation_technique.__dict__)
 
+    # source_ref: data-component detects target_ref: technique
+    # Need to check if the source_ref (left of the --) is data-component and the target_ref (left of the --) is technique
+    elif data['objects'][0]['source_ref'].startswith('x-mitre-data-component') and data['objects'][0]['target_ref'].startswith('attack-pattern'):
+        # Create a new MITRE_Technique_Data_Component object make sure to remove the identifiers from the source and target
+        data_component_technique = MITRE_Technique_Data_Component(
+            Data_Component_ID = data['objects'][0]['source_ref'].replace('x-mitre-data-component--', ''),
+            Technique_ID = data['objects'][0]['target_ref'].replace('attack-pattern--', '')
+        )
 
+        # Add the MITRE_Data_Component_Technique object to the final export
+        final_export['MITRE_Technique_Data_Component'].append(data_component_technique.__dict__)
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-# # Iterate through the relationships directory
-# for filename in os.listdir('relationship'):
-#     # Read in the json file
-#     with open('relationship/' + filename) as f:
-#         data = json.load(f)
-
-#     # Check if the source_ref is malware and the target_ref is malware
-#     if data['objects'][0]['source_ref'].startswith('malware--') and data['objects'][0]['target_ref'].startswith('malware--'):
-#         # Update the malware object that's UUID is the source_ref
-#         # So that the Superseded_By field is the UUID in the target_ref
-#         # Update the malware in the final export
-#         for malware in final_export['MITRE_Malware']:
-#             if malware['UUID'] == data['objects'][0]['source_ref'].replace('malware--', ''):
-#                 malware['Superseded_By'] = data['objects'][0]['target_ref'].replace('malware--', '')
+    else:
+        print('Missing relationship: ', data['objects'][0]['source_ref'], data['objects'][0]['relationship_type'], data['objects'][0]['target_ref'])
 
 
 

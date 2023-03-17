@@ -337,6 +337,7 @@ class MITRE_TECHNIQUE:
         Version = None,
         Impact_ID = None,
         Parent_Technique = None,
+        Superseded_By = None,
     ):
         self.UUID = UUID
         self.Description = Description
@@ -349,6 +350,7 @@ class MITRE_TECHNIQUE:
         self.Version = Version
         self.Impact_ID = Impact_ID
         self.Parent_Technique = Parent_Technique
+        self.Superseded_By = Superseded_By
 
 
 class MITRE_ATTACK_Impact_Types:
@@ -451,3 +453,111 @@ class MITRE_Technique_References:
         self.Technique_ID = Technique_ID
 
 
+class MITRE_Campaign_Malware:
+    def __init__(
+        self,
+        Malware_ID = None,
+        Campaign_ID = None,
+    ):
+        self.Malware_ID = Malware_ID
+        self.Campaign_ID = Campaign_ID
+
+
+class MITRE_Campaign_Group:
+    def __init__(
+        self,
+        Group_ID = None,
+        Campaign_ID = None,
+    ):
+        self.Group_ID = Group_ID
+        self.Campaign_ID = Campaign_ID
+
+
+class MITRE_Campaign_Tool:
+    def __init__(
+        self,
+        Tool_ID = None,
+        Campaign_ID = None,
+    ):
+        self.Tool_ID = Tool_ID
+        self.Campaign_ID = Campaign_ID
+
+
+class MITRE_Campaign_Technique:
+    def __init__(
+        self,
+        Technique_ID = None,
+        Campaign_ID = None,
+    ):
+        self.Technique_ID = Technique_ID
+        self.Campaign_ID = Campaign_ID
+
+
+class MITRE_Malware_Technique:
+    def __init__(
+        self,
+        Malware_ID = None,
+        Technique_ID = None,
+    ):
+        self.Malware_ID = Malware_ID
+        self.Technique_ID = Technique_ID
+
+
+class MITRE_Group_Malware:
+    def __init__(
+        self,
+        Group_ID = None,
+        Malware_ID = None,
+    ):
+        self.Group_ID = Group_ID
+        self.Malware_ID = Malware_ID
+
+
+class MITRE_Group_Tool:
+    def __init__(
+        self,
+        Group_ID = None,
+        Tool_ID = None,
+    ):
+        self.Group_ID = Group_ID
+        self.Tool_ID = Tool_ID
+
+
+class MITRE_Group_Technique:
+    def __init__(
+        self,
+        Group_ID = None,
+        Technique_ID = None,
+    ):
+        self.Group_ID = Group_ID
+        self.Technique_ID = Technique_ID
+
+
+class MITRE_Tool_Technique:
+    def __init__(
+        self,
+        Tool_ID = None,
+        Technique_ID = None,
+    ):
+        self.Tool_ID = Tool_ID
+        self.Technique_ID = Technique_ID
+
+
+class MITRE_Mitigation_Technique:
+    def __init__(
+        self,
+        Mitigation_ID = None,
+        Technique_ID = None,
+    ):
+        self.Mitigation_ID = Mitigation_ID
+        self.Technique_ID = Technique_ID
+
+
+class MITRE_Technique_Data_Component:
+    def __init__(
+        self,
+        Technique_ID = None,
+        Data_Component_ID = None,
+    ):
+        self.Technique_ID = Technique_ID
+        self.Data_Component_ID = Data_Component_ID
