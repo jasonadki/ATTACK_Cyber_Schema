@@ -1,0 +1,1370 @@
+<html><head><title>Cyber Data Schema</title> 
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <style>
+        .table-header {
+            background-color: #f8f9fa;
+            border: 1px solid #dee2e6;
+            padding: 10px;
+        }
+        .table-name {
+            font-size: 24px;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+        .table-desc {
+            font-size: 18px;
+        }
+        .thead-light {
+            background-color: #bdbfc1;
+            /* font color  black */
+            color: #000;
+        }
+        </style>
+      </head>
+     <body>
+        <div class="container-md mt-5 mx-5" style="margin-right: 12rem!important; margin-left: 12rem!important;">
+        <div class="table-responsive">
+        <div class="row justify-content-center">
+            <div class="col-md-12">
+            <div class="table-header"style="background-color: 
+        #FFE5B4;; color: #000;"><div class="table-name">MITRE_ATTACK_Campaign</div><div class="table-desc"></div></div></div></div>
+            <table class="table table-bordered">
+            <thead class="thead-light">
+            <tr>
+                <th style="color:#000"><strong>Field Name</strong></th>
+                <th style="color:#000"><strong>Data Type</strong></th>
+                <th style="color:#000"><strong>Description</strong></th>
+                <th style="color:#000"><strong>Nullable</strong></th>
+            </tr>
+            </thead>
+            <tbody>
+        <tr><td>
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-key" viewBox="0 0 16 16">
+                <path d="M0 8a4 4 0 0 1 7.465-2H14a.5.5 0 0 1 .354.146l1.5 1.5a.5.5 0 0 1 0 .708l-1.5 1.5a.5.5 0 0 1-.708 0L13 9.207l-.646.647a.5.5 0 0 1-.708 0L11 9.207l-.646.647a.5.5 0 0 1-.708 0L9 9.207l-.646.647A.5.5 0 0 1 8 10h-.535A4 4 0 0 1 0 8z" style="fill:gold;" />
+                <path d="M4 8a1 1 0 1 1-2 0 1 1 0 0 1 2 0z" style="fill:gold;" />
+                </svg>
+                UUID</td><td>VARCHAR(255)</td><td>Primary Key</td><td>TRUE</td></tr><tr><td>Name</td><td>VARCHAR(255)</td><td>Name of the Campaign</td><td>FALSE</td></tr><tr><td>Description</td><td>VARCHAR(255)</td><td>Description of the Campaign</td><td>FALSE</td></tr><tr><td>First_Seen</td><td>DATETIME</td><td>When the Campaign was first seen</td><td>FALSE</td></tr><tr><td>Last_Seen</td><td>DATETIME</td><td>When the Campaign was last seen</td><td>FALSE</td></tr><tr><td>Created_Date</td><td>DATETIME</td><td>When this Campaign was first created</td><td>FALSE</td></tr><tr><td>Modified_Date</td><td>DATETIME</td><td>When this Campaign was last modified</td><td>FALSE</td></tr><tr><td>Revoked</td><td>TINYINT</td><td>Boolean whether this Campaign has been revoked</td><td>FALSE</td></tr><tr><td>Deprecated</td><td>TINYINT</td><td>Boolean whether this Campaign has been depreciated</td><td>FALSE</td></tr><tr><td>Version</td><td>VARCHAR(255)</td><td>Version number of this Campaign</td><td>FALSE</td></tr>
+            </tbody>
+            </table>
+        </div></div>
+        <div class="container-md mt-5 mx-5" style="margin-right: 12rem!important; margin-left: 12rem!important;">
+        <div class="table-responsive">
+        <div class="row justify-content-center">
+            <div class="col-md-12">
+            <div class="table-header"style="background-color: 
+        #FFD12A;; color: #000;"><div class="table-name">MITRE_ATTACK_Collection_Layers</div><div class="table-desc">A description of where the data source may be physically collected (ex: Host, Network, Cloud Control Plane, etc.)</div></div></div></div>
+            <table class="table table-bordered">
+            <thead class="thead-light">
+            <tr>
+                <th style="color:#000"><strong>Field Name</strong></th>
+                <th style="color:#000"><strong>Data Type</strong></th>
+                <th style="color:#000"><strong>Description</strong></th>
+                <th style="color:#000"><strong>Nullable</strong></th>
+            </tr>
+            </thead>
+            <tbody>
+        <tr><td>
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-key" viewBox="0 0 16 16">
+                <path d="M0 8a4 4 0 0 1 7.465-2H14a.5.5 0 0 1 .354.146l1.5 1.5a.5.5 0 0 1 0 .708l-1.5 1.5a.5.5 0 0 1-.708 0L13 9.207l-.646.647a.5.5 0 0 1-.708 0L11 9.207l-.646.647a.5.5 0 0 1-.708 0L9 9.207l-.646.647A.5.5 0 0 1 8 10h-.535A4 4 0 0 1 0 8z" style="fill:gold;" />
+                <path d="M4 8a1 1 0 1 1-2 0 1 1 0 0 1 2 0z" style="fill:gold;" />
+                </svg>
+                UUID</td><td>VARCHAR(255)</td><td>Primary Key</td><td>TRUE</td></tr><tr><td>Name</td><td>VARCHAR(255)</td><td>Name of the Collection Layer</td><td>FALSE</td></tr>
+            </tbody>
+            </table>
+        </div></div>
+        <div class="container-md mt-5 mx-5" style="margin-right: 12rem!important; margin-left: 12rem!important;">
+        <div class="table-responsive">
+        <div class="row justify-content-center">
+            <div class="col-md-12">
+            <div class="table-header"style="background-color: 
+        #FFD12A;; color: #000;"><div class="table-name">MITRE_ATTACK_Defenses</div><div class="table-desc">Reference Table of defensive tools, methodologies, and processes</div></div></div></div>
+            <table class="table table-bordered">
+            <thead class="thead-light">
+            <tr>
+                <th style="color:#000"><strong>Field Name</strong></th>
+                <th style="color:#000"><strong>Data Type</strong></th>
+                <th style="color:#000"><strong>Description</strong></th>
+                <th style="color:#000"><strong>Nullable</strong></th>
+            </tr>
+            </thead>
+            <tbody>
+        <tr><td>
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-key" viewBox="0 0 16 16">
+                <path d="M0 8a4 4 0 0 1 7.465-2H14a.5.5 0 0 1 .354.146l1.5 1.5a.5.5 0 0 1 0 .708l-1.5 1.5a.5.5 0 0 1-.708 0L13 9.207l-.646.647a.5.5 0 0 1-.708 0L11 9.207l-.646.647a.5.5 0 0 1-.708 0L9 9.207l-.646.647A.5.5 0 0 1 8 10h-.535A4 4 0 0 1 0 8z" style="fill:gold;" />
+                <path d="M4 8a1 1 0 1 1-2 0 1 1 0 0 1 2 0z" style="fill:gold;" />
+                </svg>
+                UUID</td><td>VARCHAR(255)</td><td>Primary Key</td><td>TRUE</td></tr><tr><td>Name</td><td>VARCHAR(255)</td><td>Name of the Defensive tool, methodology, or process</td><td>FALSE</td></tr>
+            </tbody>
+            </table>
+        </div></div>
+        <div class="container-md mt-5 mx-5" style="margin-right: 12rem!important; margin-left: 12rem!important;">
+        <div class="table-responsive">
+        <div class="row justify-content-center">
+            <div class="col-md-12">
+            <div class="table-header"style="background-color: 
+        #FFD12A;; color: #000;"><div class="table-name">MITRE_ATTACK_Impact_Types</div><div class="table-desc">Denotes if the (sub-)technique can be used for integrity or availability attacks</div></div></div></div>
+            <table class="table table-bordered">
+            <thead class="thead-light">
+            <tr>
+                <th style="color:#000"><strong>Field Name</strong></th>
+                <th style="color:#000"><strong>Data Type</strong></th>
+                <th style="color:#000"><strong>Description</strong></th>
+                <th style="color:#000"><strong>Nullable</strong></th>
+            </tr>
+            </thead>
+            <tbody>
+        <tr><td>
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-key" viewBox="0 0 16 16">
+                <path d="M0 8a4 4 0 0 1 7.465-2H14a.5.5 0 0 1 .354.146l1.5 1.5a.5.5 0 0 1 0 .708l-1.5 1.5a.5.5 0 0 1-.708 0L13 9.207l-.646.647a.5.5 0 0 1-.708 0L11 9.207l-.646.647a.5.5 0 0 1-.708 0L9 9.207l-.646.647A.5.5 0 0 1 8 10h-.535A4 4 0 0 1 0 8z" style="fill:gold;" />
+                <path d="M4 8a1 1 0 1 1-2 0 1 1 0 0 1 2 0z" style="fill:gold;" />
+                </svg>
+                UUID</td><td>VARCHAR(255)</td><td>Primary Key</td><td>TRUE</td></tr><tr><td>Name</td><td>VARCHAR(255)</td><td>Name of the Impact Type</td><td>FALSE</td></tr>
+            </tbody>
+            </table>
+        </div></div>
+        <div class="container-md mt-5 mx-5" style="margin-right: 12rem!important; margin-left: 12rem!important;">
+        <div class="table-responsive">
+        <div class="row justify-content-center">
+            <div class="col-md-12">
+            <div class="table-header"style="background-color: 
+        #FFD12A;; color: #000;"><div class="table-name">MITRE_ATTACK_Platforms</div><div class="table-desc">Reference Table of Operating Systems and Applications</div></div></div></div>
+            <table class="table table-bordered">
+            <thead class="thead-light">
+            <tr>
+                <th style="color:#000"><strong>Field Name</strong></th>
+                <th style="color:#000"><strong>Data Type</strong></th>
+                <th style="color:#000"><strong>Description</strong></th>
+                <th style="color:#000"><strong>Nullable</strong></th>
+            </tr>
+            </thead>
+            <tbody>
+        <tr><td>
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-key" viewBox="0 0 16 16">
+                <path d="M0 8a4 4 0 0 1 7.465-2H14a.5.5 0 0 1 .354.146l1.5 1.5a.5.5 0 0 1 0 .708l-1.5 1.5a.5.5 0 0 1-.708 0L13 9.207l-.646.647a.5.5 0 0 1-.708 0L11 9.207l-.646.647a.5.5 0 0 1-.708 0L9 9.207l-.646.647A.5.5 0 0 1 8 10h-.535A4 4 0 0 1 0 8z" style="fill:gold;" />
+                <path d="M4 8a1 1 0 1 1-2 0 1 1 0 0 1 2 0z" style="fill:gold;" />
+                </svg>
+                UUID</td><td>VARCHAR(255)</td><td>Primary Key</td><td>TRUE</td></tr><tr><td>Name</td><td>VARCHAR(255)</td><td>Name of the Platform</td><td>FALSE</td></tr><tr><td>Is_Operating_System</td><td>TINYINT</td><td>Boolean for whether the Platform is a Operating System. True for Operating System, False for Application</td><td>FALSE</td></tr>
+            </tbody>
+            </table>
+        </div></div>
+        <div class="container-md mt-5 mx-5" style="margin-right: 12rem!important; margin-left: 12rem!important;">
+        <div class="table-responsive">
+        <div class="row justify-content-center">
+            <div class="col-md-12">
+            <div class="table-header"style="background-color: 
+        #FFE5B4;; color: #000;"><div class="table-name">MITRE_Campaign_Aliases</div><div class="table-desc">Names that have overlapping reference to a group entry and may refer to the same or similar group in threat intelligence reporting</div></div></div></div>
+            <table class="table table-bordered">
+            <thead class="thead-light">
+            <tr>
+                <th style="color:#000"><strong>Field Name</strong></th>
+                <th style="color:#000"><strong>Data Type</strong></th>
+                <th style="color:#000"><strong>Description</strong></th>
+                <th style="color:#000"><strong>Nullable</strong></th>
+            </tr>
+            </thead>
+            <tbody>
+        <tr><td>Name</td><td>VARCHAR(255)</td><td>Name of the Alias</td><td>FALSE</td></tr><tr><td>
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-key" viewBox="0 0 16 16">
+                <path d="M0 8a4 4 0 0 1 7.465-2H14a.5.5 0 0 1 .354.146l1.5 1.5a.5.5 0 0 1 0 .708l-1.5 1.5a.5.5 0 0 1-.708 0L13 9.207l-.646.647a.5.5 0 0 1-.708 0L11 9.207l-.646.647a.5.5 0 0 1-.708 0L9 9.207l-.646.647A.5.5 0 0 1 8 10h-.535A4 4 0 0 1 0 8z" style="fill:silver;" />
+                <path d="M4 8a1 1 0 1 1-2 0 1 1 0 0 1 2 0z" style="fill:silver;" />
+                </svg>
+                Campaign_ID</td><td>VARCHAR(255)</td><td>Foreign Key to the MITRE Group Table</td><td>FALSE</td></tr>
+            </tbody>
+            </table>
+        </div></div>
+        <div class="container-md mt-5 mx-5" style="margin-right: 12rem!important; margin-left: 12rem!important;">
+        <div class="table-responsive">
+        <div class="row justify-content-center">
+            <div class="col-md-12">
+            <div class="table-header"style="background-color: 
+        #FFE5B4;; color: #000;"><div class="table-name">MITRE_Campaign_Group</div><div class="table-desc">Connecting table for the Groups associated with Campaigns..</div></div></div></div>
+            <table class="table table-bordered">
+            <thead class="thead-light">
+            <tr>
+                <th style="color:#000"><strong>Field Name</strong></th>
+                <th style="color:#000"><strong>Data Type</strong></th>
+                <th style="color:#000"><strong>Description</strong></th>
+                <th style="color:#000"><strong>Nullable</strong></th>
+            </tr>
+            </thead>
+            <tbody>
+        <tr><td>
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-key" viewBox="0 0 16 16">
+                <path d="M0 8a4 4 0 0 1 7.465-2H14a.5.5 0 0 1 .354.146l1.5 1.5a.5.5 0 0 1 0 .708l-1.5 1.5a.5.5 0 0 1-.708 0L13 9.207l-.646.647a.5.5 0 0 1-.708 0L11 9.207l-.646.647a.5.5 0 0 1-.708 0L9 9.207l-.646.647A.5.5 0 0 1 8 10h-.535A4 4 0 0 1 0 8z" style="fill:silver;" />
+                <path d="M4 8a1 1 0 1 1-2 0 1 1 0 0 1 2 0z" style="fill:silver;" />
+                </svg>
+                Campaign_ID</td><td>VARCHAR(255)</td><td>Foreign Key to the MITRE ATTACK Campaign Table</td><td>FALSE</td></tr><tr><td>
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-key" viewBox="0 0 16 16">
+                <path d="M0 8a4 4 0 0 1 7.465-2H14a.5.5 0 0 1 .354.146l1.5 1.5a.5.5 0 0 1 0 .708l-1.5 1.5a.5.5 0 0 1-.708 0L13 9.207l-.646.647a.5.5 0 0 1-.708 0L11 9.207l-.646.647a.5.5 0 0 1-.708 0L9 9.207l-.646.647A.5.5 0 0 1 8 10h-.535A4 4 0 0 1 0 8z" style="fill:silver;" />
+                <path d="M4 8a1 1 0 1 1-2 0 1 1 0 0 1 2 0z" style="fill:silver;" />
+                </svg>
+                Group_ID</td><td>VARCHAR(255)</td><td>Foreign Key to the MITRE Attack Group Table</td><td>FALSE</td></tr>
+            </tbody>
+            </table>
+        </div></div>
+        <div class="container-md mt-5 mx-5" style="margin-right: 12rem!important; margin-left: 12rem!important;">
+        <div class="table-responsive">
+        <div class="row justify-content-center">
+            <div class="col-md-12">
+            <div class="table-header"style="background-color: 
+        #FFE5B4;; color: #000;"><div class="table-name">MITRE_Campaign_Malware</div><div class="table-desc">A connecting table for Malware that a Campaign Uses.</div></div></div></div>
+            <table class="table table-bordered">
+            <thead class="thead-light">
+            <tr>
+                <th style="color:#000"><strong>Field Name</strong></th>
+                <th style="color:#000"><strong>Data Type</strong></th>
+                <th style="color:#000"><strong>Description</strong></th>
+                <th style="color:#000"><strong>Nullable</strong></th>
+            </tr>
+            </thead>
+            <tbody>
+        <tr><td>
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-key" viewBox="0 0 16 16">
+                <path d="M0 8a4 4 0 0 1 7.465-2H14a.5.5 0 0 1 .354.146l1.5 1.5a.5.5 0 0 1 0 .708l-1.5 1.5a.5.5 0 0 1-.708 0L13 9.207l-.646.647a.5.5 0 0 1-.708 0L11 9.207l-.646.647a.5.5 0 0 1-.708 0L9 9.207l-.646.647A.5.5 0 0 1 8 10h-.535A4 4 0 0 1 0 8z" style="fill:silver;" />
+                <path d="M4 8a1 1 0 1 1-2 0 1 1 0 0 1 2 0z" style="fill:silver;" />
+                </svg>
+                Campaign_ID</td><td>VARCHAR(255)</td><td>Foreign Key to the MITRE ATTACK Campaign Table</td><td>FALSE</td></tr><tr><td>
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-key" viewBox="0 0 16 16">
+                <path d="M0 8a4 4 0 0 1 7.465-2H14a.5.5 0 0 1 .354.146l1.5 1.5a.5.5 0 0 1 0 .708l-1.5 1.5a.5.5 0 0 1-.708 0L13 9.207l-.646.647a.5.5 0 0 1-.708 0L11 9.207l-.646.647a.5.5 0 0 1-.708 0L9 9.207l-.646.647A.5.5 0 0 1 8 10h-.535A4 4 0 0 1 0 8z" style="fill:silver;" />
+                <path d="M4 8a1 1 0 1 1-2 0 1 1 0 0 1 2 0z" style="fill:silver;" />
+                </svg>
+                Malware_ID</td><td>VARCHAR(255)</td><td>Foreign Key to the MITRE Attack Malware Table</td><td>FALSE</td></tr>
+            </tbody>
+            </table>
+        </div></div>
+        <div class="container-md mt-5 mx-5" style="margin-right: 12rem!important; margin-left: 12rem!important;">
+        <div class="table-responsive">
+        <div class="row justify-content-center">
+            <div class="col-md-12">
+            <div class="table-header"style="background-color: 
+        #FFE5B4;; color: #000;"><div class="table-name">MITRE_Campaign_References</div><div class="table-desc">External References belonging to MITRE ATTACK Groups</div></div></div></div>
+            <table class="table table-bordered">
+            <thead class="thead-light">
+            <tr>
+                <th style="color:#000"><strong>Field Name</strong></th>
+                <th style="color:#000"><strong>Data Type</strong></th>
+                <th style="color:#000"><strong>Description</strong></th>
+                <th style="color:#000"><strong>Nullable</strong></th>
+            </tr>
+            </thead>
+            <tbody>
+        <tr><td>
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-key" viewBox="0 0 16 16">
+                <path d="M0 8a4 4 0 0 1 7.465-2H14a.5.5 0 0 1 .354.146l1.5 1.5a.5.5 0 0 1 0 .708l-1.5 1.5a.5.5 0 0 1-.708 0L13 9.207l-.646.647a.5.5 0 0 1-.708 0L11 9.207l-.646.647a.5.5 0 0 1-.708 0L9 9.207l-.646.647A.5.5 0 0 1 8 10h-.535A4 4 0 0 1 0 8z" style="fill:silver;" />
+                <path d="M4 8a1 1 0 1 1-2 0 1 1 0 0 1 2 0z" style="fill:silver;" />
+                </svg>
+                Reference_ID</td><td>VARCHAR(255)</td><td>Foreign Key to the MITRE_External_References Table</td><td>FALSE</td></tr><tr><td>
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-key" viewBox="0 0 16 16">
+                <path d="M0 8a4 4 0 0 1 7.465-2H14a.5.5 0 0 1 .354.146l1.5 1.5a.5.5 0 0 1 0 .708l-1.5 1.5a.5.5 0 0 1-.708 0L13 9.207l-.646.647a.5.5 0 0 1-.708 0L11 9.207l-.646.647a.5.5 0 0 1-.708 0L9 9.207l-.646.647A.5.5 0 0 1 8 10h-.535A4 4 0 0 1 0 8z" style="fill:silver;" />
+                <path d="M4 8a1 1 0 1 1-2 0 1 1 0 0 1 2 0z" style="fill:silver;" />
+                </svg>
+                Campaign_ID</td><td>VARCHAR(255)</td><td>Foreign Key to the MITRE ATTACK Group Table</td><td>FALSE</td></tr>
+            </tbody>
+            </table>
+        </div></div>
+        <div class="container-md mt-5 mx-5" style="margin-right: 12rem!important; margin-left: 12rem!important;">
+        <div class="table-responsive">
+        <div class="row justify-content-center">
+            <div class="col-md-12">
+            <div class="table-header"style="background-color: 
+        #FFE5B4;; color: #000;"><div class="table-name">MITRE_Campaign_Technique</div><div class="table-desc">A Connecting Table for the Techniques a Campaign Uses.</div></div></div></div>
+            <table class="table table-bordered">
+            <thead class="thead-light">
+            <tr>
+                <th style="color:#000"><strong>Field Name</strong></th>
+                <th style="color:#000"><strong>Data Type</strong></th>
+                <th style="color:#000"><strong>Description</strong></th>
+                <th style="color:#000"><strong>Nullable</strong></th>
+            </tr>
+            </thead>
+            <tbody>
+        <tr><td>
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-key" viewBox="0 0 16 16">
+                <path d="M0 8a4 4 0 0 1 7.465-2H14a.5.5 0 0 1 .354.146l1.5 1.5a.5.5 0 0 1 0 .708l-1.5 1.5a.5.5 0 0 1-.708 0L13 9.207l-.646.647a.5.5 0 0 1-.708 0L11 9.207l-.646.647a.5.5 0 0 1-.708 0L9 9.207l-.646.647A.5.5 0 0 1 8 10h-.535A4 4 0 0 1 0 8z" style="fill:silver;" />
+                <path d="M4 8a1 1 0 1 1-2 0 1 1 0 0 1 2 0z" style="fill:silver;" />
+                </svg>
+                Campaign_ID</td><td>VARCHAR(255)</td><td>Foreign Key to the MITRE ATTACK Campaign Table.</td><td>FALSE</td></tr><tr><td>
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-key" viewBox="0 0 16 16">
+                <path d="M0 8a4 4 0 0 1 7.465-2H14a.5.5 0 0 1 .354.146l1.5 1.5a.5.5 0 0 1 0 .708l-1.5 1.5a.5.5 0 0 1-.708 0L13 9.207l-.646.647a.5.5 0 0 1-.708 0L11 9.207l-.646.647a.5.5 0 0 1-.708 0L9 9.207l-.646.647A.5.5 0 0 1 8 10h-.535A4 4 0 0 1 0 8z" style="fill:silver;" />
+                <path d="M4 8a1 1 0 1 1-2 0 1 1 0 0 1 2 0z" style="fill:silver;" />
+                </svg>
+                Technique_ID</td><td>VARCHAR(255)</td><td>Foreign Key to the MITRE Attack Technique Table</td><td>FALSE</td></tr>
+            </tbody>
+            </table>
+        </div></div>
+        <div class="container-md mt-5 mx-5" style="margin-right: 12rem!important; margin-left: 12rem!important;">
+        <div class="table-responsive">
+        <div class="row justify-content-center">
+            <div class="col-md-12">
+            <div class="table-header"style="background-color: 
+        #FFE5B4;; color: #000;"><div class="table-name">MITRE_Campaign_Tool</div><div class="table-desc">A connecting table for the Tools that a Campaign Uses.</div></div></div></div>
+            <table class="table table-bordered">
+            <thead class="thead-light">
+            <tr>
+                <th style="color:#000"><strong>Field Name</strong></th>
+                <th style="color:#000"><strong>Data Type</strong></th>
+                <th style="color:#000"><strong>Description</strong></th>
+                <th style="color:#000"><strong>Nullable</strong></th>
+            </tr>
+            </thead>
+            <tbody>
+        <tr><td>
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-key" viewBox="0 0 16 16">
+                <path d="M0 8a4 4 0 0 1 7.465-2H14a.5.5 0 0 1 .354.146l1.5 1.5a.5.5 0 0 1 0 .708l-1.5 1.5a.5.5 0 0 1-.708 0L13 9.207l-.646.647a.5.5 0 0 1-.708 0L11 9.207l-.646.647a.5.5 0 0 1-.708 0L9 9.207l-.646.647A.5.5 0 0 1 8 10h-.535A4 4 0 0 1 0 8z" style="fill:silver;" />
+                <path d="M4 8a1 1 0 1 1-2 0 1 1 0 0 1 2 0z" style="fill:silver;" />
+                </svg>
+                Campaign_ID</td><td>VARCHAR(255)</td><td>Foreign Key to the MITRE ATTACK Campaign Table</td><td>FALSE</td></tr><tr><td>
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-key" viewBox="0 0 16 16">
+                <path d="M0 8a4 4 0 0 1 7.465-2H14a.5.5 0 0 1 .354.146l1.5 1.5a.5.5 0 0 1 0 .708l-1.5 1.5a.5.5 0 0 1-.708 0L13 9.207l-.646.647a.5.5 0 0 1-.708 0L11 9.207l-.646.647a.5.5 0 0 1-.708 0L9 9.207l-.646.647A.5.5 0 0 1 8 10h-.535A4 4 0 0 1 0 8z" style="fill:silver;" />
+                <path d="M4 8a1 1 0 1 1-2 0 1 1 0 0 1 2 0z" style="fill:silver;" />
+                </svg>
+                Tool_ID</td><td>VARCHAR(255)</td><td>Foreign Key to the MITRE Attack Tool Table</td><td>FALSE</td></tr>
+            </tbody>
+            </table>
+        </div></div>
+        <div class="container-md mt-5 mx-5" style="margin-right: 12rem!important; margin-left: 12rem!important;">
+        <div class="table-responsive">
+        <div class="row justify-content-center">
+            <div class="col-md-12">
+            <div class="table-header"style="background-color: 
+        #FFE5B4;; color: #000;"><div class="table-name">MITRE_Data_Component</div><div class="table-desc">Specific properties/values of a data source relevant to detecting a given ATT&CK technique or sub-technique.</div></div></div></div>
+            <table class="table table-bordered">
+            <thead class="thead-light">
+            <tr>
+                <th style="color:#000"><strong>Field Name</strong></th>
+                <th style="color:#000"><strong>Data Type</strong></th>
+                <th style="color:#000"><strong>Description</strong></th>
+                <th style="color:#000"><strong>Nullable</strong></th>
+            </tr>
+            </thead>
+            <tbody>
+        <tr><td>
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-key" viewBox="0 0 16 16">
+                <path d="M0 8a4 4 0 0 1 7.465-2H14a.5.5 0 0 1 .354.146l1.5 1.5a.5.5 0 0 1 0 .708l-1.5 1.5a.5.5 0 0 1-.708 0L13 9.207l-.646.647a.5.5 0 0 1-.708 0L11 9.207l-.646.647a.5.5 0 0 1-.708 0L9 9.207l-.646.647A.5.5 0 0 1 8 10h-.535A4 4 0 0 1 0 8z" style="fill:gold;" />
+                <path d="M4 8a1 1 0 1 1-2 0 1 1 0 0 1 2 0z" style="fill:gold;" />
+                </svg>
+                UUID</td><td>VARCHAR(255)</td><td>Primary Key</td><td>TRUE</td></tr><tr><td>Description</td><td>VARCHAR(255)</td><td>Description of the Data Component</td><td>FALSE</td></tr><tr><td>Name</td><td>VARCHAR(255)</td><td>Name of the Data Component</td><td>FALSE</td></tr><tr><td>Version</td><td>FLOAT</td><td>Version Number of the Data Component</td><td>FALSE</td></tr><tr><td>
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-key" viewBox="0 0 16 16">
+                <path d="M0 8a4 4 0 0 1 7.465-2H14a.5.5 0 0 1 .354.146l1.5 1.5a.5.5 0 0 1 0 .708l-1.5 1.5a.5.5 0 0 1-.708 0L13 9.207l-.646.647a.5.5 0 0 1-.708 0L11 9.207l-.646.647a.5.5 0 0 1-.708 0L9 9.207l-.646.647A.5.5 0 0 1 8 10h-.535A4 4 0 0 1 0 8z" style="fill:silver;" />
+                <path d="M4 8a1 1 0 1 1-2 0 1 1 0 0 1 2 0z" style="fill:silver;" />
+                </svg>
+                Data_Source_ID</td><td>VARCHAR(255)</td><td>Foreign Key to the MITRE Data Sources Table</td><td>FALSE</td></tr>
+            </tbody>
+            </table>
+        </div></div>
+        <div class="container-md mt-5 mx-5" style="margin-right: 12rem!important; margin-left: 12rem!important;">
+        <div class="table-responsive">
+        <div class="row justify-content-center">
+            <div class="col-md-12">
+            <div class="table-header"style="background-color: 
+        #FFE5B4;; color: #000;"><div class="table-name">MITRE_Data_Source_Reference</div><div class="table-desc">External References belonging to MITRE ATTACK Data Sources</div></div></div></div>
+            <table class="table table-bordered">
+            <thead class="thead-light">
+            <tr>
+                <th style="color:#000"><strong>Field Name</strong></th>
+                <th style="color:#000"><strong>Data Type</strong></th>
+                <th style="color:#000"><strong>Description</strong></th>
+                <th style="color:#000"><strong>Nullable</strong></th>
+            </tr>
+            </thead>
+            <tbody>
+        <tr><td>
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-key" viewBox="0 0 16 16">
+                <path d="M0 8a4 4 0 0 1 7.465-2H14a.5.5 0 0 1 .354.146l1.5 1.5a.5.5 0 0 1 0 .708l-1.5 1.5a.5.5 0 0 1-.708 0L13 9.207l-.646.647a.5.5 0 0 1-.708 0L11 9.207l-.646.647a.5.5 0 0 1-.708 0L9 9.207l-.646.647A.5.5 0 0 1 8 10h-.535A4 4 0 0 1 0 8z" style="fill:silver;" />
+                <path d="M4 8a1 1 0 1 1-2 0 1 1 0 0 1 2 0z" style="fill:silver;" />
+                </svg>
+                Reference_ID</td><td>VARCHAR(255)</td><td>Foreign Key to the MITRE_External_References Table</td><td>FALSE</td></tr><tr><td>
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-key" viewBox="0 0 16 16">
+                <path d="M0 8a4 4 0 0 1 7.465-2H14a.5.5 0 0 1 .354.146l1.5 1.5a.5.5 0 0 1 0 .708l-1.5 1.5a.5.5 0 0 1-.708 0L13 9.207l-.646.647a.5.5 0 0 1-.708 0L11 9.207l-.646.647a.5.5 0 0 1-.708 0L9 9.207l-.646.647A.5.5 0 0 1 8 10h-.535A4 4 0 0 1 0 8z" style="fill:silver;" />
+                <path d="M4 8a1 1 0 1 1-2 0 1 1 0 0 1 2 0z" style="fill:silver;" />
+                </svg>
+                Data_Source_ID</td><td>VARCHAR(255)</td><td>Foreign Key to the MITRE ATTACK Data Source Table</td><td>FALSE</td></tr>
+            </tbody>
+            </table>
+        </div></div>
+        <div class="container-md mt-5 mx-5" style="margin-right: 12rem!important; margin-left: 12rem!important;">
+        <div class="table-responsive">
+        <div class="row justify-content-center">
+            <div class="col-md-12">
+            <div class="table-header"style="background-color: 
+        #FFE5B4;; color: #000;"><div class="table-name">MITRE_Data_Sources</div><div class="table-desc">Data sources represent the various subjects/topics of information that can be collected by sensors/logs. Data sources also include data components, which identify specific properties/values of a data source relevant to detecting a given ATT&CK technique or sub-technique.</div></div></div></div>
+            <table class="table table-bordered">
+            <thead class="thead-light">
+            <tr>
+                <th style="color:#000"><strong>Field Name</strong></th>
+                <th style="color:#000"><strong>Data Type</strong></th>
+                <th style="color:#000"><strong>Description</strong></th>
+                <th style="color:#000"><strong>Nullable</strong></th>
+            </tr>
+            </thead>
+            <tbody>
+        <tr><td>
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-key" viewBox="0 0 16 16">
+                <path d="M0 8a4 4 0 0 1 7.465-2H14a.5.5 0 0 1 .354.146l1.5 1.5a.5.5 0 0 1 0 .708l-1.5 1.5a.5.5 0 0 1-.708 0L13 9.207l-.646.647a.5.5 0 0 1-.708 0L11 9.207l-.646.647a.5.5 0 0 1-.708 0L9 9.207l-.646.647A.5.5 0 0 1 8 10h-.535A4 4 0 0 1 0 8z" style="fill:gold;" />
+                <path d="M4 8a1 1 0 1 1-2 0 1 1 0 0 1 2 0z" style="fill:gold;" />
+                </svg>
+                UUID</td><td>VARCHAR(255)</td><td>Primary Key</td><td>TRUE</td></tr><tr><td>Description</td><td>VARCHAR(255)</td><td>Description of the Data Source</td><td>FALSE</td></tr><tr><td>Name</td><td>VARCHAR(255)</td><td>Name of the Data Source</td><td>FALSE</td></tr><tr><td>Version</td><td>FLOAT</td><td>Version Number of this Data Source Object</td><td>FALSE</td></tr>
+            </tbody>
+            </table>
+        </div></div>
+        <div class="container-md mt-5 mx-5" style="margin-right: 12rem!important; margin-left: 12rem!important;">
+        <div class="table-responsive">
+        <div class="row justify-content-center">
+            <div class="col-md-12">
+            <div class="table-header"style="background-color: 
+        #FFE5B4;; color: #000;"><div class="table-name">MITRE_Data_Sources_Collection_Layers</div><div class="table-desc">Connecting Table between MITRE Data Sources and the MITRE ATTACK Collection Layers</div></div></div></div>
+            <table class="table table-bordered">
+            <thead class="thead-light">
+            <tr>
+                <th style="color:#000"><strong>Field Name</strong></th>
+                <th style="color:#000"><strong>Data Type</strong></th>
+                <th style="color:#000"><strong>Description</strong></th>
+                <th style="color:#000"><strong>Nullable</strong></th>
+            </tr>
+            </thead>
+            <tbody>
+        <tr><td>
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-key" viewBox="0 0 16 16">
+                <path d="M0 8a4 4 0 0 1 7.465-2H14a.5.5 0 0 1 .354.146l1.5 1.5a.5.5 0 0 1 0 .708l-1.5 1.5a.5.5 0 0 1-.708 0L13 9.207l-.646.647a.5.5 0 0 1-.708 0L11 9.207l-.646.647a.5.5 0 0 1-.708 0L9 9.207l-.646.647A.5.5 0 0 1 8 10h-.535A4 4 0 0 1 0 8z" style="fill:silver;" />
+                <path d="M4 8a1 1 0 1 1-2 0 1 1 0 0 1 2 0z" style="fill:silver;" />
+                </svg>
+                Data_Source_ID</td><td>VARCHAR(255)</td><td>Foreign Key to the MITRE Data Source Table</td><td>FALSE</td></tr><tr><td>
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-key" viewBox="0 0 16 16">
+                <path d="M0 8a4 4 0 0 1 7.465-2H14a.5.5 0 0 1 .354.146l1.5 1.5a.5.5 0 0 1 0 .708l-1.5 1.5a.5.5 0 0 1-.708 0L13 9.207l-.646.647a.5.5 0 0 1-.708 0L11 9.207l-.646.647a.5.5 0 0 1-.708 0L9 9.207l-.646.647A.5.5 0 0 1 8 10h-.535A4 4 0 0 1 0 8z" style="fill:silver;" />
+                <path d="M4 8a1 1 0 1 1-2 0 1 1 0 0 1 2 0z" style="fill:silver;" />
+                </svg>
+                Layer_ID</td><td>VARCHAR(255)</td><td>Foreign Key to the MITRE ATTACK Collection Layers reference table</td><td>FALSE</td></tr>
+            </tbody>
+            </table>
+        </div></div>
+        <div class="container-md mt-5 mx-5" style="margin-right: 12rem!important; margin-left: 12rem!important;">
+        <div class="table-responsive">
+        <div class="row justify-content-center">
+            <div class="col-md-12">
+            <div class="table-header"style="background-color: 
+        #FFE5B4;; color: #000;"><div class="table-name">MITRE_Data_Sources_Platforms</div><div class="table-desc">MITRE ATT&CK Platforms which are the system an adversary is operating within. Could be an operating system or application</div></div></div></div>
+            <table class="table table-bordered">
+            <thead class="thead-light">
+            <tr>
+                <th style="color:#000"><strong>Field Name</strong></th>
+                <th style="color:#000"><strong>Data Type</strong></th>
+                <th style="color:#000"><strong>Description</strong></th>
+                <th style="color:#000"><strong>Nullable</strong></th>
+            </tr>
+            </thead>
+            <tbody>
+        <tr><td>
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-key" viewBox="0 0 16 16">
+                <path d="M0 8a4 4 0 0 1 7.465-2H14a.5.5 0 0 1 .354.146l1.5 1.5a.5.5 0 0 1 0 .708l-1.5 1.5a.5.5 0 0 1-.708 0L13 9.207l-.646.647a.5.5 0 0 1-.708 0L11 9.207l-.646.647a.5.5 0 0 1-.708 0L9 9.207l-.646.647A.5.5 0 0 1 8 10h-.535A4 4 0 0 1 0 8z" style="fill:silver;" />
+                <path d="M4 8a1 1 0 1 1-2 0 1 1 0 0 1 2 0z" style="fill:silver;" />
+                </svg>
+                Data_Source_ID</td><td>VARCHAR(255)</td><td>Foreign Key to the MITRE Data Source Table</td><td>FALSE</td></tr><tr><td>
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-key" viewBox="0 0 16 16">
+                <path d="M0 8a4 4 0 0 1 7.465-2H14a.5.5 0 0 1 .354.146l1.5 1.5a.5.5 0 0 1 0 .708l-1.5 1.5a.5.5 0 0 1-.708 0L13 9.207l-.646.647a.5.5 0 0 1-.708 0L11 9.207l-.646.647a.5.5 0 0 1-.708 0L9 9.207l-.646.647A.5.5 0 0 1 8 10h-.535A4 4 0 0 1 0 8z" style="fill:silver;" />
+                <path d="M4 8a1 1 0 1 1-2 0 1 1 0 0 1 2 0z" style="fill:silver;" />
+                </svg>
+                Platform_ID</td><td>VARCHAR(255)</td><td>Foreign Key to the MITE ATTACK Platforms Table</td><td>FALSE</td></tr>
+            </tbody>
+            </table>
+        </div></div>
+        <div class="container-md mt-5 mx-5" style="margin-right: 12rem!important; margin-left: 12rem!important;">
+        <div class="table-responsive">
+        <div class="row justify-content-center">
+            <div class="col-md-12">
+            <div class="table-header"style="background-color: 
+        #FFD12A;; color: #000;"><div class="table-name">MITRE_External_References</div><div class="table-desc"></div></div></div></div>
+            <table class="table table-bordered">
+            <thead class="thead-light">
+            <tr>
+                <th style="color:#000"><strong>Field Name</strong></th>
+                <th style="color:#000"><strong>Data Type</strong></th>
+                <th style="color:#000"><strong>Description</strong></th>
+                <th style="color:#000"><strong>Nullable</strong></th>
+            </tr>
+            </thead>
+            <tbody>
+        <tr><td>
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-key" viewBox="0 0 16 16">
+                <path d="M0 8a4 4 0 0 1 7.465-2H14a.5.5 0 0 1 .354.146l1.5 1.5a.5.5 0 0 1 0 .708l-1.5 1.5a.5.5 0 0 1-.708 0L13 9.207l-.646.647a.5.5 0 0 1-.708 0L11 9.207l-.646.647a.5.5 0 0 1-.708 0L9 9.207l-.646.647A.5.5 0 0 1 8 10h-.535A4 4 0 0 1 0 8z" style="fill:gold;" />
+                <path d="M4 8a1 1 0 1 1-2 0 1 1 0 0 1 2 0z" style="fill:gold;" />
+                </svg>
+                UUID</td><td>VARCHAR(255)</td><td>Primary Key</td><td>TRUE</td></tr><tr><td>Source_Name</td><td>VARCHAR(255)</td><td>Where the Reference is from</td><td>FALSE</td></tr><tr><td>URL</td><td>VARCHAR(255)</td><td>URL of the Reference</td><td>FALSE</td></tr><tr><td>Description</td><td>VARCHAR(255)</td><td>Description of the Reference</td><td>FALSE</td></tr>
+            </tbody>
+            </table>
+        </div></div>
+        <div class="container-md mt-5 mx-5" style="margin-right: 12rem!important; margin-left: 12rem!important;">
+        <div class="table-responsive">
+        <div class="row justify-content-center">
+            <div class="col-md-12">
+            <div class="table-header"style="background-color: 
+        #FFE5B4;; color: #000;"><div class="table-name">MITRE_GROUP_Aliases</div><div class="table-desc">Names that have overlapping reference to a group entry and may refer to the same or similar group in threat intelligence reporting</div></div></div></div>
+            <table class="table table-bordered">
+            <thead class="thead-light">
+            <tr>
+                <th style="color:#000"><strong>Field Name</strong></th>
+                <th style="color:#000"><strong>Data Type</strong></th>
+                <th style="color:#000"><strong>Description</strong></th>
+                <th style="color:#000"><strong>Nullable</strong></th>
+            </tr>
+            </thead>
+            <tbody>
+        <tr><td>Name</td><td>VARCHAR(255)</td><td>Name of the Alias</td><td>FALSE</td></tr><tr><td>
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-key" viewBox="0 0 16 16">
+                <path d="M0 8a4 4 0 0 1 7.465-2H14a.5.5 0 0 1 .354.146l1.5 1.5a.5.5 0 0 1 0 .708l-1.5 1.5a.5.5 0 0 1-.708 0L13 9.207l-.646.647a.5.5 0 0 1-.708 0L11 9.207l-.646.647a.5.5 0 0 1-.708 0L9 9.207l-.646.647A.5.5 0 0 1 8 10h-.535A4 4 0 0 1 0 8z" style="fill:silver;" />
+                <path d="M4 8a1 1 0 1 1-2 0 1 1 0 0 1 2 0z" style="fill:silver;" />
+                </svg>
+                Group_ID</td><td>VARCHAR(255)</td><td>Foreign Key to the MITRE Group Table</td><td>FALSE</td></tr>
+            </tbody>
+            </table>
+        </div></div>
+        <div class="container-md mt-5 mx-5" style="margin-right: 12rem!important; margin-left: 12rem!important;">
+        <div class="table-responsive">
+        <div class="row justify-content-center">
+            <div class="col-md-12">
+            <div class="table-header"style="background-color: 
+        #FFE5B4;; color: #000;"><div class="table-name">MITRE_Group</div><div class="table-desc">Groups are sets of related intrusion activity that are tracked by a common name in the security community. Analysts track clusters of activities using various analytic methodologies and terms such as threat groups, activity groups, threat actors, intrusion sets, and campaigns. Some groups have multiple names associated with similar activities due to various organizations tracking similar activities by different names. Organizations\</div></div></div></div>
+            <table class="table table-bordered">
+            <thead class="thead-light">
+            <tr>
+                <th style="color:#000"><strong>Field Name</strong></th>
+                <th style="color:#000"><strong>Data Type</strong></th>
+                <th style="color:#000"><strong>Description</strong></th>
+                <th style="color:#000"><strong>Nullable</strong></th>
+            </tr>
+            </thead>
+            <tbody>
+        <tr><td>
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-key" viewBox="0 0 16 16">
+                <path d="M0 8a4 4 0 0 1 7.465-2H14a.5.5 0 0 1 .354.146l1.5 1.5a.5.5 0 0 1 0 .708l-1.5 1.5a.5.5 0 0 1-.708 0L13 9.207l-.646.647a.5.5 0 0 1-.708 0L11 9.207l-.646.647a.5.5 0 0 1-.708 0L9 9.207l-.646.647A.5.5 0 0 1 8 10h-.535A4 4 0 0 1 0 8z" style="fill:gold;" />
+                <path d="M4 8a1 1 0 1 1-2 0 1 1 0 0 1 2 0z" style="fill:gold;" />
+                </svg>
+                UUID</td><td>VARCHAR(255)</td><td>Primary Key</td><td>TRUE</td></tr><tr><td>Description</td><td>VARCHAR(255)</td><td>Description of the Group</td><td>FALSE</td></tr><tr><td>Name</td><td>VARCHAR(255)</td><td>Name of the Group</td><td>FALSE</td></tr><tr><td>Revoked</td><td>TINYINT(1)</td><td>Boolean for whether the Group was revoked</td><td>FALSE</td></tr><tr><td>Depreciated</td><td>TINYINT(1)</td><td>Boolean for whether the Group has been depreciated</td><td>FALSE</td></tr><tr><td>Version_Number</td><td>FLOAT</td><td>Version Number for the Group object</td><td>FALSE</td></tr><tr><td>
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-key" viewBox="0 0 16 16">
+                <path d="M0 8a4 4 0 0 1 7.465-2H14a.5.5 0 0 1 .354.146l1.5 1.5a.5.5 0 0 1 0 .708l-1.5 1.5a.5.5 0 0 1-.708 0L13 9.207l-.646.647a.5.5 0 0 1-.708 0L11 9.207l-.646.647a.5.5 0 0 1-.708 0L9 9.207l-.646.647A.5.5 0 0 1 8 10h-.535A4 4 0 0 1 0 8z" style="fill:silver;" />
+                <path d="M4 8a1 1 0 1 1-2 0 1 1 0 0 1 2 0z" style="fill:silver;" />
+                </svg>
+                Superseded_By</td><td>VARCHAR(255)</td><td>Foreign Key to the MITRE Group object that supersedes this object, if available.</td><td>FALSE</td></tr>
+            </tbody>
+            </table>
+        </div></div>
+        <div class="container-md mt-5 mx-5" style="margin-right: 12rem!important; margin-left: 12rem!important;">
+        <div class="table-responsive">
+        <div class="row justify-content-center">
+            <div class="col-md-12">
+            <div class="table-header"style="background-color: 
+        #FFE5B4;; color: #000;"><div class="table-name">MITRE_Group_Malware</div><div class="table-desc">Connecting Table of the MITRE ATTACK Malware that have been used by specific Groups</div></div></div></div>
+            <table class="table table-bordered">
+            <thead class="thead-light">
+            <tr>
+                <th style="color:#000"><strong>Field Name</strong></th>
+                <th style="color:#000"><strong>Data Type</strong></th>
+                <th style="color:#000"><strong>Description</strong></th>
+                <th style="color:#000"><strong>Nullable</strong></th>
+            </tr>
+            </thead>
+            <tbody>
+        <tr><td>
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-key" viewBox="0 0 16 16">
+                <path d="M0 8a4 4 0 0 1 7.465-2H14a.5.5 0 0 1 .354.146l1.5 1.5a.5.5 0 0 1 0 .708l-1.5 1.5a.5.5 0 0 1-.708 0L13 9.207l-.646.647a.5.5 0 0 1-.708 0L11 9.207l-.646.647a.5.5 0 0 1-.708 0L9 9.207l-.646.647A.5.5 0 0 1 8 10h-.535A4 4 0 0 1 0 8z" style="fill:silver;" />
+                <path d="M4 8a1 1 0 1 1-2 0 1 1 0 0 1 2 0z" style="fill:silver;" />
+                </svg>
+                Group_ID</td><td>VARCHAR(255)</td><td>Foreign Key to the MITRE Group Table</td><td>FALSE</td></tr><tr><td>
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-key" viewBox="0 0 16 16">
+                <path d="M0 8a4 4 0 0 1 7.465-2H14a.5.5 0 0 1 .354.146l1.5 1.5a.5.5 0 0 1 0 .708l-1.5 1.5a.5.5 0 0 1-.708 0L13 9.207l-.646.647a.5.5 0 0 1-.708 0L11 9.207l-.646.647a.5.5 0 0 1-.708 0L9 9.207l-.646.647A.5.5 0 0 1 8 10h-.535A4 4 0 0 1 0 8z" style="fill:silver;" />
+                <path d="M4 8a1 1 0 1 1-2 0 1 1 0 0 1 2 0z" style="fill:silver;" />
+                </svg>
+                Malware_ID</td><td>VARCHAR(255)</td><td>Foreign Key to the MITRE Malware Table</td><td>FALSE</td></tr>
+            </tbody>
+            </table>
+        </div></div>
+        <div class="container-md mt-5 mx-5" style="margin-right: 12rem!important; margin-left: 12rem!important;">
+        <div class="table-responsive">
+        <div class="row justify-content-center">
+            <div class="col-md-12">
+            <div class="table-header"style="background-color: 
+        #FFE5B4;; color: #000;"><div class="table-name">MITRE_Group_References</div><div class="table-desc">External References belonging to MITRE ATTACK Groups</div></div></div></div>
+            <table class="table table-bordered">
+            <thead class="thead-light">
+            <tr>
+                <th style="color:#000"><strong>Field Name</strong></th>
+                <th style="color:#000"><strong>Data Type</strong></th>
+                <th style="color:#000"><strong>Description</strong></th>
+                <th style="color:#000"><strong>Nullable</strong></th>
+            </tr>
+            </thead>
+            <tbody>
+        <tr><td>
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-key" viewBox="0 0 16 16">
+                <path d="M0 8a4 4 0 0 1 7.465-2H14a.5.5 0 0 1 .354.146l1.5 1.5a.5.5 0 0 1 0 .708l-1.5 1.5a.5.5 0 0 1-.708 0L13 9.207l-.646.647a.5.5 0 0 1-.708 0L11 9.207l-.646.647a.5.5 0 0 1-.708 0L9 9.207l-.646.647A.5.5 0 0 1 8 10h-.535A4 4 0 0 1 0 8z" style="fill:silver;" />
+                <path d="M4 8a1 1 0 1 1-2 0 1 1 0 0 1 2 0z" style="fill:silver;" />
+                </svg>
+                Reference_ID</td><td>VARCHAR(255)</td><td>Foreign Key to the MITRE_External_References Table</td><td>FALSE</td></tr><tr><td>
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-key" viewBox="0 0 16 16">
+                <path d="M0 8a4 4 0 0 1 7.465-2H14a.5.5 0 0 1 .354.146l1.5 1.5a.5.5 0 0 1 0 .708l-1.5 1.5a.5.5 0 0 1-.708 0L13 9.207l-.646.647a.5.5 0 0 1-.708 0L11 9.207l-.646.647a.5.5 0 0 1-.708 0L9 9.207l-.646.647A.5.5 0 0 1 8 10h-.535A4 4 0 0 1 0 8z" style="fill:silver;" />
+                <path d="M4 8a1 1 0 1 1-2 0 1 1 0 0 1 2 0z" style="fill:silver;" />
+                </svg>
+                Group_ID</td><td>VARCHAR(255)</td><td>Foreign Key to the MITRE ATTACK Group Table</td><td>FALSE</td></tr>
+            </tbody>
+            </table>
+        </div></div>
+        <div class="container-md mt-5 mx-5" style="margin-right: 12rem!important; margin-left: 12rem!important;">
+        <div class="table-responsive">
+        <div class="row justify-content-center">
+            <div class="col-md-12">
+            <div class="table-header"style="background-color: 
+        #FFE5B4;; color: #000;"><div class="table-name">MITRE_Group_Technique</div><div class="table-desc">Connecting Table of the MITRE ATTACK Techniques that have been used by specific Groups</div></div></div></div>
+            <table class="table table-bordered">
+            <thead class="thead-light">
+            <tr>
+                <th style="color:#000"><strong>Field Name</strong></th>
+                <th style="color:#000"><strong>Data Type</strong></th>
+                <th style="color:#000"><strong>Description</strong></th>
+                <th style="color:#000"><strong>Nullable</strong></th>
+            </tr>
+            </thead>
+            <tbody>
+        <tr><td>
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-key" viewBox="0 0 16 16">
+                <path d="M0 8a4 4 0 0 1 7.465-2H14a.5.5 0 0 1 .354.146l1.5 1.5a.5.5 0 0 1 0 .708l-1.5 1.5a.5.5 0 0 1-.708 0L13 9.207l-.646.647a.5.5 0 0 1-.708 0L11 9.207l-.646.647a.5.5 0 0 1-.708 0L9 9.207l-.646.647A.5.5 0 0 1 8 10h-.535A4 4 0 0 1 0 8z" style="fill:silver;" />
+                <path d="M4 8a1 1 0 1 1-2 0 1 1 0 0 1 2 0z" style="fill:silver;" />
+                </svg>
+                Group_ID</td><td>VARCHAR(255)</td><td>Foreign Key to the MITRE Group Table</td><td>FALSE</td></tr><tr><td>
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-key" viewBox="0 0 16 16">
+                <path d="M0 8a4 4 0 0 1 7.465-2H14a.5.5 0 0 1 .354.146l1.5 1.5a.5.5 0 0 1 0 .708l-1.5 1.5a.5.5 0 0 1-.708 0L13 9.207l-.646.647a.5.5 0 0 1-.708 0L11 9.207l-.646.647a.5.5 0 0 1-.708 0L9 9.207l-.646.647A.5.5 0 0 1 8 10h-.535A4 4 0 0 1 0 8z" style="fill:silver;" />
+                <path d="M4 8a1 1 0 1 1-2 0 1 1 0 0 1 2 0z" style="fill:silver;" />
+                </svg>
+                Technique_ID</td><td>VARCHAR(255)</td><td>Foreign Key to the MITRE Technique Table</td><td>FALSE</td></tr>
+            </tbody>
+            </table>
+        </div></div>
+        <div class="container-md mt-5 mx-5" style="margin-right: 12rem!important; margin-left: 12rem!important;">
+        <div class="table-responsive">
+        <div class="row justify-content-center">
+            <div class="col-md-12">
+            <div class="table-header"style="background-color: 
+        #FFE5B4;; color: #000;"><div class="table-name">MITRE_Group_Tool</div><div class="table-desc">Connecting Table of the MITRE ATTACK Tools that have been used by specific Groups</div></div></div></div>
+            <table class="table table-bordered">
+            <thead class="thead-light">
+            <tr>
+                <th style="color:#000"><strong>Field Name</strong></th>
+                <th style="color:#000"><strong>Data Type</strong></th>
+                <th style="color:#000"><strong>Description</strong></th>
+                <th style="color:#000"><strong>Nullable</strong></th>
+            </tr>
+            </thead>
+            <tbody>
+        <tr><td>
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-key" viewBox="0 0 16 16">
+                <path d="M0 8a4 4 0 0 1 7.465-2H14a.5.5 0 0 1 .354.146l1.5 1.5a.5.5 0 0 1 0 .708l-1.5 1.5a.5.5 0 0 1-.708 0L13 9.207l-.646.647a.5.5 0 0 1-.708 0L11 9.207l-.646.647a.5.5 0 0 1-.708 0L9 9.207l-.646.647A.5.5 0 0 1 8 10h-.535A4 4 0 0 1 0 8z" style="fill:silver;" />
+                <path d="M4 8a1 1 0 1 1-2 0 1 1 0 0 1 2 0z" style="fill:silver;" />
+                </svg>
+                Group_ID</td><td>VARCHAR(255)</td><td>Foreign Key to the MITRE Group Table</td><td>FALSE</td></tr><tr><td>
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-key" viewBox="0 0 16 16">
+                <path d="M0 8a4 4 0 0 1 7.465-2H14a.5.5 0 0 1 .354.146l1.5 1.5a.5.5 0 0 1 0 .708l-1.5 1.5a.5.5 0 0 1-.708 0L13 9.207l-.646.647a.5.5 0 0 1-.708 0L11 9.207l-.646.647a.5.5 0 0 1-.708 0L9 9.207l-.646.647A.5.5 0 0 1 8 10h-.535A4 4 0 0 1 0 8z" style="fill:silver;" />
+                <path d="M4 8a1 1 0 1 1-2 0 1 1 0 0 1 2 0z" style="fill:silver;" />
+                </svg>
+                Tool_ID</td><td>VARCHAR(255)</td><td>Foreign Key to the MITRE Tool Table</td><td>FALSE</td></tr>
+            </tbody>
+            </table>
+        </div></div>
+        <div class="container-md mt-5 mx-5" style="margin-right: 12rem!important; margin-left: 12rem!important;">
+        <div class="table-responsive">
+        <div class="row justify-content-center">
+            <div class="col-md-12">
+            <div class="table-header"style="background-color: 
+        #FFE5B4;; color: #000;"><div class="table-name">MITRE_MALWARE_Aliases</div><div class="table-desc">Names that have overlapping reference to a software entry and may refer to the same or similar software in threat intelligence reporting</div></div></div></div>
+            <table class="table table-bordered">
+            <thead class="thead-light">
+            <tr>
+                <th style="color:#000"><strong>Field Name</strong></th>
+                <th style="color:#000"><strong>Data Type</strong></th>
+                <th style="color:#000"><strong>Description</strong></th>
+                <th style="color:#000"><strong>Nullable</strong></th>
+            </tr>
+            </thead>
+            <tbody>
+        <tr><td>Name</td><td>VARCHAR(255)</td><td>Name of the Alias</td><td>FALSE</td></tr><tr><td>
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-key" viewBox="0 0 16 16">
+                <path d="M0 8a4 4 0 0 1 7.465-2H14a.5.5 0 0 1 .354.146l1.5 1.5a.5.5 0 0 1 0 .708l-1.5 1.5a.5.5 0 0 1-.708 0L13 9.207l-.646.647a.5.5 0 0 1-.708 0L11 9.207l-.646.647a.5.5 0 0 1-.708 0L9 9.207l-.646.647A.5.5 0 0 1 8 10h-.535A4 4 0 0 1 0 8z" style="fill:silver;" />
+                <path d="M4 8a1 1 0 1 1-2 0 1 1 0 0 1 2 0z" style="fill:silver;" />
+                </svg>
+                Malware_ID</td><td>VARCHAR(255)</td><td>Foreign Key to the MITRE Malware Table</td><td>FALSE</td></tr>
+            </tbody>
+            </table>
+        </div></div>
+        <div class="container-md mt-5 mx-5" style="margin-right: 12rem!important; margin-left: 12rem!important;">
+        <div class="table-responsive">
+        <div class="row justify-content-center">
+            <div class="col-md-12">
+            <div class="table-header"style="background-color: 
+        #FFE5B4;; color: #000;"><div class="table-name">MITRE_Malware</div><div class="table-desc">Commercial, custom closed source, or open source software intended to be used for malicious purposes by adversaries. Examples include PlugX, CHOPSTICK, etc.</div></div></div></div>
+            <table class="table table-bordered">
+            <thead class="thead-light">
+            <tr>
+                <th style="color:#000"><strong>Field Name</strong></th>
+                <th style="color:#000"><strong>Data Type</strong></th>
+                <th style="color:#000"><strong>Description</strong></th>
+                <th style="color:#000"><strong>Nullable</strong></th>
+            </tr>
+            </thead>
+            <tbody>
+        <tr><td>
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-key" viewBox="0 0 16 16">
+                <path d="M0 8a4 4 0 0 1 7.465-2H14a.5.5 0 0 1 .354.146l1.5 1.5a.5.5 0 0 1 0 .708l-1.5 1.5a.5.5 0 0 1-.708 0L13 9.207l-.646.647a.5.5 0 0 1-.708 0L11 9.207l-.646.647a.5.5 0 0 1-.708 0L9 9.207l-.646.647A.5.5 0 0 1 8 10h-.535A4 4 0 0 1 0 8z" style="fill:gold;" />
+                <path d="M4 8a1 1 0 1 1-2 0 1 1 0 0 1 2 0z" style="fill:gold;" />
+                </svg>
+                UUID</td><td>VARCHAR(255)</td><td>Primary Key</td><td>TRUE</td></tr><tr><td>Description</td><td>INT</td><td>Description of the Malware</td><td>FALSE</td></tr><tr><td>Name</td><td>VARCHAR(255)</td><td>Name of the Malware</td><td>FALSE</td></tr><tr><td>Depreciated</td><td>TINYINT(1)</td><td>Boolean for whether the Malware has been depreciated</td><td>FALSE</td></tr><tr><td>Version_Number</td><td>FLOAT</td><td>Version Number for this Malware object</td><td>FALSE</td></tr><tr><td>
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-key" viewBox="0 0 16 16">
+                <path d="M0 8a4 4 0 0 1 7.465-2H14a.5.5 0 0 1 .354.146l1.5 1.5a.5.5 0 0 1 0 .708l-1.5 1.5a.5.5 0 0 1-.708 0L13 9.207l-.646.647a.5.5 0 0 1-.708 0L11 9.207l-.646.647a.5.5 0 0 1-.708 0L9 9.207l-.646.647A.5.5 0 0 1 8 10h-.535A4 4 0 0 1 0 8z" style="fill:silver;" />
+                <path d="M4 8a1 1 0 1 1-2 0 1 1 0 0 1 2 0z" style="fill:silver;" />
+                </svg>
+                Superseded_By</td><td>VARCHAR(255)</td><td>Foreign Key to the MITRE Malware object that supersedes this object, if available.</td><td>FALSE</td></tr>
+            </tbody>
+            </table>
+        </div></div>
+        <div class="container-md mt-5 mx-5" style="margin-right: 12rem!important; margin-left: 12rem!important;">
+        <div class="table-responsive">
+        <div class="row justify-content-center">
+            <div class="col-md-12">
+            <div class="table-header"style="background-color: 
+        #FFE5B4;; color: #000;"><div class="table-name">MITRE_Malware_Platforms</div><div class="table-desc">MITRE ATT&CK Platforms which are the system an malware is operating within. Could be an operating system or application</div></div></div></div>
+            <table class="table table-bordered">
+            <thead class="thead-light">
+            <tr>
+                <th style="color:#000"><strong>Field Name</strong></th>
+                <th style="color:#000"><strong>Data Type</strong></th>
+                <th style="color:#000"><strong>Description</strong></th>
+                <th style="color:#000"><strong>Nullable</strong></th>
+            </tr>
+            </thead>
+            <tbody>
+        <tr><td>
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-key" viewBox="0 0 16 16">
+                <path d="M0 8a4 4 0 0 1 7.465-2H14a.5.5 0 0 1 .354.146l1.5 1.5a.5.5 0 0 1 0 .708l-1.5 1.5a.5.5 0 0 1-.708 0L13 9.207l-.646.647a.5.5 0 0 1-.708 0L11 9.207l-.646.647a.5.5 0 0 1-.708 0L9 9.207l-.646.647A.5.5 0 0 1 8 10h-.535A4 4 0 0 1 0 8z" style="fill:silver;" />
+                <path d="M4 8a1 1 0 1 1-2 0 1 1 0 0 1 2 0z" style="fill:silver;" />
+                </svg>
+                Malware_ID</td><td>VARCHAR(255)</td><td>Foreign Key to the MITRE Malware Table</td><td>FALSE</td></tr><tr><td>
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-key" viewBox="0 0 16 16">
+                <path d="M0 8a4 4 0 0 1 7.465-2H14a.5.5 0 0 1 .354.146l1.5 1.5a.5.5 0 0 1 0 .708l-1.5 1.5a.5.5 0 0 1-.708 0L13 9.207l-.646.647a.5.5 0 0 1-.708 0L11 9.207l-.646.647a.5.5 0 0 1-.708 0L9 9.207l-.646.647A.5.5 0 0 1 8 10h-.535A4 4 0 0 1 0 8z" style="fill:silver;" />
+                <path d="M4 8a1 1 0 1 1-2 0 1 1 0 0 1 2 0z" style="fill:silver;" />
+                </svg>
+                Platform_ID</td><td>VARCHAR(255)</td><td>Foreign Key to the MITRE Platforms Table</td><td>FALSE</td></tr>
+            </tbody>
+            </table>
+        </div></div>
+        <div class="container-md mt-5 mx-5" style="margin-right: 12rem!important; margin-left: 12rem!important;">
+        <div class="table-responsive">
+        <div class="row justify-content-center">
+            <div class="col-md-12">
+            <div class="table-header"style="background-color: 
+        #FFE5B4;; color: #000;"><div class="table-name">MITRE_Malware_References</div><div class="table-desc">External References belonging to MITRE ATTACK Malware</div></div></div></div>
+            <table class="table table-bordered">
+            <thead class="thead-light">
+            <tr>
+                <th style="color:#000"><strong>Field Name</strong></th>
+                <th style="color:#000"><strong>Data Type</strong></th>
+                <th style="color:#000"><strong>Description</strong></th>
+                <th style="color:#000"><strong>Nullable</strong></th>
+            </tr>
+            </thead>
+            <tbody>
+        <tr><td>
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-key" viewBox="0 0 16 16">
+                <path d="M0 8a4 4 0 0 1 7.465-2H14a.5.5 0 0 1 .354.146l1.5 1.5a.5.5 0 0 1 0 .708l-1.5 1.5a.5.5 0 0 1-.708 0L13 9.207l-.646.647a.5.5 0 0 1-.708 0L11 9.207l-.646.647a.5.5 0 0 1-.708 0L9 9.207l-.646.647A.5.5 0 0 1 8 10h-.535A4 4 0 0 1 0 8z" style="fill:silver;" />
+                <path d="M4 8a1 1 0 1 1-2 0 1 1 0 0 1 2 0z" style="fill:silver;" />
+                </svg>
+                Reference_ID</td><td>VARCHAR(255)</td><td>Foreign Key to the MITRE_External_References Table</td><td>FALSE</td></tr><tr><td>
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-key" viewBox="0 0 16 16">
+                <path d="M0 8a4 4 0 0 1 7.465-2H14a.5.5 0 0 1 .354.146l1.5 1.5a.5.5 0 0 1 0 .708l-1.5 1.5a.5.5 0 0 1-.708 0L13 9.207l-.646.647a.5.5 0 0 1-.708 0L11 9.207l-.646.647a.5.5 0 0 1-.708 0L9 9.207l-.646.647A.5.5 0 0 1 8 10h-.535A4 4 0 0 1 0 8z" style="fill:silver;" />
+                <path d="M4 8a1 1 0 1 1-2 0 1 1 0 0 1 2 0z" style="fill:silver;" />
+                </svg>
+                Malware_ID</td><td>VARCHAR(255)</td><td>Foreign Key to the MITRE ATTACK Malware Table</td><td>FALSE</td></tr>
+            </tbody>
+            </table>
+        </div></div>
+        <div class="container-md mt-5 mx-5" style="margin-right: 12rem!important; margin-left: 12rem!important;">
+        <div class="table-responsive">
+        <div class="row justify-content-center">
+            <div class="col-md-12">
+            <div class="table-header"style="background-color: 
+        #FFE5B4;; color: #000;"><div class="table-name">MITRE_Malware_Technique</div><div class="table-desc">Connecting Table of the MITRE ATTACK Technique that are used as part of Malware</div></div></div></div>
+            <table class="table table-bordered">
+            <thead class="thead-light">
+            <tr>
+                <th style="color:#000"><strong>Field Name</strong></th>
+                <th style="color:#000"><strong>Data Type</strong></th>
+                <th style="color:#000"><strong>Description</strong></th>
+                <th style="color:#000"><strong>Nullable</strong></th>
+            </tr>
+            </thead>
+            <tbody>
+        <tr><td>
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-key" viewBox="0 0 16 16">
+                <path d="M0 8a4 4 0 0 1 7.465-2H14a.5.5 0 0 1 .354.146l1.5 1.5a.5.5 0 0 1 0 .708l-1.5 1.5a.5.5 0 0 1-.708 0L13 9.207l-.646.647a.5.5 0 0 1-.708 0L11 9.207l-.646.647a.5.5 0 0 1-.708 0L9 9.207l-.646.647A.5.5 0 0 1 8 10h-.535A4 4 0 0 1 0 8z" style="fill:silver;" />
+                <path d="M4 8a1 1 0 1 1-2 0 1 1 0 0 1 2 0z" style="fill:silver;" />
+                </svg>
+                Malware_ID</td><td>VARCHAR(255)</td><td>Foreign Key to the MITRE Malware Table</td><td>FALSE</td></tr><tr><td>
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-key" viewBox="0 0 16 16">
+                <path d="M0 8a4 4 0 0 1 7.465-2H14a.5.5 0 0 1 .354.146l1.5 1.5a.5.5 0 0 1 0 .708l-1.5 1.5a.5.5 0 0 1-.708 0L13 9.207l-.646.647a.5.5 0 0 1-.708 0L11 9.207l-.646.647a.5.5 0 0 1-.708 0L9 9.207l-.646.647A.5.5 0 0 1 8 10h-.535A4 4 0 0 1 0 8z" style="fill:silver;" />
+                <path d="M4 8a1 1 0 1 1-2 0 1 1 0 0 1 2 0z" style="fill:silver;" />
+                </svg>
+                Technique_ID</td><td>VARCHAR(255)</td><td>Foreign Key to the MITRE Technique Table</td><td>FALSE</td></tr>
+            </tbody>
+            </table>
+        </div></div>
+        <div class="container-md mt-5 mx-5" style="margin-right: 12rem!important; margin-left: 12rem!important;">
+        <div class="table-responsive">
+        <div class="row justify-content-center">
+            <div class="col-md-12">
+            <div class="table-header"style="background-color: 
+        #FFE5B4;; color: #000;"><div class="table-name">MITRE_Mitigation</div><div class="table-desc">Mitigations represent security concepts and classes of technologies that can be used to prevent a technique or sub-technique from being successfully executed.</div></div></div></div>
+            <table class="table table-bordered">
+            <thead class="thead-light">
+            <tr>
+                <th style="color:#000"><strong>Field Name</strong></th>
+                <th style="color:#000"><strong>Data Type</strong></th>
+                <th style="color:#000"><strong>Description</strong></th>
+                <th style="color:#000"><strong>Nullable</strong></th>
+            </tr>
+            </thead>
+            <tbody>
+        <tr><td>
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-key" viewBox="0 0 16 16">
+                <path d="M0 8a4 4 0 0 1 7.465-2H14a.5.5 0 0 1 .354.146l1.5 1.5a.5.5 0 0 1 0 .708l-1.5 1.5a.5.5 0 0 1-.708 0L13 9.207l-.646.647a.5.5 0 0 1-.708 0L11 9.207l-.646.647a.5.5 0 0 1-.708 0L9 9.207l-.646.647A.5.5 0 0 1 8 10h-.535A4 4 0 0 1 0 8z" style="fill:gold;" />
+                <path d="M4 8a1 1 0 1 1-2 0 1 1 0 0 1 2 0z" style="fill:gold;" />
+                </svg>
+                UUID</td><td>VARCHAR(255)</td><td>Primary Key</td><td>TRUE</td></tr><tr><td>Description</td><td>VARCHAR(255)</td><td>Description of the Mitigation</td><td>FALSE</td></tr><tr><td>Depreciated</td><td>TINYINT(1)</td><td>Boolean for whether this Mitigation is depreciated</td><td>FALSE</td></tr><tr><td>Version</td><td>FLOAT</td><td>Version Number for this Mitigation Object</td><td>FALSE</td></tr><tr><td>Name</td><td>VARCHAR(255)</td><td>Name of this Mitigation</td><td>FALSE</td></tr><tr><td>Created_Date</td><td>DATE</td><td>When this Mitigation object was created</td><td>FALSE</td></tr><tr><td>Modified_Date</td><td>DATE</td><td>When this Mitigation object was last modified</td><td>FALSE</td></tr>
+            </tbody>
+            </table>
+        </div></div>
+        <div class="container-md mt-5 mx-5" style="margin-right: 12rem!important; margin-left: 12rem!important;">
+        <div class="table-responsive">
+        <div class="row justify-content-center">
+            <div class="col-md-12">
+            <div class="table-header"style="background-color: 
+        #FFE5B4;; color: #000;"><div class="table-name">MITRE_Mitigation_References</div><div class="table-desc">External References belonging to MITRE ATTACK Mitigations</div></div></div></div>
+            <table class="table table-bordered">
+            <thead class="thead-light">
+            <tr>
+                <th style="color:#000"><strong>Field Name</strong></th>
+                <th style="color:#000"><strong>Data Type</strong></th>
+                <th style="color:#000"><strong>Description</strong></th>
+                <th style="color:#000"><strong>Nullable</strong></th>
+            </tr>
+            </thead>
+            <tbody>
+        <tr><td>
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-key" viewBox="0 0 16 16">
+                <path d="M0 8a4 4 0 0 1 7.465-2H14a.5.5 0 0 1 .354.146l1.5 1.5a.5.5 0 0 1 0 .708l-1.5 1.5a.5.5 0 0 1-.708 0L13 9.207l-.646.647a.5.5 0 0 1-.708 0L11 9.207l-.646.647a.5.5 0 0 1-.708 0L9 9.207l-.646.647A.5.5 0 0 1 8 10h-.535A4 4 0 0 1 0 8z" style="fill:silver;" />
+                <path d="M4 8a1 1 0 1 1-2 0 1 1 0 0 1 2 0z" style="fill:silver;" />
+                </svg>
+                Reference_ID</td><td>VARCHAR(255)</td><td>Foreign Key to the MITRE_External_References Table</td><td>FALSE</td></tr><tr><td>
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-key" viewBox="0 0 16 16">
+                <path d="M0 8a4 4 0 0 1 7.465-2H14a.5.5 0 0 1 .354.146l1.5 1.5a.5.5 0 0 1 0 .708l-1.5 1.5a.5.5 0 0 1-.708 0L13 9.207l-.646.647a.5.5 0 0 1-.708 0L11 9.207l-.646.647a.5.5 0 0 1-.708 0L9 9.207l-.646.647A.5.5 0 0 1 8 10h-.535A4 4 0 0 1 0 8z" style="fill:silver;" />
+                <path d="M4 8a1 1 0 1 1-2 0 1 1 0 0 1 2 0z" style="fill:silver;" />
+                </svg>
+                Mitigation_ID</td><td>VARCHAR(255)</td><td>Foreign Key to the MITRE ATTACK Mitigation Table</td><td>FALSE</td></tr>
+            </tbody>
+            </table>
+        </div></div>
+        <div class="container-md mt-5 mx-5" style="margin-right: 12rem!important; margin-left: 12rem!important;">
+        <div class="table-responsive">
+        <div class="row justify-content-center">
+            <div class="col-md-12">
+            <div class="table-header"style="background-color: 
+        #FFE5B4;; color: #000;"><div class="table-name">MITRE_Mitigation_Technique</div><div class="table-desc">MITRE Techniques addressed by Mitigation</div></div></div></div>
+            <table class="table table-bordered">
+            <thead class="thead-light">
+            <tr>
+                <th style="color:#000"><strong>Field Name</strong></th>
+                <th style="color:#000"><strong>Data Type</strong></th>
+                <th style="color:#000"><strong>Description</strong></th>
+                <th style="color:#000"><strong>Nullable</strong></th>
+            </tr>
+            </thead>
+            <tbody>
+        <tr><td>
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-key" viewBox="0 0 16 16">
+                <path d="M0 8a4 4 0 0 1 7.465-2H14a.5.5 0 0 1 .354.146l1.5 1.5a.5.5 0 0 1 0 .708l-1.5 1.5a.5.5 0 0 1-.708 0L13 9.207l-.646.647a.5.5 0 0 1-.708 0L11 9.207l-.646.647a.5.5 0 0 1-.708 0L9 9.207l-.646.647A.5.5 0 0 1 8 10h-.535A4 4 0 0 1 0 8z" style="fill:silver;" />
+                <path d="M4 8a1 1 0 1 1-2 0 1 1 0 0 1 2 0z" style="fill:silver;" />
+                </svg>
+                Mitigation_ID</td><td>VARCHAR(255)</td><td>Foreign Key to the MITRE Mitigation Table</td><td>FALSE</td></tr><tr><td>
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-key" viewBox="0 0 16 16">
+                <path d="M0 8a4 4 0 0 1 7.465-2H14a.5.5 0 0 1 .354.146l1.5 1.5a.5.5 0 0 1 0 .708l-1.5 1.5a.5.5 0 0 1-.708 0L13 9.207l-.646.647a.5.5 0 0 1-.708 0L11 9.207l-.646.647a.5.5 0 0 1-.708 0L9 9.207l-.646.647A.5.5 0 0 1 8 10h-.535A4 4 0 0 1 0 8z" style="fill:silver;" />
+                <path d="M4 8a1 1 0 1 1-2 0 1 1 0 0 1 2 0z" style="fill:silver;" />
+                </svg>
+                Technique_ID</td><td>VARCHAR(255)</td><td>Foreign Key to the MITRE Technique Table</td><td>FALSE</td></tr>
+            </tbody>
+            </table>
+        </div></div>
+        <div class="container-md mt-5 mx-5" style="margin-right: 12rem!important; margin-left: 12rem!important;">
+        <div class="table-responsive">
+        <div class="row justify-content-center">
+            <div class="col-md-12">
+            <div class="table-header"style="background-color: 
+        #FFE5B4;; color: #000;"><div class="table-name">MITRE_TACTIC</div><div class="table-desc">Tactics represent the why of an ATT&CK technique or sub-technique. It is the adversary\</div></div></div></div>
+            <table class="table table-bordered">
+            <thead class="thead-light">
+            <tr>
+                <th style="color:#000"><strong>Field Name</strong></th>
+                <th style="color:#000"><strong>Data Type</strong></th>
+                <th style="color:#000"><strong>Description</strong></th>
+                <th style="color:#000"><strong>Nullable</strong></th>
+            </tr>
+            </thead>
+            <tbody>
+        <tr><td>
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-key" viewBox="0 0 16 16">
+                <path d="M0 8a4 4 0 0 1 7.465-2H14a.5.5 0 0 1 .354.146l1.5 1.5a.5.5 0 0 1 0 .708l-1.5 1.5a.5.5 0 0 1-.708 0L13 9.207l-.646.647a.5.5 0 0 1-.708 0L11 9.207l-.646.647a.5.5 0 0 1-.708 0L9 9.207l-.646.647A.5.5 0 0 1 8 10h-.535A4 4 0 0 1 0 8z" style="fill:gold;" />
+                <path d="M4 8a1 1 0 1 1-2 0 1 1 0 0 1 2 0z" style="fill:gold;" />
+                </svg>
+                UUID</td><td>VARCHAR(255)</td><td>Primary Key</td><td>TRUE</td></tr><tr><td>Description</td><td>VARCHAR(255)</td><td>Description of the Tactic</td><td>FALSE</td></tr><tr><td>Name</td><td>VARCHAR(255)</td><td>Name of the Tactic</td><td>FALSE</td></tr><tr><td>Shortname</td><td>VARCHAR(255)</td><td>Short name of the Tactic</td><td>FALSE</td></tr>
+            </tbody>
+            </table>
+        </div></div>
+        <div class="container-md mt-5 mx-5" style="margin-right: 12rem!important; margin-left: 12rem!important;">
+        <div class="table-responsive">
+        <div class="row justify-content-center">
+            <div class="col-md-12">
+            <div class="table-header"style="background-color: 
+        #FFE5B4;; color: #000;"><div class="table-name">MITRE_TECHNIQUE</div><div class="table-desc">Techniques represent \</div></div></div></div>
+            <table class="table table-bordered">
+            <thead class="thead-light">
+            <tr>
+                <th style="color:#000"><strong>Field Name</strong></th>
+                <th style="color:#000"><strong>Data Type</strong></th>
+                <th style="color:#000"><strong>Description</strong></th>
+                <th style="color:#000"><strong>Nullable</strong></th>
+            </tr>
+            </thead>
+            <tbody>
+        <tr><td>
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-key" viewBox="0 0 16 16">
+                <path d="M0 8a4 4 0 0 1 7.465-2H14a.5.5 0 0 1 .354.146l1.5 1.5a.5.5 0 0 1 0 .708l-1.5 1.5a.5.5 0 0 1-.708 0L13 9.207l-.646.647a.5.5 0 0 1-.708 0L11 9.207l-.646.647a.5.5 0 0 1-.708 0L9 9.207l-.646.647A.5.5 0 0 1 8 10h-.535A4 4 0 0 1 0 8z" style="fill:gold;" />
+                <path d="M4 8a1 1 0 1 1-2 0 1 1 0 0 1 2 0z" style="fill:gold;" />
+                </svg>
+                UUID</td><td>VARCHAR(255)</td><td>Primary Key</td><td>TRUE</td></tr><tr><td>Description</td><td>VARCHAR(255)</td><td>Description of the Technique</td><td>FALSE</td></tr><tr><td>Name</td><td>VARCHAR(255)</td><td>Name of the Technique</td><td>FALSE</td></tr><tr><td>Revoked</td><td>TINYINT(1)</td><td>Boolean for whether the Technique has been revoked</td><td>FALSE</td></tr><tr><td>Depreciated</td><td>TINYINT(1)</td><td>Boolean for whether the Technique has been deprecated</td><td>FALSE</td></tr><tr><td>Detection</td><td>VARCHAR(255)</td><td>How to Detect for this Technique on a System</td><td>FALSE</td></tr><tr><td>Remote_Support</td><td>TINYINT(1)</td><td>Boolean for if the (sub-)technique can invoke an instance of itself remotely without relying on external tools/techniques</td><td>FALSE</td></tr><tr><td>System_Requirements</td><td>VARCHAR(255)</td><td>Additional information on requirements the adversary needs to meet or about the state of the system (software, patch level, etc.) that may be required for the (sub-)technique to work</td><td>FALSE</td></tr><tr><td>Version</td><td>FLOAT</td><td>Version Number of the Technique object</td><td>FALSE</td></tr><tr><td>
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-key" viewBox="0 0 16 16">
+                <path d="M0 8a4 4 0 0 1 7.465-2H14a.5.5 0 0 1 .354.146l1.5 1.5a.5.5 0 0 1 0 .708l-1.5 1.5a.5.5 0 0 1-.708 0L13 9.207l-.646.647a.5.5 0 0 1-.708 0L11 9.207l-.646.647a.5.5 0 0 1-.708 0L9 9.207l-.646.647A.5.5 0 0 1 8 10h-.535A4 4 0 0 1 0 8z" style="fill:silver;" />
+                <path d="M4 8a1 1 0 1 1-2 0 1 1 0 0 1 2 0z" style="fill:silver;" />
+                </svg>
+                Impact_ID</td><td>VARCHAR(255)</td><td>Foreign Key to the MITRE Impact Type Reference table</td><td>FALSE</td></tr><tr><td>
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-key" viewBox="0 0 16 16">
+                <path d="M0 8a4 4 0 0 1 7.465-2H14a.5.5 0 0 1 .354.146l1.5 1.5a.5.5 0 0 1 0 .708l-1.5 1.5a.5.5 0 0 1-.708 0L13 9.207l-.646.647a.5.5 0 0 1-.708 0L11 9.207l-.646.647a.5.5 0 0 1-.708 0L9 9.207l-.646.647A.5.5 0 0 1 8 10h-.535A4 4 0 0 1 0 8z" style="fill:silver;" />
+                <path d="M4 8a1 1 0 1 1-2 0 1 1 0 0 1 2 0z" style="fill:silver;" />
+                </svg>
+                Parent_Technique</td><td>VARCHAR(255)</td><td>If this Technique is a Subtechnique, then the Foreign Key to the Parent Technique</td><td>FALSE</td></tr><tr><td>
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-key" viewBox="0 0 16 16">
+                <path d="M0 8a4 4 0 0 1 7.465-2H14a.5.5 0 0 1 .354.146l1.5 1.5a.5.5 0 0 1 0 .708l-1.5 1.5a.5.5 0 0 1-.708 0L13 9.207l-.646.647a.5.5 0 0 1-.708 0L11 9.207l-.646.647a.5.5 0 0 1-.708 0L9 9.207l-.646.647A.5.5 0 0 1 8 10h-.535A4 4 0 0 1 0 8z" style="fill:silver;" />
+                <path d="M4 8a1 1 0 1 1-2 0 1 1 0 0 1 2 0z" style="fill:silver;" />
+                </svg>
+                Superseded_By</td><td>VARCHAR(255)</td><td>If the Technique is superseded, a foreign key to the Technique that supersedes it.</td><td>FALSE</td></tr>
+            </tbody>
+            </table>
+        </div></div>
+        <div class="container-md mt-5 mx-5" style="margin-right: 12rem!important; margin-left: 12rem!important;">
+        <div class="table-responsive">
+        <div class="row justify-content-center">
+            <div class="col-md-12">
+            <div class="table-header"style="background-color: 
+        #FFE5B4;; color: #000;"><div class="table-name">MITRE_TECHNIQUE_References</div><div class="table-desc">External References belonging to MITRE ATTACK Techniques</div></div></div></div>
+            <table class="table table-bordered">
+            <thead class="thead-light">
+            <tr>
+                <th style="color:#000"><strong>Field Name</strong></th>
+                <th style="color:#000"><strong>Data Type</strong></th>
+                <th style="color:#000"><strong>Description</strong></th>
+                <th style="color:#000"><strong>Nullable</strong></th>
+            </tr>
+            </thead>
+            <tbody>
+        <tr><td>
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-key" viewBox="0 0 16 16">
+                <path d="M0 8a4 4 0 0 1 7.465-2H14a.5.5 0 0 1 .354.146l1.5 1.5a.5.5 0 0 1 0 .708l-1.5 1.5a.5.5 0 0 1-.708 0L13 9.207l-.646.647a.5.5 0 0 1-.708 0L11 9.207l-.646.647a.5.5 0 0 1-.708 0L9 9.207l-.646.647A.5.5 0 0 1 8 10h-.535A4 4 0 0 1 0 8z" style="fill:silver;" />
+                <path d="M4 8a1 1 0 1 1-2 0 1 1 0 0 1 2 0z" style="fill:silver;" />
+                </svg>
+                Reference_ID</td><td>VARCHAR(255)</td><td>Foreign Key to the MITRE_External_References Table</td><td>FALSE</td></tr><tr><td>
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-key" viewBox="0 0 16 16">
+                <path d="M0 8a4 4 0 0 1 7.465-2H14a.5.5 0 0 1 .354.146l1.5 1.5a.5.5 0 0 1 0 .708l-1.5 1.5a.5.5 0 0 1-.708 0L13 9.207l-.646.647a.5.5 0 0 1-.708 0L11 9.207l-.646.647a.5.5 0 0 1-.708 0L9 9.207l-.646.647A.5.5 0 0 1 8 10h-.535A4 4 0 0 1 0 8z" style="fill:silver;" />
+                <path d="M4 8a1 1 0 1 1-2 0 1 1 0 0 1 2 0z" style="fill:silver;" />
+                </svg>
+                Technique_ID</td><td>VARCHAR(255)</td><td>Foreign Key to the MITRE ATTACK Technique Table</td><td>FALSE</td></tr>
+            </tbody>
+            </table>
+        </div></div>
+        <div class="container-md mt-5 mx-5" style="margin-right: 12rem!important; margin-left: 12rem!important;">
+        <div class="table-responsive">
+        <div class="row justify-content-center">
+            <div class="col-md-12">
+            <div class="table-header"style="background-color: 
+        #FFE5B4;; color: #000;"><div class="table-name">MITRE_TOOL</div><div class="table-desc">Commercial, open-source, built-in, or publicly available software that could be used by a defender, pen tester, red teamer, or an adversary. This category includes both software that generally is not found on an enterprise system as well as software generally available as part of an operating system that is already present in an environment. Examples include PsExec, Metasploit, Mimikatz, as well as Windows utilities such as Net, netstat, Tasklist, etc.</div></div></div></div>
+            <table class="table table-bordered">
+            <thead class="thead-light">
+            <tr>
+                <th style="color:#000"><strong>Field Name</strong></th>
+                <th style="color:#000"><strong>Data Type</strong></th>
+                <th style="color:#000"><strong>Description</strong></th>
+                <th style="color:#000"><strong>Nullable</strong></th>
+            </tr>
+            </thead>
+            <tbody>
+        <tr><td>
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-key" viewBox="0 0 16 16">
+                <path d="M0 8a4 4 0 0 1 7.465-2H14a.5.5 0 0 1 .354.146l1.5 1.5a.5.5 0 0 1 0 .708l-1.5 1.5a.5.5 0 0 1-.708 0L13 9.207l-.646.647a.5.5 0 0 1-.708 0L11 9.207l-.646.647a.5.5 0 0 1-.708 0L9 9.207l-.646.647A.5.5 0 0 1 8 10h-.535A4 4 0 0 1 0 8z" style="fill:gold;" />
+                <path d="M4 8a1 1 0 1 1-2 0 1 1 0 0 1 2 0z" style="fill:gold;" />
+                </svg>
+                ID</td><td>VARCHAR(255)</td><td>Primary Key</td><td>TRUE</td></tr><tr><td>Description</td><td>VARCHAR(255)</td><td>Description of the Tool</td><td>FALSE</td></tr><tr><td>Name</td><td>INT</td><td>Name of the Tool</td><td>FALSE</td></tr><tr><td>Version_Number</td><td>FLOAT</td><td>Version Number of the Tool</td><td>FALSE</td></tr>
+            </tbody>
+            </table>
+        </div></div>
+        <div class="container-md mt-5 mx-5" style="margin-right: 12rem!important; margin-left: 12rem!important;">
+        <div class="table-responsive">
+        <div class="row justify-content-center">
+            <div class="col-md-12">
+            <div class="table-header"style="background-color: 
+        #FFE5B4;; color: #000;"><div class="table-name">MITRE_TOOL_Aliases</div><div class="table-desc">Names that have overlapping reference to a software entry and may refer to the same or similar software in threat intelligence reporting</div></div></div></div>
+            <table class="table table-bordered">
+            <thead class="thead-light">
+            <tr>
+                <th style="color:#000"><strong>Field Name</strong></th>
+                <th style="color:#000"><strong>Data Type</strong></th>
+                <th style="color:#000"><strong>Description</strong></th>
+                <th style="color:#000"><strong>Nullable</strong></th>
+            </tr>
+            </thead>
+            <tbody>
+        <tr><td>Name</td><td>VARCHAR(255)</td><td>Name of the alias</td><td>FALSE</td></tr><tr><td>
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-key" viewBox="0 0 16 16">
+                <path d="M0 8a4 4 0 0 1 7.465-2H14a.5.5 0 0 1 .354.146l1.5 1.5a.5.5 0 0 1 0 .708l-1.5 1.5a.5.5 0 0 1-.708 0L13 9.207l-.646.647a.5.5 0 0 1-.708 0L11 9.207l-.646.647a.5.5 0 0 1-.708 0L9 9.207l-.646.647A.5.5 0 0 1 8 10h-.535A4 4 0 0 1 0 8z" style="fill:silver;" />
+                <path d="M4 8a1 1 0 1 1-2 0 1 1 0 0 1 2 0z" style="fill:silver;" />
+                </svg>
+                Tool_ID</td><td>VARCHAR(255)</td><td>Foreign Key to the MITRE Tool Table</td><td>FALSE</td></tr>
+            </tbody>
+            </table>
+        </div></div>
+        <div class="container-md mt-5 mx-5" style="margin-right: 12rem!important; margin-left: 12rem!important;">
+        <div class="table-responsive">
+        <div class="row justify-content-center">
+            <div class="col-md-12">
+            <div class="table-header"style="background-color: 
+        #FFE5B4;; color: #000;"><div class="table-name">MITRE_Tactic_References</div><div class="table-desc">External References belonging to MITRE ATTACK Tactics</div></div></div></div>
+            <table class="table table-bordered">
+            <thead class="thead-light">
+            <tr>
+                <th style="color:#000"><strong>Field Name</strong></th>
+                <th style="color:#000"><strong>Data Type</strong></th>
+                <th style="color:#000"><strong>Description</strong></th>
+                <th style="color:#000"><strong>Nullable</strong></th>
+            </tr>
+            </thead>
+            <tbody>
+        <tr><td>
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-key" viewBox="0 0 16 16">
+                <path d="M0 8a4 4 0 0 1 7.465-2H14a.5.5 0 0 1 .354.146l1.5 1.5a.5.5 0 0 1 0 .708l-1.5 1.5a.5.5 0 0 1-.708 0L13 9.207l-.646.647a.5.5 0 0 1-.708 0L11 9.207l-.646.647a.5.5 0 0 1-.708 0L9 9.207l-.646.647A.5.5 0 0 1 8 10h-.535A4 4 0 0 1 0 8z" style="fill:silver;" />
+                <path d="M4 8a1 1 0 1 1-2 0 1 1 0 0 1 2 0z" style="fill:silver;" />
+                </svg>
+                Reference_ID</td><td>VARCHAR(255)</td><td>Foreign Key to the MITRE_External_References Table</td><td>FALSE</td></tr><tr><td>
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-key" viewBox="0 0 16 16">
+                <path d="M0 8a4 4 0 0 1 7.465-2H14a.5.5 0 0 1 .354.146l1.5 1.5a.5.5 0 0 1 0 .708l-1.5 1.5a.5.5 0 0 1-.708 0L13 9.207l-.646.647a.5.5 0 0 1-.708 0L11 9.207l-.646.647a.5.5 0 0 1-.708 0L9 9.207l-.646.647A.5.5 0 0 1 8 10h-.535A4 4 0 0 1 0 8z" style="fill:silver;" />
+                <path d="M4 8a1 1 0 1 1-2 0 1 1 0 0 1 2 0z" style="fill:silver;" />
+                </svg>
+                Tactic_ID</td><td>VARCHAR(255)</td><td>Foreign Key to the MITRE ATTACK Tactic Table</td><td>FALSE</td></tr>
+            </tbody>
+            </table>
+        </div></div>
+        <div class="container-md mt-5 mx-5" style="margin-right: 12rem!important; margin-left: 12rem!important;">
+        <div class="table-responsive">
+        <div class="row justify-content-center">
+            <div class="col-md-12">
+            <div class="table-header"style="background-color: 
+        #FFE5B4;; color: #000;"><div class="table-name">MITRE_Technique_Data_Component</div><div class="table-desc">Connecting table for the Data Components that can detect MITRE ATTACK Techniques</div></div></div></div>
+            <table class="table table-bordered">
+            <thead class="thead-light">
+            <tr>
+                <th style="color:#000"><strong>Field Name</strong></th>
+                <th style="color:#000"><strong>Data Type</strong></th>
+                <th style="color:#000"><strong>Description</strong></th>
+                <th style="color:#000"><strong>Nullable</strong></th>
+            </tr>
+            </thead>
+            <tbody>
+        <tr><td>
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-key" viewBox="0 0 16 16">
+                <path d="M0 8a4 4 0 0 1 7.465-2H14a.5.5 0 0 1 .354.146l1.5 1.5a.5.5 0 0 1 0 .708l-1.5 1.5a.5.5 0 0 1-.708 0L13 9.207l-.646.647a.5.5 0 0 1-.708 0L11 9.207l-.646.647a.5.5 0 0 1-.708 0L9 9.207l-.646.647A.5.5 0 0 1 8 10h-.535A4 4 0 0 1 0 8z" style="fill:silver;" />
+                <path d="M4 8a1 1 0 1 1-2 0 1 1 0 0 1 2 0z" style="fill:silver;" />
+                </svg>
+                Technique_ID</td><td>VARCHAR(255)</td><td>Foreign Key to the MITRE Technique Table</td><td>FALSE</td></tr><tr><td>
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-key" viewBox="0 0 16 16">
+                <path d="M0 8a4 4 0 0 1 7.465-2H14a.5.5 0 0 1 .354.146l1.5 1.5a.5.5 0 0 1 0 .708l-1.5 1.5a.5.5 0 0 1-.708 0L13 9.207l-.646.647a.5.5 0 0 1-.708 0L11 9.207l-.646.647a.5.5 0 0 1-.708 0L9 9.207l-.646.647A.5.5 0 0 1 8 10h-.535A4 4 0 0 1 0 8z" style="fill:silver;" />
+                <path d="M4 8a1 1 0 1 1-2 0 1 1 0 0 1 2 0z" style="fill:silver;" />
+                </svg>
+                Data_Component_ID</td><td>VARCHAR(255)</td><td>Foreign Key to the MITRE ATTACK Data Components Table</td><td>FALSE</td></tr>
+            </tbody>
+            </table>
+        </div></div>
+        <div class="container-md mt-5 mx-5" style="margin-right: 12rem!important; margin-left: 12rem!important;">
+        <div class="table-responsive">
+        <div class="row justify-content-center">
+            <div class="col-md-12">
+            <div class="table-header"style="background-color: 
+        #FFE5B4;; color: #000;"><div class="table-name">MITRE_Technique_Defense_Bypasses</div><div class="table-desc">Connecting Table of all the Defenses that particular Techniques bypass</div></div></div></div>
+            <table class="table table-bordered">
+            <thead class="thead-light">
+            <tr>
+                <th style="color:#000"><strong>Field Name</strong></th>
+                <th style="color:#000"><strong>Data Type</strong></th>
+                <th style="color:#000"><strong>Description</strong></th>
+                <th style="color:#000"><strong>Nullable</strong></th>
+            </tr>
+            </thead>
+            <tbody>
+        <tr><td>
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-key" viewBox="0 0 16 16">
+                <path d="M0 8a4 4 0 0 1 7.465-2H14a.5.5 0 0 1 .354.146l1.5 1.5a.5.5 0 0 1 0 .708l-1.5 1.5a.5.5 0 0 1-.708 0L13 9.207l-.646.647a.5.5 0 0 1-.708 0L11 9.207l-.646.647a.5.5 0 0 1-.708 0L9 9.207l-.646.647A.5.5 0 0 1 8 10h-.535A4 4 0 0 1 0 8z" style="fill:silver;" />
+                <path d="M4 8a1 1 0 1 1-2 0 1 1 0 0 1 2 0z" style="fill:silver;" />
+                </svg>
+                Technique_ID</td><td>VARCHAR(255)</td><td>Foreign Key to the MITRE Technique Table</td><td>FALSE</td></tr><tr><td>
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-key" viewBox="0 0 16 16">
+                <path d="M0 8a4 4 0 0 1 7.465-2H14a.5.5 0 0 1 .354.146l1.5 1.5a.5.5 0 0 1 0 .708l-1.5 1.5a.5.5 0 0 1-.708 0L13 9.207l-.646.647a.5.5 0 0 1-.708 0L11 9.207l-.646.647a.5.5 0 0 1-.708 0L9 9.207l-.646.647A.5.5 0 0 1 8 10h-.535A4 4 0 0 1 0 8z" style="fill:silver;" />
+                <path d="M4 8a1 1 0 1 1-2 0 1 1 0 0 1 2 0z" style="fill:silver;" />
+                </svg>
+                Defense_ID</td><td>VARCHAR(255)</td><td>Foreign Key to the MITRE ATTACK Defenses Reference Table</td><td>FALSE</td></tr>
+            </tbody>
+            </table>
+        </div></div>
+        <div class="container-md mt-5 mx-5" style="margin-right: 12rem!important; margin-left: 12rem!important;">
+        <div class="table-responsive">
+        <div class="row justify-content-center">
+            <div class="col-md-12">
+            <div class="table-header"style="background-color: 
+        #FFE5B4;; color: #000;"><div class="table-name">MITRE_Technique_Obtained_Permissions</div><div class="table-desc">The level of permissions the adversary will attain by performing the (sub-)technique</div></div></div></div>
+            <table class="table table-bordered">
+            <thead class="thead-light">
+            <tr>
+                <th style="color:#000"><strong>Field Name</strong></th>
+                <th style="color:#000"><strong>Data Type</strong></th>
+                <th style="color:#000"><strong>Description</strong></th>
+                <th style="color:#000"><strong>Nullable</strong></th>
+            </tr>
+            </thead>
+            <tbody>
+        <tr><td>
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-key" viewBox="0 0 16 16">
+                <path d="M0 8a4 4 0 0 1 7.465-2H14a.5.5 0 0 1 .354.146l1.5 1.5a.5.5 0 0 1 0 .708l-1.5 1.5a.5.5 0 0 1-.708 0L13 9.207l-.646.647a.5.5 0 0 1-.708 0L11 9.207l-.646.647a.5.5 0 0 1-.708 0L9 9.207l-.646.647A.5.5 0 0 1 8 10h-.535A4 4 0 0 1 0 8z" style="fill:silver;" />
+                <path d="M4 8a1 1 0 1 1-2 0 1 1 0 0 1 2 0z" style="fill:silver;" />
+                </svg>
+                Technique_ID</td><td>VARCHAR(255)</td><td>Foreign Key to the ATTACK Technique Table</td><td>FALSE</td></tr><tr><td>
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-key" viewBox="0 0 16 16">
+                <path d="M0 8a4 4 0 0 1 7.465-2H14a.5.5 0 0 1 .354.146l1.5 1.5a.5.5 0 0 1 0 .708l-1.5 1.5a.5.5 0 0 1-.708 0L13 9.207l-.646.647a.5.5 0 0 1-.708 0L11 9.207l-.646.647a.5.5 0 0 1-.708 0L9 9.207l-.646.647A.5.5 0 0 1 8 10h-.535A4 4 0 0 1 0 8z" style="fill:silver;" />
+                <path d="M4 8a1 1 0 1 1-2 0 1 1 0 0 1 2 0z" style="fill:silver;" />
+                </svg>
+                Permission_ID</td><td>VARCHAR(255)</td><td>Foreign Key to the System Permissions reference Table</td><td>FALSE</td></tr>
+            </tbody>
+            </table>
+        </div></div>
+        <div class="container-md mt-5 mx-5" style="margin-right: 12rem!important; margin-left: 12rem!important;">
+        <div class="table-responsive">
+        <div class="row justify-content-center">
+            <div class="col-md-12">
+            <div class="table-header"style="background-color: 
+        #FFE5B4;; color: #000;"><div class="table-name">MITRE_Technique_Required_Permissions</div><div class="table-desc">The lowest level of permissions the adversary is required to be operating within to perform the (sub-)technique on a system.</div></div></div></div>
+            <table class="table table-bordered">
+            <thead class="thead-light">
+            <tr>
+                <th style="color:#000"><strong>Field Name</strong></th>
+                <th style="color:#000"><strong>Data Type</strong></th>
+                <th style="color:#000"><strong>Description</strong></th>
+                <th style="color:#000"><strong>Nullable</strong></th>
+            </tr>
+            </thead>
+            <tbody>
+        <tr><td>
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-key" viewBox="0 0 16 16">
+                <path d="M0 8a4 4 0 0 1 7.465-2H14a.5.5 0 0 1 .354.146l1.5 1.5a.5.5 0 0 1 0 .708l-1.5 1.5a.5.5 0 0 1-.708 0L13 9.207l-.646.647a.5.5 0 0 1-.708 0L11 9.207l-.646.647a.5.5 0 0 1-.708 0L9 9.207l-.646.647A.5.5 0 0 1 8 10h-.535A4 4 0 0 1 0 8z" style="fill:silver;" />
+                <path d="M4 8a1 1 0 1 1-2 0 1 1 0 0 1 2 0z" style="fill:silver;" />
+                </svg>
+                Technique_ID</td><td>VARCHAR(255)</td><td>Foreign Key to the MITRE Technique Table</td><td>FALSE</td></tr><tr><td>
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-key" viewBox="0 0 16 16">
+                <path d="M0 8a4 4 0 0 1 7.465-2H14a.5.5 0 0 1 .354.146l1.5 1.5a.5.5 0 0 1 0 .708l-1.5 1.5a.5.5 0 0 1-.708 0L13 9.207l-.646.647a.5.5 0 0 1-.708 0L11 9.207l-.646.647a.5.5 0 0 1-.708 0L9 9.207l-.646.647A.5.5 0 0 1 8 10h-.535A4 4 0 0 1 0 8z" style="fill:silver;" />
+                <path d="M4 8a1 1 0 1 1-2 0 1 1 0 0 1 2 0z" style="fill:silver;" />
+                </svg>
+                Permission_ID</td><td>VARCHAR(255)</td><td>Foreign Key to the System Permissions reference Table</td><td>FALSE</td></tr>
+            </tbody>
+            </table>
+        </div></div>
+        <div class="container-md mt-5 mx-5" style="margin-right: 12rem!important; margin-left: 12rem!important;">
+        <div class="table-responsive">
+        <div class="row justify-content-center">
+            <div class="col-md-12">
+            <div class="table-header"style="background-color: 
+        #FFE5B4;; color: #000;"><div class="table-name">MITRE_Technique_Tactics</div><div class="table-desc">Connecting Table for Tactic objectives that (sub-)techniques can be used to accomplish</div></div></div></div>
+            <table class="table table-bordered">
+            <thead class="thead-light">
+            <tr>
+                <th style="color:#000"><strong>Field Name</strong></th>
+                <th style="color:#000"><strong>Data Type</strong></th>
+                <th style="color:#000"><strong>Description</strong></th>
+                <th style="color:#000"><strong>Nullable</strong></th>
+            </tr>
+            </thead>
+            <tbody>
+        <tr><td>
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-key" viewBox="0 0 16 16">
+                <path d="M0 8a4 4 0 0 1 7.465-2H14a.5.5 0 0 1 .354.146l1.5 1.5a.5.5 0 0 1 0 .708l-1.5 1.5a.5.5 0 0 1-.708 0L13 9.207l-.646.647a.5.5 0 0 1-.708 0L11 9.207l-.646.647a.5.5 0 0 1-.708 0L9 9.207l-.646.647A.5.5 0 0 1 8 10h-.535A4 4 0 0 1 0 8z" style="fill:silver;" />
+                <path d="M4 8a1 1 0 1 1-2 0 1 1 0 0 1 2 0z" style="fill:silver;" />
+                </svg>
+                Technique_ID</td><td>VARCHAR(255)</td><td>Foreign Key to the MITRE Technique Table</td><td>FALSE</td></tr><tr><td>
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-key" viewBox="0 0 16 16">
+                <path d="M0 8a4 4 0 0 1 7.465-2H14a.5.5 0 0 1 .354.146l1.5 1.5a.5.5 0 0 1 0 .708l-1.5 1.5a.5.5 0 0 1-.708 0L13 9.207l-.646.647a.5.5 0 0 1-.708 0L11 9.207l-.646.647a.5.5 0 0 1-.708 0L9 9.207l-.646.647A.5.5 0 0 1 8 10h-.535A4 4 0 0 1 0 8z" style="fill:silver;" />
+                <path d="M4 8a1 1 0 1 1-2 0 1 1 0 0 1 2 0z" style="fill:silver;" />
+                </svg>
+                Tactic_ID</td><td>VARCHAR(255)</td><td>Foreign Key to the MITRE Tactics Table</td><td>FALSE</td></tr>
+            </tbody>
+            </table>
+        </div></div>
+        <div class="container-md mt-5 mx-5" style="margin-right: 12rem!important; margin-left: 12rem!important;">
+        <div class="table-responsive">
+        <div class="row justify-content-center">
+            <div class="col-md-12">
+            <div class="table-header"style="background-color: 
+        #FFE5B4;; color: #000;"><div class="table-name">MITRE_Techniques_Platforms</div><div class="table-desc">MITRE ATT&CK Platforms which are the system an adversary is operating within. Could be an operating system or application</div></div></div></div>
+            <table class="table table-bordered">
+            <thead class="thead-light">
+            <tr>
+                <th style="color:#000"><strong>Field Name</strong></th>
+                <th style="color:#000"><strong>Data Type</strong></th>
+                <th style="color:#000"><strong>Description</strong></th>
+                <th style="color:#000"><strong>Nullable</strong></th>
+            </tr>
+            </thead>
+            <tbody>
+        <tr><td>
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-key" viewBox="0 0 16 16">
+                <path d="M0 8a4 4 0 0 1 7.465-2H14a.5.5 0 0 1 .354.146l1.5 1.5a.5.5 0 0 1 0 .708l-1.5 1.5a.5.5 0 0 1-.708 0L13 9.207l-.646.647a.5.5 0 0 1-.708 0L11 9.207l-.646.647a.5.5 0 0 1-.708 0L9 9.207l-.646.647A.5.5 0 0 1 8 10h-.535A4 4 0 0 1 0 8z" style="fill:silver;" />
+                <path d="M4 8a1 1 0 1 1-2 0 1 1 0 0 1 2 0z" style="fill:silver;" />
+                </svg>
+                Technique_ID</td><td>VARCHAR(255)</td><td>Foreign Key to the MITRE Technique Table</td><td>FALSE</td></tr><tr><td>
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-key" viewBox="0 0 16 16">
+                <path d="M0 8a4 4 0 0 1 7.465-2H14a.5.5 0 0 1 .354.146l1.5 1.5a.5.5 0 0 1 0 .708l-1.5 1.5a.5.5 0 0 1-.708 0L13 9.207l-.646.647a.5.5 0 0 1-.708 0L11 9.207l-.646.647a.5.5 0 0 1-.708 0L9 9.207l-.646.647A.5.5 0 0 1 8 10h-.535A4 4 0 0 1 0 8z" style="fill:silver;" />
+                <path d="M4 8a1 1 0 1 1-2 0 1 1 0 0 1 2 0z" style="fill:silver;" />
+                </svg>
+                Platform_ID</td><td>VARCHAR(255)</td><td>Foreign Key to the MITRE Platform Table</td><td>FALSE</td></tr>
+            </tbody>
+            </table>
+        </div></div>
+        <div class="container-md mt-5 mx-5" style="margin-right: 12rem!important; margin-left: 12rem!important;">
+        <div class="table-responsive">
+        <div class="row justify-content-center">
+            <div class="col-md-12">
+            <div class="table-header"style="background-color: 
+        #FFE5B4;; color: #000;"><div class="table-name">MITRE_Tool_Platforms</div><div class="table-desc">Connecting Table for MITRE Tools and Platforms</div></div></div></div>
+            <table class="table table-bordered">
+            <thead class="thead-light">
+            <tr>
+                <th style="color:#000"><strong>Field Name</strong></th>
+                <th style="color:#000"><strong>Data Type</strong></th>
+                <th style="color:#000"><strong>Description</strong></th>
+                <th style="color:#000"><strong>Nullable</strong></th>
+            </tr>
+            </thead>
+            <tbody>
+        <tr><td>
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-key" viewBox="0 0 16 16">
+                <path d="M0 8a4 4 0 0 1 7.465-2H14a.5.5 0 0 1 .354.146l1.5 1.5a.5.5 0 0 1 0 .708l-1.5 1.5a.5.5 0 0 1-.708 0L13 9.207l-.646.647a.5.5 0 0 1-.708 0L11 9.207l-.646.647a.5.5 0 0 1-.708 0L9 9.207l-.646.647A.5.5 0 0 1 8 10h-.535A4 4 0 0 1 0 8z" style="fill:silver;" />
+                <path d="M4 8a1 1 0 1 1-2 0 1 1 0 0 1 2 0z" style="fill:silver;" />
+                </svg>
+                Tool_ID</td><td>VARCHAR(255)</td><td>Foreign Key to the MITRE Tool Table</td><td>FALSE</td></tr><tr><td>
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-key" viewBox="0 0 16 16">
+                <path d="M0 8a4 4 0 0 1 7.465-2H14a.5.5 0 0 1 .354.146l1.5 1.5a.5.5 0 0 1 0 .708l-1.5 1.5a.5.5 0 0 1-.708 0L13 9.207l-.646.647a.5.5 0 0 1-.708 0L11 9.207l-.646.647a.5.5 0 0 1-.708 0L9 9.207l-.646.647A.5.5 0 0 1 8 10h-.535A4 4 0 0 1 0 8z" style="fill:silver;" />
+                <path d="M4 8a1 1 0 1 1-2 0 1 1 0 0 1 2 0z" style="fill:silver;" />
+                </svg>
+                Platform_ID</td><td>VARCHAR(255)</td><td>Foreign Key to the MITRE Platforms Table</td><td>FALSE</td></tr>
+            </tbody>
+            </table>
+        </div></div>
+        <div class="container-md mt-5 mx-5" style="margin-right: 12rem!important; margin-left: 12rem!important;">
+        <div class="table-responsive">
+        <div class="row justify-content-center">
+            <div class="col-md-12">
+            <div class="table-header"style="background-color: 
+        #FFE5B4;; color: #000;"><div class="table-name">MITRE_Tool_References</div><div class="table-desc">External References belonging to MITRE ATTACK Tools</div></div></div></div>
+            <table class="table table-bordered">
+            <thead class="thead-light">
+            <tr>
+                <th style="color:#000"><strong>Field Name</strong></th>
+                <th style="color:#000"><strong>Data Type</strong></th>
+                <th style="color:#000"><strong>Description</strong></th>
+                <th style="color:#000"><strong>Nullable</strong></th>
+            </tr>
+            </thead>
+            <tbody>
+        <tr><td>
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-key" viewBox="0 0 16 16">
+                <path d="M0 8a4 4 0 0 1 7.465-2H14a.5.5 0 0 1 .354.146l1.5 1.5a.5.5 0 0 1 0 .708l-1.5 1.5a.5.5 0 0 1-.708 0L13 9.207l-.646.647a.5.5 0 0 1-.708 0L11 9.207l-.646.647a.5.5 0 0 1-.708 0L9 9.207l-.646.647A.5.5 0 0 1 8 10h-.535A4 4 0 0 1 0 8z" style="fill:silver;" />
+                <path d="M4 8a1 1 0 1 1-2 0 1 1 0 0 1 2 0z" style="fill:silver;" />
+                </svg>
+                Reference_ID</td><td>VARCHAR(255)</td><td>Foreign Key to the MITRE_External_References Table</td><td>FALSE</td></tr><tr><td>
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-key" viewBox="0 0 16 16">
+                <path d="M0 8a4 4 0 0 1 7.465-2H14a.5.5 0 0 1 .354.146l1.5 1.5a.5.5 0 0 1 0 .708l-1.5 1.5a.5.5 0 0 1-.708 0L13 9.207l-.646.647a.5.5 0 0 1-.708 0L11 9.207l-.646.647a.5.5 0 0 1-.708 0L9 9.207l-.646.647A.5.5 0 0 1 8 10h-.535A4 4 0 0 1 0 8z" style="fill:silver;" />
+                <path d="M4 8a1 1 0 1 1-2 0 1 1 0 0 1 2 0z" style="fill:silver;" />
+                </svg>
+                Tool_ID</td><td>VARCHAR(255)</td><td>Foreign Key to the MITRE ATTACK Tool Table</td><td>FALSE</td></tr>
+            </tbody>
+            </table>
+        </div></div>
+        <div class="container-md mt-5 mx-5" style="margin-right: 12rem!important; margin-left: 12rem!important;">
+        <div class="table-responsive">
+        <div class="row justify-content-center">
+            <div class="col-md-12">
+            <div class="table-header"style="background-color: 
+        #FFE5B4;; color: #000;"><div class="table-name">MITRE_Tool_Technique</div><div class="table-desc">Connecting Table of the MITRE ATTACK Technique that are used as part of a Tool</div></div></div></div>
+            <table class="table table-bordered">
+            <thead class="thead-light">
+            <tr>
+                <th style="color:#000"><strong>Field Name</strong></th>
+                <th style="color:#000"><strong>Data Type</strong></th>
+                <th style="color:#000"><strong>Description</strong></th>
+                <th style="color:#000"><strong>Nullable</strong></th>
+            </tr>
+            </thead>
+            <tbody>
+        <tr><td>
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-key" viewBox="0 0 16 16">
+                <path d="M0 8a4 4 0 0 1 7.465-2H14a.5.5 0 0 1 .354.146l1.5 1.5a.5.5 0 0 1 0 .708l-1.5 1.5a.5.5 0 0 1-.708 0L13 9.207l-.646.647a.5.5 0 0 1-.708 0L11 9.207l-.646.647a.5.5 0 0 1-.708 0L9 9.207l-.646.647A.5.5 0 0 1 8 10h-.535A4 4 0 0 1 0 8z" style="fill:silver;" />
+                <path d="M4 8a1 1 0 1 1-2 0 1 1 0 0 1 2 0z" style="fill:silver;" />
+                </svg>
+                Tool_ID</td><td>VARCHAR(255)</td><td>Foreign Key to the Tool Table</td><td>FALSE</td></tr><tr><td>
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-key" viewBox="0 0 16 16">
+                <path d="M0 8a4 4 0 0 1 7.465-2H14a.5.5 0 0 1 .354.146l1.5 1.5a.5.5 0 0 1 0 .708l-1.5 1.5a.5.5 0 0 1-.708 0L13 9.207l-.646.647a.5.5 0 0 1-.708 0L11 9.207l-.646.647a.5.5 0 0 1-.708 0L9 9.207l-.646.647A.5.5 0 0 1 8 10h-.535A4 4 0 0 1 0 8z" style="fill:silver;" />
+                <path d="M4 8a1 1 0 1 1-2 0 1 1 0 0 1 2 0z" style="fill:silver;" />
+                </svg>
+                Technique_ID</td><td>VARCHAR(255)</td><td>Foreign Key to the Technique Table</td><td>FALSE</td></tr>
+            </tbody>
+            </table>
+        </div></div>
+        <div class="container-md mt-5 mx-5" style="margin-right: 12rem!important; margin-left: 12rem!important;">
+        <div class="table-responsive">
+        <div class="row justify-content-center">
+            <div class="col-md-12">
+            <div class="table-header"style="background-color: 
+        #FFD12A;; color: #000;"><div class="table-name">System_Permissions</div><div class="table-desc">Reference Table of Permission Types that can be found on Systems. Ie, Administrator, root, etc.</div></div></div></div>
+            <table class="table table-bordered">
+            <thead class="thead-light">
+            <tr>
+                <th style="color:#000"><strong>Field Name</strong></th>
+                <th style="color:#000"><strong>Data Type</strong></th>
+                <th style="color:#000"><strong>Description</strong></th>
+                <th style="color:#000"><strong>Nullable</strong></th>
+            </tr>
+            </thead>
+            <tbody>
+        <tr><td>
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-key" viewBox="0 0 16 16">
+                <path d="M0 8a4 4 0 0 1 7.465-2H14a.5.5 0 0 1 .354.146l1.5 1.5a.5.5 0 0 1 0 .708l-1.5 1.5a.5.5 0 0 1-.708 0L13 9.207l-.646.647a.5.5 0 0 1-.708 0L11 9.207l-.646.647a.5.5 0 0 1-.708 0L9 9.207l-.646.647A.5.5 0 0 1 8 10h-.535A4 4 0 0 1 0 8z" style="fill:gold;" />
+                <path d="M4 8a1 1 0 1 1-2 0 1 1 0 0 1 2 0z" style="fill:gold;" />
+                </svg>
+                UUID</td><td>VARCHAR(255)</td><td>Primary Key</td><td>TRUE</td></tr><tr><td>Name</td><td>VARCHAR(255)</td><td>Name of the Permission Role</td><td>FALSE</td></tr>
+            </tbody>
+            </table>
+        </div></div></body>
+</html>

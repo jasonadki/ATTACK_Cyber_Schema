@@ -1,0 +1,1203 @@
+{
+    "MITRE_ATTACK_Collection_Layers": {
+        "Description": "A description of where the data source may be physically collected (ex: Host, Network, Cloud Control Plane, etc.)",
+        "Columns": {
+            "UUID": {
+                "Type": "VARCHAR(255)",
+                "Null": "TRUE",
+                "Comment": "Primary Key",
+                "Primary Key": true,
+                "Foreign Key": false
+            },
+            "Name": {
+                "Type": "VARCHAR(255)",
+                "Null": "FALSE",
+                "Comment": "Name of the Collection Layer",
+                "Primary Key": false,
+                "Foreign Key": false
+            }
+        }
+    },
+    "MITRE_ATTACK_Defenses": {
+        "Description": "Reference Table of defensive tools, methodologies, and processes",
+        "Columns": {
+            "UUID": {
+                "Type": "VARCHAR(255)",
+                "Null": "TRUE",
+                "Comment": "Primary Key",
+                "Primary Key": true,
+                "Foreign Key": false
+            },
+            "Name": {
+                "Type": "VARCHAR(255)",
+                "Null": "FALSE",
+                "Comment": "Name of the Defensive tool, methodology, or process",
+                "Primary Key": false,
+                "Foreign Key": false
+            }
+        }
+    },
+    "MITRE_ATTACK_Impact_Types": {
+        "Description": "Denotes if the (sub-)technique can be used for integrity or availability attacks",
+        "Columns": {
+            "UUID": {
+                "Type": "VARCHAR(255)",
+                "Null": "TRUE",
+                "Comment": "Primary Key",
+                "Primary Key": true,
+                "Foreign Key": false
+            },
+            "Name": {
+                "Type": "VARCHAR(255)",
+                "Null": "FALSE",
+                "Comment": "Name of the Impact Type",
+                "Primary Key": false,
+                "Foreign Key": false
+            }
+        }
+    },
+    "MITRE_ATTACK_Platforms": {
+        "Description": "Reference Table of Operating Systems and Applications",
+        "Columns": {
+            "UUID": {
+                "Type": "VARCHAR(255)",
+                "Null": "TRUE",
+                "Comment": "Primary Key",
+                "Primary Key": true,
+                "Foreign Key": false
+            },
+            "Name": {
+                "Type": "VARCHAR(255)",
+                "Null": "FALSE",
+                "Comment": "Name of the Platform",
+                "Primary Key": false,
+                "Foreign Key": false
+            },
+            "Is_Operating_System": {
+                "Type": "TINYINT",
+                "Null": "FALSE",
+                "Comment": "Boolean for whether the Platform is a Operating System. True for Operating System, False for Application",
+                "Primary Key": false,
+                "Foreign Key": false
+            }
+        }
+    },
+    "MITRE_Data_Sources": {
+        "Description": "Data sources represent the various subjects/topics of information that can be collected by sensors/logs. Data sources also include data components, which identify specific properties/values of a data source relevant to detecting a given ATT&CK technique or sub-technique.",
+        "Columns": {
+            "UUID": {
+                "Type": "VARCHAR(255)",
+                "Null": "TRUE",
+                "Comment": "Primary Key",
+                "Primary Key": true,
+                "Foreign Key": false
+            },
+            "Description": {
+                "Type": "VARCHAR(255)",
+                "Null": "FALSE",
+                "Comment": "Description of the Data Source",
+                "Primary Key": false,
+                "Foreign Key": false
+            },
+            "Name": {
+                "Type": "VARCHAR(255)",
+                "Null": "FALSE",
+                "Comment": "Name of the Data Source",
+                "Primary Key": false,
+                "Foreign Key": false
+            },
+            "Version": {
+                "Type": "FLOAT",
+                "Null": "FALSE",
+                "Comment": "Version Number of this Data Source Object",
+                "Primary Key": false,
+                "Foreign Key": false
+            }
+        }
+    },
+    "MITRE_Data_Component": {
+        "Description": "Specific properties/values of a data source relevant to detecting a given ATT&CK technique or sub-technique.",
+        "Columns": {
+            "UUID": {
+                "Type": "VARCHAR(255)",
+                "Null": "TRUE",
+                "Comment": "Primary Key",
+                "Primary Key": true,
+                "Foreign Key": false
+            },
+            "Description": {
+                "Type": "VARCHAR(255)",
+                "Null": "FALSE",
+                "Comment": "Description of the Data Component",
+                "Primary Key": false,
+                "Foreign Key": false
+            },
+            "Name": {
+                "Type": "VARCHAR(255)",
+                "Null": "FALSE",
+                "Comment": "Name of the Data Component",
+                "Primary Key": false,
+                "Foreign Key": false
+            },
+            "Version": {
+                "Type": "FLOAT",
+                "Null": "FALSE",
+                "Comment": "Version Number of the Data Component",
+                "Primary Key": false,
+                "Foreign Key": false
+            },
+            "Data_Source_ID": {
+                "Type": "VARCHAR(255)",
+                "Null": "FALSE",
+                "Comment": "Foreign Key to the MITRE Data Sources Table",
+                "Primary Key": false,
+                "Foreign Key": true
+            }
+        }
+    },
+    "MITRE_External_References": {
+        "Description": "",
+        "Columns": {
+            "UUID": {
+                "Type": "VARCHAR(255)",
+                "Null": "TRUE",
+                "Comment": "Primary Key",
+                "Primary Key": true,
+                "Foreign Key": false
+            },
+            "Source_Name": {
+                "Type": "VARCHAR(255)",
+                "Null": "FALSE",
+                "Comment": "Where the Reference is from",
+                "Primary Key": false,
+                "Foreign Key": false
+            },
+            "URL": {
+                "Type": "VARCHAR(255)",
+                "Null": "FALSE",
+                "Comment": "URL of the Reference",
+                "Primary Key": false,
+                "Foreign Key": false
+            },
+            "Description": {
+                "Type": "VARCHAR(255)",
+                "Null": "FALSE",
+                "Comment": "Description of the Reference",
+                "Primary Key": false,
+                "Foreign Key": false
+            }
+        }
+    },
+    "MITRE_Data_Source_Reference": {
+        "Description": "External References belonging to MITRE ATTACK Data Sources",
+        "Columns": {
+            "Reference_ID": {
+                "Type": "VARCHAR(255)",
+                "Null": "FALSE",
+                "Comment": "Foreign Key to the MITRE_External_References Table",
+                "Primary Key": false,
+                "Foreign Key": true
+            },
+            "Data_Source_ID": {
+                "Type": "VARCHAR(255)",
+                "Null": "FALSE",
+                "Comment": "Foreign Key to the MITRE ATTACK Data Source Table",
+                "Primary Key": false,
+                "Foreign Key": true
+            }
+        }
+    },
+    "MITRE_Data_Sources_Collection_Layers": {
+        "Description": "Connecting Table between MITRE Data Sources and the MITRE ATTACK Collection Layers",
+        "Columns": {
+            "Data_Source_ID": {
+                "Type": "VARCHAR(255)",
+                "Null": "FALSE",
+                "Comment": "Foreign Key to the MITRE Data Source Table",
+                "Primary Key": false,
+                "Foreign Key": true
+            },
+            "Layer_ID": {
+                "Type": "VARCHAR(255)",
+                "Null": "FALSE",
+                "Comment": "Foreign Key to the MITRE ATTACK Collection Layers reference table",
+                "Primary Key": false,
+                "Foreign Key": true
+            }
+        }
+    },
+    "MITRE_Data_Sources_Platforms": {
+        "Description": "MITRE ATT&CK Platforms which are the system an adversary is operating within. Could be an operating system or application",
+        "Columns": {
+            "Data_Source_ID": {
+                "Type": "VARCHAR(255)",
+                "Null": "FALSE",
+                "Comment": "Foreign Key to the MITRE Data Source Table",
+                "Primary Key": false,
+                "Foreign Key": true
+            },
+            "Platform_ID": {
+                "Type": "VARCHAR(255)",
+                "Null": "FALSE",
+                "Comment": "Foreign Key to the MITE ATTACK Platforms Table",
+                "Primary Key": false,
+                "Foreign Key": true
+            }
+        }
+    },
+    "MITRE_Group": {
+        "Description": "Groups are sets of related intrusion activity that are tracked by a common name in the security community. Analysts track clusters of activities using various analytic methodologies and terms such as threat groups, activity groups, threat actors, intrusion sets, and campaigns. Some groups have multiple names associated with similar activities due to various organizations tracking similar activities by different names. Organizations\\",
+        "Columns": {
+            "UUID": {
+                "Type": "VARCHAR(255)",
+                "Null": "TRUE",
+                "Comment": "Primary Key",
+                "Primary Key": true,
+                "Foreign Key": false
+            },
+            "Description": {
+                "Type": "VARCHAR(255)",
+                "Null": "FALSE",
+                "Comment": "Description of the Group",
+                "Primary Key": false,
+                "Foreign Key": false
+            },
+            "Name": {
+                "Type": "VARCHAR(255)",
+                "Null": "FALSE",
+                "Comment": "Name of the Group",
+                "Primary Key": false,
+                "Foreign Key": false
+            },
+            "Revoked": {
+                "Type": "TINYINT(1)",
+                "Null": "FALSE",
+                "Comment": "Boolean for whether the Group was revoked",
+                "Primary Key": false,
+                "Foreign Key": false
+            },
+            "Depreciated": {
+                "Type": "TINYINT(1)",
+                "Null": "FALSE",
+                "Comment": "Boolean for whether the Group has been depreciated",
+                "Primary Key": false,
+                "Foreign Key": false
+            },
+            "Version_Number": {
+                "Type": "FLOAT",
+                "Null": "FALSE",
+                "Comment": "Version Number for the Group object",
+                "Primary Key": false,
+                "Foreign Key": false
+            },
+            "Superseded_By": {
+                "Type": "VARCHAR(255)",
+                "Null": "FALSE",
+                "Comment": "Foreign Key to the MITRE Group object that supersedes this object, if available.",
+                "Primary Key": false,
+                "Foreign Key": true
+            }
+        }
+    },
+    "MITRE_GROUP_Aliases": {
+        "Description": "Names that have overlapping reference to a group entry and may refer to the same or similar group in threat intelligence reporting",
+        "Columns": {
+            "Name": {
+                "Type": "VARCHAR(255)",
+                "Null": "FALSE",
+                "Comment": "Name of the Alias",
+                "Primary Key": false,
+                "Foreign Key": false
+            },
+            "Group_ID": {
+                "Type": "VARCHAR(255)",
+                "Null": "FALSE",
+                "Comment": "Foreign Key to the MITRE Group Table",
+                "Primary Key": false,
+                "Foreign Key": true
+            }
+        }
+    },
+    "MITRE_Malware": {
+        "Description": "Commercial, custom closed source, or open source software intended to be used for malicious purposes by adversaries. Examples include PlugX, CHOPSTICK, etc.",
+        "Columns": {
+            "UUID": {
+                "Type": "VARCHAR(255)",
+                "Null": "TRUE",
+                "Comment": "Primary Key",
+                "Primary Key": true,
+                "Foreign Key": false
+            },
+            "Description": {
+                "Type": "INT",
+                "Null": "FALSE",
+                "Comment": "Description of the Malware",
+                "Primary Key": false,
+                "Foreign Key": false
+            },
+            "Name": {
+                "Type": "VARCHAR(255)",
+                "Null": "FALSE",
+                "Comment": "Name of the Malware",
+                "Primary Key": false,
+                "Foreign Key": false
+            },
+            "Depreciated": {
+                "Type": "TINYINT(1)",
+                "Null": "FALSE",
+                "Comment": "Boolean for whether the Malware has been depreciated",
+                "Primary Key": false,
+                "Foreign Key": false
+            },
+            "Version_Number": {
+                "Type": "FLOAT",
+                "Null": "FALSE",
+                "Comment": "Version Number for this Malware object",
+                "Primary Key": false,
+                "Foreign Key": false
+            },
+            "Superseded_By": {
+                "Type": "VARCHAR(255)",
+                "Null": "FALSE",
+                "Comment": "Foreign Key to the MITRE Malware object that supersedes this object, if available.",
+                "Primary Key": false,
+                "Foreign Key": true
+            }
+        }
+    },
+    "MITRE_Group_Malware": {
+        "Description": "Connecting Table of the MITRE ATTACK Malware that have been used by specific Groups",
+        "Columns": {
+            "Group_ID": {
+                "Type": "VARCHAR(255)",
+                "Null": "FALSE",
+                "Comment": "Foreign Key to the MITRE Group Table",
+                "Primary Key": false,
+                "Foreign Key": true
+            },
+            "Malware_ID": {
+                "Type": "VARCHAR(255)",
+                "Null": "FALSE",
+                "Comment": "Foreign Key to the MITRE Malware Table",
+                "Primary Key": false,
+                "Foreign Key": true
+            }
+        }
+    },
+    "MITRE_TECHNIQUE": {
+        "Description": "Techniques represent \\",
+        "Columns": {
+            "UUID": {
+                "Type": "VARCHAR(255)",
+                "Null": "TRUE",
+                "Comment": "Primary Key",
+                "Primary Key": true,
+                "Foreign Key": false
+            },
+            "Description": {
+                "Type": "VARCHAR(255)",
+                "Null": "FALSE",
+                "Comment": "Description of the Technique",
+                "Primary Key": false,
+                "Foreign Key": false
+            },
+            "Name": {
+                "Type": "VARCHAR(255)",
+                "Null": "FALSE",
+                "Comment": "Name of the Technique",
+                "Primary Key": false,
+                "Foreign Key": false
+            },
+            "Revoked": {
+                "Type": "TINYINT(1)",
+                "Null": "FALSE",
+                "Comment": "Boolean for whether the Technique has been revoked",
+                "Primary Key": false,
+                "Foreign Key": false
+            },
+            "Depreciated": {
+                "Type": "TINYINT(1)",
+                "Null": "FALSE",
+                "Comment": "Boolean for whether the Technique has been deprecated",
+                "Primary Key": false,
+                "Foreign Key": false
+            },
+            "Detection": {
+                "Type": "VARCHAR(255)",
+                "Null": "FALSE",
+                "Comment": "How to Detect for this Technique on a System",
+                "Primary Key": false,
+                "Foreign Key": false
+            },
+            "Remote_Support": {
+                "Type": "TINYINT(1)",
+                "Null": "FALSE",
+                "Comment": "Boolean for if the (sub-)technique can invoke an instance of itself remotely without relying on external tools/techniques",
+                "Primary Key": false,
+                "Foreign Key": false
+            },
+            "System_Requirements": {
+                "Type": "VARCHAR(255)",
+                "Null": "FALSE",
+                "Comment": "Additional information on requirements the adversary needs to meet or about the state of the system (software, patch level, etc.) that may be required for the (sub-)technique to work",
+                "Primary Key": false,
+                "Foreign Key": false
+            },
+            "Version": {
+                "Type": "FLOAT",
+                "Null": "FALSE",
+                "Comment": "Version Number of the Technique object",
+                "Primary Key": false,
+                "Foreign Key": false
+            },
+            "Impact_ID": {
+                "Type": "VARCHAR(255)",
+                "Null": "FALSE",
+                "Comment": "Foreign Key to the MITRE Impact Type Reference table",
+                "Primary Key": false,
+                "Foreign Key": true
+            },
+            "Parent_Technique": {
+                "Type": "VARCHAR(255)",
+                "Null": "FALSE",
+                "Comment": "If this Technique is a Subtechnique, then the Foreign Key to the Parent Technique",
+                "Primary Key": false,
+                "Foreign Key": true
+            },
+            "Superseded_By": {
+                "Type": "VARCHAR(255)",
+                "Null": "FALSE",
+                "Comment": "If the Technique is superseded, a foreign key to the Technique that supersedes it.",
+                "Primary Key": false,
+                "Foreign Key": true
+            }
+        }
+    },
+    "MITRE_Group_Technique": {
+        "Description": "Connecting Table of the MITRE ATTACK Techniques that have been used by specific Groups",
+        "Columns": {
+            "Group_ID": {
+                "Type": "VARCHAR(255)",
+                "Null": "FALSE",
+                "Comment": "Foreign Key to the MITRE Group Table",
+                "Primary Key": false,
+                "Foreign Key": true
+            },
+            "Technique_ID": {
+                "Type": "VARCHAR(255)",
+                "Null": "FALSE",
+                "Comment": "Foreign Key to the MITRE Technique Table",
+                "Primary Key": false,
+                "Foreign Key": true
+            }
+        }
+    },
+    "MITRE_TOOL": {
+        "Description": "Commercial, open-source, built-in, or publicly available software that could be used by a defender, pen tester, red teamer, or an adversary. This category includes both software that generally is not found on an enterprise system as well as software generally available as part of an operating system that is already present in an environment. Examples include PsExec, Metasploit, Mimikatz, as well as Windows utilities such as Net, netstat, Tasklist, etc.",
+        "Columns": {
+            "ID": {
+                "Type": "VARCHAR(255)",
+                "Null": "TRUE",
+                "Comment": "Primary Key",
+                "Primary Key": true,
+                "Foreign Key": false
+            },
+            "Description": {
+                "Type": "VARCHAR(255)",
+                "Null": "FALSE",
+                "Comment": "Description of the Tool",
+                "Primary Key": false,
+                "Foreign Key": false
+            },
+            "Name": {
+                "Type": "INT",
+                "Null": "FALSE",
+                "Comment": "Name of the Tool",
+                "Primary Key": false,
+                "Foreign Key": false
+            },
+            "Version_Number": {
+                "Type": "FLOAT",
+                "Null": "FALSE",
+                "Comment": "Version Number of the Tool",
+                "Primary Key": false,
+                "Foreign Key": false
+            }
+        }
+    },
+    "MITRE_Group_Tool": {
+        "Description": "Connecting Table of the MITRE ATTACK Tools that have been used by specific Groups",
+        "Columns": {
+            "Group_ID": {
+                "Type": "VARCHAR(255)",
+                "Null": "FALSE",
+                "Comment": "Foreign Key to the MITRE Group Table",
+                "Primary Key": false,
+                "Foreign Key": true
+            },
+            "Tool_ID": {
+                "Type": "VARCHAR(255)",
+                "Null": "FALSE",
+                "Comment": "Foreign Key to the MITRE Tool Table",
+                "Primary Key": false,
+                "Foreign Key": true
+            }
+        }
+    },
+    "MITRE_Group_References": {
+        "Description": "External References belonging to MITRE ATTACK Groups",
+        "Columns": {
+            "Reference_ID": {
+                "Type": "VARCHAR(255)",
+                "Null": "FALSE",
+                "Comment": "Foreign Key to the MITRE_External_References Table",
+                "Primary Key": false,
+                "Foreign Key": true
+            },
+            "Group_ID": {
+                "Type": "VARCHAR(255)",
+                "Null": "FALSE",
+                "Comment": "Foreign Key to the MITRE ATTACK Group Table",
+                "Primary Key": false,
+                "Foreign Key": true
+            }
+        }
+    },
+    "MITRE_MALWARE_Aliases": {
+        "Description": "Names that have overlapping reference to a software entry and may refer to the same or similar software in threat intelligence reporting",
+        "Columns": {
+            "Name": {
+                "Type": "VARCHAR(255)",
+                "Null": "FALSE",
+                "Comment": "Name of the Alias",
+                "Primary Key": false,
+                "Foreign Key": false
+            },
+            "Malware_ID": {
+                "Type": "VARCHAR(255)",
+                "Null": "FALSE",
+                "Comment": "Foreign Key to the MITRE Malware Table",
+                "Primary Key": false,
+                "Foreign Key": true
+            }
+        }
+    },
+    "MITRE_Malware_Technique": {
+        "Description": "Connecting Table of the MITRE ATTACK Technique that are used as part of Malware",
+        "Columns": {
+            "Malware_ID": {
+                "Type": "VARCHAR(255)",
+                "Null": "FALSE",
+                "Comment": "Foreign Key to the MITRE Malware Table",
+                "Primary Key": false,
+                "Foreign Key": true
+            },
+            "Technique_ID": {
+                "Type": "VARCHAR(255)",
+                "Null": "FALSE",
+                "Comment": "Foreign Key to the MITRE Technique Table",
+                "Primary Key": false,
+                "Foreign Key": true
+            }
+        }
+    },
+    "MITRE_Mitigation": {
+        "Description": "Mitigations represent security concepts and classes of technologies that can be used to prevent a technique or sub-technique from being successfully executed.",
+        "Columns": {
+            "UUID": {
+                "Type": "VARCHAR(255)",
+                "Null": "TRUE",
+                "Comment": "Primary Key",
+                "Primary Key": true,
+                "Foreign Key": false
+            },
+            "Description": {
+                "Type": "VARCHAR(255)",
+                "Null": "FALSE",
+                "Comment": "Description of the Mitigation",
+                "Primary Key": false,
+                "Foreign Key": false
+            },
+            "Depreciated": {
+                "Type": "TINYINT(1)",
+                "Null": "FALSE",
+                "Comment": "Boolean for whether this Mitigation is depreciated",
+                "Primary Key": false,
+                "Foreign Key": false
+            },
+            "Version": {
+                "Type": "FLOAT",
+                "Null": "FALSE",
+                "Comment": "Version Number for this Mitigation Object",
+                "Primary Key": false,
+                "Foreign Key": false
+            },
+            "Name": {
+                "Type": "VARCHAR(255)",
+                "Null": "FALSE",
+                "Comment": "Name of this Mitigation",
+                "Primary Key": false,
+                "Foreign Key": false
+            },
+            "Created_Date": {
+                "Type": "DATE",
+                "Null": "FALSE",
+                "Comment": "When this Mitigation object was created",
+                "Primary Key": false,
+                "Foreign Key": false
+            },
+            "Modified_Date": {
+                "Type": "DATE",
+                "Null": "FALSE",
+                "Comment": "When this Mitigation object was last modified",
+                "Primary Key": false,
+                "Foreign Key": false
+            }
+        }
+    },
+    "MITRE_Mitigation_Technique": {
+        "Description": "MITRE Techniques addressed by Mitigation",
+        "Columns": {
+            "Mitigation_ID": {
+                "Type": "VARCHAR(255)",
+                "Null": "FALSE",
+                "Comment": "Foreign Key to the MITRE Mitigation Table",
+                "Primary Key": false,
+                "Foreign Key": true
+            },
+            "Technique_ID": {
+                "Type": "VARCHAR(255)",
+                "Null": "FALSE",
+                "Comment": "Foreign Key to the MITRE Technique Table",
+                "Primary Key": false,
+                "Foreign Key": true
+            }
+        }
+    },
+    "MITRE_Malware_Platforms": {
+        "Description": "MITRE ATT&CK Platforms which are the system an malware is operating within. Could be an operating system or application",
+        "Columns": {
+            "Malware_ID": {
+                "Type": "VARCHAR(255)",
+                "Null": "FALSE",
+                "Comment": "Foreign Key to the MITRE Malware Table",
+                "Primary Key": false,
+                "Foreign Key": true
+            },
+            "Platform_ID": {
+                "Type": "VARCHAR(255)",
+                "Null": "FALSE",
+                "Comment": "Foreign Key to the MITRE Platforms Table",
+                "Primary Key": false,
+                "Foreign Key": true
+            }
+        }
+    },
+    "MITRE_Malware_References": {
+        "Description": "External References belonging to MITRE ATTACK Malware",
+        "Columns": {
+            "Reference_ID": {
+                "Type": "VARCHAR(255)",
+                "Null": "FALSE",
+                "Comment": "Foreign Key to the MITRE_External_References Table",
+                "Primary Key": false,
+                "Foreign Key": true
+            },
+            "Malware_ID": {
+                "Type": "VARCHAR(255)",
+                "Null": "FALSE",
+                "Comment": "Foreign Key to the MITRE ATTACK Malware Table",
+                "Primary Key": false,
+                "Foreign Key": true
+            }
+        }
+    },
+    "MITRE_Mitigation_References": {
+        "Description": "External References belonging to MITRE ATTACK Mitigations",
+        "Columns": {
+            "Reference_ID": {
+                "Type": "VARCHAR(255)",
+                "Null": "FALSE",
+                "Comment": "Foreign Key to the MITRE_External_References Table",
+                "Primary Key": false,
+                "Foreign Key": true
+            },
+            "Mitigation_ID": {
+                "Type": "VARCHAR(255)",
+                "Null": "FALSE",
+                "Comment": "Foreign Key to the MITRE ATTACK Mitigation Table",
+                "Primary Key": false,
+                "Foreign Key": true
+            }
+        }
+    },
+    "MITRE_TACTIC": {
+        "Description": "Tactics represent the why of an ATT&CK technique or sub-technique. It is the adversary\\",
+        "Columns": {
+            "UUID": {
+                "Type": "VARCHAR(255)",
+                "Null": "TRUE",
+                "Comment": "Primary Key",
+                "Primary Key": true,
+                "Foreign Key": false
+            },
+            "Description": {
+                "Type": "VARCHAR(255)",
+                "Null": "FALSE",
+                "Comment": "Description of the Tactic",
+                "Primary Key": false,
+                "Foreign Key": false
+            },
+            "Name": {
+                "Type": "VARCHAR(255)",
+                "Null": "FALSE",
+                "Comment": "Name of the Tactic",
+                "Primary Key": false,
+                "Foreign Key": false
+            },
+            "Shortname": {
+                "Type": "VARCHAR(255)",
+                "Null": "FALSE",
+                "Comment": "Short name of the Tactic",
+                "Primary Key": false,
+                "Foreign Key": false
+            }
+        }
+    },
+    "MITRE_Technique_Data_Component": {
+        "Description": "Connecting table for the Data Components that can detect MITRE ATTACK Techniques",
+        "Columns": {
+            "Technique_ID": {
+                "Type": "VARCHAR(255)",
+                "Null": "FALSE",
+                "Comment": "Foreign Key to the MITRE Technique Table",
+                "Primary Key": false,
+                "Foreign Key": true
+            },
+            "Data_Component_ID": {
+                "Type": "VARCHAR(255)",
+                "Null": "FALSE",
+                "Comment": "Foreign Key to the MITRE ATTACK Data Components Table",
+                "Primary Key": false,
+                "Foreign Key": true
+            }
+        }
+    },
+    "MITRE_Technique_Defense_Bypasses": {
+        "Description": "Connecting Table of all the Defenses that particular Techniques bypass",
+        "Columns": {
+            "Technique_ID": {
+                "Type": "VARCHAR(255)",
+                "Null": "FALSE",
+                "Comment": "Foreign Key to the MITRE Technique Table",
+                "Primary Key": false,
+                "Foreign Key": true
+            },
+            "Defense_ID": {
+                "Type": "VARCHAR(255)",
+                "Null": "FALSE",
+                "Comment": "Foreign Key to the MITRE ATTACK Defenses Reference Table",
+                "Primary Key": false,
+                "Foreign Key": true
+            }
+        }
+    },
+    "System_Permissions": {
+        "Description": "Reference Table of Permission Types that can be found on Systems. Ie, Administrator, root, etc.",
+        "Columns": {
+            "UUID": {
+                "Type": "VARCHAR(255)",
+                "Null": "TRUE",
+                "Comment": "Primary Key",
+                "Primary Key": true,
+                "Foreign Key": false
+            },
+            "Name": {
+                "Type": "VARCHAR(255)",
+                "Null": "FALSE",
+                "Comment": "Name of the Permission Role",
+                "Primary Key": false,
+                "Foreign Key": false
+            }
+        }
+    },
+    "MITRE_Technique_Obtained_Permissions": {
+        "Description": "The level of permissions the adversary will attain by performing the (sub-)technique",
+        "Columns": {
+            "Technique_ID": {
+                "Type": "VARCHAR(255)",
+                "Null": "FALSE",
+                "Comment": "Foreign Key to the ATTACK Technique Table",
+                "Primary Key": false,
+                "Foreign Key": true
+            },
+            "Permission_ID": {
+                "Type": "VARCHAR(255)",
+                "Null": "FALSE",
+                "Comment": "Foreign Key to the System Permissions reference Table",
+                "Primary Key": false,
+                "Foreign Key": true
+            }
+        }
+    },
+    "MITRE_TECHNIQUE_References": {
+        "Description": "External References belonging to MITRE ATTACK Techniques",
+        "Columns": {
+            "Reference_ID": {
+                "Type": "VARCHAR(255)",
+                "Null": "FALSE",
+                "Comment": "Foreign Key to the MITRE_External_References Table",
+                "Primary Key": false,
+                "Foreign Key": true
+            },
+            "Technique_ID": {
+                "Type": "VARCHAR(255)",
+                "Null": "FALSE",
+                "Comment": "Foreign Key to the MITRE ATTACK Technique Table",
+                "Primary Key": false,
+                "Foreign Key": true
+            }
+        }
+    },
+    "MITRE_Technique_Required_Permissions": {
+        "Description": "The lowest level of permissions the adversary is required to be operating within to perform the (sub-)technique on a system.",
+        "Columns": {
+            "Technique_ID": {
+                "Type": "VARCHAR(255)",
+                "Null": "FALSE",
+                "Comment": "Foreign Key to the MITRE Technique Table",
+                "Primary Key": false,
+                "Foreign Key": true
+            },
+            "Permission_ID": {
+                "Type": "VARCHAR(255)",
+                "Null": "FALSE",
+                "Comment": "Foreign Key to the System Permissions reference Table",
+                "Primary Key": false,
+                "Foreign Key": true
+            }
+        }
+    },
+    "MITRE_Technique_Tactics": {
+        "Description": "Connecting Table for Tactic objectives that (sub-)techniques can be used to accomplish",
+        "Columns": {
+            "Technique_ID": {
+                "Type": "VARCHAR(255)",
+                "Null": "FALSE",
+                "Comment": "Foreign Key to the MITRE Technique Table",
+                "Primary Key": false,
+                "Foreign Key": true
+            },
+            "Tactic_ID": {
+                "Type": "VARCHAR(255)",
+                "Null": "FALSE",
+                "Comment": "Foreign Key to the MITRE Tactics Table",
+                "Primary Key": false,
+                "Foreign Key": true
+            }
+        }
+    },
+    "MITRE_TOOL_Aliases": {
+        "Description": "Names that have overlapping reference to a software entry and may refer to the same or similar software in threat intelligence reporting",
+        "Columns": {
+            "Name": {
+                "Type": "VARCHAR(255)",
+                "Null": "FALSE",
+                "Comment": "Name of the alias",
+                "Primary Key": false,
+                "Foreign Key": false
+            },
+            "Tool_ID": {
+                "Type": "VARCHAR(255)",
+                "Null": "FALSE",
+                "Comment": "Foreign Key to the MITRE Tool Table",
+                "Primary Key": false,
+                "Foreign Key": true
+            }
+        }
+    },
+    "MITRE_Tool_Technique": {
+        "Description": "Connecting Table of the MITRE ATTACK Technique that are used as part of a Tool",
+        "Columns": {
+            "Tool_ID": {
+                "Type": "VARCHAR(255)",
+                "Null": "FALSE",
+                "Comment": "Foreign Key to the Tool Table",
+                "Primary Key": false,
+                "Foreign Key": true
+            },
+            "Technique_ID": {
+                "Type": "VARCHAR(255)",
+                "Null": "FALSE",
+                "Comment": "Foreign Key to the Technique Table",
+                "Primary Key": false,
+                "Foreign Key": true
+            }
+        }
+    },
+    "MITRE_Tactic_References": {
+        "Description": "External References belonging to MITRE ATTACK Tactics",
+        "Columns": {
+            "Reference_ID": {
+                "Type": "VARCHAR(255)",
+                "Null": "FALSE",
+                "Comment": "Foreign Key to the MITRE_External_References Table",
+                "Primary Key": false,
+                "Foreign Key": true
+            },
+            "Tactic_ID": {
+                "Type": "VARCHAR(255)",
+                "Null": "FALSE",
+                "Comment": "Foreign Key to the MITRE ATTACK Tactic Table",
+                "Primary Key": false,
+                "Foreign Key": true
+            }
+        }
+    },
+    "MITRE_Techniques_Platforms": {
+        "Description": "MITRE ATT&CK Platforms which are the system an adversary is operating within. Could be an operating system or application",
+        "Columns": {
+            "Technique_ID": {
+                "Type": "VARCHAR(255)",
+                "Null": "FALSE",
+                "Comment": "Foreign Key to the MITRE Technique Table",
+                "Primary Key": false,
+                "Foreign Key": true
+            },
+            "Platform_ID": {
+                "Type": "VARCHAR(255)",
+                "Null": "FALSE",
+                "Comment": "Foreign Key to the MITRE Platform Table",
+                "Primary Key": false,
+                "Foreign Key": true
+            }
+        }
+    },
+    "MITRE_Tool_Platforms": {
+        "Description": "Connecting Table for MITRE Tools and Platforms",
+        "Columns": {
+            "Tool_ID": {
+                "Type": "VARCHAR(255)",
+                "Null": "FALSE",
+                "Comment": "Foreign Key to the MITRE Tool Table",
+                "Primary Key": false,
+                "Foreign Key": true
+            },
+            "Platform_ID": {
+                "Type": "VARCHAR(255)",
+                "Null": "FALSE",
+                "Comment": "Foreign Key to the MITRE Platforms Table",
+                "Primary Key": false,
+                "Foreign Key": true
+            }
+        }
+    },
+    "MITRE_Tool_References": {
+        "Description": "External References belonging to MITRE ATTACK Tools",
+        "Columns": {
+            "Reference_ID": {
+                "Type": "VARCHAR(255)",
+                "Null": "FALSE",
+                "Comment": "Foreign Key to the MITRE_External_References Table",
+                "Primary Key": false,
+                "Foreign Key": true
+            },
+            "Tool_ID": {
+                "Type": "VARCHAR(255)",
+                "Null": "FALSE",
+                "Comment": "Foreign Key to the MITRE ATTACK Tool Table",
+                "Primary Key": false,
+                "Foreign Key": true
+            }
+        }
+    },
+    "MITRE_ATTACK_Campaign": {
+        "Description": "",
+        "Columns": {
+            "UUID": {
+                "Type": "VARCHAR(255)",
+                "Null": "TRUE",
+                "Comment": "Primary Key",
+                "Primary Key": true,
+                "Foreign Key": false
+            },
+            "Name": {
+                "Type": "VARCHAR(255)",
+                "Null": "FALSE",
+                "Comment": "Name of the Campaign",
+                "Primary Key": false,
+                "Foreign Key": false
+            },
+            "Description": {
+                "Type": "VARCHAR(255)",
+                "Null": "FALSE",
+                "Comment": "Description of the Campaign",
+                "Primary Key": false,
+                "Foreign Key": false
+            },
+            "First_Seen": {
+                "Type": "DATETIME",
+                "Null": "FALSE",
+                "Comment": "When the Campaign was first seen",
+                "Primary Key": false,
+                "Foreign Key": false
+            },
+            "Last_Seen": {
+                "Type": "DATETIME",
+                "Null": "FALSE",
+                "Comment": "When the Campaign was last seen",
+                "Primary Key": false,
+                "Foreign Key": false
+            },
+            "Created_Date": {
+                "Type": "DATETIME",
+                "Null": "FALSE",
+                "Comment": "When this Campaign was first created",
+                "Primary Key": false,
+                "Foreign Key": false
+            },
+            "Modified_Date": {
+                "Type": "DATETIME",
+                "Null": "FALSE",
+                "Comment": "When this Campaign was last modified",
+                "Primary Key": false,
+                "Foreign Key": false
+            },
+            "Revoked": {
+                "Type": "TINYINT",
+                "Null": "FALSE",
+                "Comment": "Boolean whether this Campaign has been revoked",
+                "Primary Key": false,
+                "Foreign Key": false
+            },
+            "Deprecated": {
+                "Type": "TINYINT",
+                "Null": "FALSE",
+                "Comment": "Boolean whether this Campaign has been depreciated",
+                "Primary Key": false,
+                "Foreign Key": false
+            },
+            "Version": {
+                "Type": "VARCHAR(255)",
+                "Null": "FALSE",
+                "Comment": "Version number of this Campaign",
+                "Primary Key": false,
+                "Foreign Key": false
+            }
+        }
+    },
+    "MITRE_Campaign_References": {
+        "Description": "External References belonging to MITRE ATTACK Groups",
+        "Columns": {
+            "Reference_ID": {
+                "Type": "VARCHAR(255)",
+                "Null": "FALSE",
+                "Comment": "Foreign Key to the MITRE_External_References Table",
+                "Primary Key": false,
+                "Foreign Key": true
+            },
+            "Campaign_ID": {
+                "Type": "VARCHAR(255)",
+                "Null": "FALSE",
+                "Comment": "Foreign Key to the MITRE ATTACK Group Table",
+                "Primary Key": false,
+                "Foreign Key": true
+            }
+        }
+    },
+    "MITRE_Campaign_Aliases": {
+        "Description": "Names that have overlapping reference to a group entry and may refer to the same or similar group in threat intelligence reporting",
+        "Columns": {
+            "Name": {
+                "Type": "VARCHAR(255)",
+                "Null": "FALSE",
+                "Comment": "Name of the Alias",
+                "Primary Key": false,
+                "Foreign Key": false
+            },
+            "Campaign_ID": {
+                "Type": "VARCHAR(255)",
+                "Null": "FALSE",
+                "Comment": "Foreign Key to the MITRE Group Table",
+                "Primary Key": false,
+                "Foreign Key": true
+            }
+        }
+    },
+    "MITRE_Campaign_Malware": {
+        "Description": "A connecting table for Malware that a Campaign Uses.",
+        "Columns": {
+            "Campaign_ID": {
+                "Type": "VARCHAR(255)",
+                "Null": "FALSE",
+                "Comment": "Foreign Key to the MITRE ATTACK Campaign Table",
+                "Primary Key": false,
+                "Foreign Key": true
+            },
+            "Malware_ID": {
+                "Type": "VARCHAR(255)",
+                "Null": "FALSE",
+                "Comment": "Foreign Key to the MITRE Attack Malware Table",
+                "Primary Key": false,
+                "Foreign Key": true
+            }
+        }
+    },
+    "MITRE_Campaign_Group": {
+        "Description": "Connecting table for the Groups associated with Campaigns..",
+        "Columns": {
+            "Campaign_ID": {
+                "Type": "VARCHAR(255)",
+                "Null": "FALSE",
+                "Comment": "Foreign Key to the MITRE ATTACK Campaign Table",
+                "Primary Key": false,
+                "Foreign Key": true
+            },
+            "Group_ID": {
+                "Type": "VARCHAR(255)",
+                "Null": "FALSE",
+                "Comment": "Foreign Key to the MITRE Attack Group Table",
+                "Primary Key": false,
+                "Foreign Key": true
+            }
+        }
+    },
+    "MITRE_Campaign_Tool": {
+        "Description": "A connecting table for the Tools that a Campaign Uses.",
+        "Columns": {
+            "Campaign_ID": {
+                "Type": "VARCHAR(255)",
+                "Null": "FALSE",
+                "Comment": "Foreign Key to the MITRE ATTACK Campaign Table",
+                "Primary Key": false,
+                "Foreign Key": true
+            },
+            "Tool_ID": {
+                "Type": "VARCHAR(255)",
+                "Null": "FALSE",
+                "Comment": "Foreign Key to the MITRE Attack Tool Table",
+                "Primary Key": false,
+                "Foreign Key": true
+            }
+        }
+    },
+    "MITRE_Campaign_Technique": {
+        "Description": "A Connecting Table for the Techniques a Campaign Uses.",
+        "Columns": {
+            "Campaign_ID": {
+                "Type": "VARCHAR(255)",
+                "Null": "FALSE",
+                "Comment": "Foreign Key to the MITRE ATTACK Campaign Table.",
+                "Primary Key": false,
+                "Foreign Key": true
+            },
+            "Technique_ID": {
+                "Type": "VARCHAR(255)",
+                "Null": "FALSE",
+                "Comment": "Foreign Key to the MITRE Attack Technique Table",
+                "Primary Key": false,
+                "Foreign Key": true
+            }
+        }
+    }
+}
