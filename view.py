@@ -12,10 +12,11 @@ ref_count_d = {}
 
 
 
+var = 'attack-pattern'
 
-for filename in os.listdir('tool'):
+for filename in os.listdir(var):
     # Open the file
-    with open('tool/' + filename) as f:
+    with open(f'{var}/' + filename) as f:
         # Read the file
         data = json.load(f)
 
@@ -25,7 +26,7 @@ for filename in os.listdir('tool'):
         ref_count = len(data['external_references'])
 
         # Get the UUID of the object
-        uuid = data['id'].replace('tool--', '')
+        uuid = data['id'].replace(f'{var}--', '')
 
         
         ref_count_d[uuid] = ref_count

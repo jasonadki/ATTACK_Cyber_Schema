@@ -637,6 +637,7 @@ for filename in os.listdir('x-mitre-tactic'):
     # Add the MITRE_Tactic object to the final export
     final_export['MITRE_Tactic'].append(tactic.__dict__)
 
+
     # References if they exist
     if 'external_references' in data['objects'][0]:
         for external_reference in data['objects'][0]['external_references']:
@@ -785,6 +786,10 @@ for filename in os.listdir('intrusion-set'):
             # Add the MITRE_Group_Aliases object to the final export
             final_export['MITRE_Group_Aliases'].append(mitre_group_aliases.__dict__)
 
+
+
+
+
     # References if they exist
     if 'external_references' in data['objects'][0]:
         for external_reference in data['objects'][0]['external_references']:
@@ -818,7 +823,7 @@ for filename in os.listdir('intrusion-set'):
             # Nee to check if the URL or Description already exists in the final export and if not make a new one
 
             # Check if the URL already exists for a different source in the final export if its not None
-            if url is not None:
+            if url is not None and referenceUUID is None:
                 if any(d['URL'] == url for d in final_export['MITRE_External_References']):
                     # Get the UUID of the reference found in the final export
                     for existingRef in final_export['MITRE_External_References']:
@@ -860,6 +865,7 @@ for filename in os.listdir('intrusion-set'):
             if referenceUUID is None:
                 # Create a new MITRE_External_References object
                 mitre_external_references = MITRE_External_References(
+                    UUID = str(uuid4()),
                     Source_Name = source_name,
                     URL = url,
                     Description = description
@@ -876,6 +882,7 @@ for filename in os.listdir('intrusion-set'):
 
                 # Add the MITRE_Group_References object to the final export
                 final_export['MITRE_Group_References'].append(mitre_group_references.__dict__)
+
 
 
 
@@ -914,6 +921,9 @@ for filename in os.listdir('course-of-action'):
     # Add the MITRE_Mitigation object to the final export
     final_export['MITRE_Mitigation'].append(mitre_mitigation.__dict__)
 
+
+
+
     # References if they exist
     if 'external_references' in data['objects'][0]:
         for external_reference in data['objects'][0]['external_references']:
@@ -989,6 +999,7 @@ for filename in os.listdir('course-of-action'):
             if referenceUUID is None:
                 # Create a new MITRE_External_References object
                 mitre_external_references = MITRE_External_References(
+                    UUID = str(uuid4()),
                     Source_Name = source_name,
                     URL = url,
                     Description = description
