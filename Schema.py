@@ -110,14 +110,10 @@ class MITRE_TOOL:
 class MITRE_Tool_References:
     def __init__(
         self,
-        Source_Name = None,
-        URL = None,
-        Description = None,
+        Reference_ID = None,
         Tool_ID = None,
     ):
-        self.Source_Name = Source_Name
-        self.URL = URL
-        self.Description = Description
+        self.Reference_ID = Reference_ID        
         self.Tool_ID = Tool_ID
 
 class MITRE_Tool_Aliases:
@@ -180,14 +176,10 @@ class MITRE_MALWARE_Aliases:
 class MITRE_Malware_References:
     def __init__(
         self,
-        Source_Name = None,
-        URL = None,
-        Description = None,
+        Reference_ID = None,
         Malware_ID = None,
     ):
-        self.Source_Name = Source_Name
-        self.URL = URL
-        self.Description = Description
+        self.Reference_ID = Reference_ID
         self.Malware_ID = Malware_ID
 
 
@@ -208,14 +200,10 @@ class MITRE_Tactic:
 class MITRE_Tactic_References:
     def __init__(
         self,
-        Source_Name = None,
-        URL = None,
-        Description = None,
+        Reference_ID = None,
         Tactic_ID = None,
     ):
-        self.Source_Name = Source_Name
-        self.URL = URL
-        self.Description = Description
+        self.Reference_ID = Reference_ID
         self.Tactic_ID = Tactic_ID
     
 
@@ -252,14 +240,10 @@ class MITRE_Group_Aliases:
 class MITRE_Group_References:
     def __init__(
         self,
-        Source_Name = None,
-        URL = None,
-        Description = None,
+        Reference_ID = None,
         Group_ID = None,
     ):
-        self.Source_Name = Source_Name
-        self.URL = URL
-        self.Description = Description
+        self.Reference_ID = Reference_ID
         self.Group_ID = Group_ID
 
 
@@ -286,14 +270,10 @@ class MITRE_Mitigation:
 class MITRE_Mitigation_References:
     def __init__(
         self,
-        Source_Name = None,
-        URL = None,
-        Description = None,
+        Reference_ID = None,
         Mitigation_ID = None,
     ):
-        self.Source_Name = Source_Name
-        self.URL = URL
-        self.Description = Description
+        self.Reference_ID = Reference_ID
         self.Mitigation_ID = Mitigation_ID
 
 
@@ -326,14 +306,10 @@ class MITRE_ATTACK_Campaign:
 class MITRE_ATTACK_Campaign_References:
     def __init__(
         self,
-        Source_Name = None,
-        URL = None,
-        Description = None,
+        Reference_ID = None,
         Campaign_ID = None,
     ):
-        self.Source_Name = Source_Name
-        self.URL = URL
-        self.Description = Description
+        self.Reference_ID = Reference_ID
         self.Campaign_ID = Campaign_ID
 
 
