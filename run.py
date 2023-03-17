@@ -380,7 +380,7 @@ for filename in os.listdir('tool'):
             # Nee to check if the URL or Description already exists in the final export and if not make a new one
 
             # Check if the URL already exists for a different source in the final export if its not None
-            if url is not None:
+            if url is not None and referenceUUID is None:
                 if any(d['URL'] == url for d in final_export['MITRE_External_References']):
                     # Get the UUID of the reference found in the final export
                     for existingRef in final_export['MITRE_External_References']:
@@ -427,19 +427,22 @@ for filename in os.listdir('tool'):
                     Description = description
                 )
 
+                
                 # Add the MITRE_External_References object to the final export
                 final_export['MITRE_External_References'].append(reference.__dict__)
 
                 referenceUUID = reference.UUID
 
-            # Create a new MITRE_Tool_References object
-            mitre_tool_references = MITRE_Tool_References(
-                Tool_ID = mitre_tool.UUID,
-                Reference_ID = referenceUUID
-            )
+                
 
-            # Add the MITRE_Tool_References object to the final export
-            final_export['MITRE_Tool_References'].append(mitre_tool_references.__dict__)
+                # Create a new MITRE_Tool_References object
+                mitre_tool_references = MITRE_Tool_References(
+                    Tool_ID = mitre_tool.UUID,
+                    Reference_ID = referenceUUID
+                )
+
+                # Add the MITRE_Tool_References object to the final export
+                final_export['MITRE_Tool_References'].append(mitre_tool_references.__dict__)
 
 
 
@@ -1097,16 +1100,11 @@ for filename in os.listdir('campaign'):
             # Check if the URL already exists for a different source in the final export if its not None
             if url is not None:
                 if any(d['URL'] == url for d in final_export['MITRE_External_References']):
-                    if mitre_attack_campaign.UUID == '26d9ebae-de59-427f-ae9a-349456bae4b1':
-                        print(1, ext_reference, referenceUUID)
                     # Get the UUID of the reference found in the final export
                     for existingRef in final_export['MITRE_External_References']:
                         if existingRef['URL'] == url:
-                            if mitre_attack_campaign.UUID == '26d9ebae-de59-427f-ae9a-349456bae4b1':
-                                print('j', existingRef)
+                            
                             referenceUUID = existingRef['UUID']
-                            # if mitre_attack_campaign.UUID == '26d9ebae-de59-427f-ae9a-349456bae4b1':
-                            #     print(1, reference, existingRef['UUID'])
 
                             # Create a new MITRE_ATTACK_Campaign_References object
                             mitre_attack_campaign_references = MITRE_ATTACK_Campaign_References(
@@ -1119,15 +1117,10 @@ for filename in os.listdir('campaign'):
 
                             break
 
-                    # if mitre_attack_campaign.UUID == '26d9ebae-de59-427f-ae9a-349456bae4b1':
-                    #     print(1, reference, referenceUUID)
-
             # Check if the Description already exists for a different source in the final export if its not None
             # But don't if a reference was already found by the URL
             if description is not None and referenceUUID is None:
                 if any(d['Description'] == description for d in final_export['MITRE_External_References']):
-                    if mitre_attack_campaign.UUID == '26d9ebae-de59-427f-ae9a-349456bae4b1':
-                        print(2, reference)
                     # Get the UUID of the reference found in the final export
                     for existingRef in final_export['MITRE_External_References']:
                         if existingRef['Description'] == description:
@@ -1146,8 +1139,6 @@ for filename in os.listdir('campaign'):
 
             # If the reference was not found in the final export
             if referenceUUID is None:
-                if mitre_attack_campaign.UUID == '26d9ebae-de59-427f-ae9a-349456bae4b1':
-                    print(3, ext_reference)
                 # Create a new MITRE_External_References object
                 mitre_external_references = MITRE_External_References(
                     UUID = str(uuid4()),

@@ -7,39 +7,38 @@ import sqlite3
 from Schema import *
 
 
-x = []
-
-
-# # Iterate through the campaign directory
-# for filename in os.listdir('attack-pattern'):
-#     # Open the file
-#     with open('attack-pattern/' + filename) as f:
-#         # Read the file
-#         data = json.load(f)
-
-#         data = data['objects'][0]
-
-#         # Get a list of all the keys in the dictionary
-#         for k in data.keys():
-#             x.append(k)
+ref_count_d = {}
 
 
 
-# for i in list(set(x)):
-#     print(i)
 
 
-
-# Iterate through the campaign directory
-for filename in os.listdir('attack-pattern'):
+for filename in os.listdir('tool'):
     # Open the file
-    with open('attack-pattern/' + filename) as f:
+    with open('tool/' + filename) as f:
         # Read the file
         data = json.load(f)
 
         data = data['objects'][0]
 
-        # if x_mitre_data_sources is in the dictionary
-        if 'kill_chain_phases' in data.keys():
-            # print the value of x_mitre_data_sources
-            print(data['kill_chain_phases'])
+        # Get a count of the number of references in each object
+        ref_count = len(data['external_references'])
+
+        # Get the UUID of the object
+        uuid = data['id'].replace('tool--', '')
+
+        
+        ref_count_d[uuid] = ref_count
+
+
+
+
+# Sort by the key
+ref_count_d = sorted(ref_count_d.items(), key=lambda x: x[1], reverse=True)
+
+for k, v in ref_count_d:
+    print(f'{k},', v)
+
+
+
+
